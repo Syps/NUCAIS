@@ -1,0 +1,8 @@
+{
+  "name": "NUCAIS",
+  "dependencies": {
+    "angular-bootstrap": "~0.13.4",
+    "angular-route": "~1.4.6"
+  },
+  "preen": {}
+}
