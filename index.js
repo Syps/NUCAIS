@@ -3,7 +3,7 @@ var jade         = require('jade');
 var app          = express();
 
 // set root for static files
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname));
 
 // set templating engine
 app.set('view engine', 'jade');
@@ -15,6 +15,12 @@ app.set('views', __dirname + '/public/views');
 app.get('/', function(req, res) {
   res.render('index');
 });
+
+// responds to requests for view partials
+app.get('/public/views/partials/:name', function(req, res) {
+  var name = req.params.name;
+  res.render('partials/' + name);
+})
 
 // listen on 8080
 app.listen(8080);

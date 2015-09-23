@@ -1,9 +1,27 @@
 doctype html
-html
+html(ng-app="app")
 
   head
     title NUCAIS 2016
+    base(href="/")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", type="text/css", href="public/dist/css/style.css", media="screen, handheld")
+    link(rel="stylesheet", type="text/css", href="public/dist/css/enhanced.css", media="screen and (min-width: 40.5em)")
+
+    // Normalize
+    link(rel="stylesheet", type="text/css", href="bower_components/normalize-css/normalize.css")
+
+    <!--[if (lt IE 9)&(!IEMobile)]>
+    <link rel="stylesheet" type="text/css" href="public/dist/css/enhanced.css" />
+    <![endif]-->
 
   body
 
-    p Hello World
+    div(ng-view)
+
+
+
+
+    script(src="bower_components/angular/angular.min.js")
+    script(src="bower_components/angular-route/angular-route.min.js")
+    script(src="public/dist/js/app.min.js")

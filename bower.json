@@ -2,7 +2,8 @@
   "name": "NUCAIS",
   "dependencies": {
     "angular-bootstrap": "~0.13.4",
-    "angular-route": "~1.4.6"
+    "angular-route": "~1.4.6",
+    "normalize-css": "normalize.css#~3.0.3"
   },
   "preen": {}
 }
