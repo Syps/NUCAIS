@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
 app.get('/public/views/partials/:name', function(req, res) {
   var name = req.params.name;
   res.render('partials/' + name);
-})
+});
 
 // listen on 8080
 app.listen(8080);

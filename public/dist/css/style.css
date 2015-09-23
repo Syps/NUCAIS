@@ -1,2 +1,22 @@
-body {
-  color: red; }
+/*
+ * Variables
+ */
+/*
+ * Mixins
+ */
+/*
+ * Fonts
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*
+ * Default Styles
+ */
+#intro {
+  height: 100vh;
+  background: #CC0000;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff; }
+
+/*
+ * Small Screens
+ */

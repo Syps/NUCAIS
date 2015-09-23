@@ -1,5 +1,40 @@
-$primary-color: red;
+/*
+ * Variables
+ */
+$bg-color: #CC0000;
+$text-color: #ffffff;
+$text-font: 'Roboto', sans-serif;
 
-body {
-  color: $primary-color;
+/*
+ * Mixins
+ */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
 }
+
+/*
+ * Fonts
+ */
+ @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/*
+ * Default Styles
+ */
+
+#intro {
+  height: 100vh;
+  background: $bg-color;
+  font-family: $text-font;
+  color: $text-color;
+}
+
+
+
+/*
+ * Small Screens
+ */
+
+ //@media screen and (max-size)

@@ -3,25 +3,34 @@ html(ng-app="app")
 
   head
     title NUCAIS 2016
+
+    // set base url for html5Mode
     base(href="/")
+
+    // limit viewport
     meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    // description
+    meta(name="description", content="Official website of Northeastern University 2016 College Alternative Investment Summit")
+
+    // Stylesheets (mobile, desktop)
     link(rel="stylesheet", type="text/css", href="public/dist/css/style.css", media="screen, handheld")
     link(rel="stylesheet", type="text/css", href="public/dist/css/enhanced.css", media="screen and (min-width: 40.5em)")
 
     // Normalize
     link(rel="stylesheet", type="text/css", href="bower_components/normalize-css/normalize.css")
 
+    // IE case
     <!--[if (lt IE 9)&(!IEMobile)]>
     <link rel="stylesheet" type="text/css" href="public/dist/css/enhanced.css" />
     <![endif]-->
 
-  body
-
-    div(ng-view)
+  body(ng-view)
 
 
 
 
+    // scripts
     script(src="bower_components/angular/angular.min.js")
     script(src="bower_components/angular-route/angular-route.min.js")
     script(src="public/dist/js/app.min.js")
