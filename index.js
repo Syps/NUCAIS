@@ -18,6 +18,7 @@ app.get('/', function(req, res) {
 
 // responds to requests for view partials
 app.get('/public/views/partials/:name', function(req, res) {
+  console.log("incoming partial req");
   var name = req.params.name;
   res.render('partials/' + name);
 });

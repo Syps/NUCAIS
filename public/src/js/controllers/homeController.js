@@ -2,23 +2,20 @@
 
   var app = angular.module('app');
 
-  /*
-   * Home (Main) Controller
-   */
-  /*var homeController = function($scope, $http) {
-    // dev:: welcome message
-    $scope.welcome = "Welcome home";
-  };
-  // minifcation-safe injection
-  HomeController.$inject = ['$scope', '$http'];
-*/
+  console.log("homeController");
+
   // create new controller HomeController w/ homeController constructor
   app.controller('HomeController', [
     '$scope',
     '$http',
     function($scope, $http) {
+      console.log("compiled");
       // dev:: welcome message
       $scope.welcome = "Welcome home";
+
+      $scope.menuItems = ['About', 'FAQ', 'Team',
+        'Sponsors', 'Partners', 'Location'];
+
     }
   ]);
 

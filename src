@@ -1,0 +1,112 @@
+(function() {
+  var app = angular.module('app', ['ngRoute']);
+
+console.log("anything!!!!!");
+
+// configure angular routes (minifaction-safe style)
+app.config([
+  '$routeProvider',
+  '$locationProvider',
+  function($routeProvider, $locationProvider) {
+
+    console.log("app.js loaded");
+
+    $routeProvider
+
+      .when('/', {
+        templateUrl: '/public/views/partials/home',
+        controller: 'HomeController'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+
+    // enable html5Mode to remove # from urls
+    $locationProvider.html5Mode(true);
+
+  }
+]);
+}());
+
+(function() {
+  var app = angular.module('app', ['ngRoute']);
+
+console.log("anything!!!!!");
+
+// configure angular routes (minifaction-safe style)
+app.config([
+  '$routeProvider',
+  '$locationProvider',
+  function($routeProvider, $locationProvider) {
+
+    console.log("app.js loaded");
+
+    $routeProvider
+
+      .when('/', {
+        templateUrl: '/public/views/partials/home',
+        controller: 'HomeController'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+
+    // enable html5Mode to remove # from urls
+    $locationProvider.html5Mode(true);
+
+  }
+]);
+}());
+
+(function() {
+
+  var app = angular.module('app');
+
+  console.log("homeController");
+
+  // create new controller HomeController w/ homeController constructor
+  app.controller('HomeController', [
+    '$scope',
+    '$http',
+    function($scope, $http) {
+      console.log("compiled");
+      // dev:: welcome message
+      $scope.welcome = "Welcome home";
+    }
+  ]);
+
+}());
+
+(function() {
+
+var app = angular.module('app', []);
+
+/**
+ * ng directive for hamburger menu (visible on small screen)
+ */
+
+app.directive('mobileBurger', function() {
+  return {
+      restrict: 'AE',
+      replace: 'true',
+      //scope: {
+      //  active: "="
+      //},
+      //templateUrl: '/public/views/partials/mobileBurger.jade',
+      template:
+        "<div class=\"container\">" +
+          "<button class=\"burgerBtn\" ng-click=\"toggleBurger()\">" +
+          "<i class=\"fa fa-bars\"></i></button>" +
+          "<div class=\"burger-container\" ng-show=\"active\">" +
+          "<p>BurgerState activated</p></div>" +
+          "</div>",
+      link: function($scope, $element, $attrs) {
+        $scope.active = false;
+        $scope.toggleBurger = function () {
+          $scope.active = !$scope.active;
+        };
+      }
+    };
+  });
+
+}());

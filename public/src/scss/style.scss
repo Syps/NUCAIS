@@ -1,8 +1,8 @@
 /*
  * Variables
  */
-$bg-color: #CC0000;
-$text-color: #ffffff;
+$bg-color: #ffffff;
+$text-color: #000000;
 $text-font: 'Roboto', sans-serif;
 
 /*
@@ -13,6 +13,11 @@ $text-font: 'Roboto', sans-serif;
    -moz-border-radius: $radius;
     -ms-border-radius: $radius;
         border-radius: $radius;
+}
+
+@mixin center-horiz() {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*
@@ -36,5 +41,18 @@ $text-font: 'Roboto', sans-serif;
 /*
  * Small Screens
  */
+
+//======== NavBar ==========\\
+
+.nav-list-container {
+  @include center-horiz();
+}
+.nav-list {
+  list-style-type: none;
+}
+
+ .menu-item {
+
+ }
 
  //@media screen and (max-size)

@@ -13,10 +13,16 @@
  */
 #intro {
   height: 100vh;
-  background: #CC0000;
+  background: #ffffff;
   font-family: "Roboto", sans-serif;
-  color: #ffffff; }
+  color: #000000; }
 
 /*
  * Small Screens
  */
+.nav-list-container {
+  margin-right: auto;
+  margin-left: auto; }
+
+.nav-list {
+  list-style-type: none; }

@@ -2,7 +2,10 @@
   "name": "NUCAIS",
   "dependencies": {
     "angular-bootstrap": "~0.13.4",
+    "angular-mocks": "~1.4.6",
     "angular-route": "~1.4.6",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
     "normalize-css": "normalize.css#~3.0.3"
   },
   "preen": {}

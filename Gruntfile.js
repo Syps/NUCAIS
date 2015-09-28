@@ -18,32 +18,40 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'public/dist/css/style.css' : 'public/src/scss/style.scss',
-          'public/dist/css/enhanced.css' : 'public/src/scss/enhanced.scss'
+          'public/dist/css/style.css': 'public/src/scss/style.scss',
+          'public/dist/css/enhanced.css': 'public/src/scss/enhanced.scss'
         }
       }
     },
 
     // minify all js files into app.min.js
     uglify: {
+      options: {
+        mangle: false
+      },
       build: {
         files: {
-          'public/dist/js/app.min.js':
-            ['public/src/js/**/*.js', 'public/src/js/*.js']
+          'public/dist/js/app.min.js': ['public/src/js/**/*.js']
         }
       }
     },
 
     // configure mochaTest task
-    mochaTest: {
+    /*mochaTest: {
       test: {
         options: {
           reporter: 'spec',
-          //captureFile: 'testResults.txt',
           quiet: false, // default
           clearRequireCache: false // default
-        },
-        src: ['tests/**/*.js']
+        },*/
+    //src: ['tests/**/*.js']
+    /*}
+    },*/
+
+    //configure grunt karma plugin
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js'
       }
     },
 
@@ -77,7 +85,7 @@ module.exports = function(grunt) {
     concurrent: {
       dev: {
         options: {
-          logConcurrentOutput: true
+          logConcurrentOutput: true,
         },
         tasks: ['watch', 'nodemon:dev']
       }
@@ -87,15 +95,23 @@ module.exports = function(grunt) {
 
   // load tasks
   grunt.loadNpmTasks('grunt-nodemon');
-  grunt.loadNpmTasks('grunt-mocha-test');
+  //grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-concurrent');
+  grunt.loadNpmTasks('grunt-karma');
+
 
 
   // register tasks on run grunt
-  grunt.registerTask('default', ['mochaTest','jshint:all', 'uglify', 'sass:dist', 'concurrent']);
+  grunt.registerTask('default', [
+    //'mochaTest',
+    'jshint:all',
+    'uglify',
+    'sass:dist',
+    'concurrent'
+  ]);
 
 };
