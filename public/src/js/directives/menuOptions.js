@@ -11,10 +11,10 @@ app.directive('menuOptions', function() {
       restrict: 'AE',
       replace: true,
       template:
-        "<div class=\"nav-list-container\">" +
+        "<div ng-show=\"active\" class=\"nav-list-container\">" +
         "<ul class=\"nav-list\"><li class=\"menu-item\" " +
         "ng-repeat=\"item in menuItems\">{{item}}</li></ul>" +
-        "</div>"
+        "</div>",
       };
 });
 

@@ -11,12 +11,9 @@ app.directive('mobileBurger', function() {
       restrict: 'AE',
       replace: 'true',
       template:
-        "<div class=\"container\">" +
+        "<div class=\"container center\">" +
           "<button class=\"burgerBtn\" ng-click=\"toggleBurger()\">" +
-          "<i class=\"fa fa-bars\"></i></button>" +
-          "<div class=\"burger-container\" ng-show=\"active\">" +
-          "<p>BurgerState activated</p></div>" +
-          "</div>",
+          "<i class=\"fa fa-bars\"></i></button>",
       link: function($scope, $element, $attrs) {
         $scope.active = false;
         $scope.toggleBurger = function () {

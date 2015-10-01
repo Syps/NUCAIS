@@ -27,7 +27,6 @@ describe('Directives', function() {
 
       it('should have active property defined and equal to false',
         function() {
-          expect(42).to.equal(42);
           should.exist(scope.active);
           expect(scope.active).to.equal(false);
         });
@@ -71,5 +70,38 @@ describe('Directives', function() {
     });
 
   });
+
+  /*describe('Directive menu-options', function() {
+
+    var compile, scope, directiveElem;
+
+    beforeEach(function() {
+      inject(function($rootScope, $compile) {
+
+        // create element
+        var element = angular.element('<menu-options></menu-options>');
+
+        // compile and digest
+        compile = $compile;
+        scope = $rootScope
+        directiveElem = compile(element)(scope);
+        scope.menuItems = ['A', 'B'];
+        scope.$digest();
+      });
+    });
+
+    describe('default behavior', function() {
+
+      it('should contain the same number of li as menuItems in parent scope',
+        function() {
+          var li = $( "li" );
+          var lis = directiveElem.find(li);
+          expect(lis.length).to.equal(2);
+        });
+    });
+
+
+
+  });*/
 
 });

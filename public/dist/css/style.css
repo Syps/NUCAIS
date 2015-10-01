@@ -17,12 +17,73 @@
   font-family: "Roboto", sans-serif;
   color: #000000; }
 
+.container {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; }
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid black; }
+
+/*
+ * Animations
+ */
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1; }
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
+
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1; }
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
+
+.ng-hide-add {
+  animation: 0.5s lightSpeedOut ease; }
+
 /*
  * Small Screens
  */
+.navbar {
+  padding: 0px 0px 0px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.5); }
+
 .nav-list-container {
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  border: 1px solid black;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  width: 100%; }
+
+.burgerBtn {
+  margin-right: auto;
+  margin-left: auto;
+  display: block; }
 
 .nav-list {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid blue;
+  padding: 0px 0px 0px 0px; }
+
+.menu-item {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid red;
+  text-align: center; }
