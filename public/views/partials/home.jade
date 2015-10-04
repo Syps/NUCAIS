@@ -1,11 +1,12 @@
 nav.navbar
-  <mobile-burger></mobile-burger>
-  <menu-options></menu-options>
-
+  div.container.center
+    div.burgerBtn(slide-toggle="#drop-menu")
+      i.fa.fa-bars
+    menu-options#drop-menu.slideable
 
 section#intro
-  div
-    p {{welcome}}
+  div.container.center
+    h1.billboard {{welcome}}
 
 section#about
 
