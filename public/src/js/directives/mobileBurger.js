@@ -10,14 +10,14 @@ app.directive('mobileBurger', function() {
   return {
       restrict: 'AE',
       replace: 'true',
-      template:
-        "<div class=\"container center\">" +
-          "<button class=\"burgerBtn\" ng-click=\"toggleBurger()\">" +
-          "<i class=\"fa fa-bars\"></i></button>",
+      template: "<div class=\"burgerBtn\" slide-toggle=\"#drop-menu\" ng-click=\"toggleBurger()\">" +
+        "<div class=\"burger-icon\" ng-class=\"{ 'x-active': active }\">" +
+        "</div></div>",
       link: function($scope, $element, $attrs) {
         $scope.active = false;
         $scope.toggleBurger = function () {
           $scope.active = !$scope.active;
+          $element.toggleClass('x-active');
         };
       }
     };
