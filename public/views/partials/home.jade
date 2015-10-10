@@ -8,11 +8,36 @@ nav.navbar
 div.overlay(ng-show="active")
 
 section#intro
+  // to add:
+    drop down text and store bottom: listen. learn. network.
+    come in from top: Northeastern University presents
+      College Alternative Investment Summit 2016
   div.container.center
     h1.billboard {{welcome}}
 
 
 section#about
+  h1.section-title {{about.title}}
+  div.about-intro
+    p
+      span.stress 2
+      | days
+    p
+      span.stress 11
+      | Speakers
+    p
+      | together managing
+    p
+      | over
+      span.stress $x
+      | in
+    p
+      span.impress alternative investments
+
+  div.about-billboard
+    p.brief {{about.summary}}
+
+section#pastSpeakers
 
 section#faq
 

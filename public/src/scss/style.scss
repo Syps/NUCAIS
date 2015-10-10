@@ -1,69 +1,77 @@
 /*
  * Variables
  */
-$main-bg-color: #ffffff;
-$secondary-bg-color: #4DB870;
+$main-bg-color: #fff;
+$secondary-bg-color: #4db870;
 $nav-bg-color: #808080;
 $main-text-color: #191919;
-$nav-text-color: #ffffff;
+$secondary-text-color: #090705;
+$nav-text-color: #fff;
 $text-font: 'Roboto', sans-serif;
+$section-title-size: 70px;
 
 /*
  * Mixins
  */
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-   -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-        border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
-
 @mixin center-horiz() {
   margin-right: auto;
   margin-left: auto;
 }
-
 @mixin bbrd($clr) {
   border: 1px solid $clr;
 }
-
 @mixin clear-padding() {
-  padding: 0px 0px 0px 0px;
+  padding: 0;
 }
-
 @mixin clear-margin() {
-  margin: 0px 0px 0px 0px;
+  margin: 0;
 }
 
 /*
  * Fonts
  */
- @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 /*
  * Default Styles
  */
-
- html, body {
-   @include clear-margin();
-   @include clear-padding();
-   font-family: $text-font;
- }
-
+html,
+body {
+  @include clear-margin();
+  @include clear-padding();
+  font-family: $text-font;
+}
 #intro {
+  @include clear-margin();
+  @include clear-padding();
   height: 100vh;
-  background: $main-bg-color;
+  background: $secondary-bg-color;
   font-family: $text-font;
   color: $main-text-color;
   @include bbrd(yellow);
-
 }
+#about {
+  @include clear-margin();
+  @include clear-padding();
 
+  // consider Morgan Stanley style, low opacity text
+  background: $main-bg-color;
+  font-family: $text-font;
+  color: $secondary-text-color;
+  * {
+    text-align: center;
+  }
+}
 .container {
   @include clear-margin();
   @include clear-padding();
 }
-
 .center {
   @include center-horiz();
 }
@@ -71,26 +79,23 @@ $text-font: 'Roboto', sans-serif;
 /*
  * Animations
  */
-
 /*
  * Small Screens
  */
-
- //======= Overlay =========\\
- .overlay {
-   position: fixed;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 98;
-   background: black;
-   opacity: 0.7;
-   transition: all 500ms ease-in-out;
- }
+//======= Overlay =========\\
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+  background: black;
+  opacity: 0.7;
+  transition: all 500ms ease-in-out;
+}
 
 //======== NavBar ==========\\
-
 .navbar {
   @include clear-padding();
   position: fixed;
@@ -98,15 +103,14 @@ $text-font: 'Roboto', sans-serif;
   left: 0;
   z-index: 99;
   width: 100%;
+
   //background-color: rgba(30, 30, 30, 0.5);
   background-color: $nav-bg-color;
   text-color: $nav-text-color;
-
   box-shadow: 2px 2px 2px #999;
   -moz-box-shadow: 2px 2px 2px #999;
   -webkit-box-shadow: 2px 2px 2px #999;
 }
-
 .nav-top-container {
   @include bbrd(red);
   @include clear-margin();
@@ -114,6 +118,7 @@ $text-font: 'Roboto', sans-serif;
   padding-right: 20px;
   padding-left: 15px;
   padding-top: 5px;
+
   //display: block;
   position: fixed;
   top: 0;
@@ -121,14 +126,12 @@ $text-font: 'Roboto', sans-serif;
   z-index: 100;
   background: transparentize(rgba(0,0,0,0.0), 0.0);
 }
-
 .logo {
   @include clear-padding();
   display: inline-block;
   @include bbrd(black);
   float: left;
 }
-
 .logo h1 {
   font-weight: bolder;
   font-size: 15px;
@@ -137,7 +140,6 @@ $text-font: 'Roboto', sans-serif;
   font-size: 1.8em;
   color: $nav-text-color;
 }
-
 .burgerBtn {
   @include center-horiz();
   display: inline-block;
@@ -154,14 +156,14 @@ $text-font: 'Roboto', sans-serif;
   width: 40px;
   @include bbrd(red);
 }
-
 .burger-icon {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
 }
-
-.burger-icon, .burger-icon:before, .burger-icon:after {
+.burger-icon,
+.burger-icon:before,
+.burger-icon:after {
   cursor: pointer;
   border-radius: 1px;
   height: 5px;
@@ -170,95 +172,111 @@ $text-font: 'Roboto', sans-serif;
   position: absolute;
   display: block;
   content: '';
-
 }
-
 .burger-icon:before {
-    top: 10px;
+  top: 10px;
 }
-
 .burger-icon:after {
-    top: -10px;
+  top: -10px;
 }
-
 .burger-icon,
 .buger-icon:before,
 .buger-icon:after {
   transition: all 250ms ease-in-out;
 }
-
 .burgerBtn.x-active .burger-icon {
   background: none;
 }
-
 .burgerBtn.x-active .burger-icon:before,
 .burgerBtn.x-active .burger-icon:after {
   top: 0;
-}//
-
+}
+//
 .burgerBtn.x-active .burger-icon:before {
   transform: rotate(45deg);
 }
-
 .burgerBtn.x-active .burger-icon:after {
   transform: rotate(-45deg);
 }
-
-
-
 .slideable {
   display: block;
   margin-top: 30px;
 }
-
 .nav-list {
   list-style-type: none;
   @include center-horiz();
   @include bbrd(blue);
   @include clear-padding();
 }
+.menu-item {
+  display: block;
+  @include center-horiz();
+  width: 100%;
+  @include bbrd(red);
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $nav-text-color;
+  font-size: 1.5em;
+}
+.menu-item:active {
+  background: darken( $nav-bg-color, 10%);
+}
+.menu-item:hover {
+  cursor: pointer;
+}
 
- .menu-item {
-   display: block;
-   @include center-horiz();
-   width: 100%;
-   @include bbrd(red);
-   text-align: left;
-   padding-left: 15px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   color: $nav-text-color;
-   font-size: 1.5em;
- }
-
- .menu-item:active {
-    background: darken( $nav-bg-color, 10%);
- }
-
- .menu-item:hover {
-   cursor: pointer;
- }
-
- //======== Section - Intro ==========\\
-
+//======== Section - Intro ==========\\
 #intro {
-  @include clear-margin();
-  @include clear-padding();
   position: relative;
-  background: $secondary-bg-color;
-
   .billboard {
     color: $main-bg-color;
   }
 }
 
+.billboard {
+  font-size: 100px;
+  text-align: left;
 
- .billboard {
-   font-size: 100px;
-   text-align: left;
-   // vertical align
-   transform: translate(5%, 50%);
- }
+  // vertical align
+  transform: translate(5%, 50%);
+}
+
+//======== Section - About ==========\\
+#about {
+  @include bbrd(red);
+
+  p {
+    margin-bottom: 15px;
+    height: 50px;
+  }
+}
+
+.section-title {
+  font-size: $section-title-size;
+}
+// select highlight key words
+.about-billboard {
+  @include center-horiz();
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.stress {
+  font-size: 40px;
+  color: $secondary-bg-color;
+  font-weight: 500;
+}
+
+.impress {
+  font-size: 25px;
+  color: #291400;
+}
 
 
- //@media screen and (max-size)
+
+//@media screen and (max-size)
