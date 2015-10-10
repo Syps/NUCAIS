@@ -166,17 +166,17 @@ $text-font: 'Roboto', sans-serif;
 .burger-icon,
 .buger-icon:before,
 .buger-icon:after {
-  transition: all 500ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
-.burgerBtn.x-active .buger-icon {
-  background: transparent;
+.burgerBtn.x-active .burger-icon {
+  background: none;
 }
 
 .burgerBtn.x-active .burger-icon:before,
 .burgerBtn.x-active .burger-icon:after {
   top: 0;
-}
+}//
 
 .burgerBtn.x-active .burger-icon:before {
   transform: rotate(45deg);
