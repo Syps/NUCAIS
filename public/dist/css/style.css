@@ -37,6 +37,17 @@ html, body {
 /*
  * Small Screens
  */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+  background: black;
+  opacity: 0.7;
+  transition: all 500ms ease-in-out; }
+
 .navbar {
   padding: 0px 0px 0px 0px;
   position: fixed;
@@ -45,14 +56,17 @@ html, body {
   z-index: 99;
   width: 100%;
   background-color: #808080;
-  text-color: #ffffff; }
+  text-color: #ffffff;
+  box-shadow: 2px 2px 2px #999;
+  -moz-box-shadow: 2px 2px 2px #999;
+  -webkit-box-shadow: 2px 2px 2px #999; }
 
 .nav-top-container {
   border: 1px solid red;
   margin: 0px 0px 0px 0px;
   width: 90%;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 15px;
   padding-top: 5px;
   position: fixed;
   top: 0;
@@ -148,12 +162,27 @@ html, body {
   width: 100%;
   border: 1px solid red;
   text-align: left;
-  padding-left: 6px;
+  padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   color: #ffffff;
   font-size: 1.5em; }
 
+.menu-item:active {
+  background: #676767; }
+
+.menu-item:hover {
+  cursor: pointer; }
+
+#intro {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  background: #4DB870; }
+  #intro .billboard {
+    color: #ffffff; }
+
 .billboard {
   font-size: 100px;
-  text-align: center; }
+  text-align: left;
+  transform: translate(5%, 50%); }
