@@ -18,7 +18,23 @@
 
       $scope.about = {};
       $scope.about.title = "About";
-      $scope.about.summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo a neque a congue. Praesent eros tellus, condimentum sed nulla a, sollicitudin ultrices orci. Suspendisse arcu turpis, mollis pharetra laoreet et, vulputate eu velit."
+      $scope.about.summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo a neque a congue. Praesent eros tellus, condimentum sed nulla a, sollicitudin ultrices orci. Suspendisse arcu turpis, mollis pharetra laoreet et, vulputate eu velit.";
+
+      $scope.speakers = [
+        {
+          name: "John White",
+          img: "/public/assets/img/fish.svg",
+          topic: "Renewable Energy",
+          year: "2014"
+        },
+
+        {
+          name: "Howard Yu",
+          img: "/public/assets/img/fish.svg",
+          topic: "Activist Investing",
+          year: "2014"
+        }];
+
     }
   ]);
 

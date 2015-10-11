@@ -19,6 +19,8 @@ section#intro
 section#about
   h1.section-title {{about.title}}
   div.about-intro
+    //
+      this(or some) of this text should eventually fade in on scroll
     p
       span.stress 2
       | days
@@ -35,9 +37,22 @@ section#about
       span.impress alternative investments
 
   div.about-billboard
-    p.brief {{about.summary}}
+    div.brief {{about.summary}}
+  div.clear
 
 section#pastSpeakers
+  h1.section-title Past Speakers
+  p.subtitle Check back for this year's speakers.
+    | They will be posted here as they become known.
+  div.about-billboard
+    ul
+      li.speaker-li(ng-repeat="speaker in speakers")
+        p {{speaker.year}}
+        img(ng-src="{{speaker.img}}")
+        p {{speaker.name}}
+        p {{speaker.topic}}
+
+
 
 section#faq
 

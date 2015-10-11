@@ -9,7 +9,9 @@ $secondary-text-color: #090705;
 $nav-text-color: #fff;
 $text-font: 'Roboto', sans-serif;
 $section-title-size: 70px;
-
+$subtitle-font-size: 20px;
+$subtitle-color: #808080;
+$speaker-li-color: #0066FF;
 /*
  * Mixins
  */
@@ -59,6 +61,8 @@ body {
 #about {
   @include clear-margin();
   @include clear-padding();
+
+  padding: 2px 2px 2px 2px;
 
   // consider Morgan Stanley style, low opacity text
   background: $main-bg-color;
@@ -251,6 +255,15 @@ body {
     margin-bottom: 15px;
     height: 50px;
   }
+
+  .brief {
+    margin-bottom: 30px;
+  }
+
+}
+
+.about-wrap {
+  @include bbrd(black);
 }
 
 .section-title {
@@ -276,6 +289,42 @@ body {
   font-size: 25px;
   color: #291400;
 }
+
+.clear {
+  clear:both;
+  height:0;
+  line-height: 0;
+  width:100%;
+}
+
+//======== Section - About ==========\\
+
+.subtitle {
+  @include center-horiz();
+  text-align: center;
+  font-size: $subtitle-font-size;
+  color: $subtitle-color;
+}
+
+.speaker-li {
+  list-style: none;
+  text-align: center;
+  color: $speaker-li-color;
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    @include center-horiz();
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+  }
+}
+
+
+
 
 
 

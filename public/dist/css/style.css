@@ -29,6 +29,7 @@ body {
 #about {
   margin: 0;
   padding: 0;
+  padding: 2px 2px 2px 2px;
   background: #fff;
   font-family: "Roboto", sans-serif;
   color: #090705; }
@@ -203,6 +204,11 @@ body {
   #about p {
     margin-bottom: 15px;
     height: 50px; }
+  #about .brief {
+    margin-bottom: 30px; }
+
+.about-wrap {
+  border: 1px solid black; }
 
 .section-title {
   font-size: 70px; }
@@ -224,3 +230,29 @@ body {
 .impress {
   font-size: 25px;
   color: #291400; }
+
+.clear {
+  clear: both;
+  height: 0;
+  line-height: 0;
+  width: 100%; }
+
+.subtitle {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 20px;
+  color: #808080; }
+
+.speaker-li {
+  list-style: none;
+  text-align: center;
+  color: #0066FF; }
+  .speaker-li p {
+    text-align: center; }
+  .speaker-li img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%; }
