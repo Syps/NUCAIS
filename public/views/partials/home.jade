@@ -47,14 +47,19 @@ section#pastSpeakers
   div.about-billboard
     ul
       li.speaker-li(ng-repeat="speaker in speakers")
-        p {{speaker.year}}
+        p.bold {{speaker.year}}
         img(ng-src="{{speaker.img}}")
         p {{speaker.name}}
         p {{speaker.topic}}
 
-
-
 section#faq
+  h1.section-title FAQ
+
+  ul
+    li(ng-repeat="faq in faqs")
+      h2.faq-question {{faq.question}}
+      p {{faq.answer}}
+
 
 section#team
 

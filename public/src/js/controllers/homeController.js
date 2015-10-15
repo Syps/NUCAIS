@@ -35,6 +35,25 @@
           year: "2014"
         }];
 
+        $scope.faqs = [
+          {
+            question: "What is the answer?",
+            answer: "42"
+          },
+          {
+            question: "What is the answer?",
+            answer: "42"
+          },
+          {
+            question: "What is the answer?",
+            answer: "42"
+          },
+          {
+            question: "What is the answer?",
+            answer: "42"
+          },
+        ]
+
     }
   ]);
 
