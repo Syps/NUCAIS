@@ -65,16 +65,22 @@ section#faq
 
 section#team
   h1.section-title Our Team
-  div.member-box(ng-repeat="member in team")
-    img(ng-src="{{member.img}}")
-    span.caption
-      h2.caption-header {{member.name}}
-      p {{member.info}}
+  div.container
+    div.row
+      div.col-md-4.member-box(ng-repeat="member in team")
+        img(ng-src="{{member.img}}")
+        span.img-caption
+          h2.caption-header {{member.name}}
+          p {{member.info}}
 
 
 
 section#sponsors
   h1.section-title Sponsors
+  div.container
+    div.row
+      div.col-md-3.sponsor(ng-repeat="sponsor in sponsors")
+        img.img-responsive(ng-src="{{sponsor.img}}")
 
 section#contact
   h1.section-title Get In Touch

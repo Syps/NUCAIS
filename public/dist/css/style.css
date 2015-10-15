@@ -36,19 +36,24 @@ body {
   #about * {
     text-align: center; }
 
-/* The horizontal padding around containers. */
-/* Main container class. */
+/*
+$container-max-width: 1210px;
+
+$container-gutter: 20px;
+
+
 .container {
   width: 100%;
-  max-width: 1210px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: $container-max-width;
+  padding-left:  $container-gutter;
+  padding-right: $container-gutter;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto; }
-
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  margin-left:  auto;
+  margin-right: auto;
+}
+*/
 .center {
   margin-right: auto;
   margin-left: auto; }
@@ -311,12 +316,27 @@ li {
   width: 200px;
   height: 200px; }
 
-.caption {
+.img-caption {
   left: 100px;
   color: #808080;
   font-size: 20px; }
-  .caption h2 {
+  .img-caption h2 {
     font-size: 25px; }
+
+#sponsors .section-title {
+  margin-bottom: 70px; }
+
+.sponsor {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-right: 40px;
+  margin-left: 40px; }
+  .sponsor .img-responsive {
+    margin: 0 auto; }
+
+#contact .section-title {
+  margin-top: 60px;
+  margin-bottom: 70px; }
 
 .social-links {
   display: inline-block; }

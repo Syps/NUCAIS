@@ -75,12 +75,12 @@ body {
     text-align: center;
   }
 }
-
+/*
 $container-max-width: 1210px;
-/* The horizontal padding around containers. */
+
 $container-gutter: 20px;
 
-/* Main container class. */
+
 .container {
   width: 100%;
   max-width: $container-max-width;
@@ -92,7 +92,7 @@ $container-gutter: 20px;
   margin-left:  auto;
   margin-right: auto;
 }
-
+*/
 .center {
   @include center-horiz();
 }
@@ -402,7 +402,7 @@ li {
   height: $headshot-dimen;
 }
 
-.caption {
+.img-caption {
     left: $headshot-dimen * .5;
     color: $subtitle-color;
     font-size: $img-subtext-size;
@@ -410,6 +410,7 @@ li {
     h2 {
       font-size: $img-subtext-size * 1.25;
     }
+
   }
 
 
@@ -417,11 +418,31 @@ li {
 
 
 //======== Section - Sponsors ==========\\
+#sponsors {
+  .section-title {
+    margin-bottom: 70px;
+  }
+}
 
+.sponsor {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-right: 40px;
+  margin-left: 40px;
 
-
+  .img-responsive {
+    margin: 0 auto;
+  }
+}
 
 //======== Section - Contact ==========\\
+#contact {
+  .section-title {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+}
+
 .social-links {
   display: inline-block;
 
