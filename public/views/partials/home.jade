@@ -60,14 +60,36 @@ section#faq
       h2.faq-question {{faq.question}}
       p {{faq.answer}}
 
+  a.contact-link(href="#contact") Don't see your question here?
+
 
 section#team
+  h1.section-title Our Team
+  div.member-box(ng-repeat="member in team")
+    img(ng-src="{{member.img}}")
+    span.caption
+      h2.caption-header {{member.name}}
+      p {{member.info}}
+
+
 
 section#sponsors
+  h1.section-title Sponsors
 
-section#partners
+section#contact
+  h1.section-title Get In Touch
+  div.contact-blurb
+    p Questions? Offers?
+    p Please feel free to connect via
+    span.email
+      a(href="mailto:nucais@gmail.com") nucais@gmail.com
+    p or
+  div.social-links
+    i.fa-linkedin
+    i.fa-instagram
+    i.fa-facebook
 
-section#location
+
 
 footer
   div.wrapper

@@ -52,7 +52,30 @@
             question: "What is the answer?",
             answer: "42"
           },
-        ]
+        ];
+
+        $scope.team = [
+          {
+            name: "Rohan Venkatesh",
+            img: "/public/assets/img/fish.svg",
+            info: "Senior // Finance"
+          },
+          {
+            name: "Jake Fulton",
+            img: "/public/assets/img/fish.svg",
+            info: "Senior // Finance, Economics Minor"
+          },
+          {
+            name: "Jake Fulton",
+            img: "/public/assets/img/fish.svg",
+            info: "Senior // Finance, Economics Minor"
+          },
+          {
+            name: "Jake Fulton",
+            img: "/public/assets/img/fish.svg",
+            info: "Senior // Finance, Economics Minor"
+          }
+        ];
 
     }
   ]);

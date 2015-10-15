@@ -36,9 +36,18 @@ body {
   #about * {
     text-align: center; }
 
+/* The horizontal padding around containers. */
+/* Main container class. */
 .container {
-  margin: 0;
-  padding: 0; }
+  width: 100%;
+  max-width: 1210px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto; }
 
 .center {
   margin-right: auto;
@@ -277,8 +286,37 @@ li {
     margin-right: auto;
     margin-left: auto;
     width: 75%;
-    border: 1px solid blue; }
+    border: 1px solid blue;
+    margin-bottom: 30px;
+    display: block; }
   #faq p {
     color: #808080;
     text-align: left;
     padding-left: 15px; }
+
+#team {
+  text-align: center; }
+
+.member-box {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  display: block;
+  width: 200px; }
+
+.member-box img {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px; }
+
+.caption {
+  left: 100px;
+  color: #808080;
+  font-size: 20px; }
+  .caption h2 {
+    font-size: 25px; }
+
+.social-links {
+  display: inline-block; }

@@ -10,8 +10,10 @@ $nav-text-color: #fff;
 $text-font: 'Roboto', sans-serif;
 $section-title-size: 70px;
 $subtitle-font-size: 25px;
+$img-subtext-size: 20px;
 $subtitle-color: #808080;
 $speaker-li-color: #0066FF;
+$headshot-dimen: 200px;
 /*
  * Mixins
  */
@@ -73,10 +75,24 @@ body {
     text-align: center;
   }
 }
+
+$container-max-width: 1210px;
+/* The horizontal padding around containers. */
+$container-gutter: 20px;
+
+/* Main container class. */
 .container {
-  @include clear-margin();
-  @include clear-padding();
+  width: 100%;
+  max-width: $container-max-width;
+  padding-left:  $container-gutter;
+  padding-right: $container-gutter;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  margin-left:  auto;
+  margin-right: auto;
 }
+
 .center {
   @include center-horiz();
 }
@@ -330,8 +346,8 @@ li {
 
   img {
     @include center-horiz();
-    height: 200px;
-    width: 200px;
+    height: $headshot-dimen;
+    width: $headshot-dimen;
     border-radius: 100%;
     background: #808080;
   }
@@ -348,6 +364,8 @@ li {
     @include center-horiz();
     width: 75%;
     @include bbrd(blue);
+    margin-bottom: 30px;
+    display: block;
   }
 
   p {
@@ -359,5 +377,56 @@ li {
   margin-bottom: 40px;
 }
 
+//======== Section - Team ==========\\
+#team {
+
+  text-align: center;
+
+
+}
+
+
+.member-box {
+  //@include bbrd(red);
+  @include center-horiz();
+  margin-bottom: 40px;
+  display: block;
+  width: $headshot-dimen;
+}
+
+.member-box img {
+  //@include bbrd(blue);
+  @include center-horiz();
+  border-radius: 100%;
+  width: $headshot-dimen;
+  height: $headshot-dimen;
+}
+
+.caption {
+    left: $headshot-dimen * .5;
+    color: $subtitle-color;
+    font-size: $img-subtext-size;
+
+    h2 {
+      font-size: $img-subtext-size * 1.25;
+    }
+  }
+
+
+
+
+
+//======== Section - Sponsors ==========\\
+
+
+
+
+//======== Section - Contact ==========\\
+.social-links {
+  display: inline-block;
+
+  i {
+  }
+}
 
 //@media screen and (max-size)
