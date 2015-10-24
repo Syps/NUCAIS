@@ -21,20 +21,19 @@ section#about
   div.about-intro
     //
       this(or some) of this text should eventually fade in on scroll
-    p
-      span.stress 2
-      | days
-    p
-      span.stress 11
-      | Speakers
-    p
-      | together managing
-    p
-      | over
-      span.stress $x
-      | in
-    p
-      span.impress alternative investments
+    div.container
+      div.row
+        div.col-md-3.about-point
+          div.about-number 2
+          p days
+
+        div.col-md-3.about-point
+          div.about-number 7
+          p speakers
+
+        div.col-md-3.about-point
+          div.about-number $40M
+          p combined AUM
 
   div.about-billboard
     div.brief {{about.summary}}
@@ -44,13 +43,13 @@ section#pastSpeakers
   h1.section-title Past Speakers
   p.subtitle Check back for this year's speakers.
     | They will be posted here as they become known.
-  div.about-billboard
-    ul
-      li.speaker-li(ng-repeat="speaker in speakers")
-        p.bold {{speaker.year}}
-        img(ng-src="{{speaker.img}}")
-        p {{speaker.name}}
+  div.container
+    div.row
+      div.col-md-3.member-box(ng-repeat="speaker in speakers")
+        img.img-responsive(ng-src="{{speaker.img}}")
+        p.bold  {{speaker.name}}
         p {{speaker.topic}}
+        p {{speaker.year}}
 
 section#faq
   h1.section-title FAQ
@@ -85,15 +84,18 @@ section#sponsors
 section#contact
   h1.section-title Get In Touch
   div.contact-blurb
-    p Questions? Offers?
+    p.subtitle Questions? Want to get involved?
     p Please feel free to connect via
     span.email
       a(href="mailto:nucais@gmail.com") nucais@gmail.com
     p or
   div.social-links
-    i.fa-linkedin
-    i.fa-instagram
-    i.fa-facebook
+    a.social-btn
+      i.fa.fa-linkedin.fa-4x
+    a.social-btn
+      i.fa.fa-instagram.fa-4x
+    a.social-btn
+      i.fa.fa-facebook.fa-4x
 
 
 
