@@ -17,7 +17,6 @@ app.directive('mobileBurger', function($document) {
         $scope.toggleBurger = function () {
           $scope.active = !$scope.active;
           $element.toggleClass('x-active');
-
         };
       }
     };

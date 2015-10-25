@@ -1,7 +1,7 @@
-nav.navbar
+nav.navbar(ng-class="{'scroll-nav':isScrolling}")
   div.nav-top-container
     div.logo
-      h1 nuCAIS
+      img(ng-src="{{nav.img}}")
     mobile-burger
   menu-options#drop-menu.slideable
 
@@ -13,7 +13,10 @@ section#intro
     come in from top: Northeastern University presents
       College Alternative Investment Summit 2016
   div.container.center
-    h1.billboard {{welcome}}
+    div.jumbotron.intro-text
+      h1 Northeastern University
+      h2 proudly presents
+      h1 2016 College Alternative Investment Summit
 
 
 section#about
@@ -23,19 +26,19 @@ section#about
       this(or some) of this text should eventually fade in on scroll
     div.container
       div.row
-        div.col-md-3.about-point
+        div.col-md-4.about-point
           div.about-number 2
           p days
 
-        div.col-md-3.about-point
+        div.col-md-4.about-point
           div.about-number 7
           p speakers
 
-        div.col-md-3.about-point
+        div.col-md-4.about-point
           div.about-number $40M
           p combined AUM
 
-  div.about-billboard
+  div.container.center.billboard
     div.brief {{about.summary}}
   div.clear
 
@@ -86,17 +89,17 @@ section#contact
   div.contact-blurb
     p.subtitle Questions? Want to get involved?
     p.subtitle Please feel free to connect via
-    span.email
+    div.email
       a.social-btn(href="mailto:nucais@gmail.com") nucais@gmail.com
     p.subtitle or
   div.social-links
-    a.social-btn
-      i.fa.fa-linkedin.fa-4x
-    a.social-btn
-      i.fa.fa-instagram.fa-4x
-    a.social-btn
+    //
+      a.social-btn
+        i.fa.fa-linkedin.fa-4x
+    a.social-btn(target="_blank", href="https://twitter.com/nucais")
+      i.fa.fa-twitter.fa-4x
+    a.social-btn(target="_blank", href="https://www.facebook.com/officialNUCAIS")
       i.fa.fa-facebook.fa-4x
-
 
 
 footer

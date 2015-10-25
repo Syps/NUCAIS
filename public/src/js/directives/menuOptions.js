@@ -12,7 +12,8 @@ app.directive('menuOptions', function($animate) {
       replace: true,
       template:
         "<ul class=\"nav-list\"><li class=\"menu-item\" " +
-        "ng-repeat=\"item in menuItems\">{{item}}</li></ul>"
+        "ng-repeat=\"item in menuItems\" ng-click=\"scrollTo(item)\">" +
+        "{{item}}</li></ul>"
     };
 });
 

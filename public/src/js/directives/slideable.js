@@ -33,7 +33,7 @@ app.directive('slideable', function () {
             attrs.expanded = false;
             element.bind('click', function() {
                 var content = target.querySelector('.slideable_content');
-                if(!attrs.expanded) {
+                if(!scope.active) {
                     var y = content.clientHeight;
                     content.style.border = 0;
                     target.style.height = y + 'px';

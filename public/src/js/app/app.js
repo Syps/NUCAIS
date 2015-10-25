@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('app', ['ngRoute', 'ngAnimate']);
+  var app = angular.module('app', ['ngRoute', 'ngAnimate', 'duScroll']);
 
 console.log("anything!!!!!");
 

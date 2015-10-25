@@ -8,13 +8,36 @@
   app.controller('HomeController', [
     '$scope',
     '$http',
-    function($scope, $http) {
+    '$window',
+    '$document',
+    function($scope, $http, $window, $document) {
       console.log("compiled");
       // dev:: welcome message
       $scope.welcome = "Welcome home";
 
       $scope.menuItems = ['About', 'Speakers', 'FAQ', 'Team',
         'Sponsors', 'Partners', 'Location'];
+
+        $scope.nav = {};
+        $scope.nav.img = "/public/assets/img/nav-logo.png";
+        $scope.scrollTo = function(section) {
+
+          // bring up nav dropdown
+          $scope.toggleBurger();
+          var dropDown = document.getElementById('drop-menu');
+          dropDown.style.height = 0;
+          // $scope.$apply();
+
+          var elName = section.toLowerCase();
+
+          var offset = 30;
+          var duration = 2000;
+    var target = angular.element(document.getElementById(elName));
+    $document.scrollToElement(target, offset, duration);
+        }
+
+        $scope.intro = {};
+        $scope.intro.img = "/public/assets/img/intro-logo.png";
 
       $scope.about = {};
       $scope.about.title = "About";
@@ -124,6 +147,22 @@
           }
         ];
 
+        // scroll logic
+
+        // set initial
+        $scope.scrollPosition = 0;
+        angular.element($window).bind("scroll", function() {
+
+           if (this.pageYOffset > $scope.scrollPosition) {
+               $scope.isScrolling = true;
+           } else {
+               $scope.isScrolling = false;
+           }
+           $scope.$apply();
+           console.log(this.pageYOffset);
+       });
+
+        /* end controller*/
     }
   ]);
 
