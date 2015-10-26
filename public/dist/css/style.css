@@ -28,7 +28,7 @@ section {
   background: #4db870;
   font-family: "Roboto", sans-serif;
   color: #191919;
-  border: 1px solid yellow; }
+  background-attachment: fixed; }
 
 #about {
   margin: 0;
@@ -74,6 +74,16 @@ li {
 /*
  * Animations
  */
+div[ng-view].ng-enter {
+  transition: all 0.5s linear;
+  opacity: 0; }
+
+div[ng-view].ng-enter-active {
+  opacity: 1; }
+
+.not-visible {
+  visibility: hidden; }
+
 /*
  * Small Screens
  */
@@ -95,24 +105,22 @@ li {
   left: 0;
   z-index: 99;
   width: 100%;
+  padding-bottom: 3px;
   border-radius: 0px;
-  background-color: #808080;
-  text-color: #fff;
+  text-color: #fff; }
+
+.scroll-nav {
+  background-color: #4db870;
+  transition: all 500ms ease-in-out;
   box-shadow: 2px 2px 2px #999;
   -moz-box-shadow: 2px 2px 2px #999;
   -webkit-box-shadow: 2px 2px 2px #999; }
 
-.scroll-nav {
-  background-color: #4db870;
-  transition: all 500ms ease-in-out; }
-
 .nav-top-container {
-  border: 1px solid red;
   margin: 0;
-  width: 90%;
+  width: 100%;
   padding-right: 20px;
   padding-left: 15px;
-  padding-top: 5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -122,12 +130,12 @@ li {
 .logo {
   padding: 0;
   display: inline-block;
-  border: 1px solid black;
   float: left; }
 
 .logo img {
   height: 50px;
-  width: 150px; }
+  width: 150px;
+  cursor: pointer; }
 
 .burgerBtn {
   margin-right: auto;
@@ -135,7 +143,6 @@ li {
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  border: 1px solid black;
   float: right;
   font-size: 1.5em;
   color: #fff;
@@ -143,8 +150,7 @@ li {
   right: 2%;
   top: 2%;
   height: 40px;
-  width: 40px;
-  border: 1px solid red; }
+  width: 40px; }
 
 .burger-icon {
   position: absolute;
@@ -188,14 +194,12 @@ li {
   transform: rotate(-45deg); }
 
 .slideable {
-  display: block;
   margin-top: 30px; }
 
 .nav-list {
   list-style-type: none;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid blue;
   padding: 0; }
 
 .menu-item {
@@ -203,64 +207,63 @@ li {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  border: 1px solid red;
   text-align: left;
   padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 30px;
   color: #fff;
   font-size: 1.5em; }
 
 .menu-item:active {
-  background: #676767; }
+  background: #4d4d4d; }
 
 .menu-item:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  background: #676767; }
 
-#intro {
-  position: relative; }
-  #intro .intro-text {
-    text-align: center;
-    color: #fff;
-    margin-top: 25%;
-    background: transparent;
-    background-image: url("/public/assets/img/intro-logo.png");
-    background-size: 100%;
-    -webkit-animation: fadein 2s;
-    /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s;
-    /* Firefox < 16 */
-    -ms-animation: fadein 2s;
-    /* Internet Explorer */
-    -o-animation: fadein 2s;
-    /* Opera < 12.1 */
-    animation: fadein 2s; }
+#intro .intro-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2; }
+
+#intro .intro-text {
+  text-align: center;
+  color: #fff;
+  margin-top: 25%;
+  font-size: 90px;
+  font-family: "Roboto", sans-serif;
+  background: none;
+  z-index: 99999;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s; }
 
 .billboard {
   font-size: 25px;
   color: #808080; }
 
-#about {
-  border: 1px solid red; }
-  #about p {
-    margin-bottom: 15px;
-    height: 50px; }
-  #about .brief {
-    margin-bottom: 30px; }
+#about p {
+  margin-bottom: 15px;
+  height: 50px; }
+
+#about .brief {
+  margin-bottom: 30px; }
+
+.about-point {
+  margin-bottom: 100px; }
 
 .about-number {
-  padding: 52.5px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
   text-align: center;
   height: 210px;
   width: 210px;
   border-radius: 50%;
   border: solid rgba(77, 184, 112, 0.8) 12px;
-  font-size: 63px;
+  font-size: 35px;
   color: #4db870;
   margin: 0 auto; }
-
-.about-wrap {
-  border: 1px solid black; }
 
 .section-title {
   font-size: 70px;
@@ -273,7 +276,7 @@ li {
   margin-left: auto;
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 70px;
+  margin-top: 200px;
   margin-bottom: 20px;
   font-size: 30px; }
 
@@ -293,6 +296,14 @@ li {
   height: 0;
   line-height: 0;
   width: 100%; }
+
+#speakers {
+  background-color: #E6E6E6; }
+  #speakers .container {
+    margin-top: 75px; }
+  #speakers p {
+    font-size: 25px;
+    color: #808080; }
 
 .subtitle {
   margin-right: auto;
@@ -327,7 +338,6 @@ li {
     margin-right: auto;
     margin-left: auto;
     width: 75%;
-    border: 1px solid blue;
     margin-bottom: 30px;
     display: block; }
   #faq p {
@@ -335,20 +345,16 @@ li {
     text-align: left;
     padding-left: 15px; }
   #faq a.contact-link {
-    border: 1px solid black;
     margin-top: 90px;
     color: #808080; }
 
 #team {
+  background-color: #E6E6E6;
   text-align: center; }
 
 .member-box {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  display: block;
-  width: 200px; }
+  margin-bottom: 80px; }
 
 .member-box img {
   margin-right: auto;
@@ -376,6 +382,7 @@ li {
     margin: 0 auto; }
 
 #contact {
+  background-color: #E6E6E6;
   text-align: center; }
   #contact .section-title {
     margin-top: 60px;

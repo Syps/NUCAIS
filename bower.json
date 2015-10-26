@@ -9,7 +9,8 @@
     "jquery": "~2.1.4",
     "normalize-css": "normalize.css#~3.0.3",
     "bootstrap": "~3.3.5",
-    "angular-scroll": "~0.7.3"
+    "angular-scroll": "~0.7.3",
+    "animate.css": "animate-css#~3.4.0"
   },
   "preen": {},
   "resolutions": {

@@ -9,6 +9,7 @@ $main-text-color: #191919;
 $secondary-text-color: #090705;
 $nav-text-color: #fff;
 $text-font: 'Roboto', sans-serif;
+$intro-text-size: 90px;
 $section-title-size: 70px;
 $subtitle-font-size: 25px;
 $img-subtext-size: 20px;
@@ -63,7 +64,7 @@ section {
   background: $secondary-bg-color;
   font-family: $text-font;
   color: $main-text-color;
-  @include bbrd(yellow);
+  background-attachment: fixed;
 }
 
 #about {
@@ -116,6 +117,19 @@ li {
 /*
  * Animations
  */
+
+ div[ng-view].ng-enter {
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+div[ng-view].ng-enter-active {
+    opacity: 1;
+}
+
+.not-visible {
+  visibility: hidden;
+}
 /*
  * Small Screens
  */
@@ -141,28 +155,30 @@ li {
   z-index: 99;
   width: 100%;
 
+  padding-bottom: 3px;
+
+
   // remove bootstrap border radius
   border-radius: 0px;
 
   //background-color: rgba(30, 30, 30, 0.5);
-  background-color: $nav-bg-color;
+  // background-color: $nav-bg-color;
   text-color: $nav-text-color;
-  box-shadow: 2px 2px 2px #999;
-  -moz-box-shadow: 2px 2px 2px #999;
-  -webkit-box-shadow: 2px 2px 2px #999;
 }
 
 .scroll-nav {
   background-color: $secondary-bg-color;
   transition: all 500ms ease-in-out;
+
+  box-shadow: 2px 2px 2px #999;
+  -moz-box-shadow: 2px 2px 2px #999;
+  -webkit-box-shadow: 2px 2px 2px #999;
 }
 .nav-top-container {
-  @include bbrd(red);
   @include clear-margin();
-  width: 90%;
+  width: 100%;
   padding-right: 20px;
   padding-left: 15px;
-  padding-top: 5px;
 
   //display: block;
   position: fixed;
@@ -170,23 +186,23 @@ li {
   left: 0;
   z-index: 100;
   background: transparentize(rgba(0,0,0,0.0), 0.0);
+
 }
 .logo {
   @include clear-padding();
   display: inline-block;
-  @include bbrd(black);
   float: left;
 }
 .logo img {
   height: 50px;
   width: 150px;
+  cursor: pointer;
 }
 .burgerBtn {
   @include center-horiz();
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  @include bbrd(black);
   float: right;
   font-size: 1.5em;
   color: $nav-text-color;
@@ -195,7 +211,6 @@ li {
   top: 2%;
   height: 40px;
   width: 40px;
-  @include bbrd(red);
 }
 .burger-icon {
   position: absolute;
@@ -240,51 +255,60 @@ li {
   transform: rotate(-45deg);
 }
 .slideable {
-  display: block;
   margin-top: 30px;
 }
 .nav-list {
   list-style-type: none;
   @include center-horiz();
-  @include bbrd(blue);
   @include clear-padding();
 }
 .menu-item {
   display: block;
   @include center-horiz();
   width: 100%;
-  @include bbrd(red);
   text-align: left;
   padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 30px;
   color: $nav-text-color;
   font-size: 1.5em;
 }
 .menu-item:active {
-  background: darken( $nav-bg-color, 10%);
+  background: darken( $nav-bg-color, 20%);
 }
 .menu-item:hover {
   cursor: pointer;
+  background: darken( $nav-bg-color, 10%);
 }
 
 //======== Section - Intro ==========\\
 #intro {
-  position: relative;
+
+
+  .intro-bg {
+    position:absolute;
+    top: 0;
+    // bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+  }
 
   .intro-text {
     text-align: center;
     color: $main-bg-color;
     margin-top: 25%;
-    background: transparent;
-    background-image: url('/public/assets/img/intro-logo.png');
-    background-size: 100%;
+    font-size: $intro-text-size;
+    font-family: $text-font;
+    background: none;
+    z-index: 99999;
 
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-     -o-animation: fadein 2s; /* Opera < 12.1 */
-        animation: fadein 2s;
+    -webkit-animation-duration: 3s;
+    // -webkit-animation-delay: 1s;
+    -moz-animation-duration: 3s;
+    // -moz-animation-delay: 1s;
+    animation-duration: 3s;
+    // animation-delay: 1s;
   }
 }
 
@@ -295,7 +319,6 @@ li {
 
 //======== Section - About ==========\\
 #about {
-  @include bbrd(red);
 
   p {
     margin-bottom: 15px;
@@ -312,24 +335,23 @@ li {
   // text-align: center;
   // float: none;
   // display: inline-block;
-  // margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .about-number {
-  padding: ($section-title-size * .75) 0px 0px 0px;
+  padding: ($section-title-size) 0px 0px 0px;
   text-align: center;
   height: $section-title-size * 3;
   width: $section-title-size * 3;
   border-radius: 50%;
   border: solid transparentize($secondary-bg-color, 0.2) 12px;
-  font-size: $section-title-size * .9;
+  font-size: $section-title-size * .5;
   color: $secondary-bg-color;
   margin: 0 auto;
 
 }
 
 .about-wrap {
-  @include bbrd(black);
 }
 
 .section-title {
@@ -343,7 +365,7 @@ li {
   @include center-horiz();
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 70px;
+  margin-top: 200px;
   margin-bottom: 20px;
   font-size: 30px;
 }
@@ -370,7 +392,18 @@ li {
 
 //======== Section - Past Speakers ==========\\
 
+#speakers {
+  background-color: #E6E6E6;
 
+  .container {
+    margin-top: 75px;
+  }
+
+  p {
+    font-size: $subtitle-font-size;
+    color: $subtitle-color;
+  }
+}
 
 .subtitle {
   @include center-horiz();
@@ -408,7 +441,6 @@ li {
   li {
     @include center-horiz();
     width: 75%;
-    @include bbrd(blue);
     margin-bottom: 30px;
     display: block;
   }
@@ -420,7 +452,6 @@ li {
   }
 
   a.contact-link {
-    @include bbrd(black);
     margin-top: 90px;
     color: $subtitle-color;
   }
@@ -431,6 +462,8 @@ li {
 //======== Section - Team ==========\\
 #team {
 
+  background-color: #E6E6E6;
+
   text-align: center;
 
 
@@ -438,13 +471,11 @@ li {
 
 
 .member-box {
-  //@include bbrd(red);
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  display: block;
-  width: $headshot-dimen;
+   text-align: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin-bottom: 80px;
+  // width: $headshot-dimen;
 }
 
 .member-box img {
@@ -490,6 +521,8 @@ li {
 
 //======== Section - Contact ==========\\
 #contact {
+
+  background-color: #E6E6E6;
 
   text-align: center;
 

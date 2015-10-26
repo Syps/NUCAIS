@@ -1,7 +1,7 @@
 nav.navbar(ng-class="{'scroll-nav':isScrolling}")
   div.nav-top-container
     div.logo
-      img(ng-src="{{nav.img}}")
+      img(ng-src="{{nav.img}}", ng-click="jumpTop()")
     mobile-burger
   menu-options#drop-menu.slideable
 
@@ -13,49 +13,49 @@ section#intro
     come in from top: Northeastern University presents
       College Alternative Investment Summit 2016
   div.container.center
-    div.jumbotron.intro-text
-      h1 Northeastern University
-      h2 proudly presents
+    div.jumbotron.intro-text.animated.fadeIn
+      h2 Northeastern University
       h1 2016 College Alternative Investment Summit
-
+      h2 Coming Soon
+  img.intro-bg(src="/public/assets/img/skyline.png")
 
 section#about
-  h1.section-title {{about.title}}
+  h1.section-title.animated(ng-class="{slideInLeft:anAbout, 'not-visible':!anAbout}") {{about.title}}
   div.about-intro
     //
       this(or some) of this text should eventually fade in on scroll
-    div.container
+    div.container.animated(ng-class="{slideInRight:anAboutPoints, 'not-visible':!anAboutPoints}")
       div.row
         div.col-md-4.about-point
-          div.about-number 2
-          p days
+          div.about-number Listen
 
         div.col-md-4.about-point
-          div.about-number 7
-          p speakers
+          div.about-number Learn
 
         div.col-md-4.about-point
-          div.about-number $40M
-          p combined AUM
+          div.about-number Network
 
   div.container.center.billboard
-    div.brief {{about.summary}}
+    div.row
+      div.brief {{about.summary1}}
+    div.row
+      div.brief {{about.summary2}}
   div.clear
 
-section#pastSpeakers
-  h1.section-title Past Speakers
+section#speakers
+  h1.section-title.animated(ng-class="{slideInLeft:anSpeakers, 'not-visible':!anSpeakers}") Past Speakers
   p.subtitle Check back for this year's speakers.
     | They will be posted here as they become known.
-  div.container
+  div.container.animated(ng-class="{slideInRight:anSpeakerPics, 'not-visible':!anSpeakerPics}")
     div.row
-      div.col-md-3.member-box(ng-repeat="speaker in speakers")
+      div.col-md-4.member-box(ng-repeat="speaker in speakers")
         img.img-responsive(ng-src="{{speaker.img}}")
-        p.bold  {{speaker.name}}
-        p {{speaker.topic}}
-        p {{speaker.year}}
+        p {{speaker.name}}
+        //p {{speaker.topic}}
+        //p {{speaker.year}}
 
 section#faq
-  h1.section-title FAQ
+  h1.section-title.animated(ng-class="{slideInLeft:anFaq, 'not-visible':!anFaq}") FAQ
 
   ul
     li(ng-repeat="faq in faqs")
@@ -66,11 +66,12 @@ section#faq
 
 
 section#team
-  h1.section-title Our Team
-  div.container
+  h1.section-title.animated(ng-class="{slideInLeft:anTeam, 'not-visible':!anTeam}") Our Team
+  div.container.animated(ng-class="{slideInRight:anTeamPics, 'not-visible':!anTeamPics}")
     div.row
       div.col-md-4.member-box(ng-repeat="member in team")
-        img(ng-src="{{member.img}}")
+        a(target="_blank", ng-href="{{member.linkedin}}")
+          img(ng-src="{{member.img}}")
         span.img-caption
           h2.caption-header {{member.name}}
           p {{member.info}}
@@ -78,14 +79,14 @@ section#team
 
 
 section#sponsors
-  h1.section-title Sponsors
+  h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Sponsors
   div.container
     div.row
       div.col-md-3.sponsor(ng-repeat="sponsor in sponsors")
         img.img-responsive(ng-src="{{sponsor.img}}")
 
 section#contact
-  h1.section-title Get In Touch
+  h1.section-title.animated Get In Touch
   div.contact-blurb
     p.subtitle Questions? Want to get involved?
     p.subtitle Please feel free to connect via
