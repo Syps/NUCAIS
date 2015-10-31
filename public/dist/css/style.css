@@ -18,14 +18,16 @@ body {
   font-family: "Roboto", sans-serif; }
 
 section {
+  margin-bottom: 50px;
   padding-bottom: 50px;
+  margin-top: 50px;
   padding-top: 50px; }
 
 #intro {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #4db870;
+  background: #CC0000;
   font-family: "Roboto", sans-serif;
   color: #191919;
   background-attachment: fixed; }
@@ -110,7 +112,7 @@ div[ng-view].ng-enter-active {
   text-color: #fff; }
 
 .scroll-nav {
-  background-color: #4db870;
+  background-color: #CC0000;
   transition: all 500ms ease-in-out;
   box-shadow: 2px 2px 2px #999;
   -moz-box-shadow: 2px 2px 2px #999;
@@ -147,7 +149,7 @@ div[ng-view].ng-enter-active {
   font-size: 1.5em;
   color: #fff;
   position: absolute;
-  right: 2%;
+  right: 4%;
   top: 2%;
   height: 40px;
   width: 40px; }
@@ -220,25 +222,53 @@ div[ng-view].ng-enter-active {
   cursor: pointer;
   background: #676767; }
 
-#intro .intro-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.2; }
-
-#intro .intro-text {
-  text-align: center;
-  color: #fff;
-  margin-top: 25%;
-  font-size: 90px;
-  font-family: "Roboto", sans-serif;
-  background: none;
-  z-index: 99999;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  animation-duration: 3s; }
+#intro {
+  background-image: url(/public/assets/img/nu-campus.jpg);
+  background-size: cover;
+  background-color: #CC0000; }
+  #intro .nu-seal {
+    width: 120px;
+    height: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10%; }
+  #intro .container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204, 0, 0, 0.85); }
+  #intro .apply-btn {
+    margin-top: 10%;
+    background: none;
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-duration: 3s;
+    -moz-animation-delay: 1s;
+    animation-duration: 3s;
+    animation-delay: 1s; }
+  #intro .intro-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+  #intro .intro-text {
+    text-align: center;
+    color: #fff;
+    margin-top: 15%;
+    font-size: 90px;
+    font-family: "Roboto", sans-serif;
+    z-index: 99999;
+    background: none; }
+    #intro .intro-text h1 {
+      font-variant: small-caps;
+      font-weight: 600;
+      -webkit-animation-duration: 3s;
+      -moz-animation-duration: 3s;
+      animation-duration: 3s; }
 
 .billboard {
   font-size: 25px;
@@ -260,9 +290,9 @@ div[ng-view].ng-enter-active {
   height: 210px;
   width: 210px;
   border-radius: 50%;
-  border: solid rgba(77, 184, 112, 0.8) 12px;
+  border: solid rgba(204, 0, 0, 0.8) 12px;
   font-size: 35px;
-  color: #4db870;
+  color: #CC0000;
   margin: 0 auto; }
 
 .section-title {
@@ -282,7 +312,7 @@ div[ng-view].ng-enter-active {
 
 .stress {
   font-size: 40px;
-  color: #4db870;
+  color: #CC0000;
   font-weight: 500;
   margin-right: 10px;
   margin-left: 10px; }
@@ -304,6 +334,20 @@ div[ng-view].ng-enter-active {
   #speakers p {
     font-size: 25px;
     color: #808080; }
+  #speakers .info-appear {
+    opacity: 0.0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    transition: all 300ms ease-in-out;
+    padding-top: 25%;
+    font-size: 18.75px; }
+  #speakers .info-appear:hover {
+    opacity: 1.0; }
 
 .subtitle {
   margin-right: auto;
@@ -315,19 +359,6 @@ div[ng-view].ng-enter-active {
   color: #808080;
   margin-bottom: 30px; }
 
-/*.speaker-li {
-  color: $subtitle-color;
-  margin-bottom: 40px;
-
-  p {
-    text-align: center;
-  }
-
-  .img-responsive {
-    margin: 0 auto;
-    border-radius: 100%;
-  }
-}*/
 .faq-question {
   margin-bottom: 20px; }
 
@@ -338,30 +369,35 @@ div[ng-view].ng-enter-active {
     margin-right: auto;
     margin-left: auto;
     width: 75%;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     display: block; }
   #faq p {
     color: #808080;
-    text-align: left;
+    font-size: 16.25px;
+    text-align: center;
     padding-left: 15px; }
   #faq a.contact-link {
-    margin-top: 90px;
+    margin-top: 140px;
     color: #808080; }
 
 #team {
-  background-color: #E6E6E6;
   text-align: center; }
 
 .member-box {
   text-align: center;
   margin-bottom: 80px; }
 
-.member-box img {
+.member-box .img-responsive {
   margin-right: auto;
   margin-left: auto;
   border-radius: 100%;
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  position: relative; }
+  .member-box .img-responsive img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%; }
 
 .img-caption {
   left: 100px;
@@ -370,8 +406,10 @@ div[ng-view].ng-enter-active {
   .img-caption h2 {
     font-size: 25px; }
 
-#sponsors .section-title {
-  margin-bottom: 70px; }
+#sponsors {
+  background-color: #E6E6E6; }
+  #sponsors .section-title {
+    margin-bottom: 70px; }
 
 .sponsor {
   margin-top: 40px;

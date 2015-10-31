@@ -11,13 +11,13 @@ section#intro
   // to add:
     drop down text and store bottom: listen. learn. network.
     come in from top: Northeastern University presents
-      College Alternative Investment Summit 2016
+      COLLEGE ALTERNATIVE Investment Summit 2016
   div.container.center
-    div.jumbotron.intro-text.animated.fadeIn
-      h2 Northeastern University
-      h1 2016 College Alternative Investment Summit
-      h2 Coming Soon
-  img.intro-bg(src="/public/assets/img/skyline.png")
+    div.jumbotron.intro-text
+      img.nu-seal(src="/public/assets/img/nu-seal.png")
+      h1.animated.fadeIn 2016 Collegiate Alternative Investment Summit
+      button.apply-btn.animated.fadeIn Coming Soon
+  img.intro-bg
 
 section#about
   h1.section-title.animated(ng-class="{slideInLeft:anAbout, 'not-visible':!anAbout}") {{about.title}}
@@ -49,10 +49,12 @@ section#speakers
   div.container.animated(ng-class="{slideInRight:anSpeakerPics, 'not-visible':!anSpeakerPics}")
     div.row
       div.col-md-4.member-box(ng-repeat="speaker in speakers")
-        img.img-responsive(ng-src="{{speaker.img}}")
+        div.img-responsive
+          img(ng-src="{{speaker.img}}")
+          div.info-appear
+            p {{speaker.year}}
+            p {{speaker.topic}}
         p {{speaker.name}}
-        //p {{speaker.topic}}
-        //p {{speaker.year}}
 
 section#faq
   h1.section-title.animated(ng-class="{slideInLeft:anFaq, 'not-visible':!anFaq}") FAQ
@@ -64,20 +66,6 @@ section#faq
 
   a.contact-link(href="#contact") Don't see your question here?
 
-
-section#team
-  h1.section-title.animated(ng-class="{slideInLeft:anTeam, 'not-visible':!anTeam}") Our Team
-  div.container.animated(ng-class="{slideInRight:anTeamPics, 'not-visible':!anTeamPics}")
-    div.row
-      div.col-md-4.member-box(ng-repeat="member in team")
-        a(target="_blank", ng-href="{{member.linkedin}}")
-          img(ng-src="{{member.img}}")
-        span.img-caption
-          h2.caption-header {{member.name}}
-          p {{member.info}}
-
-
-
 section#sponsors
   h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Sponsors
   div.container
@@ -85,13 +73,25 @@ section#sponsors
       div.col-md-3.sponsor(ng-repeat="sponsor in sponsors")
         img.img-responsive(ng-src="{{sponsor.img}}")
 
+section#team
+  h1.section-title.animated(ng-class="{slideInLeft:anTeam, 'not-visible':!anTeam}") Our Team
+  div.container.animated(ng-class="{slideInRight:anTeamPics, 'not-visible':!anTeamPics}")
+    div.row
+      div.col-md-4.member-box(ng-repeat="member in team")
+        a(target="_blank", ng-href="{{member.linkedin}}")
+        img(ng-src="{{member.img}}")
+        span.img-caption
+        h2.caption-header {{member.name}}
+        p {{member.info}}
+
+
 section#contact
   h1.section-title.animated Get In Touch
   div.contact-blurb
     p.subtitle Questions? Want to get involved?
     p.subtitle Please feel free to connect via
     div.email
-      a.social-btn(href="mailto:nucais@gmail.com") nucais@gmail.com
+      a.social-btn(href="mailto:contactnucais@gmail.com") nucais@gmail.com
     p.subtitle or
   div.social-links
     //

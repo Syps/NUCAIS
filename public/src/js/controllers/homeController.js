@@ -27,7 +27,8 @@
           var target = angular.element(document.getElementById('intro'));
           $document.scrollToElement(target, offset, duration);
 
-        }
+        };
+
         $scope.scrollTo = function(section) {
 
           // bring up nav dropdown
@@ -57,76 +58,94 @@
           name: "Adam Berger",
           img: "/public/assets/img/speakers/adam-berger-150x150.png",
           topic: "Stub",
-          year: "2014"
+          year: "2014",
+          title: "",
+          company: ""
         },
 
         {
           name: "Akram Yosri",
           img: "/public/assets/img/speakers/AkramYosri.jpg",
           topic: "Stub",
-          year: "2014"
-        },
-        {
-          name: "Anne Benware",
-          img: "/public/assets/img/speakers/BenwareAnne.jpg",
-          topic: "Stub",
-          year: "2014"
+          year: "2014",
+          title: "",
+          company: ""
         },
         {
           name: "Jeff McCarthy",
           img: "/public/assets/img/speakers/jeffmccarthy.jpg",
           topic: "Stub",
-          year: "2014"
+          year: "2014",
+          title: "",
+          company: ""
         },
         {
           name: "Keith Black",
           img: "/public/assets/img/speakers/keith-black.jpg",
           topic: "Stub",
-          year: "2014"
+          year: "2014",
+          title: "",
+          company: ""
         },
         {
-          name: "newgraham",
+          name: "Graham Brooks",
           img: "/public/assets/img/speakers/newgraham.jpg",
           topic: "Stub",
-          year: "2014"
+          year: "2014",
+          title: "",
+          company: ""
         },
         {
-          name: "Pagliuca",
+          name: "Stephen Pagliuca",
           img: "/public/assets/img/speakers/pagliuca.jpg",
           topic: "Stub",
-          year: "2014"
+          year: "2014",
+          title: "",
+          company: ""
         },
         {
           name: "Rick Lake",
           img: "/public/assets/img/speakers/ricklake.jpg",
           topic: "Stub",
-          year: "2014"
+          year: "2014",
+          title: "",
+          company: ""
         },
         {
-          name: "Samuel Belk",
-          img: "/public/assets/img/speakers/samuel-belk-150x150.png",
+          name: "Theodore Giletti",
+          img: "/public/assets/img/speakers/ricklake.jpg",
           topic: "Stub",
-          year: "2014"
+          year: "2014",
+          title: "",
+          company: ""
+        },
+        {
+          name: "Jim Swanson",
+          img: "/public/assets/img/speakers/ricklake.jpg",
+          topic: "Stub",
+          year: "2014",
+          title: "",
+          company: ""
         }
         ];
 
         $scope.faqs = [
           {
-            question: "What is the answer?",
-            answer: "42"
+            question: "Who can attend?",
+            answer: "CAIS is open to all Northeastern students and faculty."
           },
           {
-            question: "What is the answer?",
-            answer: "42"
+            question: "Where is it?",
+            answer: "30 West Village H"
           },
           {
-            question: "What is the answer?",
-            answer: "42"
+            question: "What's the cost?",
+            answer: "The registration fee is $35. This grants you access to both the networking night and the speaker conference the following day."
           },
           {
-            question: "What is the answer?",
-            answer: "42"
-          },
+            question: "Do I have to attend both the networking night and the conference?",
+            answer: "Attendees are free to participate in either event, though we highly recommend attending both for the full experience!"
+          }
         ];
 
         $scope.team = [
@@ -142,7 +161,7 @@
           },
           {
             name: "Harrison Balder",
-            img: "/public/assets/img/team/harrsionbalder.jpg",
+            img: "/public/assets/img/team/harrisonbalder.jpg",
             linkedin: "https://www.linkedin.com/pub/harrison-balder/b0/890/b10"
           },
           {

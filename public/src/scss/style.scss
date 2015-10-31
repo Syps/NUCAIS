@@ -3,7 +3,7 @@
  * Variables
  */
 $main-bg-color: #fff;
-$secondary-bg-color: #4db870;
+$secondary-bg-color: #CC0000;// original#4db870;
 $nav-bg-color: #808080;
 $main-text-color: #191919;
 $secondary-text-color: #090705;
@@ -53,7 +53,9 @@ body {
   font-family: $text-font;
 }
 section {
+  margin-bottom: 50px;
   padding-bottom: 50px;
+  margin-top: 50px;
   padding-top: 50px;
 }
 
@@ -207,7 +209,7 @@ div[ng-view].ng-enter-active {
   font-size: 1.5em;
   color: $nav-text-color;
   position: absolute;
-  right: 2%;
+  right: 4%;
   top: 2%;
   height: 40px;
   width: 40px;
@@ -283,6 +285,40 @@ div[ng-view].ng-enter-active {
 //======== Section - Intro ==========\\
 #intro {
 
+  background-image: url(/public/assets/img/nu-campus.jpg);
+  background-size: cover;
+  background-color: $secondary-bg-color;
+
+  .nu-seal {
+    width: 120px;
+    height: 120px;
+    @include center-horiz();
+    margin-bottom: 10%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    background-color: transparentize($secondary-bg-color, 0.15);
+  }
+
+  .apply-btn {
+    margin-top: 10%;
+    background: none;
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+    font-size: $subtitle-font-size;
+    cursor: pointer;
+
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-duration: 3s;
+     -moz-animation-delay: 1s;
+    animation-duration: 3s;
+     animation-delay: 1s;
+
+  }
+
 
   .intro-bg {
     position:absolute;
@@ -291,25 +327,33 @@ div[ng-view].ng-enter-active {
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.2;
   }
 
   .intro-text {
+
+
+    h1 {
+      font-variant: small-caps;
+      font-weight: 600;
+
+      -webkit-animation-duration: 3s;
+      // -webkit-animation-delay: 1s;
+      -moz-animation-duration: 3s;
+      // -moz-animation-delay: 1s;
+      animation-duration: 3s;
+      // animation-delay: 1s;
+
+    }
+
     text-align: center;
     color: $main-bg-color;
-    margin-top: 25%;
+    margin-top: 15%;
     font-size: $intro-text-size;
     font-family: $text-font;
-    background: none;
     z-index: 99999;
+    background: none;
 
-    -webkit-animation-duration: 3s;
-    // -webkit-animation-delay: 1s;
-    -moz-animation-duration: 3s;
-    // -moz-animation-delay: 1s;
-    animation-duration: 3s;
-    // animation-delay: 1s;
-  }
+      }
 }
 
 .billboard {
@@ -403,6 +447,27 @@ div[ng-view].ng-enter-active {
     font-size: $subtitle-font-size;
     color: $subtitle-color;
   }
+
+  .info-appear {
+    opacity: 0.0;
+    position: absolute;
+    background: transparentize(#000000, 0.4);
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+
+    transition: all 300ms ease-in-out;
+
+    // text
+    padding-top: 25%;
+    font-size: $subtitle-font-size * .75;
+  }
+
+  .info-appear:hover {
+    opacity: 1.0;
+  }
 }
 
 .subtitle {
@@ -414,20 +479,6 @@ div[ng-view].ng-enter-active {
   color: $subtitle-color;
   margin-bottom: 30px;
 }
-
-/*.speaker-li {
-  color: $subtitle-color;
-  margin-bottom: 40px;
-
-  p {
-    text-align: center;
-  }
-
-  .img-responsive {
-    margin: 0 auto;
-    border-radius: 100%;
-  }
-}*/
 
 //======== Section - FAQ ==========\\
 .faq-question {
@@ -441,18 +492,19 @@ div[ng-view].ng-enter-active {
   li {
     @include center-horiz();
     width: 75%;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     display: block;
   }
 
   p {
     color: $subtitle-color;
-    text-align: left;
+    font-size: $subtitle-font-size*0.65;
+    text-align: center;
     padding-left: 15px;
   }
 
   a.contact-link {
-    margin-top: 90px;
+    margin-top: 140px;
     color: $subtitle-color;
   }
 
@@ -461,14 +513,8 @@ div[ng-view].ng-enter-active {
 
 //======== Section - Team ==========\\
 #team {
-
-  background-color: #E6E6E6;
-
   text-align: center;
-
-
 }
-
 
 .member-box {
    text-align: center;
@@ -478,12 +524,19 @@ div[ng-view].ng-enter-active {
   // width: $headshot-dimen;
 }
 
-.member-box img {
+.member-box .img-responsive {
   //@include bbrd(blue);
   @include center-horiz();
   border-radius: 100%;
   width: $headshot-dimen;
   height: $headshot-dimen;
+  position: relative;
+
+  img {
+    width:100%;
+    height: 100%;
+    border-radius: 100%;
+  }
 }
 
 .img-caption {
@@ -503,6 +556,9 @@ div[ng-view].ng-enter-active {
 
 //======== Section - Sponsors ==========\\
 #sponsors {
+
+  background-color: #E6E6E6;
+
   .section-title {
     margin-bottom: 70px;
   }
