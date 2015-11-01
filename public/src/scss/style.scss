@@ -436,6 +436,13 @@ div[ng-view].ng-enter-active {
 
 //======== Section - Past Speakers ==========\\
 
+#speakers, #team {
+  p {
+    font-size: $subtitle-font-size;
+    color: $subtitle-color;
+  }
+}
+
 #speakers {
   background-color: #E6E6E6;
 
@@ -443,9 +450,6 @@ div[ng-view].ng-enter-active {
     margin-top: 75px;
   }
 
-  p {
-    font-size: $subtitle-font-size;
-    color: $subtitle-color;
   }
 
   .info-appear {
@@ -468,7 +472,7 @@ div[ng-view].ng-enter-active {
   .info-appear:hover {
     opacity: 1.0;
   }
-}
+
 
 .subtitle {
   @include center-horiz();

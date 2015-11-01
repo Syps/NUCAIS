@@ -53,6 +53,8 @@ section#speakers
           img(ng-src="{{speaker.img}}")
           div.info-appear
             p {{speaker.year}}
+            p {{speaker.company}}
+            p {{speaker.title}}
             p {{speaker.topic}}
         p {{speaker.name}}
 
@@ -79,10 +81,12 @@ section#team
     div.row
       div.col-md-4.member-box(ng-repeat="member in team")
         a(target="_blank", ng-href="{{member.linkedin}}")
-        img(ng-src="{{member.img}}")
-        span.img-caption
-        h2.caption-header {{member.name}}
-        p {{member.info}}
+          div.img-responsive
+            img(ng-src="{{member.img}}")
+            div.info-appear
+              span.img-caption
+              p {{member.info}}
+            p {{member.name}}
 
 
 section#contact

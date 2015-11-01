@@ -327,27 +327,30 @@ div[ng-view].ng-enter-active {
   line-height: 0;
   width: 100%; }
 
+#speakers p, #team p {
+  font-size: 25px;
+  color: #808080; }
+
 #speakers {
   background-color: #E6E6E6; }
   #speakers .container {
     margin-top: 75px; }
-  #speakers p {
-    font-size: 25px;
-    color: #808080; }
-  #speakers .info-appear {
-    opacity: 0.0;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    transition: all 300ms ease-in-out;
-    padding-top: 25%;
-    font-size: 18.75px; }
-  #speakers .info-appear:hover {
-    opacity: 1.0; }
+
+.info-appear {
+  opacity: 0.0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  transition: all 300ms ease-in-out;
+  padding-top: 25%;
+  font-size: 18.75px; }
+
+.info-appear:hover {
+  opacity: 1.0; }
 
 .subtitle {
   margin-right: auto;
