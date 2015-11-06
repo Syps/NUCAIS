@@ -1,7 +1,7 @@
 nav.navbar(ng-class="{'scroll-nav':isScrolling}")
   div.nav-top-container
     div.logo
-      img(ng-src="{{nav.img}}", ng-click="jumpTop()")
+      img(ng-src="{{nav.img}}", ng-click="jump('intro')")
     mobile-burger
   menu-options#drop-menu.slideable
 
@@ -52,28 +52,39 @@ section#speakers
         div.img-responsive
           img(ng-src="{{speaker.img}}")
           div.info-appear
-            p {{speaker.year}}
-            p {{speaker.company}}
-            p {{speaker.title}}
-            p {{speaker.topic}}
+            p.speaker {{speaker.year}}
+            //p {{speaker.company}}
+            //p {{speaker.title}}
+            p.topic {{speaker.topic}}
         p {{speaker.name}}
+        p.ital {{speaker.title + ' at '}}
+        p.ital {{speaker.company}}
 
 section#faq
   h1.section-title.animated(ng-class="{slideInLeft:anFaq, 'not-visible':!anFaq}") FAQ
 
-  ul
-    li(ng-repeat="faq in faqs")
-      h2.faq-question {{faq.question}}
-      p {{faq.answer}}
+  div.faq-div
+    ul
+      li(ng-repeat="faq in faqs")
+        h2.faq-question {{faq.question}}
+        p {{faq.answer}}
 
-  a.contact-link(href="#contact") Don't see your question here?
+  div.contact-link-div
+    p.contact-link(ng-click="jump('contact')") Don't see your question here?
+//
+  section#sponsors
+    h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Past Sponsors
+    div.container
+      div.row
+        div.col-md-3.sponsor(ng-repeat="sponsor in sponsors")
+          img.img-responsive(ng-src="{{sponsor.img}}")
 
-section#sponsors
-  h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Sponsors
-  div.container
-    div.row
-      div.col-md-3.sponsor(ng-repeat="sponsor in sponsors")
-        img.img-responsive(ng-src="{{sponsor.img}}")
+    h1.section-title Past Corporate Affiliates
+    div.container
+      div.row
+        div.col-md-3.sponsor(ng-repeat="a in affiliates")
+          img.img-responsive(ng-src="{{a.img}}")
+
 
 section#team
   h1.section-title.animated(ng-class="{slideInLeft:anTeam, 'not-visible':!anTeam}") Our Team
@@ -95,7 +106,7 @@ section#contact
     p.subtitle Questions? Want to get involved?
     p.subtitle Please feel free to connect via
     div.email
-      a.social-btn(href="mailto:contactnucais@gmail.com") nucais@gmail.com
+      a.social-btn(href="mailto:contactnucais@gmail.com") contactnucais@gmail.com
     p.subtitle or
   div.social-links
     //
@@ -105,7 +116,3 @@ section#contact
       i.fa.fa-twitter.fa-4x
     a.social-btn(target="_blank", href="https://www.facebook.com/officialNUCAIS")
       i.fa.fa-facebook.fa-4x
-
-
-footer
-  div.wrapper

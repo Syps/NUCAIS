@@ -62,6 +62,7 @@ section {
 #intro {
   @include clear-margin();
   @include clear-padding();
+  padding-top: 0px;
   height: 100vh;
   background: $secondary-bg-color;
   font-family: $text-font;
@@ -70,6 +71,7 @@ section {
 }
 
 #about {
+
   @include clear-margin();
   @include clear-padding();
 
@@ -83,24 +85,7 @@ section {
     text-align: center;
   }
 }
-/*
-$container-max-width: 1210px;
 
-$container-gutter: 20px;
-
-
-.container {
-  width: 100%;
-  max-width: $container-max-width;
-  padding-left:  $container-gutter;
-  padding-right: $container-gutter;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:    border-box;
-  box-sizing:         border-box;
-  margin-left:  auto;
-  margin-right: auto;
-}
-*/
 .center {
   @include center-horiz();
 }
@@ -279,7 +264,9 @@ div[ng-view].ng-enter-active {
 }
 .menu-item:hover {
   cursor: pointer;
-  background: darken( $nav-bg-color, 10%);
+  //background: darken( $nav-bg-color, 10%);
+  background-color: white;
+  color: $nav-bg-color;
 }
 
 //======== Section - Intro ==========\\
@@ -290,8 +277,8 @@ div[ng-view].ng-enter-active {
   background-color: $secondary-bg-color;
 
   .nu-seal {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     @include center-horiz();
     margin-bottom: 10%;
   }
@@ -331,7 +318,6 @@ div[ng-view].ng-enter-active {
 
   .intro-text {
 
-
     h1 {
       font-variant: small-caps;
       font-weight: 600;
@@ -347,7 +333,7 @@ div[ng-view].ng-enter-active {
 
     text-align: center;
     color: $main-bg-color;
-    margin-top: 15%;
+    margin-top: 5%;
     font-size: $intro-text-size;
     font-family: $text-font;
     z-index: 99999;
@@ -440,8 +426,27 @@ div[ng-view].ng-enter-active {
   p {
     font-size: $subtitle-font-size;
     color: $subtitle-color;
+    margin-bottom: 0px;
+  }
+
+  .speaker {
+    color: white;
+  }
+
+  .topic {
+    font-size: $subtitle-font-size * .7;
+    color: white;
+    padding: 0% 10% 0% 10%;
+  }
+
+  .ital {
+    font-size: $subtitle-font-size * .6;
+    color: #515151;
+    margin-top: 0px;
   }
 }
+
+
 
 #speakers {
   background-color: #E6E6E6;
@@ -450,7 +455,7 @@ div[ng-view].ng-enter-active {
     margin-top: 75px;
   }
 
-  }
+}
 
   .info-appear {
     opacity: 0.0;
@@ -489,6 +494,10 @@ div[ng-view].ng-enter-active {
   margin-bottom: 20px;
 }
 
+.faq-div {
+  @include center-horiz();
+}
+
 #faq {
 
   text-align: center;
@@ -498,25 +507,33 @@ div[ng-view].ng-enter-active {
     width: 75%;
     margin-bottom: 80px;
     display: block;
+    text-align: justify;
   }
 
   p {
     color: $subtitle-color;
     font-size: $subtitle-font-size*0.65;
-    text-align: center;
+    //text-align: center;
     padding-left: 15px;
   }
 
-  a.contact-link {
-    margin-top: 140px;
-    color: $subtitle-color;
+  .contact-link-div {
+    width: 100%;
+    margin-top: 10%;
   }
+
+  p.contact-link {
+    color: $subtitle-color;
+    cursor: pointer;
+  }
+
 
   margin-bottom: 40px;
 }
 
 //======== Section - Team ==========\\
 #team {
+  background-color: #E6E6E6;
   text-align: center;
 }
 
@@ -529,7 +546,7 @@ div[ng-view].ng-enter-active {
 }
 
 .member-box .img-responsive {
-  //@include bbrd(blue);
+  //@include bbrd(blue
   @include center-horiz();
   border-radius: 100%;
   width: $headshot-dimen;
@@ -581,8 +598,6 @@ div[ng-view].ng-enter-active {
 
 //======== Section - Contact ==========\\
 #contact {
-
-  background-color: #E6E6E6;
 
   text-align: center;
 

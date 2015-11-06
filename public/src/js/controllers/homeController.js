@@ -21,12 +21,11 @@
         $scope.nav = {};
         $scope.nav.img = "/public/assets/img/nav-logo.png";
 
-        $scope.jumpTop = function() {
+        $scope.jump = function(section) {
           var offset = 30;
           var duration = 2000;
-          var target = angular.element(document.getElementById('intro'));
+          var target = angular.element(document.getElementById(section));
           $document.scrollToElement(target, offset, duration);
-
         };
 
         $scope.scrollTo = function(section) {
@@ -57,75 +56,75 @@
         {
           name: "Adam Berger",
           img: "/public/assets/img/speakers/adam-berger-150x150.png",
-          topic: "Stub",
+          topic: "Asset Allocation",
           year: "2014",
-          title: "",
-          company: ""
+          title: "VP & Asset Allocation Strategist",
+          company: "Wellington Management"
         },
 
         {
           name: "Akram Yosri",
           img: "/public/assets/img/speakers/AkramYosri.jpg",
-          topic: "Stub",
-          year: "2014",
-          title: "",
-          company: ""
+          topic: "Leapthrough Investing in Frontier Markets",
+          year: "2015",
+          title: "Managing Partner",
+          company: "3i Capital Group"
         },
         {
           name: "Jeff McCarthy",
-          img: "/public/assets/img/speakers/jeffmccarthy.jpg",
-          topic: "Stub",
-          year: "2014",
-          title: "",
-          company: ""
+          img: "/public/assets/img/speakers/jeff-mccarthy.jpg",
+          topic: "The Venture Capital Industry",
+          year: "2015",
+          title: "Partner",
+          company: "North Bridge Venture Partners"
         },
         {
           name: "Keith Black",
           img: "/public/assets/img/speakers/keith-black.jpg",
-          topic: "Stub",
-          year: "2014",
-          title: "",
-          company: ""
+          topic: "Harvard, Yale and Investments: A Post-Crisis View",
+          year: "2015",
+          title: "Managing Director of Curriculum and Exams",
+          company: "CAIA Association"
         },
         {
           name: "Graham Brooks",
-          img: "/public/assets/img/speakers/newgraham.jpg",
-          topic: "Stub",
-          year: "2014",
-          title: "",
-          company: ""
+          img: "/public/assets/img/speakers/GrahamBrooks.jpg",
+          topic: "How to get a Job in Venture Capital",
+          year: "2015",
+          title: "Partner",
+          company: ".406 Ventures"
         },
         {
           name: "Stephen Pagliuca",
           img: "/public/assets/img/speakers/pagliuca.jpg",
-          topic: "Stub",
+          topic: "Global Outlook of Private Equity and Venture Capital",
           year: "2014",
-          title: "",
-          company: ""
+          title: "Managing Director/Co-owner",
+          company: "Bain Capital/Boston Celtics"
         },
         {
           name: "Rick Lake",
           img: "/public/assets/img/speakers/ricklake.jpg",
-          topic: "Stub",
+          topic: "Alternative Strategies in Mutual Fund Structures",
           year: "2014",
-          title: "",
-          company: ""
+          title: "Chairman",
+          company: "Lake Partners"
         },
         {
           name: "Theodore Giletti",
-          img: "/public/assets/img/speakers/ricklake.jpg",
-          topic: "Stub",
-          year: "2014",
-          title: "",
-          company: ""
+          img: "/public/assets/img/speakers/giletti.png",
+          topic: "Investment Opportunities in Emerging Markets",
+          year: "2013",
+          title: "Director",
+          company: "Angola Capital Partners"
         },
         {
-          name: "Jim Swanson",
-          img: "/public/assets/img/speakers/ricklake.jpg",
-          topic: "Stub",
-          year: "2014",
-          title: "",
-          company: ""
+          name: "James Swanson",
+          img: "/public/assets/img/speakers/jswanson.png",
+          topic: "The Sustainable Cycle",
+          year: "2013",
+          title: "Chief Investment Stategist",
+          company: "MFS Investment Management"
         }
         ];
 
@@ -143,8 +142,12 @@
             answer: "The registration fee is $35. This grants you access to both the networking night and the speaker conference the following day."
           },
           {
+            question: "What's the Friday networking event about?",
+            answer: "The Friday networking event is a panel-style Q&A session where Northeastern Alumni working in the alternatives space share their experiences, advice, and insights into their respective fields. It's a great opportunity for students to build their Northeastern network, particularly in the competitive alternatives field, and learn how some of our top talent broke into the industry."
+          },
+          {
             question: "Do I have to attend both the networking night and the conference?",
-            answer: "Attendees are free to participate in either event, though we highly recommend attending both for the full experience!"
+            answer: "Attendees are free to participate in either event, though we highly recommend coming to both for the best experience!"
           }
         ];
 
@@ -194,10 +197,7 @@
         var imgRoot = "/public/assets/img/sponsors/";
 
         $scope.sponsors = [
-          {
-            name: "Alt Assets",
-            img: imgRoot + "altassets.jpg"
-          },
+
           {
             name: "D'Amore-McKim School of Business",
             img: imgRoot + "dmsob-logo-color.png"
@@ -211,30 +211,44 @@
             name: "Lake Partners",
             img: imgRoot + "lake-partners.jpg"
           },
-          {
-            name: "LSE SU Alternative Investments Conference",
-            img: imgRoot + "lse-aic-color.png"
-          },
+
           {
             name: "MFS",
             img: imgRoot + "mfs-color.png"
           },
-          /*{
+
+          {
             name: "Northeastern Alumni Development Association",
             img: imgRoot + "nuada-color.png"
-          },*/
-          {
-            name: "Northeastern Finance and Investment Club",
-            img: imgRoot + "nufic-color.png"
           },
 
           {
             name: "State Street",
             img: imgRoot + "statest-color.png"
           },
+
           {
             name: "Wall Street Oasis",
             img: imgRoot + "WSO-logo.jpg"
+          }
+        ];
+
+        $scope.affiliates = [
+          {
+            name: "Alt Assets",
+            img: imgRoot + "altassets.jpg"
+          },
+          {
+            name: "Northeastern Finance and Investment Club",
+            img: imgRoot + "nufic-color.png"
+          },
+          {
+            name: "Northeastern Alumni Development Association",
+            img: imgRoot + "nuada-color.png"
+          },
+          {
+            name: "LSE SU Alternative Investments Conference",
+            img: imgRoot + "lse-aic-color.png"
           }
         ];
 
@@ -312,11 +326,7 @@
        });
 
      }
-
-
-
-
-        /* end controller*/
+    /* end controller*/
   ]);
 
 }());

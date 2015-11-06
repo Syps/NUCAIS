@@ -26,6 +26,7 @@ section {
 #intro {
   margin: 0;
   padding: 0;
+  padding-top: 0px;
   height: 100vh;
   background: #CC0000;
   font-family: "Roboto", sans-serif;
@@ -42,24 +43,6 @@ section {
   #about * {
     text-align: center; }
 
-/*
-$container-max-width: 1210px;
-
-$container-gutter: 20px;
-
-
-.container {
-  width: 100%;
-  max-width: $container-max-width;
-  padding-left:  $container-gutter;
-  padding-right: $container-gutter;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:    border-box;
-  box-sizing:         border-box;
-  margin-left:  auto;
-  margin-right: auto;
-}
-*/
 .center {
   margin-right: auto;
   margin-left: auto; }
@@ -220,15 +203,16 @@ div[ng-view].ng-enter-active {
 
 .menu-item:hover {
   cursor: pointer;
-  background: #676767; }
+  background-color: white;
+  color: #808080; }
 
 #intro {
   background-image: url(/public/assets/img/nu-campus.jpg);
   background-size: cover;
   background-color: #CC0000; }
   #intro .nu-seal {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10%; }
@@ -258,7 +242,7 @@ div[ng-view].ng-enter-active {
   #intro .intro-text {
     text-align: center;
     color: #fff;
-    margin-top: 15%;
+    margin-top: 5%;
     font-size: 90px;
     font-family: "Roboto", sans-serif;
     z-index: 99999;
@@ -329,7 +313,21 @@ div[ng-view].ng-enter-active {
 
 #speakers p, #team p {
   font-size: 25px;
-  color: #808080; }
+  color: #808080;
+  margin-bottom: 0px; }
+
+#speakers .speaker, #team .speaker {
+  color: white; }
+
+#speakers .topic, #team .topic {
+  font-size: 17.5px;
+  color: white;
+  padding: 0% 10% 0% 10%; }
+
+#speakers .ital, #team .ital {
+  font-size: 15px;
+  color: #515151;
+  margin-top: 0px; }
 
 #speakers {
   background-color: #E6E6E6; }
@@ -365,6 +363,10 @@ div[ng-view].ng-enter-active {
 .faq-question {
   margin-bottom: 20px; }
 
+.faq-div {
+  margin-right: auto;
+  margin-left: auto; }
+
 #faq {
   text-align: center;
   margin-bottom: 40px; }
@@ -373,17 +375,21 @@ div[ng-view].ng-enter-active {
     margin-left: auto;
     width: 75%;
     margin-bottom: 80px;
-    display: block; }
+    display: block;
+    text-align: justify; }
   #faq p {
     color: #808080;
     font-size: 16.25px;
-    text-align: center;
     padding-left: 15px; }
-  #faq a.contact-link {
-    margin-top: 140px;
-    color: #808080; }
+  #faq .contact-link-div {
+    width: 100%;
+    margin-top: 10%; }
+  #faq p.contact-link {
+    color: #808080;
+    cursor: pointer; }
 
 #team {
+  background-color: #E6E6E6;
   text-align: center; }
 
 .member-box {
@@ -423,7 +429,6 @@ div[ng-view].ng-enter-active {
     margin: 0 auto; }
 
 #contact {
-  background-color: #E6E6E6;
   text-align: center; }
   #contact .section-title {
     margin-top: 60px;
