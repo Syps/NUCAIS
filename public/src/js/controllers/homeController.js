@@ -16,7 +16,7 @@
       $scope.welcome = "Welcome home";
 
       $scope.menuItems = ['About', 'Speakers', 'FAQ', 'Team',
-        'Sponsors', 'Contact', 'Last'];
+        /*'Sponsors',*/ 'Contact', 'Last'];
 
         $scope.nav = {};
         $scope.nav.img = "/public/assets/img/nav-logo.png";
@@ -131,11 +131,11 @@
         $scope.faqs = [
           {
             question: "Who can attend?",
-            answer: "CAIS is open to all Northeastern students and faculty."
+            answer: "You don't have to study finance or even be a Northeastern student to attend. CAIS welcomes anyone interested in learning more about alternative investments, regardless of age or discipline."
           },
           {
             question: "Where is it?",
-            answer: "30 West Village H"
+            answer: "30 West Village F"
           },
           {
             question: "What's the cost?",
@@ -270,6 +270,7 @@
         $scope.anSpeakers = false;
         $scope.anSpeakerPics = false;
         $scope.anFaq = false;
+        $scope.anFaqs = false;
         $scope.anTeam = false;
         $scope.anTeamPics = false;
         $scope.anSponsors = false;
@@ -310,6 +311,10 @@
            if (this.pageYOffset > faqEl.prop('offsetTop') - 1000) {
              console.log("reached faq");
              $scope.anFaq = true;
+           }
+           if (this.pageYOffset > faqEl.prop('offsetTop') - 750) {
+             console.log("reached faq");
+             $scope.anFaqs = true;
            }
            if (this.pageYOffset > teamEl.prop('offsetTop')  - 1000) {
              $scope.anTeam = true;

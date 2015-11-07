@@ -63,7 +63,7 @@ section#speakers
 section#faq
   h1.section-title.animated(ng-class="{slideInLeft:anFaq, 'not-visible':!anFaq}") FAQ
 
-  div.faq-div
+  div.faq-div.animated(ng-class="{slideInRight:anFaqs, 'not-visible':!anFaqs}")
     ul
       li(ng-repeat="faq in faqs")
         h2.faq-question {{faq.question}}
