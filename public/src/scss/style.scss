@@ -199,7 +199,7 @@ div[ng-view].ng-enter-active {
 .logo img {
   height: 50px;
   width: 150px;
-  margin-left: 15px;
+  margin-left: 10px;
   cursor: pointer;
 }
 .burgerBtn {
@@ -272,7 +272,7 @@ div[ng-view].ng-enter-active {
   @include center-horiz();
   width: 100%;
   text-align: left;
-  padding: 15px 0px 15px 15px;
+  padding: 15px 0px 15px 35px;
   color: $nav-text-color;
   font-size: 1.5em;
 }
