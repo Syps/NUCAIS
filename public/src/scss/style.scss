@@ -58,6 +58,22 @@ section {
   padding-top: 50px;
 }
 
+/* Bootstrap column centering */
+
+@media (min-width: 1000px) {
+  .row-centered {
+      text-align:center;
+  }
+  .col-centered {
+      display:inline-block;
+      float:none;
+      /* reset the text-align */
+      text-align:left;
+      /* inline-block space fix */
+      margin-right:-4px;
+  }
+}
+
 #intro {
   @include clear-margin();
   @include clear-padding();
@@ -165,6 +181,7 @@ div[ng-view].ng-enter-active {
   width: 100%;
   padding-right: 20px;
   padding-left: 15px;
+  padding-top: 10px;
 
   //display: block;
   position: fixed;
@@ -182,6 +199,7 @@ div[ng-view].ng-enter-active {
 .logo img {
   height: 50px;
   width: 150px;
+  margin-left: 15px;
   cursor: pointer;
 }
 .burgerBtn {
@@ -193,8 +211,8 @@ div[ng-view].ng-enter-active {
   font-size: 1.5em;
   color: $nav-text-color;
   position: absolute;
-  right: 4%;
-  top: 2%;
+  right: 5%;
+  top: 20%;
   height: 40px;
   width: 40px;
 }
@@ -247,14 +265,14 @@ div[ng-view].ng-enter-active {
   list-style-type: none;
   @include center-horiz();
   @include clear-padding();
+  margin-top: 60px;
 }
 .menu-item {
   display: block;
   @include center-horiz();
   width: 100%;
   text-align: left;
-  padding-left: 15px;
-  margin-top: 30px;
+  padding: 15px 0px 15px 15px;
   color: $nav-text-color;
   font-size: 1.5em;
 }
@@ -264,8 +282,8 @@ div[ng-view].ng-enter-active {
 .menu-item:hover {
   cursor: pointer;
   //background: darken( $nav-bg-color, 10%);
-  background-color: white;
-  color: $nav-bg-color;
+  background-color: darken($secondary-bg-color, 10%);
+  //color: $nav-bg-color;
 }
 
 //======== Section - Intro ==========\\
@@ -482,6 +500,15 @@ div[ng-view].ng-enter-active {
     opacity: 1.0;
   }
 
+  .icon-appear {
+    text-align: center;
+    padding-top: 2%;
+  }
+
+  .fa-linkedin {
+    color: transparentize(#ffffff, 0.7);
+  }
+
 
 .subtitle {
   @include center-horiz();
@@ -524,12 +551,46 @@ div[ng-view].ng-enter-active {
 
   .contact-link-div {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 15%;
   }
 
   .contact-link {
-    color: $subtitle-color;
+    padding: 14px 26px;
+    font-size: 14px;
+    line-height: 100%;
+    text-shadow: 0 1px rgba(0,0,0,0.4);
+    background-color: $subtitle-color;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.1s ease-in-out;
+	  -webkit-transition: background 0.1s ease-in-out;
+	  -moz-transition: background 0.1s ease-in-out;
+	  -ms-transition: background 0.1s ease-in-out;
+	  -o-transition: background 0.1s ease-in-out;
+	  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 3px;
+	  -moz-border-radius: 3px;
+	  border-radius: 3px;
+	  font-family: 'Helvetica Neue', Helvetica, sans-serif;
     cursor: pointer;
+    box-shadow: 0px 3px 0px 0px darken($subtitle-color, 13%);
+  }
+
+  .contact-link:active {
+    padding-top: 15px;
+    margin-bottom: -1px;
+    box-shadow: 0px 1px 0px 0px darken($subtitle-color, 13%);
+  }
+
+  .contact-link:hover {
+    background-color: darken($subtitle-color, 5%);
+  }
+
+  .contact-link, .contact-link:hover, .contact-link:active {
+    outline: 0 none;
+    text-decoration: none;
+    color: #fff;
   }
 
 
@@ -541,17 +602,29 @@ div[ng-view].ng-enter-active {
   //background-color: #E6E6E6;
   text-align: center;
 
+
+
   .member-box {
+    margin-top: 60px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+
+  .container {
     margin-top: 100px;
   }
 
 }
 
+
 .member-box {
    text-align: center;
   // margin-left: auto;
   // margin-right: auto;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   // width: $headshot-dimen;
 }
 
@@ -583,6 +656,15 @@ div[ng-view].ng-enter-active {
       font-size: $img-subtext-size * 1.25;
     }
 
+  }
+
+  //======== Section - Advisory Board ==========\\
+  #team {
+    padding-bottom: 20px;
+  }
+
+  #advisory-board {
+    margin-top: 0px;
   }
 
   //======== Section - Selected Presentations ==========\\

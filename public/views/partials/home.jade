@@ -70,7 +70,7 @@ section#faq
         p {{faq.answer}}
 
   div.contact-link-div
-    a.contact-link.btn(ng-click="jump('contact')") Don't see your question here?
+    a.contact-link(ng-click="jump('contact')") Don't see your question here?
 //
   section#sponsors
     h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Past Sponsors
@@ -87,7 +87,7 @@ section#faq
 
 section#presentations
   h1.section-title.animated(ng-class="{slideInLeft:anPresentations, 'not-visible':!(anPresentations)}") Selected Presentations
-  p.subtitle Excerpts from our 2014 conference
+  p.subtitle  From our 2014 Conference
 
   div.container.animated(ng-class="{slideInRight:anVids, 'not-visible':!anVids}")
     div.row
@@ -98,14 +98,15 @@ section#presentations
 section#team
   h1.section-title.animated(ng-class="{slideInLeft:anTeam, 'not-visible':!anTeam}") Management Committee
   div.container.animated(ng-class="{slideInRight:anTeamPics, 'not-visible':!anTeamPics}")
-    div.row
-      div.col-md-4.member-box(ng-repeat="member in team")
+    div.row.row-centered
+      div.col-md-4.member-box.col-centered(ng-repeat="member in team")
         a(target="_blank", ng-href="{{member.linkedin}}")
           div.img-responsive
             img(ng-src="{{member.img}}")
             div.info-appear
-              span.img-caption
-              p {{member.info}}
+              i.fa.fa-linkedin.icon-appear.fa-5x
+              //span.img-caption
+              //p {{member.info}}
             p {{member.name}}
 
 section#advisory-board
@@ -117,8 +118,9 @@ section#advisory-board
           div.img-responsive
             img(ng-src="{{member.img}}")
             div.info-appear
-              span.img-caption
-              p {{member.info}}
+              i.fa.fa-linkedin.icon-appear.fa-5x
+              //span.img-caption
+              //p {{member.info}}
             p {{member.name}}
 
 

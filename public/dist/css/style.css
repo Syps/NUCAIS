@@ -22,6 +22,18 @@ section {
   margin-top: 50px;
   padding-top: 50px; }
 
+/* Bootstrap column centering */
+@media (min-width: 1000px) {
+  .row-centered {
+    text-align: center; }
+  .col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px; } }
+
 #intro {
   margin: 0;
   padding: 0;
@@ -105,6 +117,7 @@ div[ng-view].ng-enter-active {
   width: 100%;
   padding-right: 20px;
   padding-left: 15px;
+  padding-top: 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -119,6 +132,7 @@ div[ng-view].ng-enter-active {
 .logo img {
   height: 50px;
   width: 150px;
+  margin-left: 15px;
   cursor: pointer; }
 
 .burgerBtn {
@@ -131,8 +145,8 @@ div[ng-view].ng-enter-active {
   font-size: 1.5em;
   color: #fff;
   position: absolute;
-  right: 4%;
-  top: 2%;
+  right: 5%;
+  top: 20%;
   height: 40px;
   width: 40px; }
 
@@ -184,7 +198,8 @@ div[ng-view].ng-enter-active {
   list-style-type: none;
   margin-right: auto;
   margin-left: auto;
-  padding: 0; }
+  padding: 0;
+  margin-top: 60px; }
 
 .menu-item {
   display: block;
@@ -192,8 +207,7 @@ div[ng-view].ng-enter-active {
   margin-left: auto;
   width: 100%;
   text-align: left;
-  padding-left: 15px;
-  margin-top: 30px;
+  padding: 15px 0px 15px 15px;
   color: #fff;
   font-size: 1.5em; }
 
@@ -202,8 +216,7 @@ div[ng-view].ng-enter-active {
 
 .menu-item:hover {
   cursor: pointer;
-  background-color: white;
-  color: #808080; }
+  background-color: #990000; }
 
 #intro {
   background-image: url(/public/assets/img/nu-campus.jpg);
@@ -349,6 +362,13 @@ div[ng-view].ng-enter-active {
 .info-appear:hover {
   opacity: 1.0; }
 
+.icon-appear {
+  text-align: center;
+  padding-top: 2%; }
+
+.fa-linkedin {
+  color: rgba(255, 255, 255, 0.3); }
+
 .subtitle {
   margin-right: auto;
   margin-left: auto;
@@ -383,19 +403,51 @@ div[ng-view].ng-enter-active {
     padding-left: 15px; }
   #faq .contact-link-div {
     width: 100%;
-    margin-top: 10%; }
+    margin-top: 15%; }
   #faq .contact-link {
-    color: #808080;
-    cursor: pointer; }
+    padding: 14px 26px;
+    font-size: 14px;
+    line-height: 100%;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+    background-color: #808080;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.1s ease-in-out;
+    -webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    -ms-transition: background 0.1s ease-in-out;
+    -o-transition: background 0.1s ease-in-out;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px 0px #5f5f5f; }
+  #faq .contact-link:active {
+    padding-top: 15px;
+    margin-bottom: -1px;
+    box-shadow: 0px 1px 0px 0px #5f5f5f; }
+  #faq .contact-link:hover {
+    background-color: #737373; }
+  #faq .contact-link, #faq .contact-link:hover, #faq .contact-link:active {
+    outline: 0 none;
+    text-decoration: none;
+    color: #fff; }
 
 #team, #advisory-board {
   text-align: center; }
   #team .member-box, #advisory-board .member-box {
+    margin-top: 60px; }
+    #team .member-box a, #advisory-board .member-box a {
+      text-decoration: none; }
+  #team .container, #advisory-board .container {
     margin-top: 100px; }
 
 .member-box {
   text-align: center;
-  margin-bottom: 80px; }
+  margin-bottom: 120px; }
 
 .member-box .img-responsive {
   margin-right: auto;
@@ -417,6 +469,12 @@ div[ng-view].ng-enter-active {
   font-size: 20px; }
   .img-caption h2 {
     font-size: 25px; }
+
+#team {
+  padding-bottom: 20px; }
+
+#advisory-board {
+  margin-top: 0px; }
 
 #presentations {
   background-color: #E6E6E6;

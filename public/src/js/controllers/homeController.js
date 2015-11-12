@@ -18,7 +18,7 @@
 
       $scope.menuItems = ['About', 'Speakers', 'FAQ',
       'Selected Presentations', 'Management Committee',
-      'Advisory Board', /*'Sponsors',*/ 'Contact', 'Last'];
+      'Advisory Board', /*'Sponsors',*/ 'Contact'];
 
         $scope.nav = {};
         $scope.nav.img = "/public/assets/img/nav-logo.png";
