@@ -18,8 +18,7 @@ body {
   font-family: "Roboto", sans-serif; }
 
 section {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   margin-top: 50px;
   padding-top: 50px; }
 
@@ -211,8 +210,8 @@ div[ng-view].ng-enter-active {
   background-size: cover;
   background-color: #CC0000; }
   #intro .nu-seal {
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 240px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10%; }
@@ -311,20 +310,20 @@ div[ng-view].ng-enter-active {
   line-height: 0;
   width: 100%; }
 
-#speakers p, #team p {
+#speakers p, #team p, #advisory-board p {
   font-size: 25px;
   color: #808080;
   margin-bottom: 0px; }
 
-#speakers .speaker, #team .speaker {
+#speakers .speaker, #team .speaker, #advisory-board .speaker {
   color: white; }
 
-#speakers .topic, #team .topic {
+#speakers .topic, #team .topic, #advisory-board .topic {
   font-size: 17.5px;
   color: white;
   padding: 0% 10% 0% 10%; }
 
-#speakers .ital, #team .ital {
+#speakers .ital, #team .ital, #advisory-board .ital {
   font-size: 15px;
   color: #515151;
   margin-top: 0px; }
@@ -361,7 +360,8 @@ div[ng-view].ng-enter-active {
   margin-bottom: 30px; }
 
 .faq-question {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-size: 31.25px; }
 
 .faq-div {
   margin-right: auto;
@@ -379,18 +379,19 @@ div[ng-view].ng-enter-active {
     text-align: justify; }
   #faq p {
     color: #808080;
-    font-size: 16.25px;
+    font-size: 25px;
     padding-left: 15px; }
   #faq .contact-link-div {
     width: 100%;
     margin-top: 10%; }
-  #faq p.contact-link {
+  #faq .contact-link {
     color: #808080;
     cursor: pointer; }
 
-#team {
-  background-color: #E6E6E6;
+#team, #advisory-board {
   text-align: center; }
+  #team .member-box, #advisory-board .member-box {
+    margin-top: 100px; }
 
 .member-box {
   text-align: center;
@@ -403,6 +404,8 @@ div[ng-view].ng-enter-active {
   width: 200px;
   height: 200px;
   position: relative; }
+  .member-box .img-responsive > p {
+    margin-top: 15px; }
   .member-box .img-responsive img {
     width: 100%;
     height: 100%;
@@ -414,6 +417,26 @@ div[ng-view].ng-enter-active {
   font-size: 20px; }
   .img-caption h2 {
     font-size: 25px; }
+
+#presentations {
+  background-color: #E6E6E6;
+  padding-bottom: 100px; }
+  #presentations .container {
+    margin-top: 100px; }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 #sponsors {
   background-color: #E6E6E6; }
@@ -429,6 +452,7 @@ div[ng-view].ng-enter-active {
     margin: 0 auto; }
 
 #contact {
+  background-color: #E6E6E6;
   text-align: center; }
   #contact .section-title {
     margin-top: 60px;

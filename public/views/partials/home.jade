@@ -70,7 +70,7 @@ section#faq
         p {{faq.answer}}
 
   div.contact-link-div
-    p.contact-link(ng-click="jump('contact')") Don't see your question here?
+    a.contact-link.btn(ng-click="jump('contact')") Don't see your question here?
 //
   section#sponsors
     h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Past Sponsors
@@ -85,9 +85,18 @@ section#faq
         div.col-md-3.sponsor(ng-repeat="a in affiliates")
           img.img-responsive(ng-src="{{a.img}}")
 
+section#presentations
+  h1.section-title.animated(ng-class="{slideInLeft:anPresentations, 'not-visible':!(anPresentations)}") Selected Presentations
+  p.subtitle Excerpts from our 2014 conference
+
+  div.container.animated(ng-class="{slideInRight:anVids, 'not-visible':!anVids}")
+    div.row
+      div.col-md-6.member-box(ng-repeat="vid in presentations")
+        div.embed-container
+          iframe(width="640" height="360" ng-src="{{vid.url}}" frameborder="0" allowfullscreen)
 
 section#team
-  h1.section-title.animated(ng-class="{slideInLeft:anTeam, 'not-visible':!anTeam}") Our Team
+  h1.section-title.animated(ng-class="{slideInLeft:anTeam, 'not-visible':!anTeam}") Management Committee
   div.container.animated(ng-class="{slideInRight:anTeamPics, 'not-visible':!anTeamPics}")
     div.row
       div.col-md-4.member-box(ng-repeat="member in team")
@@ -98,6 +107,20 @@ section#team
               span.img-caption
               p {{member.info}}
             p {{member.name}}
+
+section#advisory-board
+  h1.section-title.animated(ng-class="{slideInLeft:anAdvisory, 'not-visible':!anAdvisory}") Advisory Board
+  div.container.animated(ng-class="{slideInRight:anAdvisoryPics, 'not-visible':!anAdvisoryPics}")
+    div.row
+      div.col-md-4.member-box(ng-repeat="member in advisoryBoard")
+        a(target="_blank", ng-href="{{member.linkedin}}")
+          div.img-responsive
+            img(ng-src="{{member.img}}")
+            div.info-appear
+              span.img-caption
+              p {{member.info}}
+            p {{member.name}}
+
 
 
 section#contact

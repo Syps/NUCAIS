@@ -53,8 +53,7 @@ body {
   font-family: $text-font;
 }
 section {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   margin-top: 50px;
   padding-top: 50px;
 }
@@ -277,8 +276,8 @@ div[ng-view].ng-enter-active {
   background-color: $secondary-bg-color;
 
   .nu-seal {
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 240px;
     @include center-horiz();
     margin-bottom: 10%;
   }
@@ -422,7 +421,12 @@ div[ng-view].ng-enter-active {
 
 //======== Section - Past Speakers ==========\\
 
-#speakers, #team {
+#speakers, #team, #advisory-board {
+
+  .container {
+    //margin-top: 100px;
+  }
+
   p {
     font-size: $subtitle-font-size;
     color: $subtitle-color;
@@ -492,6 +496,7 @@ div[ng-view].ng-enter-active {
 //======== Section - FAQ ==========\\
 .faq-question {
   margin-bottom: 20px;
+  font-size: $subtitle-font-size * 1.25;
 }
 
 .faq-div {
@@ -512,7 +517,7 @@ div[ng-view].ng-enter-active {
 
   p {
     color: $subtitle-color;
-    font-size: $subtitle-font-size*0.65;
+    font-size: $subtitle-font-size*1;
     //text-align: center;
     padding-left: 15px;
   }
@@ -522,7 +527,7 @@ div[ng-view].ng-enter-active {
     margin-top: 10%;
   }
 
-  p.contact-link {
+  .contact-link {
     color: $subtitle-color;
     cursor: pointer;
   }
@@ -532,9 +537,14 @@ div[ng-view].ng-enter-active {
 }
 
 //======== Section - Team ==========\\
-#team {
-  background-color: #E6E6E6;
+#team, #advisory-board {
+  //background-color: #E6E6E6;
   text-align: center;
+
+  .member-box {
+    margin-top: 100px;
+  }
+
 }
 
 .member-box {
@@ -553,6 +563,10 @@ div[ng-view].ng-enter-active {
   height: $headshot-dimen;
   position: relative;
 
+  >p {
+    margin-top: 15px;
+  }
+
   img {
     width:100%;
     height: 100%;
@@ -569,6 +583,36 @@ div[ng-view].ng-enter-active {
       font-size: $img-subtext-size * 1.25;
     }
 
+  }
+
+  //======== Section - Selected Presentations ==========\\
+  #presentations {
+    background-color: #E6E6E6;
+
+    .container {
+      margin-top: 100px;
+    }
+
+
+    padding-bottom: 100px;
+
+
+  }
+
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
 
@@ -598,6 +642,8 @@ div[ng-view].ng-enter-active {
 
 //======== Section - Contact ==========\\
 #contact {
+
+  background-color: #E6E6E6;
 
   text-align: center;
 
