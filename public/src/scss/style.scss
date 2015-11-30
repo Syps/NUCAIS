@@ -103,6 +103,7 @@ section {
 
 .center {
   @include center-horiz();
+  //text-align: center;
 }
 
 .bold {
@@ -544,9 +545,9 @@ div[ng-view].ng-enter-active {
 
   p {
     color: $subtitle-color;
-    font-size: $subtitle-font-size*1;
+    font-size: $subtitle-font-size*.9;
     //text-align: center;
-    padding-left: 15px;
+    // padding-left: 15px;
   }
 
   .contact-link-div {

@@ -8,8 +8,10 @@ html(ng-app="app")
     base(href="/")
 
     // limit viewport
-    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport")
 
+    // favicon
+    link(rel="icon", type="image/png", href="public/assets/img/nav-logo.ico")
     // description
     meta(name="description", content="Official website of Northeastern University 2016 College Alternative Investment Summit")
 
@@ -17,6 +19,8 @@ html(ng-app="app")
     link(rel="stylesheet", type="text/css", href="bower_components/font-awesome/css/font-awesome.css")
     link(rel="stylesheet", type="text/css", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
     link(rel="stylesheet", type="text/css", href="bower_components/animate.css/animate.min.css")
+
+
 
 
     // Stylesheets (mobile, desktop)

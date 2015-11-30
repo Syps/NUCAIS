@@ -399,8 +399,7 @@ div[ng-view].ng-enter-active {
     text-align: justify; }
   #faq p {
     color: #808080;
-    font-size: 25px;
-    padding-left: 15px; }
+    font-size: 22.5px; }
   #faq .contact-link-div {
     width: 100%;
     margin-top: 15%; }
