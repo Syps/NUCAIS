@@ -34,12 +34,6 @@ section {
     /* inline-block space fix */
     margin-right: -4px; } }
 
-@media (max-width: 770px) {
-  #intro .nu-seal {
-    margin-top: 10px;
-    height: 140px;
-    width: 140px; } }
-
 #intro {
   margin: 0;
   padding: 0;
@@ -407,7 +401,9 @@ div[ng-view].ng-enter-active {
     font-size: 22.5px; }
   #faq .contact-link-div {
     width: 100%;
-    margin-top: 15%; }
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto; }
   #faq .contact-link {
     padding: 14px 26px;
     font-size: 14px;
@@ -547,3 +543,22 @@ div[ng-view].ng-enter-active {
 
 .contact-blurb * {
   color: #808080; }
+
+@media (max-width: 770px) {
+  section h1.section-title {
+    font-size: 50px; }
+  #intro .nu-seal {
+    margin-top: 10px;
+    height: 140px;
+    width: 140px; }
+  #faq h1.section-title {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px; }
+  #faq h2.faq-question {
+    font-size: 20px;
+    text-align: center; }
+  #faq li p {
+    font-size: 18px;
+    text-align: center; } }

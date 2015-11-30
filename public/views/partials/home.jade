@@ -61,7 +61,8 @@ section#speakers
         p.ital {{speaker.company}}
 
 section#faq
-  h1.section-title.animated(ng-class="{slideInLeft:anFaq, 'not-visible':!anFaq}") FAQ
+  ul
+    h1.section-title.animated(ng-class="{slideInLeft:anFaq, 'not-visible':!anFaq}") FAQ
 
   div.faq-div.animated(ng-class="{slideInRight:anFaqs, 'not-visible':!anFaqs}")
     ul
@@ -70,7 +71,8 @@ section#faq
         p {{faq.answer}}
 
   div.contact-link-div
-    a.contact-link(ng-click="jump('contact')") Don't see your question here?
+    ul
+      a.contact-link(ng-click="jump('contact')") Don't see your question here?
 //
   section#sponsors
     h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Past Sponsors

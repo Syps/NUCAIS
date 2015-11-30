@@ -11,6 +11,7 @@ $nav-text-color: #fff;
 $text-font: 'Roboto', sans-serif;
 $intro-text-size: 90px;
 $section-title-size: 70px;
+$section-title-size-mobile: 50px;
 $subtitle-font-size: 25px;
 $img-subtext-size: 20px;
 $subtitle-color: #808080;
@@ -74,25 +75,7 @@ section {
   }
 }
 
-// better mobile
-@media (max-width: 770px) {
 
-  #intro {
-    .nu-seal {
-      margin-top:10px;
-      height: 140px;
-      width:140px;
-    }
-
-  }
-
-  #faq {
-
-  }
-
-
-
-}
 
 #intro {
   @include clear-margin();
@@ -573,6 +556,8 @@ div[ng-view].ng-enter-active {
   .contact-link-div {
     width: 100%;
     margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .contact-link {
@@ -792,3 +777,37 @@ div[ng-view].ng-enter-active {
 }
 
 //@media screen and (max-size)
+// better mobile
+@media (max-width: 770px) {
+
+  section h1.section-title {
+    font-size: $section-title-size-mobile;
+  }
+
+  #intro {
+    .nu-seal {
+      margin-top:10px;
+      height: 140px;
+      width:140px;
+    }
+  }
+
+  #faq {
+    h1.section-title {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      // text-align: center;
+    }
+    h2.faq-question {
+      font-size: $subtitle-font-size*.8;
+      text-align: center;
+    }
+
+    li p {
+      font-size: $subtitle-font-size*.9*.8;
+      text-align: center;
+    }
+  }
+}
