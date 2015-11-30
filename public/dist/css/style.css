@@ -34,6 +34,13 @@ section {
     /* inline-block space fix */
     margin-right: -4px; } }
 
+@media (max-width: 770px) {
+  #intro .nu-seal {
+    margin-top: 10px;
+    height: 140px;
+    width: 140px;
+    background: blue; } }
+
 #intro {
   margin: 0;
   padding: 0;

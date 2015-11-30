@@ -74,6 +74,27 @@ section {
   }
 }
 
+// better mobile
+@media (max-width: 770px) {
+
+  #intro {
+    .nu-seal {
+      margin-top:10px;
+      height: 140px;
+      width:140px;
+      background: blue;
+    }
+
+  }
+
+  #faq {
+
+  }
+
+
+
+}
+
 #intro {
   @include clear-margin();
   @include clear-padding();
