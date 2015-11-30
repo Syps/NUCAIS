@@ -551,10 +551,16 @@ div[ng-view].ng-enter-active {
 @media (max-width: 770px) {
   section h1.section-title {
     font-size: 50px; }
+  nav div.nav-top-container {
+    padding-left: 5px; }
   #intro .nu-seal {
     margin-top: 10px;
     height: 140px;
     width: 140px; }
+  #about .billboard div.brief {
+    font-size: 20px;
+    padding-left: 14px;
+    padding-right: 14px; }
   #faq h1.section-title {
     margin-left: 0px;
     margin-right: 0px;
