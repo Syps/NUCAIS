@@ -132,7 +132,7 @@ div[ng-view].ng-enter-active {
 .logo img {
   height: 50px;
   width: 150px;
-  margin-left: 10px;
+  margin-left: 0px;
   cursor: pointer; }
 
 .burgerBtn {
@@ -152,8 +152,7 @@ div[ng-view].ng-enter-active {
 
 .burger-icon {
   position: absolute;
-  top: 50%;
-  left: 50%; }
+  top: 50%; }
 
 .burger-icon,
 .burger-icon:before,
