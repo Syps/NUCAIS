@@ -8,6 +8,7 @@
  * Fonts
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 /*
  * Default Styles
  */
@@ -43,8 +44,8 @@ section {
   padding: 0;
   padding-top: 0px;
   height: 100vh;
-  background: #CC0000;
-  font-family: "Roboto", sans-serif;
+  background: #990000;
+  font-family: "Robot Condensed", sans-serif;
   color: #191919;
   background-attachment: fixed; }
 
@@ -65,7 +66,7 @@ section {
 .bold {
   color: #191919;
   font-weight: 600;
-  font-size: 16.25px; }
+  font-size: 13px; }
 
 li {
   list-style: none;
@@ -105,12 +106,11 @@ div[ng-view].ng-enter-active {
   left: 0;
   z-index: 99;
   width: 100%;
-  padding-bottom: 3px;
   border-radius: 0px;
   text-color: #fff; }
 
 .scroll-nav {
-  background-color: #CC0000;
+  background-color: #990000;
   transition: all 500ms ease-in-out;
   box-shadow: 2px 2px 2px #999;
   -moz-box-shadow: 2px 2px 2px #999;
@@ -121,7 +121,7 @@ div[ng-view].ng-enter-active {
   width: 100%;
   padding-right: 20px;
   padding-left: 15px;
-  padding-top: 10px;
+  padding-top: 5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -134,8 +134,8 @@ div[ng-view].ng-enter-active {
   float: left; }
 
 .logo img {
-  height: 50px;
-  width: 150px;
+  height: 40px;
+  width: 120px;
   margin-left: 0px;
   cursor: pointer; }
 
@@ -149,10 +149,10 @@ div[ng-view].ng-enter-active {
   font-size: 1.5em;
   color: #fff;
   position: absolute;
-  right: 5%;
-  top: 20%;
-  height: 40px;
-  width: 40px; }
+  right: 3%;
+  top: 15%;
+  height: 32px;
+  width: 32px; }
 
 .burger-icon {
   position: absolute;
@@ -163,18 +163,18 @@ div[ng-view].ng-enter-active {
 .burger-icon:after {
   cursor: pointer;
   border-radius: 1px;
-  height: 5px;
-  width: 35px;
+  height: 4px;
+  width: 28px;
   background: white;
   position: absolute;
   display: block;
   content: ''; }
 
 .burger-icon:before {
-  top: 10px; }
+  top: 8px; }
 
 .burger-icon:after {
-  top: -10px; }
+  top: -8px; }
 
 .burger-icon,
 .buger-icon:before,
@@ -195,14 +195,13 @@ div[ng-view].ng-enter-active {
   transform: rotate(-45deg); }
 
 .slideable {
-  margin-top: 30px; }
+  margin-top: 0px; }
 
 .nav-list {
   list-style-type: none;
   margin-right: auto;
   margin-left: auto;
-  padding: 0;
-  margin-top: 60px; }
+  padding: 0; }
 
 .menu-item {
   display: block;
@@ -219,12 +218,11 @@ div[ng-view].ng-enter-active {
 
 .menu-item:hover {
   cursor: pointer;
-  background-color: #990000; }
+  background-color: #660000; }
 
 #intro {
   background-image: url(/public/assets/img/nu-campus.jpg);
-  background-size: cover;
-  background-color: #CC0000; }
+  background-size: cover; }
   #intro .nu-seal {
     width: 240px;
     height: 240px;
@@ -234,13 +232,13 @@ div[ng-view].ng-enter-active {
   #intro .container {
     width: 100%;
     height: 100%;
-    background-color: rgba(204, 0, 0, 0.85); }
+    background-color: rgba(55, 0, 0, 0.9); }
   #intro .apply-btn {
     margin-top: 10%;
     background: none;
-    border: 4px solid #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     -webkit-animation-duration: 3s;
     -webkit-animation-delay: 1s;
@@ -270,7 +268,7 @@ div[ng-view].ng-enter-active {
       animation-duration: 3s; }
 
 .billboard {
-  font-size: 25px;
+  font-size: 20px;
   color: #808080; }
 
 #about p {
@@ -289,9 +287,9 @@ div[ng-view].ng-enter-active {
   height: 210px;
   width: 210px;
   border-radius: 50%;
-  border: solid rgba(204, 0, 0, 0.8) 12px;
+  border: solid rgba(153, 0, 0, 0.8) 12px;
   font-size: 35px;
-  color: #CC0000;
+  color: #990000;
   margin: 0 auto; }
 
 .section-title {
@@ -311,7 +309,7 @@ div[ng-view].ng-enter-active {
 
 .stress {
   font-size: 40px;
-  color: #CC0000;
+  color: #990000;
   font-weight: 500;
   margin-right: 10px;
   margin-left: 10px; }
@@ -326,8 +324,12 @@ div[ng-view].ng-enter-active {
   line-height: 0;
   width: 100%; }
 
+#speakers .member-name, #team .member-name, #advisory-board .member-name {
+  color: black;
+  font-size: 16px; }
+
 #speakers p, #team p, #advisory-board p {
-  font-size: 25px;
+  font-size: 20px;
   color: #808080;
   margin-bottom: 0px; }
 
@@ -335,17 +337,19 @@ div[ng-view].ng-enter-active {
   color: white; }
 
 #speakers .topic, #team .topic, #advisory-board .topic {
-  font-size: 17.5px;
+  font-size: 14px;
   color: white;
   padding: 0% 10% 0% 10%; }
 
-#speakers .ital, #team .ital, #advisory-board .ital {
-  font-size: 15px;
-  color: #515151;
+.ital {
+  font-size: 12px;
   margin-top: 0px; }
 
 #speakers {
-  background-color: #E6E6E6; }
+  background-color: #f4f5f6; }
+  #speakers .ital {
+    font-weight: 100;
+    font-size: 14px; }
   #speakers .container {
     margin-top: 75px; }
 
@@ -360,10 +364,11 @@ div[ng-view].ng-enter-active {
   border-radius: 100%;
   transition: all 300ms ease-in-out;
   padding-top: 25%;
-  font-size: 18.75px; }
+  font-size: 15px; }
 
 .info-appear:hover {
-  opacity: 1.0; }
+  opacity: 1.0;
+  filter: none; }
 
 .icon-appear {
   text-align: center;
@@ -378,13 +383,13 @@ div[ng-view].ng-enter-active {
   padding-left: 5%;
   padding-right: 5%;
   text-align: center;
-  font-size: 25px;
+  font-size: 16px;
   color: #808080;
   margin-bottom: 30px; }
 
 .faq-question {
   margin-bottom: 20px;
-  font-size: 31.25px; }
+  font-size: 25px; }
 
 .faq-div {
   margin-right: auto;
@@ -394,15 +399,18 @@ div[ng-view].ng-enter-active {
   text-align: center;
   margin-bottom: 40px; }
   #faq li {
+    padding: 10px 35px;
     margin-right: auto;
     margin-left: auto;
     width: 75%;
     margin-bottom: 80px;
     display: block;
-    text-align: justify; }
+    text-align: justify;
+    background-color: #f4f5f6;
+    box-shadow: 0px 3px 0px 0px #d0d4d8; }
   #faq p {
     color: #808080;
-    font-size: 22.5px; }
+    font-size: 14px; }
   #faq .contact-link-div {
     width: 100%;
     margin-top: 15%;
@@ -413,7 +421,7 @@ div[ng-view].ng-enter-active {
     font-size: 14px;
     line-height: 100%;
     text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-    background-color: #808080;
+    background-color: rgba(153, 0, 0, 0.8);
     color: #fff;
     text-align: center;
     font-weight: bold;
@@ -428,13 +436,13 @@ div[ng-view].ng-enter-active {
     border-radius: 3px;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     cursor: pointer;
-    box-shadow: 0px 3px 0px 0px #5f5f5f; }
+    box-shadow: 0px 3px 0px 0px #570000; }
   #faq .contact-link:active {
     padding-top: 15px;
     margin-bottom: -1px;
-    box-shadow: 0px 1px 0px 0px #5f5f5f; }
+    box-shadow: 0px 1px 0px 0px #570000; }
   #faq .contact-link:hover {
-    background-color: #737373; }
+    background-color: rgba(153, 0, 0, 0.6); }
   #faq .contact-link, #faq .contact-link:hover, #faq .contact-link:active {
     outline: 0 none;
     text-decoration: none;
@@ -457,9 +465,10 @@ div[ng-view].ng-enter-active {
   margin-right: auto;
   margin-left: auto;
   border-radius: 100%;
-  width: 200px;
-  height: 200px;
-  position: relative; }
+  width: 170px;
+  height: 170px;
+  position: relative;
+  margin-bottom: 20px; }
   .member-box .img-responsive > p {
     margin-top: 15px; }
   .member-box .img-responsive img {
@@ -468,20 +477,21 @@ div[ng-view].ng-enter-active {
     border-radius: 100%; }
 
 .img-caption {
-  left: 100px;
+  left: 85px;
   color: #808080;
   font-size: 20px; }
   .img-caption h2 {
     font-size: 25px; }
 
 #team {
+  background-color: #f4f5f6;
   padding-bottom: 20px; }
 
 #advisory-board {
   margin-top: 0px; }
 
 #presentations {
-  background-color: #E6E6E6;
+  margin-top: 0;
   padding-bottom: 100px; }
   #presentations .container {
     margin-top: 100px; }
@@ -501,7 +511,7 @@ div[ng-view].ng-enter-active {
   height: 100%; }
 
 #sponsors {
-  background-color: #E6E6E6; }
+  background-color: #f4f5f6; }
   #sponsors .section-title {
     margin-bottom: 70px; }
 
@@ -514,7 +524,9 @@ div[ng-view].ng-enter-active {
     margin: 0 auto; }
 
 #contact {
-  background-color: #E6E6E6;
+  color: #ffffff;
+  background-color: linear-gradient(135deg, #990000 24%, #ff3333 75%);
+  background: -moz-linear-gradient(135deg, #e60000 18%, #990000 75%);
   text-align: center; }
   #contact .section-title {
     margin-top: 60px;
@@ -529,16 +541,16 @@ div[ng-view].ng-enter-active {
   text-decoration: none;
   margin-left: 30px;
   margin-right: 30px;
-  color: #808080;
+  color: #ffffff;
   transition: all 300ms ease-in-out; }
 
 .social-btn:hover {
   cursor: pointer;
-  color: #191919;
+  color: #fefefe;
   text-decoration: underline; }
 
 .email {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 10px;
   margin-bottom: 30px;
   color: black; }
@@ -546,7 +558,28 @@ div[ng-view].ng-enter-active {
     text-decoration: underline; }
 
 .contact-blurb * {
-  color: #808080; }
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9); }
+
+#location {
+  margin-bottom: 0;
+  background-color: #f4f5f6; }
+  #location #map {
+    height: 420px;
+    width: 600px;
+    margin: 0 auto; }
+  #location #location-text {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+    #location #location-text p {
+      color: #191919;
+      font-size: 15px; }
+    #location #location-text .ital {
+      font-style: italic;
+      font-size: 12px;
+      color: #808080; }
 
 @media (max-width: 770px) {
   section h1.section-title {
@@ -558,7 +591,7 @@ div[ng-view].ng-enter-active {
     height: 140px;
     width: 140px; }
   #about .billboard div.brief {
-    font-size: 20px;
+    font-size: 4px;
     padding-left: 14px;
     padding-right: 14px; }
   #faq h1.section-title {
@@ -567,8 +600,8 @@ div[ng-view].ng-enter-active {
     padding-left: 0px;
     padding-right: 0px; }
   #faq h2.faq-question {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center; }
   #faq li p {
-    font-size: 18px;
+    font-size: 14.4px;
     text-align: center; } }

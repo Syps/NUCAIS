@@ -37,6 +37,7 @@ app.directive('slideable', function () {
                     var y = content.clientHeight;
                     content.style.border = 0;
                     target.style.height = y + 'px';
+                    content.style.paddingTop = "40px";
                 } else {
                     target.style.height = '0px';
                 }

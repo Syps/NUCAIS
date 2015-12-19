@@ -56,7 +56,7 @@ section#speakers
             //p {{speaker.company}}
             //p {{speaker.title}}
             p.topic {{speaker.topic}}
-        p {{speaker.name}}
+        p.member-name {{speaker.name}}
         p.ital {{speaker.title + ' at '}}
         p.ital {{speaker.company}}
 
@@ -71,6 +71,15 @@ section#faq
 
   div.contact-link-div
     a.contact-link(ng-click="jump('contact')") Don't see your question here?
+
+section#location
+  h1.section-title Location
+  div#map
+  div#location-text
+    p 30 West Village F
+    p.ital 40A Leon Street
+    p.ital Boston, MA 02115
+
 //
   section#sponsors
     h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Past Sponsors
@@ -124,20 +133,21 @@ section#advisory-board
             p {{member.name}}
 
 
-
 section#contact
   h1.section-title.animated Get In Touch
   div.contact-blurb
     p.subtitle Questions? Want to get involved?
-    p.subtitle Please feel free to connect via
-    div.email
-      a.social-btn(href="mailto:contactnucais@gmail.com") contactnucais@gmail.com
-    p.subtitle or
+    p.subtitle Please feel free to connect!
+    //
+      div.email
+        a.social-btn(href="mailto:contactnucais@gmail.com") contactnucais@gmail.com
   div.social-links
     //
       a.social-btn
-        i.fa.fa-linkedin.fa-4x
+        i.fa.fa-linkedin.fa-2x
     a.social-btn(target="_blank", href="https://twitter.com/nucais")
-      i.fa.fa-twitter.fa-4x
+      i.fa.fa-twitter.fa-2x
+    a.social-btn(href="mailto:contactnucais@gmail.com")
+      i.fa.fa-envelope.fa-2x
     a.social-btn(target="_blank", href="https://www.facebook.com/officialNUCAIS")
-      i.fa.fa-facebook.fa-4x
+      i.fa.fa-facebook.fa-2x

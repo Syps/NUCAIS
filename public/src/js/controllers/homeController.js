@@ -1,7 +1,15 @@
 (function() {
 
   var app = angular.module('app');
-
+  //
+  // $scope.map = new google.maps.Map(document.getElementById('map'), init
+  //
+  // function initMap() {
+  //   map = , {
+  //     center: {lat: -34.397, lng: 150.644},
+  //     zoom: 8
+  //   });
+  // }
   console.log("homeController");
 
   // create new controller HomeController w/ homeController constructor
@@ -15,6 +23,25 @@
       console.log("compiled");
       // dev:: welcome message
       $scope.welcome = "Welcome home";
+
+      /* Google Maps */
+    var mapOptions = {
+      zoom: 17,
+      center: new google.maps.LatLng(42.337358, -71.091847),
+      mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+
+    $scope.marker = new google.maps.Marker({
+      position: {lat: 42.337358, lng: -71.091847},
+      title: 'Hello World!'
+    });
+
+
+
+
+    $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    $scope.marker.setMap($scope.map);
+
 
       $scope.menuItems = ['About', 'Speakers', 'FAQ',
       'Selected Presentations', 'Management Committee',
@@ -378,27 +405,21 @@
            }
 
            if (this.pageYOffset > aboutEl.prop('offsetTop') - 1000) {
-             console.log("reached about");
               $scope.anAbout = true;
            }
            if (this.pageYOffset > aboutEl.prop('offsetTop') - 900) {
-             console.log("reached about");
               $scope.anAboutPoints = true;
            }
            if (this.pageYOffset > speakersEl.prop('offsetTop') - 1000) {
-             console.log("reached speakers");
              $scope.anSpeakers = true;
            }
            if (this.pageYOffset > speakersEl.prop('offsetTop') - 750) {
-             console.log("reached speakers");
              $scope.anSpeakerPics = true;
            }
            if (this.pageYOffset > faqEl.prop('offsetTop') - 1000) {
-             console.log("reached faq");
              $scope.anFaq = true;
            }
            if (this.pageYOffset > faqEl.prop('offsetTop') - 750) {
-             console.log("reached faq");
              $scope.anFaqs = true;
            }
            if (this.pageYOffset > presentationsEl.prop('offsetTop') - 1000) {
