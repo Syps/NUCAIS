@@ -621,7 +621,7 @@ div[ng-view].ng-enter-active {
     height: 140px;
     width: 140px; }
   #about .billboard div.brief {
-    font-size: 4px;
+    font-size: 16px;
     padding-left: 14px;
     padding-right: 14px; }
   #faq h1.section-title {
