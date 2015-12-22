@@ -636,5 +636,5 @@ div[ng-view].ng-enter-active {
     font-size: 14.4px;
     text-align: center; }
   #location #map {
-    height: 210;
-    width: 300; } }
+    height: 210px;
+    width: 300px; } }
