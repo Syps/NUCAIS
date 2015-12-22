@@ -11,8 +11,8 @@ $nav-text-color: #fff;
 $text-font: 'Roboto', sans-serif;
 $intro-font: 'Montserrat', sans-serif;
 $intro-text-size: 40px;
-$section-title-size: 70px;
-$section-title-size-mobile: 50px;
+$section-title-size: 50px;
+$section-title-size-mobile: 40px;
 $section-title-color: darken(#465362, 15%);
 $subtitle-font-size: 20px;
 $img-subtext-size: 20px;
@@ -599,14 +599,14 @@ div[ng-view].ng-enter-active {
 
   p {
     color: $subtitle-color;
-    font-size: $subtitle-font-size*.7;
+    font-size: $subtitle-font-size*.8;
     //text-align: center;
     // padding-left: 15px;
   }
 
   .contact-link-div {
     width: 100%;
-    margin-top: 15%;
+    margin-top: 8%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -871,12 +871,12 @@ div[ng-view].ng-enter-active {
 
     p {
       color: $main-text-color;
-      font-size: $subtitle-font-size * .75;
+      font-size: $subtitle-font-size * .8;
     }
 
     .ital {
       font-style: italic;
-      font-size: $subtitle-font-size * .6;
+      font-size: $subtitle-font-size * .7;
       color: $subtitle-color;
     }
   }
