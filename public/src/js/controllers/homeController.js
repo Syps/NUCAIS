@@ -180,7 +180,7 @@
           },
           {
             question: "What's the cost?",
-            answer: "The registration fee is $35. This grants you access to both the networking night and the speaker conference the following day."
+            answer: "The registration fee is $30. This grants you access to both the networking night and the speaker conference the following day."
           },
           {
             question: "What's the Friday networking event about?",

@@ -9,6 +9,7 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 /*
  * Default Styles
  */
@@ -45,7 +46,7 @@ section {
   padding-top: 0px;
   height: 100vh;
   background: #990000;
-  font-family: "Robot Condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #191919;
   background-attachment: fixed; }
 
@@ -228,7 +229,7 @@ div[ng-view].ng-enter-active {
     height: 240px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 10%; }
+    margin-bottom: 5%; }
   #intro .container {
     width: 100%;
     height: 100%;
@@ -236,16 +237,30 @@ div[ng-view].ng-enter-active {
   #intro .apply-btn {
     margin-top: 10%;
     background: none;
-    border: 3px solid #ffffff;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
+    border-radius: 1px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
     -webkit-animation-duration: 3s;
     -webkit-animation-delay: 1s;
     -moz-animation-duration: 3s;
     -moz-animation-delay: 1s;
     animation-duration: 3s;
-    animation-delay: 1s; }
+    animation-delay: 1s;
+    transition: background 400ms ease-in-out;
+    transition: color 450ms ease-in-out;
+    background: #808080; }
+  #intro div.apply-btn:hover {
+    background: rgba(255, 255, 255, 0.7);
+    color: #990000; }
   #intro .intro-bg {
     position: absolute;
     top: 0;
@@ -256,16 +271,15 @@ div[ng-view].ng-enter-active {
     text-align: center;
     color: #fff;
     margin-top: 5%;
-    font-size: 90px;
-    font-family: "Roboto", sans-serif;
     z-index: 99999;
     background: none; }
     #intro .intro-text h1 {
       font-variant: small-caps;
-      font-weight: 600;
+      font-weight: 400;
       -webkit-animation-duration: 3s;
       -moz-animation-duration: 3s;
-      animation-duration: 3s; }
+      animation-duration: 3s;
+      font-size: 40px; }
 
 .billboard {
   font-size: 20px;
@@ -294,9 +308,13 @@ div[ng-view].ng-enter-active {
 
 .section-title {
   font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+  color: #262d35;
   text-align: center;
   margin-bottom: 70px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  font-weight: 400;
+  font-style: normal; }
 
 .about-billboard {
   margin-right: auto;
@@ -452,14 +470,24 @@ div[ng-view].ng-enter-active {
   text-align: center; }
   #team .member-box, #advisory-board .member-box {
     margin-top: 60px; }
+    #team .member-box p, #advisory-board .member-box p {
+      transition: all 300ms ease-in-out;
+      font-size: 16px; }
     #team .member-box a, #advisory-board .member-box a {
       text-decoration: none; }
+  #team .member-box:hover, #advisory-board .member-box:hover {
+    text-decoration: underline; }
+    #team .member-box:hover p, #advisory-board .member-box:hover p {
+      color: #000000; }
   #team .container, #advisory-board .container {
     margin-top: 100px; }
 
 .member-box {
   text-align: center;
   margin-bottom: 120px; }
+
+.member-box .img-responsive:hover {
+  filter: none; }
 
 .member-box .img-responsive {
   margin-right: auto;
@@ -492,7 +520,7 @@ div[ng-view].ng-enter-active {
 
 #presentations {
   margin-top: 0;
-  padding-bottom: 100px; }
+  padding-bottom: 0; }
   #presentations .container {
     margin-top: 100px; }
 
@@ -513,7 +541,8 @@ div[ng-view].ng-enter-active {
 #sponsors {
   background-color: #f4f5f6; }
   #sponsors .section-title {
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    font-family: 'Roboto Condensed', sans-serif; }
 
 .sponsor {
   margin-top: 40px;
@@ -524,10 +553,11 @@ div[ng-view].ng-enter-active {
     margin: 0 auto; }
 
 #contact {
-  color: #ffffff;
-  background-color: linear-gradient(135deg, #990000 24%, #ff3333 75%);
-  background: -moz-linear-gradient(135deg, #e60000 18%, #990000 75%);
+  background: linear-gradient(135deg, #990000 24%, #ff3333 75%);
+  background: -moz-linear-gradient(135deg, #e60000 18%, maroon 75%);
   text-align: center; }
+  #contact * {
+    color: #ffffff; }
   #contact .section-title {
     margin-top: 60px;
     margin-bottom: 70px; }
@@ -547,7 +577,7 @@ div[ng-view].ng-enter-active {
 .social-btn:hover {
   cursor: pointer;
   color: #fefefe;
-  text-decoration: underline; }
+  text-shadow: 0 0 3px white; }
 
 .email {
   font-size: 16px;

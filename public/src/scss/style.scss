@@ -9,10 +9,11 @@ $main-text-color: #191919;
 $secondary-text-color: #090705;
 $nav-text-color: #fff;
 $text-font: 'Roboto', sans-serif;
-$intro-font: 'Robot Condensed', sans-serif;
-$intro-text-size: 90px;
+$intro-font: 'Montserrat', sans-serif;
+$intro-text-size: 40px;
 $section-title-size: 70px;
 $section-title-size-mobile: 50px;
+$section-title-color: darken(#465362, 15%);
 $subtitle-font-size: 20px;
 $img-subtext-size: 20px;
 $subtitle-color: #808080;
@@ -46,6 +47,7 @@ $secondary-section-color: #f4f5f6; // #E6E6E6
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /*
  * Default Styles
@@ -311,7 +313,7 @@ div[ng-view].ng-enter-active {
     width: 240px;
     height: 240px;
     @include center-horiz();
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   .container {
@@ -323,10 +325,20 @@ div[ng-view].ng-enter-active {
   .apply-btn {
     margin-top: 10%;
     background: none;
-    border: 3px solid #ffffff;
-    border-radius: 5px;
-    font-size: $subtitle-font-size;
-    cursor: pointer;
+    // border: 2px solid #ffffff;
+    border-radius: 1px;
+    font-size: $subtitle-font-size * 0.75;
+    font-family: $intro-font;
+    font-weight: 100;
+    letter-spacing: 1px;
+    // cursor: pointer;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
 
     -webkit-animation-duration: 3s;
     -webkit-animation-delay: 1s;
@@ -334,14 +346,20 @@ div[ng-view].ng-enter-active {
      -moz-animation-delay: 1s;
     animation-duration: 3s;
      animation-delay: 1s;
+     transition: background 400ms ease-in-out;
+     transition: color 450ms ease-in-out;
+     background: $subtitle-color;
+  }
 
+  div.apply-btn:hover {
+    background: rgba(255,255,255,0.7);
+    color: $secondary-bg-color;
   }
 
 
   .intro-bg {
-    position:absolute;
+    position: absolute;
     top: 0;
-    // bottom: 0;
     left: 0;
     height: 100%;
     width: 100%;
@@ -351,7 +369,7 @@ div[ng-view].ng-enter-active {
 
     h1 {
       font-variant: small-caps;
-      font-weight: 600;
+      font-weight: 400;
 
       -webkit-animation-duration: 3s;
       // -webkit-animation-delay: 1s;
@@ -360,13 +378,15 @@ div[ng-view].ng-enter-active {
       animation-duration: 3s;
       // animation-delay: 1s;
 
+      font-size: $intro-text-size;
+
     }
 
     text-align: center;
     color: $main-bg-color;
     margin-top: 5%;
-    font-size: $intro-text-size;
-    font-family: $text-font;
+
+    // font-family: $text-font;
     z-index: 99999;
     background: none;
 
@@ -421,9 +441,13 @@ div[ng-view].ng-enter-active {
 
 .section-title {
   font-size: $section-title-size;
+  font-family: $intro-font;
+  color: $section-title-color;
   text-align: center;
   margin-bottom: 70px;
   margin-top: 40px;
+  font-weight: 400;
+  font-style: normal;
 }
 // select highlight key words
 .about-billboard {
@@ -507,7 +531,6 @@ div[ng-view].ng-enter-active {
 }
 
   .info-appear {
-    // filter: grayscale(100%);
     opacity: 0.0;
     position: absolute;
     background: transparentize(#000000, 0.4);
@@ -638,12 +661,26 @@ div[ng-view].ng-enter-active {
 
 
   .member-box {
+
     margin-top: 60px;
+
+    p {
+      transition: all 300ms ease-in-out;
+      font-size: $subtitle-font-size * .8;
+    }
 
     a {
       text-decoration: none;
     }
   }
+
+  .member-box:hover {
+    text-decoration: underline;
+
+    p {
+      color: #000000;
+  }
+}
 
   .container {
     margin-top: 100px;
@@ -660,6 +697,10 @@ div[ng-view].ng-enter-active {
   // width: $headshot-dimen;
 }
 
+.member-box .img-responsive:hover {
+  filter: none;
+}
+
 .member-box .img-responsive {
   //@include bbrd(blue
   @include center-horiz();
@@ -668,6 +709,10 @@ div[ng-view].ng-enter-active {
   height: $headshot-dimen;
   position: relative;
   margin-bottom: 20px;
+
+  // grayscale
+  // filter: grayscale(1);
+
 
   >p {
     margin-top: 15px;
@@ -705,15 +750,12 @@ div[ng-view].ng-enter-active {
   #presentations {
     margin-top: 0;
 
+    padding-bottom: 0;
+
 
     .container {
       margin-top: 100px;
     }
-
-
-    padding-bottom: 100px;
-
-
   }
 
   .embed-container {
@@ -732,10 +774,6 @@ div[ng-view].ng-enter-active {
     height: 100%;
   }
 
-
-
-
-
 //======== Section - Sponsors ==========\\
 #sponsors {
 
@@ -743,6 +781,7 @@ div[ng-view].ng-enter-active {
 
   .section-title {
     margin-bottom: 70px;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 }
 
@@ -760,11 +799,11 @@ div[ng-view].ng-enter-active {
 //======== Section - Contact ==========\\
 #contact {
 
-  color: #ffffff;
+  * {color: #ffffff;}
 
 
-  background-color: linear-gradient(135deg, $secondary-bg-color 24%, #ff3333 75%);
-  background: -moz-linear-gradient(135deg, #e60000 18%, $secondary-bg-color 75%);
+  background: linear-gradient(135deg, $secondary-bg-color 24%, #ff3333 75%);
+  background: -moz-linear-gradient(135deg, #e60000 18%, darken($secondary-bg-color, 5%) 75%);
 
   //$secondary-section-color;
 
@@ -794,7 +833,7 @@ div[ng-view].ng-enter-active {
 .social-btn:hover {
   cursor: pointer;
   color: darken(#ffffff, 0.2);
-  text-decoration: underline;
+  text-shadow: 0 0 3px rgba(255,255,255,1);
 }
 
 .email {
