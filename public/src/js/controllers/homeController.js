@@ -91,7 +91,7 @@
       $scope.about = {};
       $scope.about.title = "About";
       $scope.about.summary1 = "Northeastern University’s Collegiate Alternative Investments Summit (NUCAIS) is a student-run conference that offers students from universities across the United States an opportunity to engage in topics that pertain to the private equity, venture capital, and hedge fund industries.";
-      $scope.about.summary2 = "With a focus on educational enrichment and relationship development, NUCAIS aims to better equip future business leaders with both enhanced knowledge of alternative investments and a robust network of top industry professionals.";
+      $scope.about.summary2 = "With a focus on educational enrichment and relationship development, NUCAIS aims to better equip future business leaders with both an enhanced knowledge of alternative investments and a robust network of top industry professionals.";
 
       $scope.speakers = [
         {
@@ -217,6 +217,11 @@
             name: "Daniel Arvidsson",
             img: "/public/assets/img/team/danielarvidson.jpg",
             linkedin: "https://www.linkedin.com/pub/daniel-arvidsson/91/3ba/81b"
+          },
+          {
+            name: "Amy Zhou",
+            img: "/public/assets/img/team/amyzhou.jpg",
+            linkedin: "https://www.linkedin.com/in/amywzhou"
           },
           {
             name: "Harrison Balder",
