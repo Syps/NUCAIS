@@ -523,6 +523,13 @@ div[ng-view].ng-enter-active {
   padding-bottom: 0; }
   #presentations .container {
     margin-top: 100px; }
+  #presentations .row > div {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: none;
+    margin: auto; }
 
 .embed-container {
   position: relative;

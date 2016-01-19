@@ -756,6 +756,16 @@ div[ng-view].ng-enter-active {
     .container {
       margin-top: 100px;
     }
+
+    .row > div {
+      // border: 10px solid red;
+      padding-left:0;
+      padding-right:0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      float:none;
+      margin:auto
+    }
   }
 
   .embed-container {
