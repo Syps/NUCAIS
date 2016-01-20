@@ -178,7 +178,7 @@
           },
           {
             question: "Where is it?",
-            answer: "30 West Village F"
+            answer: "20 West Village F"
           },
           {
             question: "What's the cost?",
