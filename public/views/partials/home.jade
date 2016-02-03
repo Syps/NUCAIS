@@ -14,26 +14,19 @@ section#intro
       COLLEGE ALTERNATIVE Investment Summit 2016
   div.container.center
     div.jumbotron.intro-text
+      h1.animated.fadeIn 2016
+      div.line-divider.animated.fadeIn
+      h2.animated.fadeIn COLLEGIATE ALTERNATIVE INVESTMENT SUMMIT
       img.nu-seal(src="/public/assets/img/nu-seal.png")
-      h1.animated.fadeIn 2016 Collegiate Alternative Investment Summit
-      div.apply-btn.animated.fadeIn COMING SOON
+      // div.apply-btn.animated.fadeIn COMING SOON
   //img.intro-bg
 
 section#about
   h1.section-title.animated(ng-class="{slideInLeft:anAbout, 'not-visible':!anAbout}") {{about.title}}
+  h2.sub-highlight LISTEN . LEARN . NETWORK
+  div.line-divider
   div.about-intro
-    //
-      this(or some) of this text should eventually fade in on scroll
-    div.container.animated(ng-class="{slideInRight:anAboutPoints, 'not-visible':!anAboutPoints}")
-      div.row
-        div.col-md-4.about-point
-          div.about-number Listen
-
-        div.col-md-4.about-point
-          div.about-number Learn
-
-        div.col-md-4.about-point
-          div.about-number Network
+      img.marquee(src="/public/assets/img/conf_marquee.png")
 
   div.container.center.billboard
     div.row
@@ -44,8 +37,10 @@ section#about
 
 section#speakers
   h1.section-title.animated(ng-class="{slideInLeft:anSpeakers, 'not-visible':!anSpeakers}") Past Speakers
-  p.subtitle Check back for this year's speakers.
-    | They will be posted here as they become known.
+  //
+    p.subtitle Check back for this year's speakers.
+      | They will be posted here as they become known.
+  div.line-divider
   div.container.animated(ng-class="{slideInRight:anSpeakerPics, 'not-visible':!anSpeakerPics}")
     div.row
       div.col-md-4.member-box(ng-repeat="speaker in speakers")
@@ -106,6 +101,7 @@ section#presentations
 
 section#team
   h1.section-title.animated(ng-class="{slideInLeft:anTeam, 'not-visible':!anTeam}") Management Committee
+  div.line-divider
   div.container.animated(ng-class="{slideInRight:anTeamPics, 'not-visible':!anTeamPics}")
     div.row.row-centered
       div.col-md-4.member-box.col-centered(ng-repeat="member in team")
@@ -120,6 +116,7 @@ section#team
 
 section#advisory-board
   h1.section-title.animated(ng-class="{slideInLeft:anAdvisory, 'not-visible':!anAdvisory}") Advisory Board
+  div.line-divider
   div.container.animated(ng-class="{slideInRight:anAdvisoryPics, 'not-visible':!anAdvisoryPics}")
     div.row
       div.col-md-4.member-box(ng-repeat="member in advisoryBoard")
@@ -136,8 +133,8 @@ section#advisory-board
 section#contact
   h1.section-title.animated Get In Touch
   div.contact-blurb
-    p.subtitle Questions? Want to get involved?
-    p.subtitle Please feel free to connect!
+    //p.subtitle Questions?   Want to get involved?   Please feel free to connect!
+    div.line-divider.white
     //
       div.email
         a.social-btn(href="mailto:contactnucais@gmail.com") contactnucais@gmail.com

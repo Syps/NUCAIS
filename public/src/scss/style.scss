@@ -8,9 +8,12 @@ $nav-bg-color: #808080;
 $main-text-color: #191919;
 $secondary-text-color: #090705;
 $nav-text-color: #fff;
+$light-grey: #e0e0d1;
+$orange: #ff2800;
 $text-font: 'Roboto', sans-serif;
+$text-font-thin: 'Roboto Condensed', sans-serif;
 $intro-font: 'Montserrat', sans-serif;
-$intro-text-size: 40px;
+$intro-text-size: 120px;
 $section-title-size: 50px;
 $section-title-size-mobile: 40px;
 $section-title-color: darken(#465362, 15%);
@@ -45,7 +48,7 @@ $secondary-section-color: #f4f5f6; // #E6E6E6
 /*
  * Fonts
  */
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
@@ -69,6 +72,27 @@ section {
       margin-left: 0;
       padding:0;
     }
+}
+
+.line-divider {
+  height: 1px;
+  width: 75%;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-bottom: 50px;
+  background-color: $light-grey;
+}
+
+.orange {
+  background-color: $orange;
+}
+
+.white {
+  width: 15%;
+  background-color: #ffffff;
+  margin-top: 70px
+
 }
 
 /* Bootstrap column centering */
@@ -98,9 +122,23 @@ section {
   font-family: $intro-font;
   color: $main-text-color;
   background-attachment: fixed;
+
+  h1, h2 {
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  .line-divider {
+    width: 140px;
+  }
 }
 
 #about {
+
+  p {
+    font-weight: thin;
+    color: black;
+  }
 
   @include clear-margin();
   @include clear-padding();
@@ -188,9 +226,9 @@ div[ng-view].ng-enter-active {
   background-color: $secondary-bg-color;
   transition: all 500ms ease-in-out;
 
-  box-shadow: 2px 2px 2px #999;
-  -moz-box-shadow: 2px 2px 2px #999;
-  -webkit-box-shadow: 2px 2px 2px #999;
+  box-shadow: 1px 1px 1px #999;
+  -moz-box-shadow: 1px 1px 1px #999;
+  -webkit-box-shadow: 1px 1px 1px #999;
 }
 .nav-top-container {
   @include clear-margin();
@@ -205,7 +243,6 @@ div[ng-view].ng-enter-active {
   left: 0;
   z-index: 100;
   background: transparentize(rgba(0,0,0,0.0), 0.0);
-
 }
 .logo {
   @include clear-padding();
@@ -241,7 +278,7 @@ div[ng-view].ng-enter-active {
 .burger-icon:before,
 .burger-icon:after {
   cursor: pointer;
-  border-radius: 1px;
+  border-radius: 0px;
   height: 4px;
   width: 28px;
   background: white;
@@ -310,20 +347,21 @@ div[ng-view].ng-enter-active {
   // background-color: $secondary-bg-color;
 
   .nu-seal {
+    margin-top: 60px;
     width: 240px;
     height: 240px;
     @include center-horiz();
-    margin-bottom: 5%;
   }
 
   .container {
     width: 100%;
     height: 100%;
-    background-color: rgba(55,0,0,0.9);
+    background-color: rgba(33,33,33,0.9); //rgba(55,0,0,0.9);
   }
 
   .apply-btn {
-    margin-top: 10%;
+    margin-top: 90px;
+    margin-bottom: 60px;
     background: none;
     // border: 2px solid #ffffff;
     border-radius: 1px;
@@ -367,9 +405,13 @@ div[ng-view].ng-enter-active {
 
   .intro-text {
 
+    padding:0px;
+
     h1 {
-      font-variant: small-caps;
+      font-family: $intro-font;
       font-weight: 400;
+      margin-bottom: 20px;
+      color: $orange;
 
       -webkit-animation-duration: 3s;
       // -webkit-animation-delay: 1s;
@@ -395,7 +437,9 @@ div[ng-view].ng-enter-active {
 
 .billboard {
   font-size: $subtitle-font-size;
+  font-weight: 100;
   color: $subtitle-color;
+
   //
   // .brief {
   //   font-size: $subtitle-font-size*.75;
@@ -403,7 +447,28 @@ div[ng-view].ng-enter-active {
 }
 
 //======== Section - About ==========\\
+
+.marquee {
+  width: 60%;
+  height: 240px;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+.sub-highlight {
+  font-family: $intro-font;
+  color: $orange;
+  font-size: $subtitle-font-size * .8;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
 #about {
+
+  .section-title {
+    font-weight: 100;
+    margin-bottom: 25px;
+  }
 
   p {
     margin-bottom: 15px;
@@ -441,12 +506,12 @@ div[ng-view].ng-enter-active {
 
 .section-title {
   font-size: $section-title-size;
-  font-family: $intro-font;
+  font-family: $text-font;
   color: $section-title-color;
+  font-weight: 100;
   text-align: center;
   margin-bottom: 70px;
   margin-top: 40px;
-  font-weight: 400;
   font-style: normal;
 }
 // select highlight key words
@@ -481,7 +546,21 @@ div[ng-view].ng-enter-active {
 
 //======== Section - Past Speakers ==========\\
 
+#team, #advisory-board {
+    div.container {
+      margin-top: 25px;
+    }
+
+    .line-divider {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+}
+
 #speakers, #team, #advisory-board {
+
+
+
 
   .member-name {
     color: black;
@@ -781,7 +860,6 @@ div[ng-view].ng-enter-active {
 
   .section-title {
     margin-bottom: 70px;
-    font-family: 'Roboto Condensed', sans-serif;
   }
 }
 
@@ -799,7 +877,13 @@ div[ng-view].ng-enter-active {
 //======== Section - Contact ==========\\
 #contact {
 
+  padding-bottom: 50px;
+
   * {color: #ffffff;}
+
+  p {
+    font-weight: 100;
+  }
 
 
   background: linear-gradient(135deg, $secondary-bg-color 24%, #ff3333 75%);
@@ -810,8 +894,8 @@ div[ng-view].ng-enter-active {
   text-align: center;
 
   .section-title {
-    margin-top: 60px;
-    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -897,6 +981,7 @@ div[ng-view].ng-enter-active {
 
   #intro {
     .nu-seal {
+      margin-bottom: 0px;
       margin-top:10px;
       height: 140px;
       width:140px;
