@@ -37,6 +37,9 @@ section {
   margin-bottom: 50px;
   background-color: #e0e0d1; }
 
+.small-dot {
+  font-size: 13px; }
+
 .orange {
   background-color: #ff2800; }
 
