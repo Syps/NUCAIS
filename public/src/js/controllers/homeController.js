@@ -175,12 +175,16 @@
             answer: "You don't have to study finance or even be a Northeastern student to attend. CAIS welcomes anyone interested in learning more about alternative investments, regardless of age or discipline."
           },
           {
+            question: "When is it?",
+            answer: "April 1-2, 2016"
+          },
+          {
             question: "Where is it?",
             answer: "30 West Village F"
           },
           {
             question: "What's the cost?",
-            answer: "The registration fee is $30. This grants you access to both the networking night and the speaker conference the following day."
+            answer: "The registration fee is $30. This grants you access to both the networking night and the speaker conference the following day as well as breakfast and lunch the day of the speaker conference."
           },
           {
             question: "What's the Friday networking event about?",
