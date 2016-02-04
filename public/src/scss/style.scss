@@ -124,7 +124,7 @@ section {
   height: 100vh;
   background: $secondary-bg-color;
   font-family: $intro-font;
-  color: $main-text-color;
+  color:. $main-text-color;
   background-attachment: fixed;
 
   h1, h2 {
@@ -487,6 +487,7 @@ div[ng-view].ng-enter-active {
 
   .brief {
     margin-bottom: 30px;
+  
   }
 
 }

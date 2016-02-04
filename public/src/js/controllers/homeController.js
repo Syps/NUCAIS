@@ -90,8 +90,8 @@
 
       $scope.about = {};
       $scope.about.title = "About";
-      $scope.about.summary1 = "Northeastern University’s Collegiate Alternative Investments Summit (NUCAIS) is a student-run conference that offers students from universities across the United States an opportunity to engage in topics that pertain to the private equity, venture capital, and hedge fund industries.";
-      $scope.about.summary2 = "With a focus on educational enrichment and relationship development, NUCAIS aims to better equip future business leaders with both enhanced knowledge of alternative investments and a robust network of top industry professionals.";
+      $scope.about.summary1 = "CAIS is a student-run conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space.";
+      $scope.about.summary2 = "CAIS bridges the gap between classroom education and professional application with respect to Hedge Funds, Private Equity, Venture Capital, and Real Assets.";
 
       $scope.speakers = [
         {
@@ -180,7 +180,7 @@
           },
           {
             question: "Where is it?",
-            answer: "30 West Village F"
+            answer: "20 West Village F"
           },
           {
             question: "What's the cost?",
@@ -202,11 +202,11 @@
 
         $scope.presentations = [
           {
-            url: $sce.trustAsResourceUrl("https://www.youtube.com/embed/byoSuIUhjsg"),
+            url: $sce.trustAsResourceUrl("https://www.youtube.com/embed/c6OCuycMmRg"),
             description: ""
           },
           {
-            url: $sce.trustAsResourceUrl("https://www.youtube.com/embed/hdFzfXmDoZE"),
+            url: $sce.trustAsResourceUrl("https://www.youtube.com/embed/uvFvArULZKY"),
             description: ""
           }
         ];
@@ -246,11 +246,6 @@
             name: "Nick Sypteras",
             img: "/public/assets/img/team/nicksypteras.jpg",
             linkedin: "https://www.linkedin.com/pub/nicholas-sypteras/69/4a9/a2"
-          },
-          {
-            name: "Omar Fahmy",
-            img: "/public/assets/img/team/omarfahmy.jpg",
-            linkedin: "https://www.linkedin.com/in/omarfahmy"
           },
           {
             name: "Sam Marley",
