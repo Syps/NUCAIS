@@ -237,10 +237,11 @@ div[ng-view].ng-enter-active {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  text-align: left;
+  text-align: center;
   padding: 15px 0px 15px 35px;
   color: #fff;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-weight: 300; }
 
 .menu-item:active {
   background: #4d4d4d; }

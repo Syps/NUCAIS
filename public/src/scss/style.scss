@@ -228,12 +228,17 @@ div[ng-view].ng-enter-active {
 
 .scroll-nav {
   background-color: $secondary-bg-color;
+  // opacity: 0.4;
   transition: all 500ms ease-in-out;
 
   box-shadow: 1px 1px 1px #999;
   -moz-box-shadow: 1px 1px 1px #999;
   -webkit-box-shadow: 1px 1px 1px #999;
 }
+
+// .scroll-nav:hover {
+//   opacity: 1;
+// }
 .nav-top-container {
   @include clear-margin();
   width: 100%;
@@ -328,10 +333,11 @@ div[ng-view].ng-enter-active {
   display: block;
   @include center-horiz();
   width: 100%;
-  text-align: left;
+  text-align: center;
   padding: 15px 0px 15px 35px;
   color: $nav-text-color;
   font-size: 1.5em;
+  font-weight: 300;
 }
 .menu-item:active {
   background: darken( $nav-bg-color, 20%);

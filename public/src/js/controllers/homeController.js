@@ -214,6 +214,11 @@
             linkedin: "https://www.linkedin.com/in/rohanvenkatesh"
           },
           {
+            name: "Amy Zhou",
+            img: "/public/assets/img/team/amyzhou.jpg",
+            linkedin: "https://www.linkedin.com/in/amywzhou"
+          },
+          {
             name: "Daniel Arvidsson",
             img: "/public/assets/img/team/danielarvidson.jpg",
             linkedin: "https://www.linkedin.com/pub/daniel-arvidsson/91/3ba/81b"
