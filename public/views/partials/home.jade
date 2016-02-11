@@ -8,18 +8,13 @@ nav.navbar(ng-class="{'scroll-nav':isScrolling}")
 div.overlay(ng-show="active")
 
 section#intro
-  // to add:
-    drop down text and store bottom: listen. learn. network.
-    come in from top: Northeastern University presents
-      COLLEGE ALTERNATIVE Investment Summit 2016
   div.container.center
     div.jumbotron.intro-text
       h1.animated.fadeIn 2016
       div.line-divider.animated.fadeIn
       h2.animated.fadeIn COLLEGIATE ALTERNATIVE INVESTMENT SUMMIT
       img.nu-seal(src="/public/assets/img/nu-seal.png")
-      // div.apply-btn.animated.fadeIn COMING SOON
-  //img.intro-bg
+      a.apply-btn.animated.fadeIn(target="_blank", href="https://commerce.cashnet.com/SFDMSB2016") REGISTER
 
 section#about
   h1.section-title.animated(ng-class="{slideInLeft:anAbout, 'not-visible':!anAbout}") {{about.title}}
@@ -36,24 +31,17 @@ section#about
   div.clear
 
 section#speakers
-  h1.section-title.animated(ng-class="{slideInLeft:anSpeakers, 'not-visible':!anSpeakers}") Past Speakers
-  //
-    p.subtitle Check back for this year's speakers.
-      | They will be posted here as they become known.
+  h1.section-title.animated(ng-class="{slideInLeft:anSpeakers, 'not-visible':!anSpeakers}") 2016 Speakers
   div.line-divider
   div.container.animated(ng-class="{slideInRight:anSpeakerPics, 'not-visible':!anSpeakerPics}")
-    div.row
-      div.col-md-4.member-box(ng-repeat="speaker in speakers")
+    div.row.row-centered
+      div.col-md-4.col-centered.member-box(ng-repeat="speaker in speakers")
         div.img-responsive
           img(ng-src="{{speaker.img}}")
-          div.info-appear
-            p.speaker {{speaker.year}}
-            //p {{speaker.company}}
-            //p {{speaker.title}}
-            p.topic {{speaker.topic}}
-        p.member-name {{speaker.name}}
-        p.ital {{speaker.title + ' at '}}
-        p.ital {{speaker.company}}
+          p.member-name {{speaker.name}}
+        //
+          p.ital {{speaker.title + ' at '}}
+          p.ital {{speaker.company}}
 
 section#faq
   h1.section-title.animated(ng-class="{slideInLeft:anFaq, 'not-visible':!anFaq}") FAQ

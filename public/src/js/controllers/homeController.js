@@ -37,7 +37,7 @@
     });
 
 
-
+    $scope.registrationLink = "https://commerce.cashnet.com/SFDMSB2016";
 
     $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
     $scope.marker.setMap($scope.map);
@@ -95,77 +95,85 @@
 
       $scope.speakers = [
         {
-          name: "Adam Berger",
-          img: "/public/assets/img/speakers/adam-berger-150x150.png",
-          topic: "Asset Allocation",
-          year: "2014",
-          title: "VP & Asset Allocation Strategist",
-          company: "Wellington Management"
+          name: "Bruce Martin",
+          img: "/public/assets/img/speakers/headshots/BruceMartin.jpg",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
         },
 
         {
-          name: "Akram Yosri",
-          img: "/public/assets/img/speakers/AkramYosri.jpg",
-          topic: "Leapthrough Investing in Frontier Markets",
-          year: "2015",
-          title: "Managing Partner",
-          company: "3i Capital Group"
+          name: "Christina Qi",
+          img: "/public/assets/img/speakers/headshots/ChristinaQi.png",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
         },
         {
-          name: "Jeff McCarthy",
-          img: "/public/assets/img/speakers/jeff-mccarthy.jpg",
-          topic: "The Venture Capital Industry",
-          year: "2015",
-          title: "Partner",
-          company: "North Bridge Venture Partners"
+          name: "James Goodman",
+          img: "/public/assets/img/speakers/headshots/JamesGoodman.jpg",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
         },
         {
-          name: "Keith Black",
-          img: "/public/assets/img/speakers/keith-black.jpg",
-          topic: "Harvard, Yale and Investments: A Post-Crisis View",
-          year: "2015",
-          title: "Managing Director of Curriculum and Exams",
-          company: "CAIA Association"
+          name: "Karthik Krishnan",
+          img: "/public/assets/img/speakers/headshots/KarthikKrishnan.jpg",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
         },
         {
-          name: "Graham Brooks",
-          img: "/public/assets/img/speakers/GrahamBrooks.jpg",
-          topic: "How to get a Job in Venture Capital",
-          year: "2015",
-          title: "Partner",
-          company: ".406 Ventures"
+          name: "Michael Gries",
+          img: "/public/assets/img/speakers/headshots/MichaelGries.png",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
         },
         {
-          name: "Stephen Pagliuca",
-          img: "/public/assets/img/speakers/pagliuca.jpg",
-          topic: "Global Outlook of Private Equity and Venture Capital",
-          year: "2014",
-          title: "Managing Director/Co-owner",
-          company: "Bain Capital/Boston Celtics"
+          name: "Nicholas Sammut",
+          img: "/public/assets/img/speakers/headshots/NicholasSammut.jpg",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
         },
         {
-          name: "Rick Lake",
-          img: "/public/assets/img/speakers/ricklake.jpg",
-          topic: "Alternative Strategies in Mutual Fund Structures",
-          year: "2014",
-          title: "Chairman",
-          company: "Lake Partners"
+          name: "Ryan Cotton",
+          img: "/public/assets/img/speakers/headshots/RyanCotton.jpg",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
         },
         {
-          name: "Theodore Giletti",
-          img: "/public/assets/img/speakers/giletti.png",
-          topic: "Investment Opportunities in Emerging Markets",
-          year: "2013",
-          title: "Director",
-          company: "Angola Capital Partners"
+          name: "Sam Klar",
+          img: "/public/assets/img/speakers/headshots/SamKlar.jpg",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
         },
         {
-          name: "James Swanson",
-          img: "/public/assets/img/speakers/jswanson.png",
-          topic: "The Sustainable Cycle",
-          year: "2013",
-          title: "Chief Investment Stategist",
-          company: "MFS Investment Management"
+          name: "Spencer Murray",
+          img: "/public/assets/img/speakers/headshots/SpencerMurray.jpg",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
+        },
+        {
+          name: "Tom Andrews",
+          img: "/public/assets/img/speakers/headshots/TomAndrews.jpeg",
+          topic: "",
+          year: "",
+          title: "",
+          company: ""
         }
         ];
 
