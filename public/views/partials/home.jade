@@ -82,8 +82,8 @@ section#presentations
   p.subtitle  From our 2013 and 2014 Conferences
 
   div.container.animated(ng-class="{slideInRight:anVids, 'not-visible':!anVids}")
-    div.row
-      div.col-md-6.member-box(ng-repeat="vid in presentations")
+    div.row.row-centered
+      div.col-md-6.col-centered.member-box(ng-repeat="vid in presentations")
         div.embed-container
           iframe(width="640" height="360" ng-src="{{vid.url}}" frameborder="0" allowfullscreen)
 

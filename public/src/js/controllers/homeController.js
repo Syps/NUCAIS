@@ -102,7 +102,6 @@
           title: "",
           company: ""
         },
-
         {
           name: "Christina Qi",
           img: "/public/assets/img/speakers/headshots/ChristinaQi.png",
@@ -192,7 +191,7 @@
           },
           {
             question: "What's the cost?",
-            answer: "The registration fee is $30. This grants you access to both the networking night and the speaker conference the following day as well as breakfast and lunch the day of the speaker conference."
+            answer: "Early bird registration is $20 until March 18, after which time the registration fee is $30. This grants you access to both the networking night and the speaker conference the following day as well as breakfast and lunch the day of the speaker conference."
           },
           {
             question: "What's the Friday networking event about?",
@@ -212,6 +211,10 @@
           {
             url: $sce.trustAsResourceUrl("https://www.youtube.com/embed/c6OCuycMmRg"),
             description: ""
+          },
+          {
+            url: $sce.trustAsResourceUrl("https://www.youtube.com/embed/byoSuIUhjsg"),
+            description: "Pagliuca"
           },
           {
             url: $sce.trustAsResourceUrl("https://www.youtube.com/embed/uvFvArULZKY"),
@@ -239,6 +242,16 @@
             name: "Harrison Balder",
             img: "/public/assets/img/team/harrisonbalder.jpg",
             linkedin: "https://www.linkedin.com/pub/harrison-balder/b0/890/b10"
+          },
+          {
+            name: "Mark Garbin",
+            img: "/public/assets/img/team/markgarbin.jpg",
+            linkedin: "https://www.linkedin.com/in/markkgarbin"
+          },
+          {
+            name: "Lauren Tawfik",
+            img: "/public/assets/img/team/laurentawfik.jpg",
+            linkedin: "https://www.linkedin.com/in/lauren-tawfik-a93a48111?authType=name&authToken=jiE_&trk=prof-sb-browse_map-name"
           },
           {
             name: "Jake Fulton",
