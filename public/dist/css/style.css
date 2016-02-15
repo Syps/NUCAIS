@@ -28,6 +28,9 @@ section {
     margin-left: 0;
     padding: 0; }
 
+td {
+  white-space: pre; }
+
 .line-divider {
   height: 1px;
   width: 75%;
@@ -41,7 +44,7 @@ section {
   font-size: 13px; }
 
 .orange {
-  background-color: #ff2800; }
+  background-color: #e62200; }
 
 .white {
   width: 15%;
@@ -72,6 +75,9 @@ section {
   #intro h1, #intro h2 {
     margin-left: auto;
     margin-right: auto; }
+  #intro .bar-separator {
+    width: 200px;
+    text-align: center; }
   #intro .line-divider {
     width: 140px; }
 
@@ -255,7 +261,7 @@ div[ng-view].ng-enter-active {
   background-size: cover; }
   #intro .nu-seal {
     display: block;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 30vh;
     height: 30vh;
     margin-right: auto;
@@ -312,11 +318,11 @@ div[ng-view].ng-enter-active {
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
       margin-bottom: 20px;
-      color: #ff2800;
+      color: #e62200;
       -webkit-animation-duration: 3s;
       -moz-animation-duration: 3s;
       animation-duration: 3s;
-      font-size: 100px; }
+      font-size: 80px; }
 
 .billboard {
   font-size: 20px;
@@ -324,14 +330,12 @@ div[ng-view].ng-enter-active {
   color: #808080; }
 
 .marquee {
-  width: 60%;
   height: 240px;
-  padding: 5px;
   margin-bottom: 50px; }
 
 .sub-highlight {
   font-family: "Montserrat", sans-serif;
-  color: #ff2800;
+  color: #e62200;
   font-size: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -405,19 +409,25 @@ div[ng-view].ng-enter-active {
   margin-top: 0px;
   margin-bottom: 0px; }
 
-#speakers .member-name, #team .member-name, #advisory-board .member-name {
+#team .member-name, #advisory-board .member-name {
   color: black;
   font-size: 16px; }
 
-#speakers p, #team p, #advisory-board p {
+#team p, #advisory-board p {
   font-size: 20px;
   color: #808080;
   margin-bottom: 0px; }
 
-#speakers .speaker, #team .speaker, #advisory-board .speaker {
+#team .ital, #advisory-board .ital {
+  margin-top: 1px;
+  font-style: italic;
+  font-size: 10px;
+  color: #808080; }
+
+#team .speaker, #advisory-board .speaker {
   color: white; }
 
-#speakers .topic, #team .topic, #advisory-board .topic {
+#team .topic, #advisory-board .topic {
   font-size: 14px;
   color: white;
   padding: 0% 10% 0% 10%; }
@@ -427,10 +437,48 @@ div[ng-view].ng-enter-active {
   margin-top: 0px; }
 
 #speakers {
+  /* debug */
   background-color: #f4f5f6; }
-  #speakers .ital {
+  #speakers .speaker-box {
+    /* debug */
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%; }
+    #speakers .speaker-box .speaker-img {
+      vertical-align: top;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 210px;
+      height: 210px; }
+      #speakers .speaker-box .speaker-img .img-dummy {
+        margin-top: 70%; }
+      #speakers .speaker-box .speaker-img img {
+        border-radius: 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0%; }
+    #speakers .speaker-box .speaker-info {
+      padding-left: 5%; }
+    #speakers .speaker-box p {
+      font-weight: 200;
+      color: #272727;
+      letter-spacing: 1px;
+      font-family: "Roboto", sans-serif; }
+    #speakers .speaker-box .speaker-bio {
+      font-size: 16px;
+      text-align: left; }
+  #speakers .member-name {
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
-    font-size: 14px; }
+    color: #990000; }
+  #speakers .ital {
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    text-decoration: none; }
   #speakers .container {
     margin-top: 75px; }
 
@@ -475,6 +523,15 @@ div[ng-view].ng-enter-active {
 .faq-div {
   margin-right: auto;
   margin-left: auto; }
+
+#schedule {
+  padding-bottom: 50px;
+  font-family: "Roboto", sans-serif; }
+  #schedule h2 {
+    margin-bottom: 25px;
+    font-family: "Montserrat", sans-serif; }
+  #schedule .schedule-table {
+    margin-bottom: 25px; }
 
 #faq {
   text-align: center;
@@ -532,14 +589,15 @@ div[ng-view].ng-enter-active {
 #team, #advisory-board {
   text-align: center; }
   #team .member-box, #advisory-board .member-box {
-    margin-top: 60px; }
+    margin-top: 40px;
+    vertical-align: top; }
     #team .member-box p, #advisory-board .member-box p {
       transition: all 300ms ease-in-out;
       font-size: 16px; }
     #team .member-box a, #advisory-board .member-box a {
       text-decoration: none; }
   #team .member-box:hover, #advisory-board .member-box:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
     #team .member-box:hover p, #advisory-board .member-box:hover p {
       color: #000000; }
   #team .container, #advisory-board .container {
@@ -547,7 +605,7 @@ div[ng-view].ng-enter-active {
 
 .member-box {
   text-align: center;
-  margin-bottom: 120px; }
+  margin-bottom: 60px; }
 
 .member-box .img-responsive:hover {
   filter: none; }
@@ -659,22 +717,52 @@ div[ng-view].ng-enter-active {
 #location {
   margin-bottom: 0;
   background-color: #f4f5f6; }
+  #location h2 {
+    font-size: 20px; }
+  #location .location-text-holder {
+    margin: 0 auto;
+    width: 60%; }
   #location #map {
     height: 420px;
     width: 600px;
     margin: 0 auto; }
-  #location #location-text {
+  #location .location-text {
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-    #location #location-text p {
+    #location .location-text p {
       color: #191919;
       font-size: 16px; }
-    #location #location-text .ital {
+    #location .location-text .ital {
       font-style: italic;
       font-size: 14px;
       color: #808080; }
+
+@media (min-width: 991px) {
+  .marquee {
+    width: 60%;
+    padding: 5px; }
+  .speaker-box {
+    margin-bottom: 50px; }
+  .speaker-info {
+    width: 70%; }
+  .speaker-bio {
+    text-align: left; } }
+
+@media (max-width: 990px) {
+  .marquee {
+    width: 100%;
+    padding: 5px 0px;
+    background-attachment: fixed; }
+  #speakers .speaker-box {
+    margin-bottom: 50px; }
+  #speakers .speaker-info {
+    width: 100%; }
+    #speakers .speaker-info h2, #speakers .speaker-info h3 {
+      text-align: center; }
+    #speakers .speaker-info .speaker-bio {
+      text-align: center; } }
 
 @media (max-width: 770px) {
   section h1.section-title {

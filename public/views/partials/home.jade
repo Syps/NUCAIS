@@ -10,10 +10,11 @@ div.overlay(ng-show="active")
 section#intro
   div.container.center
     div.jumbotron.intro-text
-      h1.animated.fadeIn 2016
-      div.line-divider.animated.fadeIn
+      h1.intro-year.animated.fadeIn 2016
       h2.animated.fadeIn COLLEGIATE ALTERNATIVE INVESTMENT SUMMIT
+      div.line-divider.animated.fadeIn
       img.nu-seal(src="/public/assets/img/nu-seal.png")
+      h2.animated.fadeIn APRIL 1 - 2
       a.apply-btn.animated.fadeIn(target="_blank", href="https://commerce.cashnet.com/SFDMSB2016") REGISTER
 
 section#about
@@ -34,18 +35,59 @@ section#speakers
   h1.section-title.animated(ng-class="{slideInLeft:anSpeakers, 'not-visible':!anSpeakers}") 2016 Speakers
   div.line-divider
   div.container.animated(ng-class="{slideInRight:anSpeakerPics, 'not-visible':!anSpeakerPics}")
-    div.row.row-centered
-      div.col-md-4.col-centered.member-box(ng-repeat="speaker in speakers")
-        div.img-responsive
+    div.row.speaker-box(ng-repeat="speaker in speakers")
+        div.speaker-img.col-md-3
           img(ng-src="{{speaker.img}}")
-          p.member-name {{speaker.name}}
-        //
-          p.ital {{speaker.title + ' at '}}
-          p.ital {{speaker.company}}
+
+        div.speaker-info.col-md-9
+          h2.member-name {{speaker.name}}
+          h3.ital {{speaker.title + ' at ' + speaker.company}}
+          p.speaker-bio {{speaker.bio}}
+          p.speaker-bio {{speaker.bioTwo}}
+          p.speaker-bio {{speaker.bioThree}}
+
+section#schedule
+  h1.section-title.animated(ng-class="{slideInLeft:anSchedule, 'not-visible':!anSchedule}") Schedule
+  div.line-divider
+  div.container.animated(ng-class="{fadeInUp:anScheduleChart, 'not-visible':!anScheduleChart}")
+    h2 Friday April 1, 6:30 PM - 9 PM
+    div.table-responsive
+      table.table.schedule-table.table-condensed
+        thead
+          tr(ng-repeat="row in schedule.friday")
+            td {{row.time}}
+            td {{row.activity}}
+            td {{row.speaker}}
+
+    h2 Saturday April 2, 9 AM - 4 PM
+    div.table-responsive
+      table.table.table-condensed.schedule-table
+        thead
+          tr(ng-repeat="row in schedule.saturday")
+            td {{row.time}}
+            td {{row.activity}}
+            td {{row.speaker}}
+
+
+section#location
+  h1.section-title Location
+  div.container
+    div.row.row-centered
+      div.col-md-12#map.col-centered
+    div.row.row-centered.location-text-holder
+      div.col-md-6.location-text
+        h2 Conference
+        p.ital 20 West Village F
+        p.ital 40A Leon Street
+        p.ital Boston, MA 02115
+      div.col-md-6.location-text
+        h2 Alumni Panel
+        p.ital Alumni Center
+        p.ital 716 Columbus Ave
+        p.ital Boston, MA 02120
 
 section#faq
   h1.section-title.animated(ng-class="{slideInLeft:anFaq, 'not-visible':!anFaq}") FAQ
-
   div.faq-div.animated(ng-class="{slideInRight:anFaqs, 'not-visible':!anFaqs}")
     ul
       li(ng-repeat="faq in faqs")
@@ -55,13 +97,7 @@ section#faq
   div.contact-link-div
     a.contact-link(ng-click="jump('contact')") Don't see your question here?
 
-section#location
-  h1.section-title Location
-  div#map
-  div#location-text
-    p 20 West Village F
-    p.ital 40A Leon Street
-    p.ital Boston, MA 02115
+section#past-speakers
 
 //
   section#sponsors
@@ -92,7 +128,7 @@ section#team
   div.line-divider
   div.container.animated(ng-class="{slideInRight:anTeamPics, 'not-visible':!anTeamPics}")
     div.row.row-centered
-      div.col-md-4.member-box.col-centered(ng-repeat="member in team")
+      div.col-md-3.member-box.col-centered(ng-repeat="member in team")
         a(target="_blank", ng-href="{{member.linkedin}}")
           div.img-responsive
             img(ng-src="{{member.img}}")
@@ -101,13 +137,14 @@ section#team
               //span.img-caption
               //p {{member.info}}
             p {{member.name}}
+            p.ital {{member.title}}
 
 section#advisory-board
   h1.section-title.animated(ng-class="{slideInLeft:anAdvisory, 'not-visible':!anAdvisory}") Advisory Board
   div.line-divider
   div.container.animated(ng-class="{slideInRight:anAdvisoryPics, 'not-visible':!anAdvisoryPics}")
     div.row
-      div.col-md-4.member-box(ng-repeat="member in advisoryBoard")
+      div.col-md-3.col-centered.member-box(ng-repeat="member in advisoryBoard")
         a(target="_blank", ng-href="{{member.linkedin}}")
           div.img-responsive
             img(ng-src="{{member.img}}")

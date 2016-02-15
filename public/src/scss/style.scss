@@ -9,11 +9,11 @@ $main-text-color: #191919;
 $secondary-text-color: #090705;
 $nav-text-color: #fff;
 $light-grey: #e0e0d1;
-$orange: #ff2800;
+$orange: #e62200;
 $text-font: 'Roboto', sans-serif;
 $text-font-thin: 'Roboto Condensed', sans-serif;
 $intro-font: 'Montserrat', sans-serif;
-$intro-text-size: 100px;
+$intro-text-size: 80px;
 $section-title-size: 50px;
 $section-title-size-mobile: 40px;
 $section-title-color: darken(#465362, 15%);
@@ -74,6 +74,10 @@ section {
     }
 }
 
+td {
+  white-space: pre;
+}
+
 .line-divider {
   height: 1px;
   width: 75%;
@@ -118,7 +122,6 @@ section {
 }
 
 
-
 #intro {
   @include clear-margin();
   @include clear-padding();
@@ -132,8 +135,13 @@ section {
   h1, h2 {
     margin-left:auto;
     margin-right: auto;
+
   }
 
+  .bar-separator {
+   width: 200px;
+   text-align: center;
+  }
   .line-divider {
     width: 140px;
   }
@@ -358,7 +366,7 @@ div[ng-view].ng-enter-active {
 
   .nu-seal {
     display: block;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 30vh;
     height: 30vh;
     @include center-horiz();
@@ -368,7 +376,7 @@ div[ng-view].ng-enter-active {
     width: 100%;
     height: 100%;
     background-color: rgba(33,33,33,0.9); //rgba(55,0,0,0.9);
-  } 
+  }
 
   .apply-btn {
     margin-top: 30px;
@@ -423,11 +431,9 @@ div[ng-view].ng-enter-active {
       font-weight: 400;
       margin-bottom: 20px;
       color: $orange;
-
       -webkit-animation-duration: 3s;
       -moz-animation-duration: 3s;
       animation-duration: 3s;
-
       font-size: $intro-text-size;
 
     }
@@ -452,9 +458,7 @@ div[ng-view].ng-enter-active {
 //======== Section - About ==========\\
 
 .marquee {
-  width: 60%;
   height: 240px;
-  padding: 5px;
   margin-bottom: 50px;
 }
 
@@ -548,7 +552,7 @@ div[ng-view].ng-enter-active {
   width:100%;
 }
 
-//======== Section - Past Speakers ==========\\
+//======== Section - Speakers ==========\\
 
 #team, #advisory-board {
     div.container {
@@ -561,10 +565,7 @@ div[ng-view].ng-enter-active {
     }
 }
 
-#speakers, #team, #advisory-board {
-
-
-
+#team, #advisory-board {
 
   .member-name {
     color: black;
@@ -579,6 +580,13 @@ div[ng-view].ng-enter-active {
     font-size: $subtitle-font-size;
     color: $subtitle-color;
     margin-bottom: 0px;
+  }
+
+  .ital {
+    margin-top:1px;
+    font-style: italic;
+    font-size: $subtitle-font-size * .5;
+    color: $subtitle-color;
   }
 
   .speaker {
@@ -601,11 +609,82 @@ div[ng-view].ng-enter-active {
 }
 
 #speakers {
+  /* debug */
+  // border: 1px solid blue;
   background-color: $secondary-section-color;
 
-  .ital {
+  .speaker-box {
+    /* debug */
+    margin-right: auto;
+    margin-left: auto;
+    // border: 1px solid red;
+    width: 90%;
+
+    > * {
+      // border: 1px solid black;
+    }
+
+    .speaker-img {
+      // display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width:210px;
+      height: 210px;
+      // border: 1px solid black;
+
+      .img-dummy {
+        margin-top: 70%;
+      }
+
+      img {
+        border-radius: 50%;
+        position: absolute;
+        // padding: 10%;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        // bottom: 0;
+        left: 0%;
+        // right: 0;
+      }
+
+
+
+    }
+
+    .speaker-info {
+      padding-left: 5%;
+      // width: 70%;
+    }
+
+    p {
+      font-weight: 200;
+      color: darken($subtitle-color, 35%);
+      letter-spacing: 1px;
+      font-family: $text-font;
+    }
+
+    .speaker-bio {
+      font-size: $subtitle-font-size * .8;
+      text-align: left;
+    }
+
+  }
+
+  .member-name {
+    font-family: $text-font;
     font-weight: 100;
-    font-size: $subtitle-font-size * .7;
+    // color: $orange;
+    color: $secondary-bg-color;
+  }
+
+  .ital {
+    margin-bottom: 20px;
+    font-family: $intro-font;
+    font-size: $subtitle-font-size * .75;
+    text-decoration: none;
   }
 
   .container {
@@ -663,6 +742,25 @@ div[ng-view].ng-enter-active {
 
 .faq-div {
   @include center-horiz();
+}
+
+#schedule {
+
+  padding-bottom: 50px;
+
+  font-family: $text-font;
+  h2 {
+    margin-bottom: 25px;
+    font-family: $intro-font;
+  }
+
+  .schedule-table {
+    margin-bottom: 25px;
+  }
+
+
+
+
 }
 
 #faq {
@@ -744,8 +842,9 @@ div[ng-view].ng-enter-active {
 
 
   .member-box {
-
-    margin-top: 60px;
+  // @include bbrd(blue);
+    margin-top: 40px;
+    vertical-align: top;
 
     p {
       transition: all 300ms ease-in-out;
@@ -758,7 +857,7 @@ div[ng-view].ng-enter-active {
   }
 
   .member-box:hover {
-    text-decoration: underline;
+    text-decoration: none;
 
     p {
       color: #000000;
@@ -776,7 +875,7 @@ div[ng-view].ng-enter-active {
    text-align: center;
   // margin-left: auto;
   // margin-right: auto;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
   // width: $headshot-dimen;
 }
 
@@ -785,7 +884,6 @@ div[ng-view].ng-enter-active {
 }
 
 .member-box .img-responsive {
-  //@include bbrd(blue
   @include center-horiz();
   border-radius: 100%;
   width: $headshot-dimen;
@@ -939,8 +1037,16 @@ div[ng-view].ng-enter-active {
 #location {
 
   margin-bottom: 0;
-
   background-color: $secondary-section-color;
+
+  h2 {
+    font-size: $subtitle-font-size;
+  }
+
+  .location-text-holder {
+    margin: 0 auto;
+    width: 60%;
+  }
 
   #map {
     height:420px;
@@ -948,7 +1054,7 @@ div[ng-view].ng-enter-active {
     margin: 0 auto;
   }
 
-  #location-text {
+  .location-text {
     margin-top: 40px;
     @include center-horiz();
     text-align: center;
@@ -966,6 +1072,56 @@ div[ng-view].ng-enter-active {
   }
 }
 
+@media (min-width: 991px) {
+
+  .marquee {
+    width: 60%;
+    padding: 5px;
+  }
+
+
+  .speaker-box {
+    margin-bottom: 50px;
+  }
+  .speaker-info {
+    width: 70%;
+  }
+
+  .speaker-bio {
+    text-align: left;
+  }
+}
+
+@media (max-width: 990px) {
+
+  .marquee {
+    width: 100%;
+    padding: 5px 0px;
+    background-attachment: fixed;
+  }
+
+  #speakers {
+    .speaker-box {
+      // border: 1px solid green;
+      margin-bottom: 50px;
+    }
+
+    .speaker-info {
+      width: 100%;
+      // border: 1px solid yellow;
+
+      h2, h3 {
+          text-align:center;
+      }
+
+      .speaker-bio {
+        text-align: center;
+      }
+    }
+  }
+
+
+}
 //@media screen and (max-size)
 // better mobile
 @media (max-width: 770px) {
@@ -996,6 +1152,8 @@ div[ng-view].ng-enter-active {
     }
 
   }
+
+
 
   #faq {
     h1.section-title {

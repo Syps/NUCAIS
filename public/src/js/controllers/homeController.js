@@ -1,15 +1,7 @@
 (function() {
 
   var app = angular.module('app');
-  //
-  // $scope.map = new google.maps.Map(document.getElementById('map'), init
-  //
-  // function initMap() {
-  //   map = , {
-  //     center: {lat: -34.397, lng: 150.644},
-  //     zoom: 8
-  //   });
-  // }
+
   console.log("homeController");
 
   // create new controller HomeController w/ homeController constructor
@@ -26,24 +18,28 @@
 
       /* Google Maps */
     var mapOptions = {
-      zoom: 17,
+      zoom: 15,
       center: new google.maps.LatLng(42.337358, -71.091847),
       mapTypeId: google.maps.MapTypeId.TERRAIN
     };
 
-    $scope.marker = new google.maps.Marker({
+    $scope.markerConference = new google.maps.Marker({
       position: {lat: 42.337358, lng: -71.091847},
-      title: 'Hello World!'
+      title: 'Speaker Conference'
     });
 
+    $scope.markerNetworking = new google.maps.Marker({
+      position: {lat: 42.337831, lng: -71.085189},
+      title: 'Networking Night'
+    });
+
+    $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    $scope.markerConference.setMap($scope.map);
+    $scope.markerNetworking.setMap($scope.map);
 
     $scope.registrationLink = "https://commerce.cashnet.com/SFDMSB2016";
 
-    $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    $scope.marker.setMap($scope.map);
-
-
-      $scope.menuItems = ['About', 'Speakers', 'FAQ',
+      $scope.menuItems = ['About', 'Speakers', 'Schedule', 'FAQ', 'Location',
       'Selected Presentations', 'Management Committee',
       'Advisory Board', /*'Sponsors',*/ 'Contact'];
 
@@ -95,86 +91,188 @@
 
       $scope.speakers = [
         {
-          name: "Bruce Martin",
-          img: "/public/assets/img/speakers/headshots/BruceMartin.jpg",
+          name: "Ryan Cotton",
+          img: "/public/assets/img/speakers/headshots/RyanCotton.jpg",
           topic: "",
           year: "",
-          title: "",
-          company: ""
-        },
-        {
-          name: "Christina Qi",
-          img: "/public/assets/img/speakers/headshots/ChristinaQi.png",
-          topic: "",
-          year: "",
-          title: "",
-          company: ""
+          title: "Managing Director",
+          company: "Bain Capital",
+          bio: "Ryan Cotton is a Managing Director at Bain Capital, a leading global private investment firm with approximately $80 billion in assets under management.  He has significant experience in private equity investing and currently leads Bain Capital’s North American consumer, travel, leisure and hospitality, and real estate investment efforts.",
+          bioTwo: "Since joining the firm in 2003, Mr. Cotton has been actively involved with and served on the Board of Directors of a wide spectrum of prominent companies in which Bain Capital has made investments. These businesses currently include TOMS, the company that turned the idea of One for One™ into a global movement; Canada Goose, one of the world’s leading manufacturers of extreme weather outerwear; International Market Centers, the world's largest operator of premier showroom space for home furnishings and décor; Sundial Brands, a leading manufacturer of personal care products; and Apple Leisure Group, a leading hospitality company holding a unique niche in the U.S. travel industry. Mr. Cotton is also responsible for the launch of Virgin Cruises, a start-up cruise line developed and launched in partnership with Virgin and Richard Branson.",
+          bioThree: "Prior to joining Bain Capital in 2003, Mr. Cotton was a consultant at Bain & Company and worked extensively in the consumer and financial services spaces. Previously, he worked in baseball operations as a member of The Boston Red Sox front office.  Mr. Cotton also volunteers his time to support a variety of charitable organizations. He currently serves on the Board of Directors of City Year New York, an education-focused, nonprofit organization founded in 1988 that partners with public schools to provide full-time targeted intervention for students most at risk of dropping out, and the St. Mark’s School of Texas, a K-12 primary school located in Dallas, Texas.\nMr. Cotton received an M.B.A from The Stanford Graduate School of Business where he was a Seibel Scholar, an Arjay Miller Scholar and the winner of the Alexander A. Robichek Award for Outstanding Achievement in Finance. He received an A.B. in Philosophy from Princeton University."
         },
         {
           name: "James Goodman",
           img: "/public/assets/img/speakers/headshots/JamesGoodman.jpg",
           topic: "",
           year: "",
-          title: "",
-          company: ""
+          title: "President",
+          company: "Gemini Investors",
+          bio: "Jim has been an investor in private middle market companies for the last 26 years. Since 1993, when he founded Gemini’s predecessor firm, he has raised six private equity funds and completed investments in more than 120 different companies. From 1989 to 1993, Mr. Goodman completed over $400 million in private equity transactions at Berkshire Partners, a Boston-based private investment firm. Previously, he was a management consultant for five years with Bain & Company. Mr. Goodman has been a Director or Board observer for over 40 portfolio companies during his investment career. A speaker at numerous industry conferences and events, Mr. Goodman received his A.B., J.D., and M.B.A. degrees from Harvard University and is a member of the State Bar of California."
         },
         {
-          name: "Karthik Krishnan",
-          img: "/public/assets/img/speakers/headshots/KarthikKrishnan.jpg",
+          name: "Bruce Martin",
+          img: "/public/assets/img/speakers/headshots/BruceMartin.jpg",
           topic: "",
           year: "",
-          title: "",
-          company: ""
-        },
-        {
-          name: "Michael Gries",
-          img: "/public/assets/img/speakers/headshots/MichaelGries.png",
-          topic: "",
-          year: "",
-          title: "",
-          company: ""
-        },
-        {
-          name: "Nicholas Sammut",
-          img: "/public/assets/img/speakers/headshots/NicholasSammut.jpg",
-          topic: "",
-          year: "",
-          title: "",
-          company: ""
-        },
-        {
-          name: "Ryan Cotton",
-          img: "/public/assets/img/speakers/headshots/RyanCotton.jpg",
-          topic: "",
-          year: "",
-          title: "",
-          company: ""
-        },
-        {
-          name: "Sam Klar",
-          img: "/public/assets/img/speakers/headshots/SamKlar.jpg",
-          topic: "",
-          year: "",
-          title: "",
-          company: ""
-        },
-        {
-          name: "Spencer Murray",
-          img: "/public/assets/img/speakers/headshots/SpencerMurray.jpg",
-          topic: "",
-          year: "",
-          title: "",
-          company: ""
+          title: "Managing Director, Executive Committee Member",
+          company: "Angelo, Gordon & Co.",
+          bio: "Bruce Martin joined Angelo, Gordon in 1999 to focus on investments in the leveraged loan market.  He is a Managing Director and a member of the firm’s executive committee. Bruce is head of the firm’s leveraged loan and high yield business and portfolio manager of the firm’s Northwoods Capital CLOs, the Diversified Credit Strategies and Income Funds and several separate accounts.  Since 1993, Bruce has analyzed high yield investments ranging from par loans to distressed debt and has also focused on equity value creation as a member of the Board of Directors for Angelo, Gordon portfolio companies.   Prior to joining the firm, Bruce was a High Yield Bond Analyst at Putnam Investments and at Eaton Vance.  Before working at Eaton Vance, he worked at John Hancock as a Senior Corporate Bond/High Yield Analyst and at Insurance Service Offices as an Actuarial Analyst.  Bruce holds a B.A. degree in Mathematics from SUNY Binghamton and an M.B.A. degree from Northeastern University."
         },
         {
           name: "Tom Andrews",
           img: "/public/assets/img/speakers/headshots/TomAndrews.jpeg",
           topic: "",
           year: "",
-          title: "",
-          company: ""
+          title: "Executive Vice President, Regional Market Director",
+          company: "Alexandria Real Estate Equities, Inc.",
+          bio: "Tom Andrews serves as the Executive Vice President, Regional Market Director for Alexandria Real Estate Equities, Inc., the largest and leading real estate investment trust focused on urban science and technology campuses in major innovation clusters.   Tom has 26 years of direct experience in the development and management of office and life science facilities, including over 16 years heading Alexandria’s acquisition, development, leasing, and asset management activities in the Greater Boston region.  Under Tom’s leadership, the Greater Boston region has become Alexandria’s largest region, with 42 operating properties totaling 4.5 million square feet, and over 1.1 million square feet of additional projects under construction in Cambridge and Boston.    Tom heads a team of 22 individuals engaged in asset and property management, construction and development management, leasing and marketing, and business development and industry research activities.",
+          bioTwo: "Prior to joining Alexandria in 1999, Tom served as the Executive Director of the Massachusetts Biotechnology Research Park in Worcester, one of the first purpose-built life science research parks in the world.  Tom graduated from Cornell University and earned a Master of Science degree from MIT Center for Real Estate, where his thesis examined the development of the research facilities for academic medical centers."
+        },
+        {
+          name: "Michael Gries",
+          img: "/public/assets/img/speakers/headshots/MichaelGries.png",
+          topic: "",
+          year: "",
+          title: "Managing Member",
+          company: "CDG Group",
+          bio: "Michael Gries is a nationally recognized leader in the restructuring profession with more than 30 years of experience advising companies and creditors on complex corporate reorganizations. Mr. Gries has specialized in providing business and financial advice to boards of directors, management, investors, and other interested parties in distressed and turnaround situations.",
+          bioTwo: "Mr. Gries has been involved in all aspects of CDG’s strategic and financial restructuring business as an advisor and as a manager of under-performing and distressed companies. He has also advised lenders, creditors, corporate boards, and equity sponsors on both operational and financial issues. He has been involved with more than 100 restructuring transactions and has successfully restructured billions of dollars of debt. In addition to serving as an advisor, Mr. Gries has served as the chairman of the board of directors of a major NYSE company, as chief executive officer and, on numerous occasions, as chief restructuring officer. Michael Gries received a Bachelor of Science in Accounting and Finance from Northeastern University."
+        },
+        {
+          name: "Christina Qi",
+          img: "/public/assets/img/speakers/headshots/ChristinaQi.png",
+          topic: "",
+          year: "",
+          title: "Partner",
+          company: "Domeyard LP",
+          bio: "Christina Qi is a Partner at Domeyard LP, a quantitative hedge fund based in Boston. Domeyard leverages computational models to execute trades at ultra low latencies, deploying capital globally across multiple asset classes. Domeyard is backed by various institutional investors and hedge fund veterans. Christina started her career at Goldman Sachs, UBS Securities, Zions Bank, and Lincoln Labs, with experiences in buy-side trading, sell-side trading, derivatives operations, and technology infrastructure. Christina has guest-lectured for Nobel Laureate Robert Merton’s “Retirement Finance” class at MIT, as well as Harvard Business School’s core finance class \"Investment Strategies.\"",
+          bioTwo: "Christina holds a Bachelor of Science degree from MIT. She is a CAIA Charterholder and was granted the 2014 CAIA Foundation Scholarship by PAAMCO and 100 Women in Hedge Funds. She was recently named among Boston Business Journal’s “40 Under 40”, of business and civic leaders making a major impact in their respective fields. She serves on the 100 Women in Hedge Funds Non-Profit Boards Committee."
+        },
+        {
+          name: "Sam Klar",
+          img: "/public/assets/img/speakers/headshots/SamKlar.jpg",
+          topic: "",
+          year: "",
+          title: "Portfolio Manager",
+          company: "GMO",
+          bio: "Mr. Klar is a merger arbitrage Portfolio Manager for GMO’s Global Equity team. Prior to joining full-time in 2006, he held a co-op position at GMO with the Emerging Markets Equity team.  Mr. Klar earned his B.S. in Finance from Northeastern University."
+        },
+        {
+          name: "Karthik Krishnan",
+          img: "/public/assets/img/speakers/headshots/KarthikKrishnan.jpg",
+          topic: "",
+          year: "",
+          title: "Associate Professor, Thomas Moore Faculty Fellow",
+          company: "Northeastern University",
+          bio: "Karthik Krishnan is an Associate Professor of Finance Thomas Moore Faculty Fellow at the D’Amore-McKim School of Business at Northeastern University. Additionally, Dr. Krishnan is a member of the Launchpad Venture Group, a Boston-area angel investing group focused on early stage investments primarily in high tech and life sciences. Dr. Krishnan graduated from the Delhi College of Engineering and received his Doctor of Philosophy degree in Finance from the Boston College Wallace E. Carroll Graduate School of Management."
+        },
+        {
+          name: "Spencer Murray",
+          img: "/public/assets/img/speakers/headshots/SpencerMurray.jpg",
+          topic: "",
+          year: "",
+          title: "Associate",
+          company: "Berkshire Partners",
+          bio: "Spencer joined Berkshire Partners in 2015. Prior to joining Berkshire, he was an analyst at Morgan Stanley. Spencer earned his B.S. at Northeastern University."
+        },
+        {
+          name: "Nicholas Sammut",
+          img: "/public/assets/img/speakers/headshots/NicholasSammut.jpg",
+          topic: "",
+          year: "",
+          title: "Investment Professional",
+          company: "Generate Capital"
         }
-        ];
+    ];
+
+    $scope.schedule = {};
+
+    $scope.schedule.friday = [
+      {
+        time: "6:30 PM",
+        activity: "Welcome",
+        speaker: "Nikko Lara"
+      },
+      {
+        time: "6:45 PM",
+        activity: "D'Amore-McKim School of Business Alumni Panel",
+        speaker: "Nick Sammut, Spencer Murray, Michael St. Germain"
+      },
+      {
+        time: "7:35 PM",
+        activity: "Keynote",
+        speaker: "Bruce Martin - Managing Director and Member of the Executive Committee at Angelo, Gordon & Co."
+      },
+      {
+        time: "8:20 PM",
+        activity: "Networking",
+        speaker: ""
+      }
+    ];
+
+    $scope.schedule.saturday = [
+      {
+        time: "9 AM",
+        activity: "Registration and Breakfast",
+        speaker: ""
+      },
+      {
+        time: "9:35 AM",
+        activity: "Welcome to CAIS 2016",
+        speaker: "Jake Fulton - Co-President of CAIS"
+      },
+      {
+        time: "9:50 AM",
+        activity: "Real Estate Investing",
+        speaker: "Thomas Andrews - Executive Vice President & Regional Market Director at Alexandria Real Estate Equities"
+      },
+      {
+        time: "10:30 AM",
+        activity: "Private Equity",
+        speaker: "Ryan Cotton - Managing Director at Bain Capital"
+      },
+      {
+        time: "11:15 AM",
+        activity: "Coffee Break",
+        speaker: "Network with previous speakers"
+      },
+      {
+        time: "11:50 AM",
+        activity: "Generating Alpha in the Current Market Environment",
+        speaker: "Sean Wilson - Managing Partner and CIO at LR Global\nGary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO"
+      },
+      {
+        time: "12:50 PM",
+        activity: "Venture Capital",
+        speaker: "Karthik Krishnan - Associate Professor - Thomas Moore Faculty Fellow at Northeastern University"
+      },
+      {
+        time: "1:15 PM",
+        activity: "Lunch",
+        speaker: ""
+      },
+      {
+        time: "1:50 PM",
+        activity: "The Art of Restructuring",
+        speaker: "Michael Gries - Managing Member of CDG Group"
+      },
+      {
+        time: "2:40 PM",
+        activity: "Private Equity",
+        speaker: "James Goodman - President of Gemini Investors"
+      },
+      {
+        time: "3:25 PM",
+        activity: "CAIS Closing Remarks",
+        speaker: "Rohan Venkatesh - Co-President of CAIS"
+      },
+      {
+        time: "3:35 PM",
+        activity: "Closing Networking",
+        speaker: ""
+      }
+    ];
 
         $scope.faqs = [
           {
@@ -226,7 +324,14 @@
           {
             name: "Rohan Venkatesh",
             img: "/public/assets/img/team/rohanvenkatesh.jpg",
-            linkedin: "https://www.linkedin.com/in/rohanvenkatesh"
+            linkedin: "https://www.linkedin.com/in/rohanvenkatesh",
+            title: "Co-President"
+          },
+          {
+            name: "Jake Fulton",
+            img: "/public/assets/img/team/jakefulton.jpg",
+            linkedin: "https://www.linkedin.com/pub/jake-fulton/43/a29/641",
+            title: "Co-President"
           },
           {
             name: "Amy Zhou",
@@ -236,42 +341,44 @@
           {
             name: "Daniel Arvidsson",
             img: "/public/assets/img/team/danielarvidson.jpg",
-            linkedin: "https://www.linkedin.com/pub/daniel-arvidsson/91/3ba/81b"
+            linkedin: "https://www.linkedin.com/pub/daniel-arvidsson/91/3ba/81b",
+            title: ""
           },
           {
             name: "Harrison Balder",
             img: "/public/assets/img/team/harrisonbalder.jpg",
-            linkedin: "https://www.linkedin.com/pub/harrison-balder/b0/890/b10"
+            linkedin: "https://www.linkedin.com/pub/harrison-balder/b0/890/b10",
+            title: ""
           },
           {
             name: "Mark Garbin",
             img: "/public/assets/img/team/markgarbin.jpg",
-            linkedin: "https://www.linkedin.com/in/markkgarbin"
+            linkedin: "https://www.linkedin.com/in/markkgarbin",
+            title: ""
           },
           {
             name: "Lauren Tawfik",
             img: "/public/assets/img/team/laurentawfik.jpg",
-            linkedin: "https://www.linkedin.com/in/lauren-tawfik-a93a48111?authType=name&authToken=jiE_&trk=prof-sb-browse_map-name"
-          },
-          {
-            name: "Jake Fulton",
-            img: "/public/assets/img/team/jakefulton.jpg",
-            linkedin: "https://www.linkedin.com/pub/jake-fulton/43/a29/641"
+            linkedin: "https://www.linkedin.com/in/lauren-tawfik-a93a48111?authType=name&authToken=jiE_&trk=prof-sb-browse_map-name",
+            title: ""
           },
           {
             name: "Michael Counihan",
             img: "/public/assets/img/team/michaelcounihan.jpg",
-            linkedin: "https://www.linkedin.com/in/michaelbcounihan"
+            linkedin: "https://www.linkedin.com/in/michaelbcounihan",
+            title: ""
           },
           {
             name: "Nick Sypteras",
             img: "/public/assets/img/team/nicksypteras.jpg",
-            linkedin: "https://www.linkedin.com/pub/nicholas-sypteras/69/4a9/a2"
+            linkedin: "https://www.linkedin.com/pub/nicholas-sypteras/69/4a9/a2",
+            title: ""
           },
           {
             name: "Sam Marley",
             img: "/public/assets/img/team/sammarley.jpg",
-            linkedin: "https://www.linkedin.com/pub/sam-marley/a4/a51/275"
+            linkedin: "https://www.linkedin.com/pub/sam-marley/a4/a51/275",
+            title: ""
           }
         ];
 
@@ -401,6 +508,8 @@
         $scope.anAboutPoints = false;
         $scope.anSpeakers = false;
         $scope.anSpeakerPics = false;
+        $scope.anSchedule = false;
+        $scope.anSchedulePics = false;
         $scope.anFaq = false;
         $scope.anFaqs = false;
         $scope.anPresentations = false;
@@ -414,6 +523,7 @@
 
         var aboutEl = angular.element(document.getElementById("about"));
         var speakersEl = angular.element(document.getElementById("speakers"));
+        var scheduleEl = angular.element(document.getElementById("schedule"));
         var faqEl = angular.element(document.getElementById("faq"));
         var teamEl = angular.element(document.getElementById("team"));
         var presentationsEl = angular.element(document.getElementById("presentations"));
@@ -440,6 +550,12 @@
            }
            if (this.pageYOffset > speakersEl.prop('offsetTop') - 750) {
              $scope.anSpeakerPics = true;
+           }
+           if (this.pageYOffset > scheduleEl.prop('offsetTop') - 1000) {
+             $scope.anSchedule = true;
+           }
+           if (this.pageYOffset > scheduleEl.prop('offsetTop') - 750) {
+             $scope.anScheduleChart = true;
            }
            if (this.pageYOffset > faqEl.prop('offsetTop') - 1000) {
              $scope.anFaq = true;
