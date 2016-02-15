@@ -43,30 +43,32 @@ section#speakers
           h2.member-name {{speaker.name}}
           h3.ital {{speaker.title + ' at ' + speaker.company}}
           p.speaker-bio {{speaker.bio}}
-          p.speaker-bio {{speaker.bioTwo}}
-          p.speaker-bio {{speaker.bioThree}}
+          p.speaker-bio.multiPar {{speaker.bioTwo}}
+          p.speaker-bio.multiPar {{speaker.bioThree}}
 
 section#schedule
   h1.section-title.animated(ng-class="{slideInLeft:anSchedule, 'not-visible':!anSchedule}") Schedule
   div.line-divider
   div.container.animated(ng-class="{fadeInUp:anScheduleChart, 'not-visible':!anScheduleChart}")
-    h2 Friday April 1, 6:30 PM - 9 PM
+    h2 Alumni Panel
+    h3 Friday April 1, 6:30 PM - 9 PM
     div.table-responsive
       table.table.schedule-table.table-condensed
         thead
           tr(ng-repeat="row in schedule.friday")
-            td {{row.time}}
-            td {{row.activity}}
-            td {{row.speaker}}
+            td.time-cell {{row.time}}
+            td.activity-cell {{row.activity}}
+            td.speaker-cell {{row.speaker}}
 
-    h2 Saturday April 2, 9 AM - 4 PM
+    h2 Conference
+    h3 Saturday April 2, 9 AM - 4 PM
     div.table-responsive
       table.table.table-condensed.schedule-table
         thead
           tr(ng-repeat="row in schedule.saturday")
-            td {{row.time}}
-            td {{row.activity}}
-            td {{row.speaker}}
+            td.time-cell {{row.time}}
+            td.activity-cell {{row.activity}}
+            td.speaker-cell {{row.speaker}}
 
 
 section#location
@@ -97,7 +99,18 @@ section#faq
   div.contact-link-div
     a.contact-link(ng-click="jump('contact')") Don't see your question here?
 
+
+
 section#past-speakers
+  h1.section-title.animated(ng-class="{slideInLeft:anPastSpeakers, 'not-visible':!anPastSpeakers}") Past Speakers
+  div.container.animated(ng-class="{slideInRight:anPastSpeakersPics, 'not-visible':!anPastSpeakersPics}")
+    div.row
+      div.col-md-3.member-box(ng-repeat="speaker in pastSpeakers")
+        div.img-responsive
+          img(ng-src="{{speaker.img}}")
+        p.member-name {{speaker.name}}
+        p.ital {{speaker.title + ' at '}}
+        p.ital {{speaker.company}}
 
 //
   section#sponsors

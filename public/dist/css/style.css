@@ -44,7 +44,7 @@ td {
   font-size: 13px; }
 
 .orange {
-  background-color: #e62200; }
+  background-color: #b90900; }
 
 .white {
   width: 15%;
@@ -89,7 +89,7 @@ td {
   font-family: "Roboto", sans-serif;
   color: #090705; }
   #about p {
-    font-weight: thin;
+    font-weight: 300;
     color: black; }
   #about * {
     text-align: center; }
@@ -271,6 +271,7 @@ div[ng-view].ng-enter-active {
     height: 100%;
     background-color: rgba(33, 33, 33, 0.9); }
   #intro .apply-btn {
+    text-decoration: none;
     margin-top: 30px;
     margin-bottom: 60px;
     background: transparent;
@@ -318,7 +319,7 @@ div[ng-view].ng-enter-active {
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
       margin-bottom: 20px;
-      color: #e62200;
+      color: #b90900;
       -webkit-animation-duration: 3s;
       -moz-animation-duration: 3s;
       animation-duration: 3s;
@@ -335,7 +336,7 @@ div[ng-view].ng-enter-active {
 
 .sub-highlight {
   font-family: "Montserrat", sans-serif;
-  color: #e62200;
+  color: #b90900;
   font-size: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -463,13 +464,15 @@ div[ng-view].ng-enter-active {
     #speakers .speaker-box .speaker-info {
       padding-left: 5%; }
     #speakers .speaker-box p {
-      font-weight: 200;
-      color: #272727;
+      font-weight: 300;
+      color: #343434;
       letter-spacing: 1px;
       font-family: "Roboto", sans-serif; }
     #speakers .speaker-box .speaker-bio {
       font-size: 16px;
       text-align: left; }
+    #speakers .speaker-box .multiPar {
+      margin-top: 25px; }
   #speakers .member-name {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -528,8 +531,26 @@ div[ng-view].ng-enter-active {
   padding-bottom: 50px;
   font-family: "Roboto", sans-serif; }
   #schedule h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    color: #990000;
+    font-weight: 300; }
+  #schedule h3 {
+    font-size: 14px;
     margin-bottom: 25px;
     font-family: "Montserrat", sans-serif; }
+  #schedule .time-cell {
+    text-align: right; }
+  #schedule td {
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 14px; }
+  #schedule .activity-cell {
+    padding-left: 15px;
+    font-weight: 400; }
+  #schedule .speaker-cell {
+    padding-left: 15px; }
   #schedule .schedule-table {
     margin-bottom: 25px; }
 
@@ -585,6 +606,20 @@ div[ng-view].ng-enter-active {
     outline: 0 none;
     text-decoration: none;
     color: #fff; }
+
+#past-speakers {
+  background-color: #f4f5f6;
+  padding-bottom: 50px; }
+  #past-speakers .member-name {
+    color: #990000;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+  #past-speakers .ital {
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #808080; }
 
 #team, #advisory-board {
   text-align: center; }
@@ -775,9 +810,12 @@ div[ng-view].ng-enter-active {
     height: 40vh;
     width: 40vh; }
   #about .billboard div.brief {
-    font-size: 16px;
-    padding-left: 14px;
-    padding-right: 14px; }
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #343434;
+    padding-left: 20px;
+    padding-right: 20px; }
   #faq h1.section-title {
     margin-left: 0px;
     margin-right: 0px;

@@ -39,8 +39,8 @@
 
     $scope.registrationLink = "https://commerce.cashnet.com/SFDMSB2016";
 
-      $scope.menuItems = ['About', 'Speakers', 'Schedule', 'FAQ', 'Location',
-      'Selected Presentations', 'Management Committee',
+      $scope.menuItems = ['About', 'Speakers', 'Schedule', 'Location', 'FAQ',
+      'Past Speakers', 'Selected Presentations', 'Management Committee',
       'Advisory Board', /*'Sponsors',*/ 'Contact'];
 
         $scope.nav = {};
@@ -73,6 +73,9 @@
             case 'advisory board':
               elName = 'advisory-board';
               break;
+            case 'past speakers':
+              elName = 'past-speakers';
+              break;
           }
 
           var offset = 30;
@@ -86,7 +89,7 @@
 
       $scope.about = {};
       $scope.about.title = "About";
-      $scope.about.summary1 = "CAIS is a student-run conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space.";
+      $scope.about.summary1 = "Northeastern University's College Alternative Investment Summit (CAIS) is a student-run conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space. The summit comprises an Alumni Panel and Networking night on Friday April 1 from 6:30PM - 9PM and a speaker conference on April 2 from 9AM to 4PM.";
       $scope.about.summary2 = "CAIS bridges the gap between classroom education and professional application with respect to Hedge Funds, Private Equity, Venture Capital, and Real Assets.";
 
       $scope.speakers = [
@@ -186,6 +189,39 @@
         }
     ];
 
+    $scope.pastSpeakers = [
+        {
+          name: "Keith Black",
+          img: "/public/assets/img/speakers/previous_speakers/keith-black.jpg",
+          topic: "Harvard, Yale and Investments: A Post-Crisis View",
+          year: "2015",
+          title: "MD of Curriculum and Exams",
+          company: "CAIA Association"
+        },
+        {
+          name: "Stephen Pagliuca",
+          img: "/public/assets/img/speakers/previous_speakers/pagliuca.jpg",
+          topic: "Global Outlook of Private Equity and Venture Capital",
+          year: "2014",
+          title: "Managing Director/Co-owner",
+          company: "Bain Capital/Boston Celtics"
+        },
+        {
+          name: "James Swanson",
+          img: "/public/assets/img/speakers/previous_speakers/jswanson.png",
+          topic: "The Sustainable Cycle",
+          year: "2013",
+          title: "Chief Investment Stategist",
+          company: "MFS Investment Management"
+        },
+        {
+          name: "Roger Ibbotson",
+          img: "/public/assets/img/speakers/previous_speakers/ribbotson.jpg",
+          title: "Chairman and Chief Investment Officer",
+          company: "Zebra Capital Management, LLC"
+        }
+    ];
+
     $scope.schedule = {};
 
     $scope.schedule.friday = [
@@ -197,7 +233,7 @@
       {
         time: "6:45 PM",
         activity: "D'Amore-McKim School of Business Alumni Panel",
-        speaker: "Nick Sammut, Spencer Murray, Michael St. Germain"
+        speaker: "Nick Sammut - Investment Professional at Generate Capital\nAssociate at Berkshire Partners\nMichael St. Germain - Director at LR Global"
       },
       {
         time: "7:35 PM",
@@ -269,7 +305,7 @@
       },
       {
         time: "3:35 PM",
-        activity: "Closing Networking",
+        activity: "Networking",
         speaker: ""
       }
     ];
@@ -278,14 +314,6 @@
           {
             question: "Who can attend?",
             answer: "You don't have to study finance or even be a Northeastern student to attend. CAIS welcomes anyone interested in learning more about alternative investments, regardless of age or discipline."
-          },
-          {
-            question: "When is it?",
-            answer: "April 1-2, 2016"
-          },
-          {
-            question: "Where is it?",
-            answer: "20 West Village F"
           },
           {
             question: "What's the cost?",
@@ -512,6 +540,8 @@
         $scope.anSchedulePics = false;
         $scope.anFaq = false;
         $scope.anFaqs = false;
+        $scope.anPastSpeakers = false;
+        $scope.anPastSpeakersPics = false;
         $scope.anPresentations = false;
         $scope.anVids = false;
         $scope.anTeam = false;
@@ -525,6 +555,7 @@
         var speakersEl = angular.element(document.getElementById("speakers"));
         var scheduleEl = angular.element(document.getElementById("schedule"));
         var faqEl = angular.element(document.getElementById("faq"));
+        var pastSpeakersEl = angular.element(document.getElementById("past-speakers"));
         var teamEl = angular.element(document.getElementById("team"));
         var presentationsEl = angular.element(document.getElementById("presentations"));
         var advisoryEl = angular.element(document.getElementById("advisory-board"));
@@ -562,6 +593,12 @@
            }
            if (this.pageYOffset > faqEl.prop('offsetTop') - 750) {
              $scope.anFaqs = true;
+           }
+           if (this.pageYOffset > pastSpeakersEl.prop('offsetTop') - 1000) {
+             $scope.anPastSpeakers = true;
+           }
+           if (this.pageYOffset > pastSpeakersEl.prop('offsetTop') - 750) {
+             $scope.anPastSpeakersPics = true;
            }
            if (this.pageYOffset > presentationsEl.prop('offsetTop') - 1000) {
              $scope.anPresentations = true;
