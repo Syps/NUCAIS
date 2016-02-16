@@ -89,7 +89,7 @@
 
       $scope.about = {};
       $scope.about.title = "About";
-      $scope.about.summary1 = "Northeastern University's College Alternative Investment Summit (CAIS) is a student-run conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space. The summit comprises an Alumni Panel and Networking night on Friday April 1 from 6:30PM - 9PM and a speaker conference on April 2 from 9AM to 4PM.";
+      $scope.about.summary1 = "Northeastern University's College Alternative Investment Summit (CAIS) is a student-run conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space. The summit comprises an Alumni Panel and Networking night on Friday, April 1 from 6:30PM - 9PM and a speaker conference on Saturday, April 2 from 9AM to 4PM.";
       $scope.about.summary2 = "CAIS bridges the gap between classroom education and professional application with respect to Hedge Funds, Private Equity, Venture Capital, and Real Assets.";
 
       $scope.speakers = [
@@ -110,6 +110,7 @@
           topic: "",
           year: "",
           title: "President",
+          preposition: true,
           company: "Gemini Investors",
           bio: "Jim has been an investor in private middle market companies for the last 26 years. Since 1993, when he founded Gemini’s predecessor firm, he has raised six private equity funds and completed investments in more than 120 different companies. From 1989 to 1993, Mr. Goodman completed over $400 million in private equity transactions at Berkshire Partners, a Boston-based private investment firm. Previously, he was a management consultant for five years with Bain & Company. Mr. Goodman has been a Director or Board observer for over 40 portfolio companies during his investment career. A speaker at numerous industry conferences and events, Mr. Goodman received his A.B., J.D., and M.B.A. degrees from Harvard University and is a member of the State Bar of California."
         },
@@ -118,9 +119,9 @@
           img: "/public/assets/img/speakers/headshots/BruceMartin.jpg",
           topic: "",
           year: "",
-          title: "Managing Director, Executive Committee Member",
+          title: "Managing Director and Executive Committee Member",
           company: "Angelo, Gordon & Co.",
-          bio: "Bruce Martin joined Angelo, Gordon in 1999 to focus on investments in the leveraged loan market.  He is a Managing Director and a member of the firm’s executive committee. Bruce is head of the firm’s leveraged loan and high yield business and portfolio manager of the firm’s Northwoods Capital CLOs, the Diversified Credit Strategies and Income Funds and several separate accounts.  Since 1993, Bruce has analyzed high yield investments ranging from par loans to distressed debt and has also focused on equity value creation as a member of the Board of Directors for Angelo, Gordon portfolio companies.   Prior to joining the firm, Bruce was a High Yield Bond Analyst at Putnam Investments and at Eaton Vance.  Before working at Eaton Vance, he worked at John Hancock as a Senior Corporate Bond/High Yield Analyst and at Insurance Service Offices as an Actuarial Analyst.  Bruce holds a B.A. degree in Mathematics from SUNY Binghamton and an M.B.A. degree from Northeastern University."
+          bio: "Bruce Martin joined Angelo, Gordon in 1999 to focus on investments in the leveraged loan market.  He is a Managing Director and a member of the firm’s executive committee. Bruce is head of the firm’s leveraged loan and high yield business and portfolio manager of the firm’s Northwoods Capital CLOs, the Diversified Credit Strategies and Income Funds and several separate accounts. Since 1993, Bruce has analyzed high yield investments ranging from par loans to distressed debt and has also focused on equity value creation as a member of the Board of Directors for Angelo, Gordon portfolio companies. Prior to joining the firm, Bruce was a High Yield Bond Analyst at Putnam Investments and at Eaton Vance.  Before working at Eaton Vance, he worked at John Hancock as a Senior Corporate Bond/High Yield Analyst and at Insurance Service Offices as an Actuarial Analyst. Bruce holds a B.A. degree in Mathematics from SUNY Binghamton and an M.B.A. degree from Northeastern University."
         },
         {
           name: "Tom Andrews",
@@ -139,6 +140,7 @@
           year: "",
           title: "Managing Member",
           company: "CDG Group",
+          preposition: true,
           bio: "Michael Gries is a nationally recognized leader in the restructuring profession with more than 30 years of experience advising companies and creditors on complex corporate reorganizations. Mr. Gries has specialized in providing business and financial advice to boards of directors, management, investors, and other interested parties in distressed and turnaround situations.",
           bioTwo: "Mr. Gries has been involved in all aspects of CDG’s strategic and financial restructuring business as an advisor and as a manager of under-performing and distressed companies. He has also advised lenders, creditors, corporate boards, and equity sponsors on both operational and financial issues. He has been involved with more than 100 restructuring transactions and has successfully restructured billions of dollars of debt. In addition to serving as an advisor, Mr. Gries has served as the chairman of the board of directors of a major NYSE company, as chief executive officer and, on numerous occasions, as chief restructuring officer. Michael Gries received a Bachelor of Science in Accounting and Finance from Northeastern University."
         },
@@ -170,15 +172,15 @@
           company: "Northeastern University",
           bio: "Karthik Krishnan is an Associate Professor of Finance Thomas Moore Faculty Fellow at the D’Amore-McKim School of Business at Northeastern University. Additionally, Dr. Krishnan is a member of the Launchpad Venture Group, a Boston-area angel investing group focused on early stage investments primarily in high tech and life sciences. Dr. Krishnan graduated from the Delhi College of Engineering and received his Doctor of Philosophy degree in Finance from the Boston College Wallace E. Carroll Graduate School of Management."
         },
-        {
-          name: "Spencer Murray",
-          img: "/public/assets/img/speakers/headshots/SpencerMurray.jpg",
-          topic: "",
-          year: "",
-          title: "Associate",
-          company: "Berkshire Partners",
-          bio: "Spencer joined Berkshire Partners in 2015. Prior to joining Berkshire, he was an analyst at Morgan Stanley. Spencer earned his B.S. at Northeastern University."
-        },
+        // {
+        //   name: "Spencer Murray",
+        //   img: "/public/assets/img/speakers/headshots/SpencerMurray.jpg",
+        //   topic: "",
+        //   year: "",
+        //   title: "Associate",
+        //   company: "Berkshire Partners",
+        //   bio: "Spencer joined Berkshire Partners in 2015. Prior to joining Berkshire, he was an analyst at Morgan Stanley. Spencer earned his B.S. at Northeastern University."
+        // },
         {
           name: "Nicholas Sammut",
           img: "/public/assets/img/speakers/headshots/NicholasSammut.jpg",
@@ -195,7 +197,7 @@
           img: "/public/assets/img/speakers/previous_speakers/keith-black.jpg",
           topic: "Harvard, Yale and Investments: A Post-Crisis View",
           year: "2015",
-          title: "MD of Curriculum and Exams",
+          title: "Managing Director of Curriculum and Exams",
           company: "CAIA Association"
         },
         {
@@ -228,17 +230,17 @@
       {
         time: "6:30 PM",
         activity: "Welcome",
-        speaker: "Nikko Lara"
+        speaker: "Nicolas Lara - Founder and Chairman of CAIS"
       },
       {
         time: "6:45 PM",
         activity: "D'Amore-McKim School of Business Alumni Panel",
-        speaker: "Nick Sammut - Investment Professional at Generate Capital\nAssociate at Berkshire Partners\nMichael St. Germain - Director at LR Global"
+        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nAssociate at Berkshire Partners\nMichael St. Germain - Director at LR Global\nModerated by Professor Nicole Boyson"
       },
       {
         time: "7:35 PM",
         activity: "Keynote",
-        speaker: "Bruce Martin - Managing Director and Member of the Executive Committee at Angelo, Gordon & Co."
+        speaker: "Bruce Martin - Managing Director and Executive Committee Member at Angelo, Gordon & Co."
       },
       {
         time: "8:20 PM",
@@ -265,22 +267,22 @@
       },
       {
         time: "10:30 AM",
-        activity: "Private Equity",
+        activity: "Keynote",
         speaker: "Ryan Cotton - Managing Director at Bain Capital"
       },
       {
         time: "11:15 AM",
         activity: "Coffee Break",
-        speaker: "Network with previous speakers"
+        speaker: ""
       },
       {
         time: "11:50 AM",
         activity: "Generating Alpha in the Current Market Environment",
-        speaker: "Sean Wilson - Managing Partner and CIO at LR Global\nGary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO"
+        speaker: "Sean Wilson - Managing Partner and CIO at LR Global\nGary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO\nModerated by Professor Nicole Boyson"
       },
       {
         time: "12:50 PM",
-        activity: "Venture Capital",
+        activity: "Venture Capital and Angel Investing",
         speaker: "Karthik Krishnan - Associate Professor - Thomas Moore Faculty Fellow at Northeastern University"
       },
       {
@@ -415,9 +417,10 @@
          */
          $scope.advisoryBoard = [
            {
-             name: "Nicholas Lara",
+             name: "Nicolas Lara",
              img: "/public/assets/img/advisory/lara.jpg",
-             linkedin: "https://www.linkedin.com/pub/nicholas-f-lara/2a/ba7/47b"
+             linkedin: "https://www.linkedin.com/pub/nicholas-f-lara/2a/ba7/47b",
+             title: "Founder and Chairman"
            },
            {
              name: "Stephen Price",

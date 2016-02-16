@@ -41,7 +41,7 @@ section#speakers
 
         div.speaker-info.col-md-9
           h2.member-name {{speaker.name}}
-          h3.ital {{speaker.title + ' at ' + speaker.company}}
+          h3.ital {{speaker.title + (speaker.preposition ? ' of ' : ' at ') + speaker.company}}
           p.speaker-bio {{speaker.bio}}
           p.speaker-bio.multiPar {{speaker.bioTwo}}
           p.speaker-bio.multiPar {{speaker.bioThree}}
@@ -51,7 +51,7 @@ section#schedule
   div.line-divider
   div.container.animated(ng-class="{fadeInUp:anScheduleChart, 'not-visible':!anScheduleChart}")
     h2 Alumni Panel
-    h3 Friday April 1, 6:30 PM - 9 PM
+    h3 Friday, April 1, 6:30 PM - 9 PM
     div.table-responsive
       table.table.schedule-table.table-condensed
         thead
@@ -61,7 +61,7 @@ section#schedule
             td.speaker-cell {{row.speaker}}
 
     h2 Conference
-    h3 Saturday April 2, 9 AM - 4 PM
+    h3 Saturday, April 2, 9 AM - 4 PM
     div.table-responsive
       table.table.table-condensed.schedule-table
         thead
@@ -166,6 +166,7 @@ section#advisory-board
               //span.img-caption
               //p {{member.info}}
             p {{member.name}}
+            p.ital {{member.title}}
 
 
 section#contact

@@ -586,6 +586,8 @@ div[ng-view].ng-enter-active {
   .ital {
     margin-top:1px;
     font-style: italic;
+    font-family: $text-font;
+    font-weight: 300;
     font-size: $subtitle-font-size * .5;
     color: $subtitle-color;
   }
@@ -976,6 +978,14 @@ div[ng-view].ng-enter-active {
 
   #advisory-board {
     margin-top: 0px;
+
+    p.ital {
+      margin-bottom: 20px;
+      font-family: $text-font;
+      font-size: $subtitle-font-size * .75;
+      text-decoration: none;
+      font-weight: 300;
+    }
   }
 
   //======== Section - Selected Presentations ==========\\

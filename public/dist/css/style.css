@@ -422,6 +422,8 @@ div[ng-view].ng-enter-active {
 #team .ital, #advisory-board .ital {
   margin-top: 1px;
   font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 10px;
   color: #808080; }
 
@@ -673,6 +675,12 @@ div[ng-view].ng-enter-active {
 
 #advisory-board {
   margin-top: 0px; }
+  #advisory-board p.ital {
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 300; }
 
 #presentations {
   margin-top: 0;
