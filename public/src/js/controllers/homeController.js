@@ -230,12 +230,12 @@
       {
         time: "6:30 PM",
         activity: "Welcome",
-        speaker: "Nicolas Lara - Founder and Chairman of CAIS"
+        speaker: "Nicholas Lara - Founder and Chairman of CAIS"
       },
       {
         time: "6:45 PM",
         activity: "D'Amore-McKim School of Business Alumni Panel",
-        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nAssociate at Berkshire Partners\nMichael St. Germain - Director at LR Global\nModerated by Professor Nicole Boyson"
+        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nMichael St. Germain - Director at LR Global\nModerated by Professor Nicole Boyson"
       },
       {
         time: "7:35 PM",
@@ -297,7 +297,7 @@
       },
       {
         time: "2:40 PM",
-        activity: "Private Equity",
+        activity: "Keynote",
         speaker: "James Goodman - President of Gemini Investors"
       },
       {
@@ -417,7 +417,7 @@
          */
          $scope.advisoryBoard = [
            {
-             name: "Nicolas Lara",
+             name: "Nicholas Lara",
              img: "/public/assets/img/advisory/lara.jpg",
              linkedin: "https://www.linkedin.com/pub/nicholas-f-lara/2a/ba7/47b",
              title: "Founder and Chairman"
