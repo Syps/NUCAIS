@@ -72,6 +72,9 @@ td {
   font-family: "Montserrat", sans-serif;
   color: #191919;
   background-attachment: fixed; }
+  #intro div.top-title-contain, #intro div.intro-date-contain {
+    margin-right: auto;
+    margin-left: auto; }
   #intro h1, #intro h2 {
     margin-left: auto;
     margin-right: auto; }
@@ -244,9 +247,9 @@ div[ng-view].ng-enter-active {
   margin-left: auto;
   width: 100%;
   text-align: center;
-  padding: 15px 0px 15px 35px;
+  padding: 10px 0px 10px 35px;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 18px;
   font-weight: 300; }
 
 .menu-item:active {
@@ -442,6 +445,15 @@ div[ng-view].ng-enter-active {
 #speakers {
   /* debug */
   background-color: #f4f5f6; }
+  #speakers .speaker-classification {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
   #speakers .speaker-box {
     /* debug */
     margin-right: auto;
@@ -453,7 +465,8 @@ div[ng-view].ng-enter-active {
       margin-left: auto;
       margin-right: auto;
       width: 210px;
-      height: 210px; }
+      height: 210px;
+      margin-bottom: 40px; }
       #speakers .speaker-box .speaker-img .img-dummy {
         margin-top: 70%; }
       #speakers .speaker-box .speaker-img img {
@@ -703,9 +716,23 @@ div[ng-view].ng-enter-active {
   height: 100%; }
 
 #sponsors {
-  background-color: #f4f5f6; }
+  background-color: #fff; }
   #sponsors .section-title {
     margin-bottom: 70px; }
+  #sponsors .sponsor-title, #sponsors .sponsor-facts {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #808080;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px; }
+  #sponsors .sponsor-title {
+    color: #5a5a5a; }
+  #sponsors .sponsor-facts {
+    font-size: 16px;
+    font-weight: 300; }
 
 .sponsor {
   margin-top: 40px;
@@ -786,7 +813,7 @@ div[ng-view].ng-enter-active {
   .marquee {
     width: 60%;
     padding: 5px; }
-  .speaker-box {
+  .speaker-spacer {
     margin-bottom: 50px; }
   .speaker-info {
     width: 70%; }
@@ -798,7 +825,7 @@ div[ng-view].ng-enter-active {
     width: 100%;
     padding: 5px 0px;
     background-attachment: fixed; }
-  #speakers .speaker-box {
+  #speakers .speaker-spacer {
     margin-bottom: 50px; }
   #speakers .speaker-info {
     width: 100%; }

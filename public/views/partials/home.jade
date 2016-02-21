@@ -10,11 +10,13 @@ div.overlay(ng-show="active")
 section#intro
   div.container.center
     div.jumbotron.intro-text
-      h1.intro-year.animated.fadeIn 2016
-      h2.animated.fadeIn COLLEGIATE ALTERNATIVE INVESTMENT SUMMIT
+      div.top-title-contain
+        h1.intro-year.animated.fadeIn 2016
+        h2.animated.fadeIn COLLEGIATE ALTERNATIVE INVESTMENT SUMMIT
       div.line-divider.animated.fadeIn
       img.nu-seal(src="/public/assets/img/nu-seal.png")
-      h2.animated.fadeIn APRIL 1 - 2
+      div.intro-date-contain
+        h2.animated.fadeIn APRIL 1 - 2
       a.apply-btn.animated.fadeIn(target="_blank", href="https://commerce.cashnet.com/SFDMSB2016") REGISTER
 
 section#about
@@ -35,7 +37,22 @@ section#speakers
   h1.section-title.animated(ng-class="{slideInLeft:anSpeakers, 'not-visible':!anSpeakers}") 2016 Speakers
   div.line-divider
   div.container.animated(ng-class="{slideInRight:anSpeakerPics, 'not-visible':!anSpeakerPics}")
+    div.row.speaker-classification Keynote Speakers
     div.row.speaker-box(ng-repeat="speaker in speakers")
+      div.speaker-spacer(ng-if="speaker.keynote")
+        div.speaker-img.col-md-3
+          img(ng-src="{{speaker.img}}")
+
+        div.speaker-info.col-md-9
+          h2.member-name {{speaker.name}}
+          h3.ital {{speaker.title + (speaker.preposition ? ' of ' : ' at ') + speaker.company}}
+          p.speaker-bio {{speaker.bio}}
+          p.speaker-bio.multiPar {{speaker.bioTwo}}
+          p.speaker-bio.multiPar {{speaker.bioThree}}
+
+    div.row.speaker-classification Speakers
+    div.row.speaker-box(ng-repeat="speaker in speakers")
+      div.speaker-spacer(ng-if="!speaker.keynote")
         div.speaker-img.col-md-3
           img(ng-src="{{speaker.img}}")
 
@@ -99,10 +116,25 @@ section#faq
   div.contact-link-div
     a.contact-link(ng-click="jump('contact')") Don't see your question here?
 
+section#sponsors
+  h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Sponsors
+  div.line-divider
+  div.container
+    div.row.row-centered
+      div.col-md-6.col-centered.sponsor(ng-repeat="sponsor in sponsors")
+        img.img-responsive(ng-src="{{sponsor.img}}")
+        p.sponsor-title {{sponsor.title}}
+        p.sponsor-facts(ng-if="sponsor.hasFacts") For all your <a target="_blank", href="http://www.wallstreetoasis.com/guide/investment-banking-interview-prep-questions">investment banking</a>, <a target="_blank", href="http://www.wallstreetoasis.com/guide/private-equity-interview-prep-questions">private equity</a> and <a target="_blank", href="http://www.wallstreetoasis.com/guide/hedge-fund-interview-questions">hedge fund</a> interview prep needs
 
+//
+  h1.section-title Past Corporate Affiliates
+  div.container
+    div.row
+      div.col-md-3.sponsor(ng-repeat="a in affiliates")
+        img.img-responsive(ng-src="{{a.img}}")
 
 section#past-speakers
-  h1.section-title.animated(ng-class="{slideInLeft:anPastSpeakers, 'not-visible':!anPastSpeakers}") Past Speakers
+  h1.section-title.animated(ng-class="{slideInLeft:anPastSpeakers, 'not-visible':!anPastSpeakers}") Past Keynote Speakers
   div.container.animated(ng-class="{slideInRight:anPastSpeakersPics, 'not-visible':!anPastSpeakersPics}")
     div.row
       div.col-md-3.member-box(ng-repeat="speaker in pastSpeakers")
@@ -112,19 +144,6 @@ section#past-speakers
         p.ital {{speaker.title + ' at '}}
         p.ital {{speaker.company}}
 
-//
-  section#sponsors
-    h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") Past Sponsors
-    div.container
-      div.row
-        div.col-md-3.sponsor(ng-repeat="sponsor in sponsors")
-          img.img-responsive(ng-src="{{sponsor.img}}")
-
-    h1.section-title Past Corporate Affiliates
-    div.container
-      div.row
-        div.col-md-3.sponsor(ng-repeat="a in affiliates")
-          img.img-responsive(ng-src="{{a.img}}")
 
 section#presentations
   h1.section-title.animated(ng-class="{slideInLeft:anPresentations, 'not-visible':!(anPresentations)}") Selected Presentations
@@ -178,11 +197,8 @@ section#contact
       div.email
         a.social-btn(href="mailto:contactnucais@gmail.com") contactnucais@gmail.com
   div.social-links
-    //
-      a.social-btn
-        i.fa.fa-linkedin.fa-2x
-    a.social-btn(target="_blank", href="https://twitter.com/nucais")
-      i.fa.fa-twitter.fa-2x
+    a.social-btn(target="_blank", href="https://www.linkedin.com/groups/4541006")
+      i.fa.fa-linkedin.fa-2x
     a.social-btn(href="mailto:contactnucais@gmail.com")
       i.fa.fa-envelope.fa-2x
     a.social-btn(target="_blank", href="https://www.facebook.com/officialNUCAIS")

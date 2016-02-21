@@ -30,7 +30,7 @@
 
     $scope.markerNetworking = new google.maps.Marker({
       position: {lat: 42.337831, lng: -71.085189},
-      title: 'Networking Night'
+      title: 'Alumni Panel & Networking Night'
     });
 
     $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -40,8 +40,8 @@
     $scope.registrationLink = "https://commerce.cashnet.com/SFDMSB2016";
 
       $scope.menuItems = ['About', 'Speakers', 'Schedule', 'Location', 'FAQ',
-      'Past Speakers', 'Selected Presentations', 'Management Committee',
-      'Advisory Board', /*'Sponsors',*/ 'Contact'];
+      'Sponsors', 'Past Speakers', 'Selected Presentations', 'Management Committee',
+      'Advisory Board', 'Contact'];
 
         $scope.nav = {};
         $scope.nav.img = "/public/assets/img/nav-logo.png";
@@ -89,7 +89,7 @@
 
       $scope.about = {};
       $scope.about.title = "About";
-      $scope.about.summary1 = "Northeastern University's College Alternative Investment Summit (CAIS) is a student-run conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space. The summit comprises an Alumni Panel and Networking night on Friday, April 1 from 6:30PM - 9PM and a speaker conference on Saturday, April 2 from 9AM to 4PM.";
+      $scope.about.summary1 = "The Northeastern University Collegiate Alternative Investment Summit (CAIS) is a student-led conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space. The summit is comprised of an Alumni Panel on Friday, April 1 from 6:00PM - 9PM, and a Conference on Saturday, April 2 from 9AM to 4PM.";
       $scope.about.summary2 = "CAIS bridges the gap between classroom education and professional application with respect to Hedge Funds, Private Equity, Venture Capital, and Real Assets.";
 
       $scope.speakers = [
@@ -102,7 +102,8 @@
           company: "Bain Capital",
           bio: "Ryan Cotton is a Managing Director at Bain Capital, a leading global private investment firm with approximately $80 billion in assets under management.  He has significant experience in private equity investing and currently leads Bain Capital’s North American consumer, travel, leisure and hospitality, and real estate investment efforts.",
           bioTwo: "Since joining the firm in 2003, Mr. Cotton has been actively involved with and served on the Board of Directors of a wide spectrum of prominent companies in which Bain Capital has made investments. These businesses currently include TOMS, the company that turned the idea of One for One™ into a global movement; Canada Goose, one of the world’s leading manufacturers of extreme weather outerwear; International Market Centers, the world's largest operator of premier showroom space for home furnishings and décor; Sundial Brands, a leading manufacturer of personal care products; and Apple Leisure Group, a leading hospitality company holding a unique niche in the U.S. travel industry. Mr. Cotton is also responsible for the launch of Virgin Cruises, a start-up cruise line developed and launched in partnership with Virgin and Richard Branson.",
-          bioThree: "Prior to joining Bain Capital in 2003, Mr. Cotton was a consultant at Bain & Company and worked extensively in the consumer and financial services spaces. Previously, he worked in baseball operations as a member of The Boston Red Sox front office.  Mr. Cotton also volunteers his time to support a variety of charitable organizations. He currently serves on the Board of Directors of City Year New York, an education-focused, nonprofit organization founded in 1988 that partners with public schools to provide full-time targeted intervention for students most at risk of dropping out, and the St. Mark’s School of Texas, a K-12 primary school located in Dallas, Texas.\nMr. Cotton received an M.B.A from The Stanford Graduate School of Business where he was a Seibel Scholar, an Arjay Miller Scholar and the winner of the Alexander A. Robichek Award for Outstanding Achievement in Finance. He received an A.B. in Philosophy from Princeton University."
+          bioThree: "Prior to joining Bain Capital in 2003, Mr. Cotton was a consultant at Bain & Company and worked extensively in the consumer and financial services spaces. Previously, he worked in baseball operations as a member of The Boston Red Sox front office.  Mr. Cotton also volunteers his time to support a variety of charitable organizations. He currently serves on the Board of Directors of City Year New York, an education-focused, nonprofit organization founded in 1988 that partners with public schools to provide full-time targeted intervention for students most at risk of dropping out, and the St. Mark’s School of Texas, a K-12 primary school located in Dallas, Texas.\nMr. Cotton received an M.B.A from The Stanford Graduate School of Business where he was a Seibel Scholar, an Arjay Miller Scholar and the winner of the Alexander A. Robichek Award for Outstanding Achievement in Finance. He received an A.B. in Philosophy from Princeton University.",
+          keynote: true
         },
         {
           name: "James Goodman",
@@ -112,7 +113,8 @@
           title: "President",
           preposition: true,
           company: "Gemini Investors",
-          bio: "Jim has been an investor in private middle market companies for the last 26 years. Since 1993, when he founded Gemini’s predecessor firm, he has raised six private equity funds and completed investments in more than 120 different companies. From 1989 to 1993, Mr. Goodman completed over $400 million in private equity transactions at Berkshire Partners, a Boston-based private investment firm. Previously, he was a management consultant for five years with Bain & Company. Mr. Goodman has been a Director or Board observer for over 40 portfolio companies during his investment career. A speaker at numerous industry conferences and events, Mr. Goodman received his A.B., J.D., and M.B.A. degrees from Harvard University and is a member of the State Bar of California."
+          bio: "Jim has been an investor in private middle market companies for the last 26 years. Since 1993, when he founded Gemini’s predecessor firm, he has raised six private equity funds and completed investments in more than 120 different companies. From 1989 to 1993, Mr. Goodman completed over $400 million in private equity transactions at Berkshire Partners, a Boston-based private investment firm. Previously, he was a management consultant for five years with Bain & Company. Mr. Goodman has been a Director or Board observer for over 40 portfolio companies during his investment career. A speaker at numerous industry conferences and events, Mr. Goodman received his A.B., J.D., and M.B.A. degrees from Harvard University and is a member of the State Bar of California.",
+          keynote: true
         },
         {
           name: "Bruce Martin",
@@ -121,7 +123,8 @@
           year: "",
           title: "Managing Director and Executive Committee Member",
           company: "Angelo, Gordon & Co.",
-          bio: "Bruce Martin joined Angelo, Gordon in 1999 to focus on investments in the leveraged loan market.  He is a Managing Director and a member of the firm’s executive committee. Bruce is head of the firm’s leveraged loan and high yield business and portfolio manager of the firm’s Northwoods Capital CLOs, the Diversified Credit Strategies and Income Funds and several separate accounts. Since 1993, Bruce has analyzed high yield investments ranging from par loans to distressed debt and has also focused on equity value creation as a member of the Board of Directors for Angelo, Gordon portfolio companies. Prior to joining the firm, Bruce was a High Yield Bond Analyst at Putnam Investments and at Eaton Vance.  Before working at Eaton Vance, he worked at John Hancock as a Senior Corporate Bond/High Yield Analyst and at Insurance Service Offices as an Actuarial Analyst. Bruce holds a B.A. degree in Mathematics from SUNY Binghamton and an M.B.A. degree from Northeastern University."
+          bio: "Bruce Martin joined Angelo, Gordon in 1999 to focus on investments in the leveraged loan market.  He is a Managing Director and a member of the firm’s executive committee. Bruce is head of the firm’s leveraged loan and high yield business and portfolio manager of the firm’s Northwoods Capital CLOs, the Diversified Credit Strategies and Income Funds and several separate accounts. Since 1993, Bruce has analyzed high yield investments ranging from par loans to distressed debt and has also focused on equity value creation as a member of the Board of Directors for Angelo, Gordon portfolio companies. Prior to joining the firm, Bruce was a High Yield Bond Analyst at Putnam Investments and at Eaton Vance.  Before working at Eaton Vance, he worked at John Hancock as a Senior Corporate Bond/High Yield Analyst and at Insurance Service Offices as an Actuarial Analyst. Bruce holds a B.A. degree in Mathematics from SUNY Binghamton and an M.B.A. degree from Northeastern University.",
+          keynote: true
         },
         {
           name: "Tom Andrews",
@@ -187,7 +190,9 @@
           topic: "",
           year: "",
           title: "Investment Professional",
-          company: "Generate Capital"
+          company: "Generate Capital",
+          bio: "Nick is currently an Investment Professional at Generate Capital where he focuses on equity investments in the distributed generation, energy efficiency and waste technology sectors. Before joining Generate in 2015, Nick was a member of the Private Equity team at Fortress Investment Group, a diversified global asset manager with over $75 billion under management. Here he worked on asset and corporate transactions in the transportation, infrastructure and energy sectors. Prior to Fortress, Nick was an analyst within the Global Investment Research group at Goldman Sachs, focused on the aerospace & defense sector.",
+          bioTwo: "Nick received his BS from Northeastern University with a summa cum laude designation. Nick is also a co-founder of Northeastern's venture accelerator program, IDEA."
         }
     ];
 
@@ -197,7 +202,7 @@
           img: "/public/assets/img/speakers/previous_speakers/keith-black.jpg",
           topic: "Harvard, Yale and Investments: A Post-Crisis View",
           year: "2015",
-          title: "Managing Director of Curriculum and Exams",
+          title: "Managing Director",
           company: "CAIA Association"
         },
         {
@@ -228,14 +233,19 @@
 
     $scope.schedule.friday = [
       {
+        time: "6:00 PM",
+        activity: "Registration",
+        speaker: ""
+      },
+      {
         time: "6:30 PM",
         activity: "Welcome",
-        speaker: "Nicholas Lara - Founder and Chairman of CAIS"
+        speaker: "Nicholas Lara - Founder and Chairman of CAIS\nHugh Courtney, Ph.D. - Dean, D'Amore-McKim School of Business"
       },
       {
         time: "6:45 PM",
-        activity: "D'Amore-McKim School of Business Alumni Panel",
-        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nMichael St. Germain - Director at LR Global\nModerated by Professor Nicole Boyson"
+        activity: "D'Amore-McKim School of Business Alumni Panel\nModerated by Professor Nicole Boyson - Professor of Finance at Northeastern University",
+        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nMichael St. Germain - Director at LR Global"
       },
       {
         time: "7:35 PM",
@@ -277,8 +287,8 @@
       },
       {
         time: "11:50 AM",
-        activity: "Generating Alpha in the Current Market Environment",
-        speaker: "Sean Wilson - Managing Partner and CIO at LR Global\nGary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO\nModerated by Professor Nicole Boyson"
+        activity: "Generating Alpha in the Current Market Environment\nModerated by Professor Nicole Boyson - Professor of Finance at Northeastern University",
+        speaker: "Sean Wilson - Managing Partner and CIO at LR Global\nGary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO"
       },
       {
         time: "12:50 PM",
@@ -319,14 +329,14 @@
           },
           {
             question: "What's the cost?",
-            answer: "Early bird registration is $20 until March 18, after which time the registration fee is $30. This grants you access to both the networking night and the speaker conference the following day as well as breakfast and lunch the day of the speaker conference."
+            answer: "Early bird registration is $20 until March 18, after which time the registration fee is $30. This grants you access to both the Friday alumni panel and the speaker conference the following day as well as breakfast and lunch the day of the speaker conference."
           },
           {
-            question: "What's the Friday networking event about?",
-            answer: "The Friday networking event is a panel-style Q&A session where Northeastern Alumni working in the alternatives space share their experiences, advice, and insights into their respective fields. It's a great opportunity for students to build their Northeastern network, particularly in the competitive alternatives field, and learn how some of our top talent broke into the industry."
+            question: "What's the Friday alumni panel about?",
+            answer: "The Friday alumni panel is a panel-style Q&A session where Northeastern Alumni working in the alternatives space share their experiences, advice, and insights into their respective fields. It's a great opportunity for students to build their Northeastern network, particularly in the competitive alternatives field, and learn how some of our top talent broke into the industry."
           },
           {
-            question: "Do I have to attend both the networking night and the conference?",
+            question: "Do I have to attend both the alumni panel and the conference?",
             answer: "Attendees are free to participate in either event, though we highly recommend coming to both for the best experience!"
           }
         ];
@@ -467,39 +477,31 @@
         var imgRoot = "/public/assets/img/sponsors/";
 
         $scope.sponsors = [
-
-          {
-            name: "D'Amore-McKim School of Business",
-            img: imgRoot + "dmsob-logo-color.png"
-          },
-          {
-            name: "John Hancock",
-            img: imgRoot + "john-hancock-color.png"
-          },
-
-          {
-            name: "Lake Partners",
-            img: imgRoot + "lake-partners.jpg"
-          },
-
-          {
-            name: "MFS",
-            img: imgRoot + "mfs-color.png"
-          },
-
-          {
-            name: "Northeastern Alumni Development Association",
-            img: imgRoot + "nuada-color.png"
-          },
-
-          {
-            name: "State Street",
-            img: imgRoot + "statest-color.png"
-          },
-
           {
             name: "Wall Street Oasis",
-            img: imgRoot + "WSO-logo.jpg"
+            img: imgRoot + "wso.png",
+            title: "Premier Sponsor",
+            hasFacts: true
+          },
+          {
+            name: "Wellington Management",
+            img: imgRoot + "wellington.png",
+            title: "Gold Sponsor"
+          },
+          {
+            name: "Pitchbook",
+            img: imgRoot + "pitchbook.jpg",
+            title: "Data Sponsor"
+          },
+          {
+            name: "Northeastern Alumni Development Association",
+            img: imgRoot + "nuada.png",
+            title: "Silver Sponsor"
+          },
+          {
+            name: "CAIA",
+            img: imgRoot + "caia.jpg",
+            title: "Silver Sponsor"
           }
         ];
 
