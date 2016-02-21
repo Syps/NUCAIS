@@ -245,7 +245,7 @@
       {
         time: "6:45 PM",
         activity: "D'Amore-McKim School of Business Alumni Panel\nModerated by Professor Nicole Boyson - Professor of Finance at Northeastern University",
-        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nMichael St. Germain - Director at LR Global"
+        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nMichael St.Germain - Director at LR Global"
       },
       {
         time: "7:35 PM",
@@ -478,16 +478,17 @@
 
         $scope.sponsors = [
           {
+            name: "Wellington Management",
+            img: imgRoot + "wellington.png",
+            title: "Gold Sponsor"
+          },
+          {
             name: "Wall Street Oasis",
             img: imgRoot + "wso.png",
             title: "Premier Sponsor",
             hasFacts: true
           },
-          {
-            name: "Wellington Management",
-            img: imgRoot + "wellington.png",
-            title: "Gold Sponsor"
-          },
+
           {
             name: "Pitchbook",
             img: imgRoot + "pitchbook.jpg",

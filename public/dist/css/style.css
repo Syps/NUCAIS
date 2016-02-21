@@ -717,6 +717,9 @@ div[ng-view].ng-enter-active {
 
 #sponsors {
   background-color: #fff; }
+  #sponsors img.sponsor-img {
+    width: 60%;
+    height: 40%; }
   #sponsors .section-title {
     margin-bottom: 70px; }
   #sponsors .sponsor-title, #sponsors .sponsor-facts {

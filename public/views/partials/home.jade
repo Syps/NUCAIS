@@ -68,7 +68,7 @@ section#schedule
   div.line-divider
   div.container.animated(ng-class="{fadeInUp:anScheduleChart, 'not-visible':!anScheduleChart}")
     h2 Alumni Panel
-    h3 Friday, April 1, 6:30 PM - 9 PM
+    h3 Friday, April 1, 6:00 PM - 9 PM
     div.table-responsive
       table.table.schedule-table.table-condensed
         thead
@@ -122,7 +122,7 @@ section#sponsors
   div.container
     div.row.row-centered
       div.col-md-6.col-centered.sponsor(ng-repeat="sponsor in sponsors")
-        img.img-responsive(ng-src="{{sponsor.img}}")
+        img.img-responsive.sponsor-img(ng-src="{{sponsor.img}}")
         p.sponsor-title {{sponsor.title}}
         p.sponsor-facts(ng-if="sponsor.hasFacts") For all your <a target="_blank", href="http://www.wallstreetoasis.com/guide/investment-banking-interview-prep-questions">investment banking</a>, <a target="_blank", href="http://www.wallstreetoasis.com/guide/private-equity-interview-prep-questions">private equity</a> and <a target="_blank", href="http://www.wallstreetoasis.com/guide/hedge-fund-interview-questions">hedge fund</a> interview prep needs
 
