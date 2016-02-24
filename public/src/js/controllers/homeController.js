@@ -89,7 +89,7 @@
 
       $scope.about = {};
       $scope.about.title = "About";
-      $scope.about.summary1 = "The Northeastern University Collegiate Alternative Investment Summit (CAIS) is a student-led conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space. The summit is comprised of an Alumni Panel on Friday, April 1 from 6:00PM - 9PM, and a Conference on Saturday, April 2 from 9AM to 4PM.";
+      $scope.about.summary1 = "The Northeastern University Collegiate Alternative Investment Summit (CAIS) is a student-led conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space. The summit is comprised of an Alumni Panel on Friday, April 1 from 6PM - 9PM, and a Conference on Saturday, April 2 from 9AM to 4PM.";
       $scope.about.summary2 = "CAIS bridges the gap between classroom education and professional application with respect to Hedge Funds, Private Equity, Venture Capital, and Real Assets.";
 
       $scope.speakers = [
@@ -127,7 +127,18 @@
           keynote: true
         },
         {
-          name: "Tom Andrews",
+          name: "Gary Bergstrom",
+          img: "/public/assets/img/speakers/headshots/glb.jpg",
+          topic: "",
+          year: "",
+          title: "Consultant",
+          company: "Acadian Asset Management",
+          bio: "Dr. Gary L. Bergstrom is Founder of Acadian Asset Management, Inc., a global equity manager with main offices in Boston and Singapore. Dr. Bergstrom has over thirty-five years of continuous experience in global investing. He spent nine years at the Putnam Companies and started the Putnam International Fund in 1971. During the five years in which he managed the fund, it consistently outperformed global market indices.",
+          bioTwo: "Dr. Bergstrom founded Acadian Financial Research, predecessor of Acadian Asset Management, in 1977. Acadian worked closely with the State Street Bank and Trust Company to launch and manage their first international index fund. In 1987, Acadian ended its formal relationship with State Street and began managing institutional assets directly. Since then, the firm has continued to be a pioneer in developing and implementing advanced active strategies for global equity investing.",
+          bioThree: "Dr. Bergstrom’s pioneering article, \"A New Route to Higher Returns and Lower Risks,\" published in the Journal of Portfolio Management in 1975, was one of the first to advocate major systematic allocations of the assets of U.S.-based funds to non-U.S. equities. Other publications include articles in The Financial Analysts Journal, The Columbia Journal of World Business, and The Sloan Management Review, as well as chapters in many books on investing. Dr. Bergstrom has a particular interest in development economics and emerging markets, gained in part from his extensive research in India during graduate school. He has a doctorate from the Massachusetts Institute of Technology, where he also taught at the Sloan School of Management."
+        },
+        {
+          name: "Thomas Andrews",
           img: "/public/assets/img/speakers/headshots/TomAndrews.jpeg",
           topic: "",
           year: "",
@@ -244,7 +255,7 @@
       },
       {
         time: "6:45 PM",
-        activity: "D'Amore-McKim School of Business Alumni Panel\nModerated by Professor Nicole Boyson - Professor of Finance at Northeastern University",
+        activity: "D'Amore-McKim School of Business Alumni Panel\nModerated by Professor Nicole Boyson",
         speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nMichael St.Germain - Director at LR Global"
       },
       {
@@ -287,7 +298,7 @@
       },
       {
         time: "11:50 AM",
-        activity: "Generating Alpha in the Current Market Environment\nModerated by Professor Nicole Boyson - Professor of Finance at Northeastern University",
+        activity: "Generating Alpha in the Current Market Environment\nModerated by Professor Nicole Boyson",
         speaker: "Sean Wilson - Managing Partner and CIO at LR Global\nGary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO"
       },
       {
@@ -338,7 +349,11 @@
           {
             question: "Do I have to attend both the alumni panel and the conference?",
             answer: "Attendees are free to participate in either event, though we highly recommend coming to both for the best experience!"
-          }
+          },
+          {
+            question: "Is the press allowed to attend?",
+            answer: "As a general practice, we do not invite press to our conference events. For our 2016 Summit, we are operating under Chatham House Rules in order to preserve the substance of our conference. Chatham House Rules are defined as a meeting where participants are free to use the information received, but neither the identity nor the affiliation of the speakers, nor that of any participant, may be revealed."
+          },
         ];
 
         /*
