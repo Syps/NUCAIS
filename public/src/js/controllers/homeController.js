@@ -127,13 +127,14 @@
           keynote: true
         },
         {
-          name: "Gary Bergstrom",
+          name: "Gary Bergstrom, Ph.D",
           img: "/public/assets/img/speakers/headshots/glb.jpg",
           topic: "",
           year: "",
-          title: "Consultant",
+          title: "Founder",
+          preposition: true,
           company: "Acadian Asset Management",
-          bio: "Dr. Gary L. Bergstrom is Founder of Acadian Asset Management, Inc., a global equity manager with main offices in Boston and Singapore. Dr. Bergstrom has over thirty-five years of continuous experience in global investing. He spent nine years at the Putnam Companies and started the Putnam International Fund in 1971. During the five years in which he managed the fund, it consistently outperformed global market indices.",
+          bio: "Dr. Gary L. Bergstrom is the Founder of Acadian Asset Management, Inc., a global equity manager with main offices in Boston and Singapore. Dr. Bergstrom has over thirty-five years of continuous experience in global investing. He spent nine years at the Putnam Companies and started the Putnam International Fund in 1971. During the five years in which he managed the fund, it consistently outperformed global market indices.",
           bioTwo: "Dr. Bergstrom founded Acadian Financial Research, predecessor of Acadian Asset Management, in 1977. Acadian worked closely with the State Street Bank and Trust Company to launch and manage their first international index fund. In 1987, Acadian ended its formal relationship with State Street and began managing institutional assets directly. Since then, the firm has continued to be a pioneer in developing and implementing advanced active strategies for global equity investing.",
           bioThree: "Dr. Bergstrom’s pioneering article, \"A New Route to Higher Returns and Lower Risks,\" published in the Journal of Portfolio Management in 1975, was one of the first to advocate major systematic allocations of the assets of U.S.-based funds to non-U.S. equities. Other publications include articles in The Financial Analysts Journal, The Columbia Journal of World Business, and The Sloan Management Review, as well as chapters in many books on investing. Dr. Bergstrom has a particular interest in development economics and emerging markets, gained in part from his extensive research in India during graduate school. He has a doctorate from the Massachusetts Institute of Technology, where he also taught at the Sloan School of Management."
         },
@@ -244,7 +245,7 @@
 
     $scope.schedule.friday = [
       {
-        time: "6:00 PM",
+        time: "6 PM",
         activity: "Registration",
         speaker: ""
       },
@@ -256,7 +257,7 @@
       {
         time: "6:45 PM",
         activity: "D'Amore-McKim School of Business Alumni Panel\nModerated by Professor Nicole Boyson",
-        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nMichael St.Germain - Director at LR Global"
+        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nMichael St.Germain - Director at LR Global\nEric Rosiello - Associate at Arrowstreet Capital, LP"
       },
       {
         time: "7:35 PM",
