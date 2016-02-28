@@ -188,6 +188,16 @@
           bio: "Karthik Krishnan is an Associate Professor of Finance Thomas Moore Faculty Fellow at the D’Amore-McKim School of Business at Northeastern University. Additionally, Dr. Krishnan is a member of the Launchpad Venture Group, a Boston-area angel investing group focused on early stage investments primarily in high tech and life sciences. Dr. Krishnan graduated from the Delhi College of Engineering and received his Doctor of Philosophy degree in Finance from the Boston College Wallace E. Carroll Graduate School of Management."
         },
         {
+          name: "Nicholas Sammut",
+          img: "/public/assets/img/speakers/headshots/NicholasSammut.jpg",
+          topic: "",
+          year: "",
+          title: "Investment Professional",
+          company: "Generate Capital",
+          bio: "Nick is currently an Investment Professional at Generate Capital where he focuses on equity investments in the distributed generation, energy efficiency and waste technology sectors. Before joining Generate in 2015, Nick was a member of the Private Equity team at Fortress Investment Group, a diversified global asset manager with over $75 billion under management. Here he worked on asset and corporate transactions in the transportation, infrastructure and energy sectors. Prior to Fortress, Nick was an analyst within the Global Investment Research group at Goldman Sachs, focused on the aerospace & defense sector.",
+          bioTwo: "Nick received his BS from Northeastern University with a summa cum laude designation. Nick is also a co-founder of Northeastern's venture accelerator program, IDEA."
+        },
+        {
           name: "Spencer Murray",
           img: "/public/assets/img/speakers/headshots/SpencerMurray.jpg",
           topic: "",
@@ -204,16 +214,6 @@
           title: "Associate",
           company: "Arrowstreet Capital, LP",
           bio: "Eric is an Associate on Arrowstreet's Portfolio Management and Investment Operations teams. Arrowstreet uses a quantitative approach to manage over $50 billion in global equity assets. He focuses on strategic implementation of the firm's model outputs as well as management of special situations & corporate opportunities. Prior to joining the firm full-time after graduation, Eric spent 10 months as a co-op and part-time member of the Portfolio Management team. Eric graduated with B.S. in Finance and Accounting from Northeastern University."
-        },
-        {
-          name: "Nicholas Sammut",
-          img: "/public/assets/img/speakers/headshots/NicholasSammut.jpg",
-          topic: "",
-          year: "",
-          title: "Investment Professional",
-          company: "Generate Capital",
-          bio: "Nick is currently an Investment Professional at Generate Capital where he focuses on equity investments in the distributed generation, energy efficiency and waste technology sectors. Before joining Generate in 2015, Nick was a member of the Private Equity team at Fortress Investment Group, a diversified global asset manager with over $75 billion under management. Here he worked on asset and corporate transactions in the transportation, infrastructure and energy sectors. Prior to Fortress, Nick was an analyst within the Global Investment Research group at Goldman Sachs, focused on the aerospace & defense sector.",
-          bioTwo: "Nick received his BS from Northeastern University with a summa cum laude designation. Nick is also a co-founder of Northeastern's venture accelerator program, IDEA."
         }
     ];
 
@@ -351,6 +351,10 @@
           {
             question: "What's the cost?",
             answer: "Early bird registration is $20 until March 18, after which time the registration fee is $30. This grants you access to both the Friday alumni panel and the speaker conference the following day as well as breakfast and lunch the day of the speaker conference."
+          },
+          {
+            question: "What's the dresscode?",
+            answer: "Business formal is recommended."
           },
           {
             question: "What's the Friday alumni panel about?",
@@ -506,6 +510,12 @@
             name: "Wellington Management",
             img: imgRoot + "wellington.png",
             title: "Gold Sponsor"
+          },
+          {
+            name: "BackBay Communications",
+            img: imgRoot + "bbc.jpg",
+            title: "Platinum Sponsor",
+            link: "http://www.backbaycommunications.com/"
           },
           {
             name: "Wall Street Oasis",

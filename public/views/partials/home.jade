@@ -122,7 +122,8 @@ section#sponsors
   div.container
     div.row.row-centered
       div.col-md-6.col-centered.sponsor(ng-repeat="sponsor in sponsors")
-        img.img-responsive.sponsor-img(ng-src="{{sponsor.img}}")
+        a(ng-class="{clickable: sponsor.clickable}", ng-href="{{sponsor.link}}")
+          img.img-responsive.sponsor-img(ng-src="{{sponsor.img}}")
         p.sponsor-title {{sponsor.title}}
         p.sponsor-facts(ng-if="sponsor.hasFacts") For all your <a target="_blank", href="http://www.wallstreetoasis.com/guide/investment-banking-interview-prep-questions">investment banking</a>, <a target="_blank", href="http://www.wallstreetoasis.com/guide/private-equity-interview-prep-questions">private equity</a> and <a target="_blank", href="http://www.wallstreetoasis.com/guide/hedge-fund-interview-questions">hedge fund</a> interview prep needs
 
