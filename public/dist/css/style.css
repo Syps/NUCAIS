@@ -325,8 +325,7 @@ div[ng-view].ng-enter-active {
       color: #b90900;
       -webkit-animation-duration: 3s;
       -moz-animation-duration: 3s;
-      animation-duration: 3s;
-      font-size: 80px; }
+      animation-duration: 3s; }
 
 .billboard {
   font-size: 20px;
@@ -813,6 +812,8 @@ div[ng-view].ng-enter-active {
       color: #808080; }
 
 @media (min-width: 991px) {
+  #intro h1 {
+    font-size: 80px; }
   .marquee {
     width: 60%;
     padding: 5px; }
@@ -824,6 +825,12 @@ div[ng-view].ng-enter-active {
     text-align: left; } }
 
 @media (max-width: 990px) {
+  #intro h1 {
+    font-size: 56px; }
+  #intro h2 {
+    font-size: 20px; }
+  #intro .top-title-contain {
+    margin-top: 80px; }
   .marquee {
     width: 100%;
     padding: 5px 0px;
@@ -845,8 +852,8 @@ div[ng-view].ng-enter-active {
   #intro .nu-seal {
     margin-bottom: 0px;
     margin-top: 10px;
-    height: 40vh;
-    width: 40vh; }
+    height: 20vh;
+    width: 20vh; }
   #about .billboard div.brief {
     font-size: 14px;
     font-weight: 300;

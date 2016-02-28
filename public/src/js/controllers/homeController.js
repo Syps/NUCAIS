@@ -187,15 +187,24 @@
           company: "Northeastern University",
           bio: "Karthik Krishnan is an Associate Professor of Finance Thomas Moore Faculty Fellow at the D’Amore-McKim School of Business at Northeastern University. Additionally, Dr. Krishnan is a member of the Launchpad Venture Group, a Boston-area angel investing group focused on early stage investments primarily in high tech and life sciences. Dr. Krishnan graduated from the Delhi College of Engineering and received his Doctor of Philosophy degree in Finance from the Boston College Wallace E. Carroll Graduate School of Management."
         },
-        // {
-        //   name: "Spencer Murray",
-        //   img: "/public/assets/img/speakers/headshots/SpencerMurray.jpg",
-        //   topic: "",
-        //   year: "",
-        //   title: "Associate",
-        //   company: "Berkshire Partners",
-        //   bio: "Spencer joined Berkshire Partners in 2015. Prior to joining Berkshire, he was an analyst at Morgan Stanley. Spencer earned his B.S. at Northeastern University."
-        // },
+        {
+          name: "Spencer Murray",
+          img: "/public/assets/img/speakers/headshots/SpencerMurray.jpg",
+          topic: "",
+          year: "",
+          title: "Associate",
+          company: "Berkshire Partners",
+          bio: "Spencer joined Berkshire Partners in 2015. Prior to joining Berkshire, he was an analyst at Morgan Stanley. Spencer earned his B.S. at Northeastern University."
+        },
+        {
+          name: "Eric Rosiello",
+          img: "/public/assets/img/speakers/headshots/ericrosiello.jpg",
+          topic: "",
+          year: "",
+          title: "Associate",
+          company: "Arrowstreet Capital, LP",
+          bio: "Eric is an Associate on Arrowstreet's Portfolio Management and Investment Operations teams. Arrowstreet uses a quantitative approach to manage over $50 billion in global equity assets. He focuses on strategic implementation of the firm's model outputs as well as management of special situations & corporate opportunities. Prior to joining the firm full-time after graduation, Eric spent 10 months as a co-op and part-time member of the Portfolio Management team. Eric graduated with B.S. in Finance and Accounting from Northeastern University."
+        },
         {
           name: "Nicholas Sammut",
           img: "/public/assets/img/speakers/headshots/NicholasSammut.jpg",

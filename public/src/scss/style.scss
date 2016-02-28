@@ -444,8 +444,6 @@ div[ng-view].ng-enter-active {
       -webkit-animation-duration: 3s;
       -moz-animation-duration: 3s;
       animation-duration: 3s;
-      font-size: $intro-text-size;
-
     }
 
     text-align: center;
@@ -1189,6 +1187,15 @@ div[ng-view].ng-enter-active {
 }
 
 @media (min-width: 991px) {
+#intro {
+  h1 {
+    font-size: $intro-text-size;
+  }
+
+
+
+}
+
 
   .marquee {
     width: 60%;
@@ -1208,6 +1215,21 @@ div[ng-view].ng-enter-active {
 }
 
 @media (max-width: 990px) {
+
+
+  #intro {
+    h1 {
+      font-size: $intro-text-size * .7;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .top-title-contain {
+      margin-top: 80px;
+    }
+  }
 
   .marquee {
     width: 100%;
@@ -1254,8 +1276,8 @@ div[ng-view].ng-enter-active {
     .nu-seal {
       margin-bottom: 0px;
       margin-top:10px;
-      height: 40vh;
-      width: 40vh;
+      height: 20vh;
+      width: 20vh;
     }
   }
 
