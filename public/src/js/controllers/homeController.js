@@ -204,7 +204,9 @@
           year: "",
           title: "Associate",
           company: "Berkshire Partners",
-          bio: "Spencer joined Berkshire Partners in 2015. Prior to joining Berkshire, he was an analyst at Morgan Stanley. Spencer earned his B.S. at Northeastern University."
+          bio: "Spencer is an Associate at Berkshire Partners, a Boston-based private equity firm that invests in middle market companies. While with Berkshire, Spencer has worked on investments in the retail-focused healthcare, communications, consumer and industrial sectors. Prior to joining Berkshire in August 2015, he was an analyst in the investment banking division of Morgan Stanley where he advised communications and technology companies on various transactions.",
+          bioTwo: "Outside of work, Spencer spends his time mentoring teenagers and serving on the executive committee of Access Better Learning and Education (“ABLE”), an educational nonprofit in Boston that helps disadvantaged students earn a high school diploma and prepare for college.",
+          bioThree: "Spencer graduated magna cum laude from Northeastern University with a BS in Finance and Accounting."
         },
         {
           name: "Eric Rosiello",
@@ -530,8 +532,8 @@
             title: "Data Sponsor"
           },
           {
-            name: "Northeastern Alumni Development Association",
-            img: imgRoot + "nuada.png",
+            name: "Northeastern University Student Alumni Association",
+            img: imgRoot + "saa-logo.jpg",
             title: "Silver Sponsor"
           },
           {
