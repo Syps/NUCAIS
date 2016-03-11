@@ -1086,6 +1086,15 @@ div[ng-view].ng-enter-active {
   }
 }
 
+
+#press-releases {
+
+
+  .press-release {
+    @include center-horiz;
+    margin-bottom: 20px;
+  }
+}
 //======== Section - Contact ==========\\
 #contact {
 

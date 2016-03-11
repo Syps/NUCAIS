@@ -744,6 +744,11 @@ div[ng-view].ng-enter-active {
   .sponsor .img-responsive {
     margin: 0 auto; }
 
+#press-releases .press-release {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px; }
+
 #contact {
   padding-bottom: 50px;
   background: linear-gradient(135deg, #990000 24%, #ff3333 75%);

@@ -127,6 +127,15 @@ section#sponsors
         p.sponsor-title {{sponsor.title}}
         p.sponsor-facts(ng-if="sponsor.hasFacts") For all your <a target="_blank", href="http://www.wallstreetoasis.com/guide/investment-banking-interview-prep-questions">investment banking</a>, <a target="_blank", href="http://www.wallstreetoasis.com/guide/private-equity-interview-prep-questions">private equity</a> and <a target="_blank", href="http://www.wallstreetoasis.com/guide/hedge-fund-interview-questions">hedge fund</a> interview prep needs
 
+section#press-releases
+  h1.section-title Press Releases
+  div.line-divider
+  div.container
+    div.row.row-centered
+      div.col-md-4.col-centered(ng-repeat="p in press")
+        a(target="_blank", ng-href="{{p.link}}")
+          img.img-responsive.press-release(ng-src="{{p.img}}")
+
 //
   h1.section-title Past Corporate Affiliates
   div.container

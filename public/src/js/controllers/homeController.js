@@ -40,7 +40,7 @@
     $scope.registrationLink = "https://commerce.cashnet.com/SFDMSB2016";
 
       $scope.menuItems = ['About', 'Speakers', 'Schedule', 'Location', 'FAQ',
-      'Sponsors', 'Past Speakers', 'Selected Presentations', 'Management Committee',
+      'Sponsors', 'Press Releases', 'Past Speakers', 'Selected Presentations', 'Management Committee',
       'Advisory Board', 'Contact'];
 
         $scope.nav = {};
@@ -75,6 +75,9 @@
               break;
             case 'past speakers':
               elName = 'past-speakers';
+              break;
+            case 'press releases':
+              elName = 'press-releases';
               break;
           }
 
@@ -311,7 +314,7 @@
       {
         time: "11:50 AM",
         activity: "Generating Alpha in the Current Market Environment\nModerated by Professor Nicole Boyson",
-        speaker: "Sean Wilson - Managing Partner and CIO at LR Global\nGary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO"
+        speaker: "Gary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO"
       },
       {
         time: "12:50 PM",
@@ -502,6 +505,23 @@
              name: "Jake Fulton",
              img: "/public/assets/img/advisory/jakefulton.jpg",
              linkedin: "https://www.linkedin.com/pub/jake-fulton/43/a29/641"
+           }
+         ];
+
+         var pressImgRoot = "/public/assets/img/press/";
+
+         $scope.press = [
+           {
+             link: "https://www.morningstar.com/news/business-wire/BWIPREM_20160308005500/4th-annual-northeastern-university-collegiate-alternative-investment-summit-to-connect-students-professionals-and-academics-with-industry-leaders-for-networking-and-collaborative-discourse.html",
+             img: pressImgRoot + "morningstar.jpg"
+           },
+           {
+             link: "http://finance.yahoo.com/news/4th-annual-northeastern-university-collegiate-110000421.html",
+             img: pressImgRoot + "yahoofinance.png"
+           },
+           {
+             link: "http://www.businesswire.com/news/home/20160308005500/en/4th-Annual-Northeastern-University-Collegiate-Alternative-Investment",
+             img: pressImgRoot + "businesswire.jpg"
            }
          ];
 
