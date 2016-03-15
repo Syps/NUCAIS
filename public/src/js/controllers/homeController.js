@@ -163,6 +163,14 @@
           bioTwo: "Mr. Gries has been involved in all aspects of CDG’s strategic and financial restructuring business as an advisor and as a manager of under-performing and distressed companies. He has also advised lenders, creditors, corporate boards, and equity sponsors on both operational and financial issues. He has been involved with more than 100 restructuring transactions and has successfully restructured billions of dollars of debt. In addition to serving as an advisor, Mr. Gries has served as the chairman of the board of directors of a major NYSE company, as chief executive officer and, on numerous occasions, as chief restructuring officer. Michael Gries received a Bachelor of Science in Accounting and Finance from Northeastern University."
         },
         {
+          name: "Jason Leinwand",
+          img: "/public/assets/img/speakers/headshots/jl2.jpg",
+          year: "",
+          title: "Managing Director",
+          company: "Riverside Risk Advisors",
+          bio: "Jason Leinwand has nearly 30 years of experience in foreign exchange markets. Prior to joining Riverside Risk Advisors in 2015, Jason was the Global Head of FX Trading and Strategy for MetLife, a global insurance company, for nine years. In that role, he was responsible for developing and implementing FX strategies for MetLife’s treasury and finance groups, as well as providing fundamental market analysis and hedging strategies for their merger & acquisitions and private equity teams. In that capacity he was responsible for hedging and execution of the currency risk for all of MetLife’s international acquisitions totaling over $13 billion. Jason led the development of a new enterprise-wide FX policy and managed a dynamic alpha driven $15 billion net equity hedge program across 20 countries. Jason was instrumental in managing an overlay program for MetLife’s emerging market debt portfolio and was responsible for building out the currency desk technology infrastructure. He was the lead in aggregation of the currency exposures into a dynamic real time dashboard that allowed senior management the ability to see all currency exposures across portfolios, entities and countries for the first time. Prior to MetLife, Jason spent nearly 20 years as a senior trader at sell side financial institutions. At Man Financial, Jason was responsible for managing the forward risk for the currency desk. He also held senior roles at Donaldson, Lufkin and Jenrette and Calyon Financial where he was responsible for both FX sales and trading. Jason earned a B.S. in Finance from the D’Amore McKim School of Business at Northeastern University."
+        },
+        {
           name: "Christina Qi",
           img: "/public/assets/img/speakers/headshots/ChristinaQi.png",
           topic: "",
@@ -314,7 +322,7 @@
       {
         time: "11:50 AM",
         activity: "Generating Alpha in the Current Market Environment\nModerated by Professor Nicole Boyson",
-        speaker: "Gary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO"
+        speaker: "Gary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO\nJason Leinwand - Managing Director at Riverside Risk Advisors"
       },
       {
         time: "12:50 PM",
