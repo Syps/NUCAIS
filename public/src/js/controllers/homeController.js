@@ -168,7 +168,7 @@
           year: "",
           title: "Managing Director",
           company: "Riverside Risk Advisors",
-          bio: "Jason Leinwand has nearly 30 years of experience in foreign exchange markets. Prior to joining Riverside Risk Advisors in 2015, Jason was the Global Head of FX Trading and Strategy for MetLife, a global insurance company, for nine years. In that role, he was responsible for developing and implementing FX strategies for MetLife’s treasury and finance groups, as well as providing fundamental market analysis and hedging strategies for their merger & acquisitions and private equity teams. In that capacity he was responsible for hedging and execution of the currency risk for all of MetLife’s international acquisitions totaling over $13 billion. Jason led the development of a new enterprise-wide FX policy and managed a dynamic alpha driven $15 billion net equity hedge program across 20 countries.",
+          bio: "Jason Leinwand has nearly 30 years of experience in foreign exchange markets. In his current role as managing director at Riverside Risk Advisors Jason provides currency trading and strategy expertise to a wide array of globally focused clients in the private equity, project finance, real estate and insurance space. Prior to joining Riverside, Jason was the Global Head of FX Trading and Strategy for MetLife, a global insurance company, for nine years. In that role, he was responsible for developing and implementing FX strategies for MetLife’s treasury and finance groups, as well as providing fundamental market analysis and hedging strategies for their merger & acquisitions and private equity teams. In that capacity he was responsible for hedging and execution of the currency risk for all of MetLife’s international acquisitions totaling over $13 billion. Jason led the development of a new enterprise-wide FX policy and managed a dynamic alpha driven $15 billion net equity hedge program across 20 countries.",
           bioTwo: "Jason was instrumental in managing an overlay program for MetLife’s emerging market debt portfolio and was responsible for building out the currency desk technology infrastructure. He was the lead in aggregation of the currency exposures into a dynamic real time dashboard that allowed senior management the ability to see all currency exposures across portfolios, entities and countries for the first time. Prior to MetLife, Jason spent nearly 20 years as a senior trader at sell side financial institutions. At Man Financial, Jason was responsible for managing the forward risk for the currency desk. He also held senior roles at Donaldson, Lufkin and Jenrette and Calyon Financial where he was responsible for both FX sales and trading. Jason earned a B.S. in Finance from the D’Amore McKim School of Business at Northeastern University."
         },
         {
@@ -522,15 +522,27 @@
          $scope.press = [
            {
              link: "https://www.morningstar.com/news/business-wire/BWIPREM_20160308005500/4th-annual-northeastern-university-collegiate-alternative-investment-summit-to-connect-students-professionals-and-academics-with-industry-leaders-for-networking-and-collaborative-discourse.html",
-             img: pressImgRoot + "morningstar.jpg"
+             img: pressImgRoot + "morningstar.jpg",
+             paddingTop: true,
+             extraPadding: true
            },
            {
              link: "http://finance.yahoo.com/news/4th-annual-northeastern-university-collegiate-110000421.html",
-             img: pressImgRoot + "yahoofinance.png"
+             img: pressImgRoot + "yahoofinance.png",
+             paddingTop: true,
+             extraPadding: true
            },
            {
              link: "http://www.businesswire.com/news/home/20160308005500/en/4th-Annual-Northeastern-University-Collegiate-Alternative-Investment",
-             img: pressImgRoot + "businesswire.jpg"
+             img: pressImgRoot + "businesswire.jpg",
+             paddingTop: false,
+             extraPadding: false
+           },
+           {
+             link: "http://www.reuters.com/article/ma-backbay-comm-idUSnBw085500a+100+BSW20160308",
+             img: pressImgRoot + "reuters.jpg",
+             paddingTop: true,
+             extraPadding: false
            }
          ];
 

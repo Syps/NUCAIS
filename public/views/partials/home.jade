@@ -132,7 +132,7 @@ section#press-releases
   div.line-divider
   div.container
     div.row.row-centered
-      div.col-md-4.col-centered(ng-repeat="p in press")
+      div.col-md-3.col-centered.black-border(ng-repeat="p in press", ng-class="{'small-padding-top': p.paddingTop, 'extra-padding': p.extraPadding}")
         a(target="_blank", ng-href="{{p.link}}")
           img.img-responsive.press-release(ng-src="{{p.img}}")
 
@@ -170,7 +170,7 @@ section#team
   div.line-divider
   div.container.animated(ng-class="{slideInRight:anTeamPics, 'not-visible':!anTeamPics}")
     div.row.row-centered
-      div.col-md-3.member-box.col-centered(ng-repeat="member in team")
+      div.col-md-3.col-sm-1.member-box.col-centered(ng-repeat="member in team")
         a(target="_blank", ng-href="{{member.linkedin}}")
           div.img-responsive
             img(ng-src="{{member.img}}")
