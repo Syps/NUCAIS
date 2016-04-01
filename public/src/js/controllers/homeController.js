@@ -39,6 +39,26 @@
 
     $scope.registrationLink = "https://commerce.cashnet.com/SFDMSB2016";
 
+    $scope.hideButton = false;
+
+    $scope.getTimeLeftMessage = function() {
+      var endDate = new Date("April 1, 2016 11:00:00").getTime() / 1000,
+        now = Date.now() / 1000,
+        message;
+
+        console.log("end Date = " + endDate);
+        console.log("now = " + now);
+
+      if (endDate > now) {
+        message = "Only " + Math.floor((endDate - now) / 3600) + " hours left to register! Additional tickets will be sold at door on Saturday.";
+      } else {
+        $scope.hideButton = true;
+        message = "Online registration has ended. Additional tickets will be sold at door on Saturday.";
+      }
+      return message;
+
+    }
+
       $scope.menuItems = ['About', 'Speakers', 'Schedule', 'Location', 'FAQ',
       'Sponsors', 'Press Releases', 'Past Speakers', 'Selected Presentations', 'Management Committee',
       'Advisory Board', 'Contact'];
@@ -126,7 +146,7 @@
           year: "",
           title: "Managing Director and Executive Committee Member",
           company: "Angelo, Gordon & Co.",
-          bio: "Bruce Martin joined Angelo, Gordon in 1999 to focus on investments in the leveraged loan market.  He is a Managing Director and a member of the firm’s executive committee. Bruce is head of the firm’s leveraged loan and high yield business and portfolio manager of the firm’s Northwoods Capital CLOs, the Diversified Credit Strategies and Income Funds and several separate accounts. Since 1993, Bruce has analyzed high yield investments ranging from par loans to distressed debt and has also focused on equity value creation as a member of the Board of Directors for Angelo, Gordon portfolio companies. Prior to joining the firm, Bruce was a High Yield Bond Analyst at Putnam Investments and at Eaton Vance.  Before working at Eaton Vance, he worked at John Hancock as a Senior Corporate Bond/High Yield Analyst and at Insurance Service Offices as an Actuarial Analyst. Bruce holds a B.A. degree in Mathematics from SUNY Binghamton and an M.B.A. degree from Northeastern University.",
+          bio: "Bruce Martin joined Angelo, Gordon in 1999 to focus on investments in the leveraged loan market.  He was formerly a Managing Director and a member of the firm’s executive committee. Bruce was head of the firm’s leveraged loan and high yield business and portfolio manager of the firm’s Northwoods Capital CLOs, the Diversified Credit Strategies and Income Funds and several separate accounts. During his time at Angelo, Gordon, Bruce analyzed high yield investments ranging from par loans to distressed debt and has also focused on equity value creation as a member of the Board of Directors for Angelo, Gordon portfolio companies. Prior to joining Angelo, Gordon, Bruce was a High Yield Bond Analyst at Putnam Investments and at Eaton Vance.  Before working at Eaton Vance, he worked at John Hancock as a Senior Corporate Bond/High Yield Analyst and at Insurance Service Offices as an Actuarial Analyst. Bruce holds a B.A. degree in Mathematics from SUNY Binghamton and an M.B.A. degree from Northeastern University.",
           keynote: true
         },
         {
@@ -280,12 +300,12 @@
       {
         time: "6:45 PM",
         activity: "D'Amore-McKim School of Business Alumni Panel\nModerated by Professor Nicole Boyson",
-        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nMichael St.Germain - Director at LR Global\nEric Rosiello - Associate at Arrowstreet Capital, LP"
+        speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nEric Rosiello - Associate at Arrowstreet Capital, LP"
       },
       {
         time: "7:35 PM",
         activity: "Keynote",
-        speaker: "Bruce Martin - Managing Director and Executive Committee Member at Angelo, Gordon & Co."
+        speaker: "Bruce Martin - Former Managing Director and Executive Committee Member at Angelo, Gordon & Co."
       },
       {
         time: "8:20 PM",

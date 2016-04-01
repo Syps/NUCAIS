@@ -17,7 +17,8 @@ section#intro
       img.nu-seal(src="/public/assets/img/nu-seal.png")
       div.intro-date-contain
         h2.animated.fadeIn APRIL 1 - 2
-      a.apply-btn.animated.fadeIn(target="_blank", href="https://commerce.cashnet.com/SFDMSB2016") REGISTER
+      a.apply-btn.animated.fadeIn(ng-hide="hideButton", target="_blank", href="https://commerce.cashnet.com/SFDMSB2016") REGISTER
+      h2.registration-warning {{getTimeLeftMessage()}}
 
 section#about
   h1.section-title.animated(ng-class="{slideInLeft:anAbout, 'not-visible':!anAbout}") {{about.title}}
