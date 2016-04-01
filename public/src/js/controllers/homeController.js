@@ -144,7 +144,7 @@
           img: "/public/assets/img/speakers/headshots/BruceMartin.jpg",
           topic: "",
           year: "",
-          title: "Managing Director and Executive Committee Member",
+          title: "Former Managing Director and Executive Committee Member",
           company: "Angelo, Gordon & Co.",
           bio: "Bruce Martin joined Angelo, Gordon in 1999 to focus on investments in the leveraged loan market.  He was formerly a Managing Director and a member of the firm’s executive committee. Bruce was head of the firm’s leveraged loan and high yield business and portfolio manager of the firm’s Northwoods Capital CLOs, the Diversified Credit Strategies and Income Funds and several separate accounts. During his time at Angelo, Gordon, Bruce analyzed high yield investments ranging from par loans to distressed debt and has also focused on equity value creation as a member of the Board of Directors for Angelo, Gordon portfolio companies. Prior to joining Angelo, Gordon, Bruce was a High Yield Bond Analyst at Putnam Investments and at Eaton Vance.  Before working at Eaton Vance, he worked at John Hancock as a Senior Corporate Bond/High Yield Analyst and at Insurance Service Offices as an Actuarial Analyst. Bruce holds a B.A. degree in Mathematics from SUNY Binghamton and an M.B.A. degree from Northeastern University.",
           keynote: true
