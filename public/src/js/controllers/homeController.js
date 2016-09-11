@@ -42,22 +42,26 @@
     $scope.hideButton = false;
 
     $scope.getTimeLeftMessage = function() {
-      var endDate = new Date("April 1, 2016 11:00:00").getTime() / 1000,
-        now = Date.now() / 1000,
-        message;
+      var endDate = new Date("April 6, 2017 11:00:00").getTime() / 1000,
+          now = Date.now() / 1000,
+          message;
 
-        console.log("end Date = " + endDate);
-        console.log("now = " + now);
+      var dayDiff = function(d1,d2) {
+	return (d1 - d2) / (24 * 60 * 60);
+      };
 
-      if (endDate > now) {
+      if (dayDiff(endDate, now) > 2) {
+	message = "More details to come";
+	$scope.hideButton = true;
+	}
+      else if (endDate > now) {
         message = "Only " + Math.floor((endDate - now) / 3600) + " hours left to register! Additional tickets will be sold at door on Saturday.";
       } else {
         $scope.hideButton = true;
         message = "Online registration has ended. Additional tickets will be sold at door on Saturday.";
       }
       return message;
-
-    }
+    };
 
       $scope.menuItems = ['About', 'Speakers', 'Schedule', 'Location', 'FAQ',
       'Sponsors', 'Press Releases', 'Past Speakers', 'Selected Presentations', 'Management Committee',
@@ -112,7 +116,7 @@
 
       $scope.about = {};
       $scope.about.title = "About";
-      $scope.about.summary1 = "The Northeastern University Collegiate Alternative Investment Summit (CAIS) is a student-led conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space. The summit is comprised of an Alumni Panel on Friday, April 1 from 6PM - 9PM, and a Conference on Saturday, April 2 from 9AM to 4PM.";
+      $scope.about.summary1 = "The Northeastern University Collegiate Alternative Investment Summit (CAIS) is a student-led conference designed to create a knowledge forum with some of the brightest minds in the alternative investments space. The summit is comprised of an Alumni Panel on Friday, April 7 from 6PM - 9PM, and a Conference on Saturday, April 8 from 9AM to 4PM.";
       $scope.about.summary2 = "CAIS bridges the gap between classroom education and professional application with respect to Hedge Funds, Private Equity, Venture Capital, and Real Assets.";
 
       $scope.speakers = [
@@ -384,7 +388,7 @@
           },
           {
             question: "What's the cost?",
-            answer: "Early bird registration is $20 until March 18, after which time the registration fee is $30. This grants you access to both the Friday alumni panel and the speaker conference the following day as well as breakfast and lunch the day of the speaker conference."
+            answer: "The 2017 summit cost will be released at a later date. Registration grants you access to both the Friday alumni panel and the speaker conference the following day as well as breakfast and lunch the day of the speaker conference."
           },
           {
             question: "What's the dresscode?",
@@ -400,7 +404,7 @@
           },
           {
             question: "Is the press allowed to attend?",
-            answer: "As a general practice, we do not invite press to our conference events. For our 2016 Summit, we are operating under Chatham House Rules in order to preserve the substance of our conference. Chatham House Rules are defined as a meeting where participants are free to use the information received, but neither the identity nor the affiliation of the speakers, nor that of any participant, may be revealed."
+            answer: "As a general practice, we do not invite press to our conference events. Our 2017 summit will operate under Chatham House Rules in order to preserve the substance of the conference. Chatham House Rules are defined as a meeting where participants are free to use the information received, but neither the identity nor the affiliation of the speakers, nor that of any participant, may be revealed."
           },
         ];
 
@@ -425,21 +429,21 @@
 
         $scope.team = [
           {
-            name: "Rohan Venkatesh",
-            img: "/public/assets/img/team/rohanvenkatesh.jpg",
-            linkedin: "https://www.linkedin.com/in/rohanvenkatesh",
+            name: "Lauren Tawfik",
+            img: "/public/assets/img/team/laurentawfik.jpg",
+            linkedin: "https://www.linkedin.com/in/lauren-tawfik-a93a48111?authType=name&authToken=jiE_&trk=prof-sb-browse_map-name",
             title: "Co-President"
           },
           {
-            name: "Jake Fulton",
-            img: "/public/assets/img/team/jakefulton.jpg",
-            linkedin: "https://www.linkedin.com/pub/jake-fulton/43/a29/641",
-            title: "Co-President"
-          },
+            name: "Cole Weppner",
+            img: "/public/assets/img/team/coleweppner.jpg",
+            linkedin: "https://www.linkedin.com/in/cole-weppner-a1b59599",
+	    title: "Co-President"
+	  },
           {
-            name: "Amy Zhou",
-            img: "/public/assets/img/team/amyzhou.jpg",
-            linkedin: "https://www.linkedin.com/in/amywzhou"
+            name: "Sofia Sotelo Ortiz",
+            img: "/public/assets/img/team/sofiasoteloortiz_rename.jpg",
+            linkedin: "https://www.linkedin.com/in/sofia-sotelo-ortiz-48702271"
           },
           {
             name: "Daniel Arvidsson",
@@ -454,21 +458,33 @@
             title: ""
           },
           {
+            name: "Helen Wang",
+            img: "/public/assets/img/team/helenwang.jpg",
+            linkedin: "https://www.linkedin.com/in/hwang18",
+            title: ""
+          },
+          {
             name: "Mark Garbin",
             img: "/public/assets/img/team/markgarbin.jpg",
             linkedin: "https://www.linkedin.com/in/markkgarbin",
             title: ""
           },
           {
-            name: "Lauren Tawfik",
-            img: "/public/assets/img/team/laurentawfik.jpg",
-            linkedin: "https://www.linkedin.com/in/lauren-tawfik-a93a48111?authType=name&authToken=jiE_&trk=prof-sb-browse_map-name",
+            name: "Robert Hartman",
+            img: "/public/assets/img/team/roberthartman.jpg",
+            linkedin: "https://www.linkedin.com/in/robert-hartman",
             title: ""
           },
           {
-            name: "Michael Counihan",
-            img: "/public/assets/img/team/michaelcounihan.jpg",
-            linkedin: "https://www.linkedin.com/in/michaelbcounihan",
+            name: "John O'Connor",
+            img: "/public/assets/img/team/johnoconnor.jpg",
+            linkedin: "https://www.linkedin.com/in/john-o-connor-49817773",
+            title: ""
+          },
+          {
+            name: "John Zhang",
+            img: "/public/assets/img/team/johnzhang_rename.jpg",
+            linkedin: "https://www.linkedin.com/in/john-zhang-99a131b4",
             title: ""
           },
           {
@@ -534,6 +550,16 @@
              name: "Jake Fulton",
              img: "/public/assets/img/advisory/jakefulton.jpg",
              linkedin: "https://www.linkedin.com/pub/jake-fulton/43/a29/641"
+           },
+           {
+             name: "Amy Zhou",
+             img: "/public/assets/img/advisory/amyzhou.jpg",
+             linkedin: "https://www.linkedin.com/in/amywzhou"
+           },
+           {
+             name: "Michael Counihan",
+             img: "/public/assets/img/advisory/michaelcounihan.jpg",
+             linkedin: "https://www.linkedin.com/in/michaelbcounihan"
            }
          ];
 
