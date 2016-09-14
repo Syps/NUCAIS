@@ -83,7 +83,6 @@
           $scope.toggleBurger();
           var dropDown = document.getElementById('drop-menu');
           dropDown.style.height = 0;
-          // $scope.$apply();
 
           var elName = section.toLowerCase();
 
@@ -107,8 +106,8 @@
 
           var offset = 30;
           var duration = 2000;
-    var target = angular.element(document.getElementById(elName));
-    $document.scrollToElement(target, offset, duration);
+          var target = angular.element(document.getElementById(elName));
+          $document.scrollToElement(target, offset, duration);
   };
 
         $scope.intro = {};
@@ -644,7 +643,7 @@
           }
         ];
 
-        // scroll logic
+        // scroll "logic"
 
         // set initial
         $scope.scrollPosition = 0;
@@ -752,7 +751,6 @@
        });
 
      }
-    /* end controller*/
   ]);
 
 }());

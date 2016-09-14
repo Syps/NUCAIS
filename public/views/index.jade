@@ -21,29 +21,14 @@ html(ng-app="app")
     link(rel="stylesheet", type="text/css", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
     link(rel="stylesheet", type="text/css", href="bower_components/animate.css/animate.min.css")
 
-
-
-
     // Stylesheets (mobile, desktop)
     link(rel="stylesheet", type="text/css", href="public/dist/css/style.css", media="screen, handheld")
-    link(rel="stylesheet", type="text/css", href="public/dist/css/enhanced.css", media="screen and (min-width: 40.5em)")
-
-    // IE case
-    <!--[if (lt IE 9)&(!IEMobile)]>
-    <link rel="stylesheet" type="text/css" href="public/dist/css/enhanced.css" />
-    <![endif]-->
 
   body(ng-view)
 
-
-
-
-    // scripts
     script(src="bower_components/angular/angular.min.js")
     script(src="bower_components/angular-route/angular-route.min.js")
     script(src="bower_components/angular-animate/angular-animate.min.js")
     script(src="bower_components/angular-scroll/angular-scroll.min.js")
     script(src="public/dist/js/app.min.js")
-    // Google Maps API
-    //script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdHKEEkB-rqsdrtapea5JMU_VSVvWZ7QM&callback=initMap")
     script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js")

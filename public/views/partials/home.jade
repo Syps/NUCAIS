@@ -88,7 +88,6 @@ section#schedule
             td.activity-cell {{row.activity}}
             td.speaker-cell {{row.speaker}}
 
-
 section#location
   h1.section-title Location
   div.container
@@ -137,13 +136,6 @@ section#press-releases
         a(target="_blank", ng-href="{{p.link}}")
           img.img-responsive.press-release(ng-src="{{p.img}}")
 
-//
-  h1.section-title Past Corporate Affiliates
-  div.container
-    div.row
-      div.col-md-3.sponsor(ng-repeat="a in affiliates")
-        img.img-responsive(ng-src="{{a.img}}")
-
 section#past-speakers
   h1.section-title.animated(ng-class="{slideInLeft:anPastSpeakers, 'not-visible':!anPastSpeakers}") Past Keynote Speakers
   div.container.animated(ng-class="{slideInRight:anPastSpeakersPics, 'not-visible':!anPastSpeakersPics}")
@@ -177,8 +169,6 @@ section#team
             img(ng-src="{{member.img}}")
             div.info-appear
               i.fa.fa-linkedin.icon-appear.fa-5x
-              //span.img-caption
-              //p {{member.info}}
             p {{member.name}}
             p.ital {{member.title}}
 
@@ -198,15 +188,10 @@ section#advisory-board
             p {{member.name}}
             p.ital {{member.title}}
 
-
 section#contact
   h1.section-title.animated Get In Touch
   div.contact-blurb
-    //p.subtitle Questions?   Want to get involved?   Please feel free to connect!
     div.line-divider.white
-    //
-      div.email
-        a.social-btn(href="mailto:contactnucais@gmail.com") contactnucais@gmail.com
   div.social-links
     a.social-btn(target="_blank", href="https://www.linkedin.com/groups/4541006")
       i.fa.fa-linkedin.fa-2x

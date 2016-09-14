@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tests-unit": "grunt mochaTest"
+    "tests-unit": "grunt mochaTest",
+    "deploy": "ssh nucais 'cd ~/sites/NUCAIS && git checkout master && git pull'"
   },
   "repository": {
     "type": "git",
