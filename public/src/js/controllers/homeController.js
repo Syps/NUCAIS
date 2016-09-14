@@ -552,11 +552,6 @@
              linkedin: "https://www.linkedin.com/pub/jake-fulton/43/a29/641"
            },
            {
-             name: "Amy Zhou",
-             img: "/public/assets/img/advisory/amyzhou.jpg",
-             linkedin: "https://www.linkedin.com/in/amywzhou"
-           },
-           {
              name: "Michael Counihan",
              img: "/public/assets/img/advisory/michaelcounihan.jpg",
              linkedin: "https://www.linkedin.com/in/michaelbcounihan"
