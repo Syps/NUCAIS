@@ -561,12 +561,6 @@
 
          $scope.press = [
            {
-             link: "https://www.morningstar.com/news/business-wire/BWIPREM_20160308005500/4th-annual-northeastern-university-collegiate-alternative-investment-summit-to-connect-students-professionals-and-academics-with-industry-leaders-for-networking-and-collaborative-discourse.html",
-             img: pressImgRoot + "morningstar.jpg",
-             paddingTop: true,
-             extraPadding: true
-           },
-           {
              link: "http://finance.yahoo.com/news/4th-annual-northeastern-university-collegiate-110000421.html",
              img: pressImgRoot + "yahoofinance.png",
              paddingTop: true,
@@ -576,12 +570,6 @@
              link: "http://www.businesswire.com/news/home/20160308005500/en/4th-Annual-Northeastern-University-Collegiate-Alternative-Investment",
              img: pressImgRoot + "businesswire.jpg",
              paddingTop: false,
-             extraPadding: false
-           },
-           {
-             link: "http://www.reuters.com/article/ma-backbay-comm-idUSnBw085500a+100+BSW20160308",
-             img: pressImgRoot + "reuters.jpg",
-             paddingTop: true,
              extraPadding: false
            }
          ];
