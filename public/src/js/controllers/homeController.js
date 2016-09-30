@@ -320,7 +320,7 @@
     $scope.schedule.saturday = [
       {
         time: "9 AM",
-        activity: "Registration and Breakfast",
+        activity: "Registration & Breakfast",
         speaker: ""
       },
       {
