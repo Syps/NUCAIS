@@ -441,7 +441,7 @@
 	  },
           {
             name: "Sofia Sotelo Ortiz",
-            img: "/public/assets/img/team/sofiasoteloortiz_rename.jpg",
+            img: "/public/assets/img/team/sofiasoteloortiz.jpg",
             linkedin: "https://www.linkedin.com/in/sofia-sotelo-ortiz-48702271"
           },
           {
@@ -469,6 +469,12 @@
             title: ""
           },
           {
+            name: "Colby Gilbert",
+            img: "/public/assets/img/team/colbygilbert.jpg",
+            linkedin: "https://www.linkedin.com/in/gilbertrichardc",
+            title: ""
+          },
+          {
             name: "Robert Hartman",
             img: "/public/assets/img/team/roberthartman.jpg",
             linkedin: "https://www.linkedin.com/in/robert-hartman",
@@ -482,7 +488,7 @@
           },
           {
             name: "John Zhang",
-            img: "/public/assets/img/team/johnzhang_rename.jpg",
+            img: "/public/assets/img/team/johnzhang.jpg",
             linkedin: "https://www.linkedin.com/in/john-zhang-99a131b4",
             title: ""
           },
