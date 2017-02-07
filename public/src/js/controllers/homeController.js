@@ -527,6 +527,11 @@
              linkedin: "https://www.linkedin.com/in/rohitmalrani"
            },
            {
+             name: "Amy Zhou",
+             img: "/public/assets/img/advisory/amyzhou.jpg",
+             linkedin: "https://www.linkedin.com/in/amywzhou/"
+           },
+           {
              name: "Amanda White",
              img: "/public/assets/img/advisory/white.jpg",
              linkedin: "https://www.linkedin.com/pub/amanda-white/27/86b/20a"
