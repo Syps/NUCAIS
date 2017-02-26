@@ -47,13 +47,13 @@
           message;
 
       var dayDiff = function(d1,d2) {
-	return (d1 - d2) / (24 * 60 * 60);
+	       return (d1 - d2) / (24 * 60 * 60);
       };
 
       if (dayDiff(endDate, now) > 2) {
-	message = "More details to come";
-	$scope.hideButton = true;
-	}
+	        message = "More details to come";
+	         $scope.hideButton = true;
+	    }
       else if (endDate > now) {
         message = "Only " + Math.floor((endDate - now) / 3600) + " hours left to register! Additional tickets will be sold at door on Saturday.";
       } else {
