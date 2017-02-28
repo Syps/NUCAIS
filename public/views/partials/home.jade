@@ -65,28 +65,30 @@ section#speakers
           p.speaker-bio.multiPar {{speaker.bioThree}}
 
 section#schedule
-  h1.section-title.animated(ng-class="{slideInLeft:anSchedule, 'not-visible':!anSchedule}") 2016 Schedule
+  h1.section-title.animated(ng-class="{slideInLeft:anSchedule, 'not-visible':!anSchedule}") 2017 Schedule
   div.line-divider
   div.container.animated(ng-class="{fadeInUp:anScheduleChart, 'not-visible':!anScheduleChart}")
-    h2 Alumni Panel
-    h3 Friday, April 1, 6 PM - 9 PM
-    div.table-responsive
-      table.table.schedule-table.table-condensed
-        thead
-          tr(ng-repeat="row in schedule.friday")
-            td.time-cell {{row.time}}
-            td.activity-cell {{row.activity}}
-            td.speaker-cell {{row.speaker}}
+    div.billboard The official CAIS 2017 schedule will be released in the coming days. Alumni Night will take place from 6PM to 9PM on April 7, 2017. The Conference will take place from 9AM to 4PM on April 8, 2017.
+    //
+      h2 Alumni Night
+      h3 Friday, April 1, 6 PM - 9 PM
+      div.table-responsive
+        table.table.schedule-table.table-condensed
+          thead
+            tr(ng-repeat="row in schedule.friday")
+              td.time-cell {{row.time}}
+              td.activity-cell {{row.activity}}
+              td.speaker-cell {{row.speaker}}
 
-    h2 Conference
-    h3 Saturday, April 2, 9 AM - 4 PM
-    div.table-responsive
-      table.table.table-condensed.schedule-table
-        thead
-          tr(ng-repeat="row in schedule.saturday")
-            td.time-cell {{row.time}}
-            td.activity-cell {{row.activity}}
-            td.speaker-cell {{row.speaker}}
+      h2 Conference
+      h3 Saturday, April 2, 9 AM - 4 PM
+      div.table-responsive
+        table.table.table-condensed.schedule-table
+          thead
+            tr(ng-repeat="row in schedule.saturday")
+              td.time-cell {{row.time}}
+              td.activity-cell {{row.activity}}
+              td.speaker-cell {{row.speaker}}
 
 section#location
   h1.section-title Location
@@ -95,15 +97,15 @@ section#location
       div.col-md-12#map.col-centered
     div.row.row-centered.location-text-holder
       div.col-md-6.location-text
+        h2 Alumni Night
+        p.ital Alumni Center
+        p.ital 716 Columbus Ave
+        p.ital Boston, MA 02120
+      div.col-md-6.location-text
         h2 Conference
         p.ital 20 West Village F
         p.ital 40A Leon Street
         p.ital Boston, MA 02115
-      div.col-md-6.location-text
-        h2 Alumni Panel
-        p.ital Alumni Center
-        p.ital 716 Columbus Ave
-        p.ital Boston, MA 02120
 
 section#faq
   h1.section-title.animated(ng-class="{slideInLeft:anFaq, 'not-visible':!anFaq}") FAQ
@@ -117,15 +119,16 @@ section#faq
     a.contact-link(ng-click="jump('contact')") Don't see your question here?
 
 section#sponsors
-  h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") 2016 Sponsors
+  h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") 2017 Sponsors
   div.line-divider
   div.container
     div.row.row-centered
-      div.col-md-6.col-centered.sponsor(ng-repeat="sponsor in sponsors")
-        a(ng-class="{clickable: sponsor.clickable}", ng-href="{{sponsor.link}}")
-          img.img-responsive.sponsor-img(ng-src="{{sponsor.img}}")
-        p.sponsor-title {{sponsor.title}}
-        p.sponsor-facts(ng-if="sponsor.hasFacts") For all your <a target="_blank", href="http://www.wallstreetoasis.com/guide/investment-banking-interview-prep-questions">investment banking</a>, <a target="_blank", href="http://www.wallstreetoasis.com/guide/private-equity-interview-prep-questions">private equity</a> and <a target="_blank", href="http://www.wallstreetoasis.com/guide/hedge-fund-interview-questions">hedge fund</a> interview prep needs
+      div(ng-repeat="category in sponsors")
+        h2.sponsor-title.section- {{category.category}}
+        div.col-md-6.col-centered.sponsor(ng-repeat="sponsor in category.members")
+          a(ng-class="{clickable: sponsor.clickable}", ng-href="{{sponsor.link}}")
+            img.img-responsive.sponsor-img(ng-src="{{sponsor.img}}")
+          p.sponsor-facts(ng-if="sponsor.hasFacts") For all your <a target="_blank", href="http://www.wallstreetoasis.com/guide/investment-banking-interview-prep-questions">investment banking</a>, <a target="_blank", href="http://www.wallstreetoasis.com/guide/private-equity-interview-prep-questions">private equity</a> and <a target="_blank", href="http://www.wallstreetoasis.com/guide/hedge-fund-interview-questions">hedge fund</a> interview prep needs
 
 section#press-releases
   h1.section-title 2016 Press Releases
@@ -148,7 +151,7 @@ section#past-speakers
         p.ital {{speaker.company}}
 
 
-section#presentations
+section#selected-presentations
   h1.section-title.animated(ng-class="{slideInLeft:anPresentations, 'not-visible':!(anPresentations)}") Selected Presentations
   p.subtitle  From our 2013 and 2014 Conferences
 
@@ -158,7 +161,7 @@ section#presentations
         div.embed-container
           iframe(width="640" height="360" ng-src="{{vid.url}}" frameborder="0" allowfullscreen)
 
-section#team
+section#management-committee
   h1.section-title.animated(ng-class="{slideInLeft:anTeam, 'not-visible':!anTeam}") Management Committee
   div.line-divider
   div.container.animated(ng-class="{slideInRight:anTeamPics, 'not-visible':!anTeamPics}")
