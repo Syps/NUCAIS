@@ -592,7 +592,7 @@
                   name: "Office of Alumni Relations",
                   img: imgRoot + "oar.png",
                   title: "Gold Sponsor",
-                  link: "http://www.scotiabank.com/"
+                  link: "https://www.northeastern.edu/alumni/"
                 }]
       },
       {
@@ -611,7 +611,21 @@
                   img: imgRoot + "bbc.jpg",
                   title: "Media Sponsor",
                   link: "http://www.backbaycommunications.com/"
-                }]
+                },
+              {
+                name: "Wall Street Oasis",
+                img: imgRoot + 'wso.png',
+                hasFacts: true,
+                link: "http://www.wallstreetoasis.com/"
+              }]
+      },
+      {
+        'category': 'Data Sponsors',
+        'members': [{
+          name: 'Pitchbook',
+          img: imgRoot + 'pitchbook.jpg',
+          link: "http://pitchbook.com/"
+        }]
       }
       ];
       // $scope.sponsors = [
