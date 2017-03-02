@@ -35,34 +35,17 @@ section#about
   div.clear
 
 section#speakers
-  h1.section-title.animated(ng-class="{slideInLeft:anSpeakers, 'not-visible':!anSpeakers}") 2016 Speakers
+  h1.section-title.animated(ng-class="{slideInLeft:anSpeakers, 'not-visible':!anSpeakers}") 2017 Speakers
   div.line-divider
-  div.container.animated(ng-class="{slideInRight:anSpeakerPics, 'not-visible':!anSpeakerPics}")
-    div.row.speaker-classification Keynote Speakers
-    div.row.speaker-box(ng-repeat="speaker in speakers")
-      div.speaker-spacer(ng-if="speaker.keynote")
-        div.speaker-img.col-md-3
+  div.container.animated(ng-class="{slideInRight:anSpeakerPics, 'not-visible':!anSpeakerPics}", ng-repeat="item in speakers")
+    div.row
+      h2 {{item.category}}
+      div.col-md-3.col-centered.member-box(ng-repeat="speaker in item.members")
+        div.img-responsive
           img(ng-src="{{speaker.img}}")
-
-        div.speaker-info.col-md-9
-          h2.member-name {{speaker.name}}
-          h3.ital {{speaker.title + (speaker.preposition ? ' of ' : ' at ') + speaker.company}}
-          p.speaker-bio {{speaker.bio}}
-          p.speaker-bio.multiPar {{speaker.bioTwo}}
-          p.speaker-bio.multiPar {{speaker.bioThree}}
-
-    div.row.speaker-classification Speakers
-    div.row.speaker-box(ng-repeat="speaker in speakers")
-      div.speaker-spacer(ng-if="!speaker.keynote")
-        div.speaker-img.col-md-3
-          img(ng-src="{{speaker.img}}")
-
-        div.speaker-info.col-md-9
-          h2.member-name {{speaker.name}}
-          h3.ital {{speaker.title + (speaker.preposition ? ' of ' : ' at ') + speaker.company}}
-          p.speaker-bio {{speaker.bio}}
-          p.speaker-bio.multiPar {{speaker.bioTwo}}
-          p.speaker-bio.multiPar {{speaker.bioThree}}
+          p.member-name {{speaker.name}}
+          p.ital {{speaker.title + ' at '}}
+          p.ital {{speaker.company}}
 
 section#schedule
   h1.section-title.animated(ng-class="{slideInLeft:anSchedule, 'not-visible':!anSchedule}") 2017 Schedule

@@ -482,13 +482,6 @@ div[ng-view].ng-enter-active {
       margin-bottom: 40px; }
       #speakers .speaker-box .speaker-img .img-dummy {
         margin-top: 70%; }
-      #speakers .speaker-box .speaker-img img {
-        border-radius: 50%;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0%; }
     #speakers .speaker-box .speaker-info {
       padding-left: 5%; }
     #speakers .speaker-box p {
@@ -635,35 +628,35 @@ div[ng-view].ng-enter-active {
     text-decoration: none;
     color: #fff; }
 
-#past-speakers {
+#speakers, #past-speakers {
   background-color: #f4f5f6;
   padding-bottom: 50px; }
-  #past-speakers .member-name {
+  #speakers .member-name, #past-speakers .member-name {
     color: #990000;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: 300; }
-  #past-speakers .ital {
+  #speakers .ital, #past-speakers .ital {
     font-weight: 300;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: #808080; }
 
-#management-committee, #advisory-board {
+#speakers, #management-committee, #advisory-board {
   text-align: center; }
-  #management-committee .member-box, #advisory-board .member-box {
+  #speakers .member-box, #management-committee .member-box, #advisory-board .member-box {
     margin-top: 40px;
     vertical-align: top; }
-    #management-committee .member-box p, #advisory-board .member-box p {
+    #speakers .member-box p, #management-committee .member-box p, #advisory-board .member-box p {
       transition: all 300ms ease-in-out;
       font-size: 16px; }
-    #management-committee .member-box a, #advisory-board .member-box a {
+    #speakers .member-box a, #management-committee .member-box a, #advisory-board .member-box a {
       text-decoration: none; }
-  #management-committee .member-box:hover, #advisory-board .member-box:hover {
+  #speakers .member-box:hover, #management-committee .member-box:hover, #advisory-board .member-box:hover {
     text-decoration: none; }
-    #management-committee .member-box:hover p, #advisory-board .member-box:hover p {
+    #speakers .member-box:hover p, #management-committee .member-box:hover p, #advisory-board .member-box:hover p {
       color: #000000; }
-  #management-committee .container, #advisory-board .container {
+  #speakers .container, #management-committee .container, #advisory-board .container {
     margin-top: 100px; }
 
 .member-box {
