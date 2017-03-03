@@ -651,6 +651,14 @@ div[ng-view].ng-enter-active {
 }
 
 #speakers {
+
+  .row > h2 {
+    font-weight: 300;
+  }
+
+  .member-box {
+    margin-top: 40px;
+  }
   /* debug */
   // border: 1px solid blue;
   background-color: $secondary-section-color;
@@ -781,6 +789,10 @@ div[ng-view].ng-enter-active {
 
 .faq-div {
   @include center-horiz();
+}
+
+#speakers {
+  text-align: center;
 }
 
 #schedule {
@@ -925,7 +937,7 @@ div[ng-view].ng-enter-active {
 }
 
 //======== Section - Team ==========\\
-#speakers, #management-committee, #advisory-board {
+#management-committee, #advisory-board {
   text-align: center;
 
   .member-box {
@@ -1262,6 +1274,10 @@ div[ng-view].ng-enter-active {
 
   #speakers {
 
+    .member-box {
+      margin-top: 40px;
+    }
+
     .speaker-spacer {
       margin-bottom: 50px;
     }
@@ -1271,6 +1287,7 @@ div[ng-view].ng-enter-active {
       // border: 1px solid yellow;
 
       h2, h3 {
+          font-weight: 300;
           text-align:center;
       }
 

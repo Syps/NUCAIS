@@ -107,18 +107,18 @@
           {
             'category': 'Conference Keynote Speakers',
             'members': [
-              {
-                name: "Henry Nasella",
-                img: "/public/assets/img/speakers/headshots/henrynasella.jpeg",
-                topic: "",
-                year: "",
-                title: "Founding Partner",
-                company: "LNK Partners",
-                bio: "Henry co-founded LNK in 2005 and has over 25 years of operating experience and 16 years of private equity experience in the consumer/retail sector.",
-                bioTwo: "Prior to LNK, Henry was a Venture Partner at Apax Partners, where he was a senior member of the U.S. Consumer and Retail Group. Before Apax, Henry led the successful buyout of Star Markets, a regional supermarket chain, and served as Chairman and CEO of the company until its sale to Sainsbury Plc. Prior to Star Markets, Henry was the first President of Staples (NASDAQ: SPLS), where he built the company from a startup into a global leader in office supply retailing.",
-                bioThree: "Henry is currently on the Board of Directors of Au Bon Pain, PVH (NYSE: PVH), and Northeastern University, and has served on the Board of Directors of Ariat, Natural Food Holdings, Staples, Panera Bread (NASDAQ: PNRA), Denny’s (NASDAQ: DENN), Spyder Active Sports, Ulta Beauty (NASDAQ: ULTA), and Blinds-To-Go. Henry received a BS from Northeastern University, where he is currently the Chairman of the Board of Trustees.",
-                keynote: true
-              },
+              // {
+              //   name: "Henry Nasella",
+              //   img: "/public/assets/img/speakers/headshots/henrynasella.jpeg",
+              //   topic: "",
+              //   year: "",
+              //   title: "Founding Partner",
+              //   company: "LNK Partners",
+              //   bio: "Henry co-founded LNK in 2005 and has over 25 years of operating experience and 16 years of private equity experience in the consumer/retail sector.",
+              //   bioTwo: "Prior to LNK, Henry was a Venture Partner at Apax Partners, where he was a senior member of the U.S. Consumer and Retail Group. Before Apax, Henry led the successful buyout of Star Markets, a regional supermarket chain, and served as Chairman and CEO of the company until its sale to Sainsbury Plc. Prior to Star Markets, Henry was the first President of Staples (NASDAQ: SPLS), where he built the company from a startup into a global leader in office supply retailing.",
+              //   bioThree: "Henry is currently on the Board of Directors of Au Bon Pain, PVH (NYSE: PVH), and Northeastern University, and has served on the Board of Directors of Ariat, Natural Food Holdings, Staples, Panera Bread (NASDAQ: PNRA), Denny’s (NASDAQ: DENN), Spyder Active Sports, Ulta Beauty (NASDAQ: ULTA), and Blinds-To-Go. Henry received a BS from Northeastern University, where he is currently the Chairman of the Board of Trustees.",
+              //   keynote: true
+              // },
               {
                 name: "Ted English",
                 img: "/public/assets/img/speakers/headshots/tedenglish.jpg",
@@ -188,19 +188,19 @@
             bioTwo: "",
             bioThree: "",
             keynote: false
-          },
-          {
-            name: "Derek Lister",
-            img: "/public/assets/img/speakers/headshots/dereklister.jpg",
-            topic: "",
-            year: "",
-            title: "Portfolio Analyst",
-            company: "Harvard Management Company",
-            bio: "",
-            bioTwo: "",
-            bioThree: "",
-            keynote: false
           }
+          // {
+          //   name: "Derek Lister",
+          //   img: "/public/assets/img/speakers/headshots/dereklister.jpg",
+          //   topic: "",
+          //   year: "",
+          //   title: "Portfolio Analyst",
+          //   company: "Harvard Management Company",
+          //   bio: "",
+          //   bioTwo: "",
+          //   bioThree: "",
+          //   keynote: false
+          // }
         ]
       },
       {
@@ -286,7 +286,7 @@
             img: "/public/assets/img/speakers/headshots/tarikemara.jpg",
             topic: "",
             year: "",
-            title: "Vice President of Private Equity",
+            title: "VP of Private Equity",
             company: "Citi",
             bio: "",
             bioTwo: "",
