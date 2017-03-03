@@ -839,7 +839,9 @@ div[ng-view].ng-enter-active {
   #intro h1 {
     font-size: 80px; }
   .marquee {
-    width: 60%;
+    margin-top: 60px;
+    height: 150px;
+    width: 450px;
     padding: 5px; }
   .speaker-spacer {
     margin-bottom: 50px; }
