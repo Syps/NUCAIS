@@ -179,7 +179,7 @@
           },
           {
             name: "Nicholas Sammut",
-            img: "/public/assets/img/speakers/headshots/nicholassammut.jpg",
+            img: "/public/assets/img/speakers/headshots/NicholasSammut.jpg",
             topic: "",
             year: "",
             title: "Investment Professional",
@@ -225,7 +225,7 @@
         'members': [
           {
             name: "Sam Klar",
-            img: "/public/assets/img/speakers/headshots/samklar.jpg",
+            img: "/public/assets/img/speakers/headshots/SamKlar.jpg",
             topic: "",
             year: "",
             title: "Portfolio Manager",
