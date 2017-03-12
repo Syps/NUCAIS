@@ -55,7 +55,6 @@ module.exports = function(grunt) {
       }
     },
 
-
     // watch for changes to index.js
     nodemon: {
       dev: {
@@ -95,7 +94,6 @@ module.exports = function(grunt) {
 
   // load tasks
   grunt.loadNpmTasks('grunt-nodemon');
-  //grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-sass');
@@ -108,7 +106,7 @@ module.exports = function(grunt) {
   // register tasks on run grunt
   grunt.registerTask('default', [
     //'mochaTest',
-    'jshint:all',
+    // 'jshint:all',
     'uglify',
     'sass:dist',
     'concurrent'

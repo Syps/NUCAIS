@@ -42,18 +42,28 @@ section#speakers
     div.row
       h2 {{item.category}}
       div.col-md-3.col-centered.member-box(ng-repeat="speaker in item.members")
-        div.img-responsive
+        div.img-responsive(ng-click='toggleModal(speaker.name)')
           img(ng-src="{{speaker.img}}")
           p.member-name {{speaker.name}}
+            span.black(ng-if="speaker.isModerator")  (Moderator)
           p.ital {{speaker.title + ' at '}}
           p.ital {{speaker.company}}
+
+div.ng-modal(ng-show='modalVisible')
+  div.ng-modal-overlay(ng-click='hideModal()')
+  div.ng-modal-dialog(ng-style='dialogStyle')
+    div.ng-modal-close(ng-click='hideModal()')
+      i.fa.fa-close
+    div.ng-modal-dialog-content
+      h1 {{modalSpeaker.name}}
+      h2 {{modalSpeaker.title}}, {{modalSpeaker.company}}
+      p(ng-repeat="paragraph in modalSpeaker.bioParagraphs") {{paragraph}}
 
 section#schedule
   h1.section-title.animated(ng-class="{slideInLeft:anSchedule, 'not-visible':!anSchedule}") 2017 Schedule
   div.line-divider
   div.container.animated(ng-class="{fadeInUp:anScheduleChart, 'not-visible':!anScheduleChart}")
-    div.billboard The official CAIS 2017 schedule will be released in the coming days. Alumni Night will take place from 6PM to 9PM on April 7, 2017. The Conference will take place from 9AM to 4PM on April 8, 2017.
-    //
+    div.billboard
       h2 Alumni Night
       h3 Friday, April 1, 6 PM - 9 PM
       div.table-responsive

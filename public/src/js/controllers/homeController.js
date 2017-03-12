@@ -18,6 +18,27 @@
       var LONG_NWK = -71.085189;
       var DATE_CONF = new Date("April 6, 2017 11:00:00");
 
+      $scope.modalVisible = false;
+      $scope.modalSpeakerBioParagraphs = [];
+
+      $scope.toggleModal = function(name) {
+        for(var i = 0; i < $scope.speakers.length; i++) {
+          var members = $scope.speakers[i].members;
+          for (var j = 0; j < members.length; j++) {
+            var speaker = members[j];
+            if (speaker.name == name || speaker.modalShown) {
+              console.log(speaker.name);
+              $scope.modalSpeaker= speaker;
+            }
+          }
+        }
+        $scope.modalVisible = true;
+      };
+
+      $scope.hideModal = function() {
+        $scope.modalVisible = false;
+      }
+
       /* Google Maps */
       var mapOptions = {
         zoom: 15,
@@ -105,20 +126,21 @@
 
         $scope.speakers = [
           {
-            'category': 'Conference Keynote Speakers',
+            'category': 'Conference Keynotes',
             'members': [
-              // {
-              //   name: "Henry Nasella",
-              //   img: "/public/assets/img/speakers/headshots/henrynasella.jpeg",
-              //   topic: "",
-              //   year: "",
-              //   title: "Founding Partner",
-              //   company: "LNK Partners",
-              //   bio: "Henry co-founded LNK in 2005 and has over 25 years of operating experience and 16 years of private equity experience in the consumer/retail sector.",
-              //   bioTwo: "Prior to LNK, Henry was a Venture Partner at Apax Partners, where he was a senior member of the U.S. Consumer and Retail Group. Before Apax, Henry led the successful buyout of Star Markets, a regional supermarket chain, and served as Chairman and CEO of the company until its sale to Sainsbury Plc. Prior to Star Markets, Henry was the first President of Staples (NASDAQ: SPLS), where he built the company from a startup into a global leader in office supply retailing.",
-              //   bioThree: "Henry is currently on the Board of Directors of Au Bon Pain, PVH (NYSE: PVH), and Northeastern University, and has served on the Board of Directors of Ariat, Natural Food Holdings, Staples, Panera Bread (NASDAQ: PNRA), Denny’s (NASDAQ: DENN), Spyder Active Sports, Ulta Beauty (NASDAQ: ULTA), and Blinds-To-Go. Henry received a BS from Northeastern University, where he is currently the Chairman of the Board of Trustees.",
-              //   keynote: true
-              // },
+              {
+                name: "Henry Nasella",
+                img: "/public/assets/img/speakers/headshots/henrynasella.jpeg",
+                topic: "",
+                year: "",
+                title: "Partner",
+                company: "LNK Partners",
+                keynote: true,
+                bioParagraphs: ["Henry co-founded LNK in 2005 and has over 25 years of operating experience and 16 years of private equity experience in the consumer/retail sector.",
+                    "Prior to LNK, Henry was a Venture Partner at Apax Partners, where he was a senior member of the U.S. Consumer and Retail Group. Before Apax, Henry led the successful buyout of Star Markets, a regional supermarket chain, and served as Chairman and CEO of the company until its sale to Sainsbury Plc. Prior to Star Markets, Henry was the first President of Staples (NASDAQ: SPLS), where he built the company from a startup into a global leader in office supply retailing.",
+                    "Henry is currently on the Board of Directors of Au Bon Pain, PVH (NYSE: PVH), and Northeastern University, and has served on the Board of Directors of Ariat, Natural Food Holdings, Staples, Panera Bread (NASDAQ: PNRA), Denny’s (NASDAQ: DENN), Spyder Active Sports, Ulta Beauty (NASDAQ: ULTA), and Blinds-To-Go. Henry received a BS from Northeastern University, where he is currently the Chairman of the Board of Trustees."
+                  ]
+              },
               {
                 name: "Ted English",
                 img: "/public/assets/img/speakers/headshots/tedenglish.jpg",
@@ -126,15 +148,20 @@
                 year: "",
                 title: "Executive Chairman",
                 company: "Bob's Discount Furniture",
-                bio: "",
-                bioTwo: "",
-                bioThree: "",
-                keynote: true
+                bioParagraphs: [
+                  "Ted English is the Executive Chairman of Bob’s Discount Furniture and the former President and CEO of the TJX Companies, Inc. Ted joined Bob’s Discount Furniture in November of 2006 and since that time , Bob’s has more than quadrupled their sales from $225 million in 2005 to over  $1 billion in 2015. Bob’s has opened more than 50 stores on top of their original 21 during that period of time.",
+                  "During his five plus year tenure as CEO of TJX, Ted increased revenue over $6B, from $8.8B in 2000 to $15B in 2005. He opened over 900 stores across 8 domestic and international divisions, creating over 50,000 new jobs as a result.  TJX’s common stock significantly outperformed the S&P 500 during this time generating a 20% compound annual growth rate in stock price while achieving double digit compound annual growth rates in revenue and earnings per share.",
+                  "Ted has over 45 years of retailing experience. He began his career as a stock boy at Filene’s Basement in Boston where he worked from High School through College. As a Co-op student at Northeastern University, Ted held several entry level management positions ultimately landing a buyer’s role at that world renowned retailer upon graduation.",
+                  "Ted is a member of the Board of Directors for Natixis Global Asset Management and Rue La La. Ted is a member of the Board of Trustees at Boston Medical Center and his alma mater, Northeastern University. Ted is also an Overseer at Cardinal Cushing Centers, an organization that teaches, trains and supports children and adults with developmental and cognitive disabilities.",
+                  "Ted and his wife, Maureen, have four children and reside in Boston, Massachusetts."
+                ],
+                keynote: true,
+                modalShown: false
               }
             ]
         },
         {
-          'category': 'Alumni Night Keynote Speakers',
+          'category': 'Alumni Night Keynote',
           'members': [
             {
               name: "Fran Janis",
@@ -146,36 +173,48 @@
               bio: "",
               bioTwo: "",
               bioThree: "",
-              keynote: true
+              keynote: true,
+              modalShown: false,
+              bioParagraphs: ["Fran has 32 years of private equity experience. She co-founded Pomona Capital in 1994 and is primarily responsible for investment sourcing and decision-making in the secondaries, primary funds of funds and co-investment businesses. Pomona Capital is a global, value-oriented private equity firm focused on generating significant performance while limiting risk.  The firm manages over $8 billion with 40 employees on three continents.",
+                "Prior to joining Pomona, she was a General Partner of Hambro International Equity Partners, a venture group that managed a series of domestic and offshore funds. During her career, Fran served as a Director of a number of private and public companies engaged in the telecommunications equipment, consumer products, software services, healthcare, and specialty retailing industries.",
+                "She received an MBA from Northeastern University, and a BS from the State University at New York (Albany). Fran is a member of the Board of Trustees of Northeastern University.  Fran lives in New York City with her husband and two sons ages 8 and 12."
+            ]
             },
             {
               name: "Richard D'Amore",
+              isModerator: true,
               img: "/public/assets/img/speakers/headshots/richarddamore.jpg",
               topic: "",
               year: "",
-              title: "Founding Partner",
-              company: "Northbridge Ventures",
+              title: "Partner",
+              company: "North Bridge Venture Partners",
               bio: "",
               bioTwo: "",
               bioThree: "",
-              keynote: true
+              keynote: true,
+              modalShown: false,
+              bioParagraphs: [
+                "Rich D'Amore, Partner at North Bridge Venture Partners, has almost three decades of experience in the venture business.",
+                "Rich D'Amore has been with North Bridge since the company's inception in 1994. Before co-founding North Bridge, he spent fourteen years at Hambro International Equity Partners, establishing the firm's Boston office. His investments have been split between early stage projects and special situations.",
+                "Before joining Hambro in 1982, he worked as a consultant at Bain and Company and was a Certified Public Accountant with Arthur Young and Company.",
+                "Rich received a BS from Northeastern, summa cum laude, in 1975. He also has an MBA from Harvard University Graduate School of Business Administration where he was a Baker Scholar. A dedicated supporter of higher education, he is on the Board of Trustees at Northeastern University, where he promotes innovation and research that can drive economic growth."
+              ]
             }
           ]
       },
       {
-        'category': 'Sustainability Panel',
+        'category': 'Investing in Sustainability',
         'members': [
           {
             name: "Alan McKim",
             img: "/public/assets/img/speakers/headshots/alanmckim.jpg",
             topic: "",
             year: "",
-            title: "Chairman & CEO",
+            title: "Chairman, CEO & President",
             company: "Clean Harbors Inc.",
-            bio: "",
-            bioTwo: "",
-            bioThree: "",
-            keynote: false
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: ["Alan S. McKim founded the Clean Harbors in 1980 and has served as Chairman of the Board of Directors and Chief Executive Officer since its founding. He was named President of the Company in September 2016. He serves as a director of most of the Company's subsidiaries. Mr. McKim holds an MBA from Northeastern University's D'Amore - McKim School of Business. He now serves on Northeastern University's Board of Trustees, and he holds an honorary doctorate from the Massachusetts Maritime Academy. Mr. McKim is recognized as an industry leader, with over 35 years' experience in the environmental services business."]
           },
           {
             name: "Nicholas Sammut",
@@ -187,20 +226,22 @@
             bio: "",
             bioTwo: "",
             bioThree: "",
-            keynote: false
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: ["Nick is currently an Investment Professional at Generate Capital where he focuses on equity investments in the distributed generation, energy efficiency and waste technology sectors. Before joining Generate in 2015, Nick was a member of the Private Equity team at Fortress Investment Group, a diversified global asset manager with over $75 billion under management. Here he worked on asset and corporate transactions in the transportation, infrastructure and energy sectors. Prior to Fortress, Nick was an analyst within the Global Investment Research group at Goldman Sachs, focused on the aerospace & defense sector.",
+          "Nick received his BS from Northeastern University with a summa cum laude designation. Nick is also a co-founder of Northeastern's venture accelerator program, IDEA."]
+        },
+          {
+            name: "Derek Lister",
+            img: "/public/assets/img/speakers/headshots/dereklister.png",
+            topic: "",
+            year: "",
+            title: "M&A Analyst",
+            company: "Harvard Management Company",
+            bioParagraphs: ["Derek Lister is an M&A Analyst on Harvard Management Company's natural resource team and is responsible for investment screening, financial analysis, structuring, and diligence of prospective renewable energy, agriculture, and timber investments.  He has six years of renewable natural resource investment experience.  His experience spans the geographies of North America, South America, Australia, Europe, and Africa.  Prior to joining Harvard Management Company, Derek was an M&A Analyst at Hancock Natural Resource Group and worked on international acquisitions within the renewable natural resources sector for a $14bn portfolio.  Derek is well positioned to analyze standalone investments as well as investments combining energy with either agriculture or timber.  He holds a B.S. in Business Administration with concentrations in Finance and Accounting from Northeastern University and a Master of Finance from MIT Sloan."],
+            keynote: false,
+          modalShown: false
           }
-          // {
-          //   name: "Derek Lister",
-          //   img: "/public/assets/img/speakers/headshots/dereklister.jpg",
-          //   topic: "",
-          //   year: "",
-          //   title: "Portfolio Analyst",
-          //   company: "Harvard Management Company",
-          //   bio: "",
-          //   bioTwo: "",
-          //   bioThree: "",
-          //   keynote: false
-          // }
         ]
       },
       {
@@ -212,11 +253,13 @@
             topic: "",
             year: "",
             title: "Portfolio Manager",
-            company: "Acadian Management",
+            company: "Acadian Asset Management",
             bio: "",
             bioTwo: "",
             bioThree: "",
-            keynote: false
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: ["Asha Mehta, CFA, is a lead Portfolio Manager with a focus on Frontier & Emerging Markets. Prior to joining Acadian, Asha worked as an investment banker at Goldman Sachs and at Johnson & Johnson in a strategy role. Early in her career, she conducted microfinance lending in India. She has traveled to over 70 countries and lived in six.  She holds an M.B.A. with Honors from The Wharton School (University of Pennsylvania) and undergraduate degrees from Stanford University. Asha is a CFA charterholder and a member of CFA Society Boston. Asha was named one of the Top 10 Women in Asset Management by Money Management Executive in 2016."]
           }
         ]
       },
@@ -233,12 +276,14 @@
             bio: "",
             bioTwo: "",
             bioThree: "",
-            keynote: false
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: ["Sam Klar is a Merger Arbitrage Portfolio Manager within GMO’s Asset Allocation team. Since joining GMO full-time in 2006, Mr. Klar has held positions within the firm’s Global Equity and Emerging Markets Equity teams. Mr. Klar earned his B.S. in Finance from Northeastern University in 2006."]
           }
         ]
       },
       {
-        'category': 'Turnaround Management Panel',
+        'category': 'Turnaround Management',
         'members': [
           {
             name: "Jacen Dinoff",
@@ -250,7 +295,10 @@
             bio: "",
             bioTwo: "",
             bioThree: "",
-            keynote: false
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: ["Jacen Dinoff is the co-Founder and Chief Executive Officer of KCP Advisory Group, a leading business advisory firm specializing in providing creative solutions to rehabilitate businesses. Mr. Dinoff oversees all company operations and case assignments. Mr. Dinoff is highly-regarded as a corporate restructuring and turnaround management advisor with hands-on accounting, finance, management and operations experience that complements his technical expertise in bankruptcy case administration and financial advisory. Mr. Dinoff’s career has included engagements in financial and operational restructurings, asset divestitures through sale and liquidation, and senior debtor/creditor advisor roles for many well-known companies, both publicly and privately held.",
+            "Mr. Dinoff is a Certified Turnaround Professional. He holds a B.S. in Business Administration from the Peter T. Paul College of Business and Economics at the University of New Hampshire, and an M.B.A in Finance from Bentley College.  He is an active member of the Turnaround Management Association and American Bankruptcy Institute and is a frequent speaker and contributor at industry events and media outlets."]
           },
           {
             name: "Barry Green",
@@ -259,10 +307,15 @@
             year: "",
             title: "Founding Partner",
             company: "HunterPoint LLC",
-            bio: "",
-            bioTwo: "",
-            bioThree: "",
-            keynote: false
+            bioParagraphs: [
+              "Barry Green is a recognized expert in implementing change in companies undergoing or requiring transformation.  He has run and revived distressed companies in a wide range of industries and has nurtured businesses through the turmoil that can accompany rapid growth.",
+              "Barry is a founding partner of HunterPoint LLC, a boutique management consultancy based in New York and Boston that provides corporate restructuring, due diligence and corporate governance services.",
+              "Prior to the formation of HunterPoint, Barry was a founding partner of Coeus Management LLC, and before that a managing director at a middle market boutique turnaround consulting firm, during which periods he led a number of successful turnarounds and restructurings in the roles of Chief Restructuring Officer and financial advisor, and held several board positions as audit committee chair.  His prior experience included director and CFO of an international airline food and equipment distribution company, and similar posts in the consumer electronics and home improvement industries.",
+              "Barry, originally from the UK, is a chartered accountant, has an MBA with distinction from the Wharton School, University of Pennsylvania, and a bachelor’s degree in Econometrics from the University of Manchester in the UK.",
+              "Barry currently sits on the board of Katun Corporation, one of the world’s largest suppliers of OEM- compatible imaging consumables and supplies for office equipment, as an independent director and chair of the audit committee.  Barry is a member of the Turnaround Management Association (TMA) and the American Bankruptcy Institute, and is a former board member of the TMA Northeast Chapter."
+            ],
+            keynote: false,
+            modalShown: false
           },
           {
             name: "John Loughnane",
@@ -271,27 +324,58 @@
             year: "",
             title: "Partner",
             company: "Nutter McClennen & Fish",
-            bio: "",
-            bioTwo: "",
-            bioThree: "",
-            keynote: false
+            bioParagraphs: ["John G. Loughnane is a partner in Nutter’s Business Department. Clients rely on his practical business experience in working out difficult situations and solving a variety of business challenges inherent in today’s fast-paced innovation economy. Clients appreciate the value of John’s past work in-house at PTC, an international technology company based in the Boston area, where John worked directly with business teams solving a variety of business challenges. John’s recent clients include owners, investors, board members, lenders, buyers and vendors.   His leadership roles include current service as President of the Northeast Chapter of the Turnaround Management Association. John also serves on the leadership team for the Mediation Committee of the American Bankruptcy Institute. Past leadership service includes co-chairing the Technology & Intellectual Property Committee of ABI as well as co-chairing the Bankruptcy Section of the Boston Bar Association. He speaks and writes on topics involving financing and technology issues including data security. John strengthens client rights and outcomes at the outset of financing and technology transactions through his deep understanding of how commercial issues are handled in distressed circumstances.  He is a graduate of Holy Cross and George Washington University Law School."],
+            keynote: false,
+            modalShown: false
           }
         ]
       },
       {
-        'category': 'Alumni Panel',
+        'category': 'DMSB Alumni Panel',
         'members': [
+          {
+            name: "Lilly Xie",
+            img: "/public/assets/img/speakers/headshots/lillyxie.jpg",
+            topic: "",
+            year: "",
+            title: "Analyst",
+            company: "Spinnaker Capital LLC",
+            bioParagraphs: ["Lilly Xie is a second year Analyst at Spinnaker Capital LLC, a Boston-based investment firm that focuses on investing in private companies and a variety of funds on behalf of a select number of high net-worth families. Prior to Spinnaker, Lilly worked as a client operations specialist at State Street. Before that, she was a credit research analyst at Moody’s Analytics in Beijing, China. Lilly graduated summa cum laude from Northeastern University with a degree in Business Administration."],
+            keynote: false,
+            modalShown: false
+          },
+          {
+            name: "Martin Lemaire",
+            img: "/public/assets/img/speakers/headshots/martinlemaire.png",
+            topic: "",
+            year: "",
+            title: "Quantitative Investment Associate",
+            company: "Putnam Investments",
+            bioParagraphs: [],
+            keynote: false,
+            modalShown: false
+          },
           {
             name: "Tarik Emara",
             img: "/public/assets/img/speakers/headshots/tarikemara.jpg",
             topic: "",
             year: "",
-            title: "VP of Private Equity",
+            title: "Vice President of Private Equity",
             company: "Citi",
-            bio: "",
-            bioTwo: "",
-            bioThree: "",
-            keynote: false
+            bioParagraphs: [],
+            keynote: false,
+            modalShown: false
+          },
+          {
+            name: "Annemarie Murphy",
+            img: "/public/assets/img/speakers/headshots/annemariemurphy.jpg",
+            topic: "",
+            year: "",
+            title: "Assistant Vice President",
+            company: "Boston Capital",
+            bioParagraphs: [],
+            keynote: false,
+            modalShown: false
           }
         ]
       }
@@ -345,17 +429,17 @@
         },
         {
           time: "6:45 PM",
-          activity: "D'Amore-McKim School of Business Alumni Panel\nModerated by Professor Nicole Boyson",
-          speaker: "Nicholas Sammut - Investment Professional at Generate Capital\nSpencer Murray - Associate at Berkshire Partners\nEric Rosiello - Associate at Arrowstreet Capital, LP"
+          activity: "DMSB Alumni Panel\nModerated by Professor Nicole Boyson",
+          speaker: "Lilly Xie - Analyst, Spinnaker Capital\nMartin Lemaire - Quantitative Investment Associate, Putnam Investments\nTarik Emara - Vice President of Private Equity, Citi\nAnnemarie Murphy - Assistant Vice President, Boston Capital"
         },
         {
           time: "7:35 PM",
-          activity: "Keynote",
-          speaker: "Bruce Martin - Former Managing Director and Executive Committee Member at Angelo, Gordon & Co."
+          activity: "Alumni Night Keynote\nModerated by Richard D'Amore - Partner, North Bridge Venture Partners",
+          speaker: "Fran Janis - Founding Partner, Pomona Capital"
         },
         {
           time: "8:20 PM",
-          activity: "Networking",
+          activity: "Networking Session",
           speaker: ""
         }
       ];
@@ -368,18 +452,18 @@
         },
         {
           time: "9:35 AM",
-          activity: "Welcome to CAIS 2016",
-          speaker: "Jake Fulton - Co-President of CAIS"
+          activity: "Welcome to CAIS 2017",
+          speaker: "Cole Weppner - Co-President, CAIS"
         },
         {
-          time: "9:50 AM",
-          activity: "Real Estate Investing",
-          speaker: "Thomas Andrews - Executive Vice President & Regional Market Director at Alexandria Real Estate Equities"
+          time: "9:40 AM",
+          activity: "Frontier Markets",
+          speaker: "Asha Mehta - Portfolio Manager, Acadian Asset Management"
         },
         {
-          time: "10:30 AM",
-          activity: "Keynote",
-          speaker: "Ryan Cotton - Managing Director at Bain Capital"
+          time: "10:15 AM",
+          activity: "Conference Keynotes - Different Perspectives in Private Equity\nModerated by Nicole Boyson - Associate Professor, D'Amore-McKim School of Business",
+          speaker: "Henry Nasella - Partner, LNK Partners\nTed English - Executive Chairman, Bob's Discount Furniture"
         },
         {
           time: "11:15 AM",
@@ -387,37 +471,37 @@
           speaker: ""
         },
         {
-          time: "11:50 AM",
-          activity: "Generating Alpha in the Current Market Environment\nModerated by Professor Nicole Boyson",
-          speaker: "Gary Bergstrom, Ph.D. - Founder and Consultant at Acadian Asset Management\nChristina Qi - Partner at Domeyard LP\nSam Klar - Portfolio Manager at GMO\nJason Leinwand - Managing Director at Riverside Risk Advisors"
+          time: "11:30 AM",
+          activity: "Investing in Sustainability",
+          speaker: "Alan McKim - Chairman, CEO & President, Clean Harbors Inc.\nNicholas Sammut - Investment Professional, Generate Capital\nDerek Lister - M&A Analyst, Harvard Management Company"
         },
         {
-          time: "12:50 PM",
-          activity: "Venture Capital and Angel Investing",
-          speaker: "Karthik Krishnan - Associate Professor - Thomas Moore Faculty Fellow at Northeastern University"
+          time: "12:30 PM",
+          activity: "Partner-Track in Venture Capital\nModerated by Dan Gregory - Digital Media I-cubator Director, D'Amore-McKim School of Business",
+          speaker: "Our Venture Capital experts will be announced in the coming days"
         },
         {
-          time: "1:15 PM",
+          time: "1:30 PM",
           activity: "Lunch",
           speaker: ""
         },
         {
-          time: "1:50 PM",
-          activity: "The Art of Restructuring",
-          speaker: "Michael Gries - Managing Member of CDG Group"
+          time: "2:00 PM",
+          activity: "Merger Arbitrage",
+          speaker: "Sam Klar - Portfolio Manager, GMO"
         },
         {
-          time: "2:40 PM",
-          activity: "Keynote",
-          speaker: "James Goodman - President of Gemini Investors"
+          time: "2:35 PM",
+          activity: "Turnaround Management\nModerated by Harlan Platt - Professor, D'Amore-McKim School of Business",
+          speaker: "Jacen Dinoff - Co-Founder & CEO, KCP Advisory Group\nBarry Green - Founding Partner, HunterPoint LLC\nJohn Loughnane - Partner, Nutter McClennen & Fish"
         },
         {
-          time: "3:25 PM",
+          time: "3:20 PM",
           activity: "CAIS Closing Remarks",
-          speaker: "Rohan Venkatesh - Co-President of CAIS"
+          speaker: "Lauren Tawfik - Co-President, CAIS"
         },
         {
-          time: "3:35 PM",
+          time: "3:30 PM",
           activity: "Networking",
           speaker: ""
         }
@@ -482,11 +566,6 @@
           linkedin: "https://www.linkedin.com/in/cole-weppner-a1b59599",
     title: "Co-President"
   },
-        {
-          name: "Sofia Sotelo Ortiz",
-          img: "/public/assets/img/team/sofiasoteloortiz.jpg",
-          linkedin: "https://www.linkedin.com/in/sofia-sotelo-ortiz-48702271"
-        },
         {
           name: "Daniel Arvidsson",
           img: "/public/assets/img/team/danielarvidson.jpg",
@@ -575,16 +654,6 @@
            linkedin: "https://www.linkedin.com/in/amywzhou/"
          },
          {
-           name: "Amanda White",
-           img: "/public/assets/img/advisory/white.jpg",
-           linkedin: "https://www.linkedin.com/pub/amanda-white/27/86b/20a"
-         },
-         {
-           name: "Jay Hastings",
-           img: "/public/assets/img/advisory/hastings.jpg",
-           linkedin: "https://www.linkedin.com/pub/jayhastings"
-         },
-         {
            name: "Michael DeCenzo",
            img: "/public/assets/img/advisory/deCenzo.jpg",
            linkedin: "https://www.linkedin.com/pub/michael-decenzo/13/873/46a"
@@ -603,11 +672,6 @@
            name: "Jake Fulton",
            img: "/public/assets/img/advisory/jakefulton.jpg",
            linkedin: "https://www.linkedin.com/pub/jake-fulton/43/a29/641"
-         },
-         {
-           name: "Michael Counihan",
-           img: "/public/assets/img/advisory/michaelcounihan.jpg",
-           linkedin: "https://www.linkedin.com/in/michaelbcounihan"
          }
        ];
 
@@ -637,6 +701,12 @@
             img: imgRoot + "thrive.jpg",
             title: "Platinum Sponsor",
             link: "http://www.northeastern.edu/cfi"
+        },
+        {
+            name: "BackBay Communications",
+            img: imgRoot + "bbc.jpg",
+            title: "Media Sponsor",
+            link: "http://www.backbaycommunications.com/"
         }]
       },
       {
@@ -665,12 +735,7 @@
       },
       {
         'category': 'Media Sponsors',
-        'members': [{
-                  name: "BackBay Communications",
-                  img: imgRoot + "bbc.jpg",
-                  title: "Media Sponsor",
-                  link: "http://www.backbaycommunications.com/"
-                },
+        'members': [
               {
                 name: "Wall Street Oasis",
                 img: imgRoot + 'wso.png',

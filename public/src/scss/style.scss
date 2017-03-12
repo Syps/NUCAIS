@@ -23,6 +23,67 @@ $subtitle-color: #808080;
 $headshot-dimen: 170px;
 $secondary-section-color: #f4f5f6; // #E6E6E6
 
+
+// modal directive
+.ng-modal-overlay {
+  /* A dark translucent div that covers the whole screen */
+  position:fixed;
+  z-index:9999;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:#000000;
+  opacity: 0.6;
+}
+.ng-modal-dialog {
+  /* A centered div above the overlay with a box shadow. */
+  z-index:10000;
+  position: fixed;
+  width: 50%; /* Default */
+
+  /* Center the dialog */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+
+  background-color: #fff;
+  box-shadow: 4px 4px 80px #000;
+  border-radius: 2px;
+}
+.ng-modal-dialog-content {
+  padding:30px;
+  text-align: left;
+
+  h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 300;
+    color: $secondary-bg-color;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #4c4b4b;
+  }
+}
+.ng-modal-close {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 120%;
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'arial', 'sans-serif';
+}
+
 .black-border {
   // border: 1px solid blue;
   vertical-align: top;
@@ -84,6 +145,9 @@ $secondary-section-color: #f4f5f6; // #E6E6E6
 /*
  * Default Styles
  */
+ .black {
+   color: black;
+ }
 html,
 body {
   @include clear-margin();
@@ -798,8 +862,8 @@ div[ng-view].ng-enter-active {
 #schedule {
 
   padding-bottom: 50px;
-
   font-family: $text-font;
+
   h2 {
     font-size: $subtitle-font-size;
     margin-bottom: 10px;
@@ -814,7 +878,7 @@ div[ng-view].ng-enter-active {
   }
 
   .time-cell {
-    text-align: right;
+    text-align: left;
   }
 
   td {
@@ -823,12 +887,14 @@ div[ng-view].ng-enter-active {
     font-size: $subtitle-font-size * .7;
   }
 
-  .activity-cell {
+  .billboard .activity-cell {
+    text-align: left;
     padding-left: 15px;
     font-weight: 400;
   }
 
-  .speaker-cell {
+  .billboard .speaker-cell {
+    text-align: left;
     padding-left: 15px;
   }
 
@@ -980,6 +1046,7 @@ div[ng-view].ng-enter-active {
 
 .member-box .img-responsive:hover {
   filter: none;
+  cursor: pointer;
 }
 
 .member-box .img-responsive {
@@ -1304,6 +1371,21 @@ div[ng-view].ng-enter-active {
 //@media screen and (max-size)
 // better mobile
 @media (max-width: 770px) {
+
+  .ng-modal-dialog {
+    /* A centered div above the overlay with a box shadow. */
+    z-index:10000;
+    position: fixed;
+    width: 100%; /* Default */
+
+    /* Center the dialog */
+    top: 100%;
+    left: 100%;
+
+    background-color: #fff;
+    box-shadow: 4px 4px 80px #000;
+    border-radius: 2px;
+  }
 
   section h1.section-title {
     font-size: $section-title-size-mobile;
