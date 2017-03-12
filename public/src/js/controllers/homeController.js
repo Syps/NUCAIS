@@ -21,18 +21,11 @@
       $scope.modalVisible = false;
       $scope.modalSpeakerBioParagraphs = [];
 
-      $scope.toggleModal = function(name) {
-        for(var i = 0; i < $scope.speakers.length; i++) {
-          var members = $scope.speakers[i].members;
-          for (var j = 0; j < members.length; j++) {
-            var speaker = members[j];
-            if (speaker.name == name || speaker.modalShown) {
-              console.log(speaker.name);
-              $scope.modalSpeaker= speaker;
-            }
+      $scope.toggleModal = function(speaker) {
+          if (speaker.bioParagraphs && speaker.bioParagraphs.length) {
+            $scope.modalSpeaker= speaker;
+            $scope.modalVisible = true;
           }
-        }
-        $scope.modalVisible = true;
       };
 
       $scope.hideModal = function() {
@@ -451,7 +444,7 @@
           speaker: ""
         },
         {
-          time: "9:35 AM",
+          time: "9:30 AM",
           activity: "Welcome to CAIS 2017",
           speaker: "Cole Weppner - Co-President, CAIS"
         },

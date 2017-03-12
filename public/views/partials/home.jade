@@ -42,12 +42,10 @@ section#speakers
     div.row
       h2 {{item.category}}
       div.col-md-3.col-centered.member-box(ng-repeat="speaker in item.members")
-        div.img-responsive(ng-click='toggleModal(speaker.name)')
+        div.img-responsive(ng-click='toggleModal(speaker)', ng-class="{'cursor-pointer': speaker.bioParagraphs && speaker.bioParagraphs.length}")
           img(ng-src="{{speaker.img}}")
-          p.member-name {{speaker.name}}
-            span.black(ng-if="speaker.isModerator")  (Moderator)
-          p.ital {{speaker.title + ' at '}}
-          p.ital {{speaker.company}}
+        p.member-name {{speaker.name}} #[span.black(ng-if="speaker.isModerator") (Moderator)]
+        p.ital {{speaker.title}}, {{speaker.company}}
 
 div.ng-modal(ng-show='modalVisible')
   div.ng-modal-overlay(ng-click='hideModal()')
@@ -65,7 +63,7 @@ section#schedule
   div.container.animated(ng-class="{fadeInUp:anScheduleChart, 'not-visible':!anScheduleChart}")
     div.billboard
       h2 Alumni Night
-      h3 Friday, April 1, 6 PM - 9 PM
+      h3 Friday, April 7, 6 PM - 9 PM
       div.table-responsive
         table.table.schedule-table.table-condensed
           thead
@@ -75,7 +73,7 @@ section#schedule
               td.speaker-cell {{row.speaker}}
 
       h2 Conference
-      h3 Saturday, April 2, 9 AM - 4 PM
+      h3 Saturday, April 8, 9 AM - 4 PM
       div.table-responsive
         table.table.table-condensed.schedule-table
           thead

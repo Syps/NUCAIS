@@ -19,6 +19,10 @@
   /* A centered div above the overlay with a box shadow. */
   z-index: 10000;
   position: fixed;
+  overflow: scroll;
+  background-color: #fff;
+  box-shadow: 4px 4px 80px #000;
+  border-radius: 2px;
   width: 50%;
   /* Default */
   /* Center the dialog */
@@ -26,10 +30,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  background-color: #fff;
-  box-shadow: 4px 4px 80px #000;
-  border-radius: 2px; }
+  -moz-transform: translate(-50%, -50%); }
 
 .ng-modal-dialog-content {
   padding: 30px;
@@ -79,6 +80,9 @@
  */
 .black {
   color: black; }
+
+.cursor-pointer {
+  cursor: pointer; }
 
 html,
 body {
@@ -401,8 +405,11 @@ div[ng-view].ng-enter-active {
   color: #808080; }
 
 .marquee {
-  height: 240px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-top: 60px;
+  height: 150px;
+  width: 450px;
+  padding: 5px; }
 
 .sub-highlight {
   font-family: "Montserrat", sans-serif;
@@ -510,12 +517,16 @@ div[ng-view].ng-enter-active {
   margin-top: 0px; }
 
 #speakers {
+  padding-bottom: 100px;
   /* debug */
   background-color: #f4f5f6; }
   #speakers .row > h2 {
     font-weight: 300; }
   #speakers .member-box {
-    margin-top: 40px; }
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    vertical-align: top; }
   #speakers .speaker-classification {
     margin-left: auto;
     margin-right: auto;
@@ -560,7 +571,9 @@ div[ng-view].ng-enter-active {
     margin-bottom: 14px;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    text-decoration: none; }
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px; }
   #speakers .container {
     margin-top: 75px; }
 
@@ -727,8 +740,7 @@ div[ng-view].ng-enter-active {
   margin-bottom: 60px; }
 
 .member-box .img-responsive:hover {
-  filter: none;
-  cursor: pointer; }
+  filter: none; }
 
 .member-box .img-responsive {
   margin-right: auto;
@@ -895,11 +907,15 @@ div[ng-view].ng-enter-active {
 @media (min-width: 991px) {
   #intro h1 {
     font-size: 80px; }
-  .marquee {
-    margin-top: 60px;
-    height: 150px;
-    width: 450px;
-    padding: 5px; }
+  #intro .ng-modal-dialog {
+    width: 50%;
+    /* Default */
+    /* Center the dialog */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%); }
   .speaker-spacer {
     margin-bottom: 50px; }
   .speaker-info {
@@ -908,16 +924,29 @@ div[ng-view].ng-enter-active {
     text-align: left; } }
 
 @media (max-width: 990px) {
+  .ng-modal-dialog {
+    /* A centered div above the overlay with a box shadow. */
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    /* Default */
+    /* Center the dialog */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    background-color: #fff;
+    box-shadow: 4px 4px 80px #000;
+    border-radius: 2px; }
   #intro h1 {
     font-size: 56px; }
   #intro h2 {
     font-size: 20px; }
   #intro .top-title-contain {
     margin-top: 80px; }
-  .marquee {
-    width: 100%;
-    padding: 5px 0px;
-    background-attachment: fixed; }
   #speakers .member-box {
     margin-top: 40px; }
   #speakers .speaker-spacer {
@@ -931,18 +960,6 @@ div[ng-view].ng-enter-active {
       text-align: center; } }
 
 @media (max-width: 770px) {
-  .ng-modal-dialog {
-    /* A centered div above the overlay with a box shadow. */
-    z-index: 10000;
-    position: fixed;
-    width: 100%;
-    /* Default */
-    /* Center the dialog */
-    top: 100%;
-    left: 100%;
-    background-color: #fff;
-    box-shadow: 4px 4px 80px #000;
-    border-radius: 2px; }
   section h1.section-title {
     font-size: 40px; }
   nav div.nav-top-container {
@@ -973,3 +990,8 @@ div[ng-view].ng-enter-active {
   #location #map {
     height: 210px;
     width: 300px; } }
+
+@media (max-width: 550px) {
+  .marquee {
+    height: 75px;
+    width: 225px; } }

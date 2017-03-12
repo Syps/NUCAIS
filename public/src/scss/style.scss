@@ -40,6 +40,12 @@ $secondary-section-color: #f4f5f6; // #E6E6E6
   /* A centered div above the overlay with a box shadow. */
   z-index:10000;
   position: fixed;
+  overflow: scroll;
+
+  background-color: #fff;
+  box-shadow: 4px 4px 80px #000;
+  border-radius: 2px;
+
   width: 50%; /* Default */
 
   /* Center the dialog */
@@ -48,10 +54,6 @@ $secondary-section-color: #f4f5f6; // #E6E6E6
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
-
-  background-color: #fff;
-  box-shadow: 4px 4px 80px #000;
-  border-radius: 2px;
 }
 .ng-modal-dialog-content {
   padding:30px;
@@ -87,7 +89,6 @@ $secondary-section-color: #f4f5f6; // #E6E6E6
 .black-border {
   // border: 1px solid blue;
   vertical-align: top;
-
 }
 
 .registration-warning {
@@ -147,6 +148,10 @@ $secondary-section-color: #f4f5f6; // #E6E6E6
  */
  .black {
    color: black;
+ }
+
+ .cursor-pointer {
+   cursor: pointer;
  }
 html,
 body {
@@ -348,9 +353,6 @@ div[ng-view].ng-enter-active {
   -webkit-box-shadow: 1px 1px 1px #999;
 }
 
-// .scroll-nav:hover {
-//   opacity: 1;
-// }
 .nav-top-container {
   @include clear-margin();
   width: 100%;
@@ -365,6 +367,7 @@ div[ng-view].ng-enter-active {
   z-index: 100;
   background: transparentize(rgba(0,0,0,0.0), 0.0);
 }
+
 .logo {
   @include clear-padding();
   display: inline-block;
@@ -393,7 +396,6 @@ div[ng-view].ng-enter-active {
 .burger-icon {
   position: absolute;
   top: 50%;
-  // left: 50%;
 }
 .burger-icon,
 .burger-icon:before,
@@ -439,7 +441,6 @@ div[ng-view].ng-enter-active {
   list-style-type: none;
   @include center-horiz();
   @include clear-padding();
-  // margin-top: 60px;
 }
 .menu-item {
   display: block;
@@ -456,9 +457,7 @@ div[ng-view].ng-enter-active {
 }
 .menu-item:hover {
   cursor: pointer;
-  //background: darken( $nav-bg-color, 10%);
   background-color: darken($secondary-bg-color, 10%);
-  //color: $nav-bg-color;
 }
 
 //======== Section - Intro ==========\\
@@ -560,8 +559,11 @@ div[ng-view].ng-enter-active {
 //======== Section - About ==========\\
 
 .marquee {
-  height: 240px;
   margin-bottom: 50px;
+  margin-top:60px;
+  height:150px;
+  width: 450px;
+  padding: 5px;
 }
 
 .sub-highlight {
@@ -716,12 +718,20 @@ div[ng-view].ng-enter-active {
 
 #speakers {
 
-  .row > h2 {
-    font-weight: 300;
+  padding-bottom: 100px;
+
+  .row {
+
+    > h2 {
+      font-weight: 300;
+    }
   }
 
   .member-box {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 40px;
+    vertical-align: top;
   }
   /* debug */
   // border: 1px solid blue;
@@ -796,6 +806,8 @@ div[ng-view].ng-enter-active {
     font-family: $intro-font;
     font-size: $subtitle-font-size * .75;
     text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .container {
@@ -1046,7 +1058,6 @@ div[ng-view].ng-enter-active {
 
 .member-box .img-responsive:hover {
   filter: none;
-  cursor: pointer;
 }
 
 .member-box .img-responsive {
@@ -1287,24 +1298,27 @@ div[ng-view].ng-enter-active {
     }
   }
 }
+@media (max-width: 701px) {
 
+}
 @media (min-width: 991px) {
 #intro {
   h1 {
     font-size: $intro-text-size;
   }
 
+  .ng-modal-dialog {
+    width: 50%; /* Default */
 
+    /* Center the dialog */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+  }
 
 }
-
-
-  .marquee {
-    margin-top:60px;
-    height:150px;
-    width: 450px;
-    padding: 5px;
-  }
 
   .speaker-spacer {
     margin-bottom: 50px;
@@ -1319,6 +1333,28 @@ div[ng-view].ng-enter-active {
 }
 
 @media (max-width: 990px) {
+
+  .ng-modal-dialog {
+    /* A centered div above the overlay with a box shadow. */
+    z-index:10000;
+    position: fixed;
+    width: 100%; /* Default */
+
+    /* Center the dialog */
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+
+    background-color: #fff;
+    box-shadow: 4px 4px 80px #000;
+    border-radius: 2px;
+  }
 
 
   #intro {
@@ -1335,11 +1371,11 @@ div[ng-view].ng-enter-active {
     }
   }
 
-  .marquee {
-    width: 100%;
-    padding: 5px 0px;
-    background-attachment: fixed;
-  }
+  // .marquee {
+  //   width: 100%;
+  //   padding: 5px 0px;
+  //   background-attachment: fixed;
+  // }
 
   #speakers {
 
@@ -1371,21 +1407,6 @@ div[ng-view].ng-enter-active {
 //@media screen and (max-size)
 // better mobile
 @media (max-width: 770px) {
-
-  .ng-modal-dialog {
-    /* A centered div above the overlay with a box shadow. */
-    z-index:10000;
-    position: fixed;
-    width: 100%; /* Default */
-
-    /* Center the dialog */
-    top: 100%;
-    left: 100%;
-
-    background-color: #fff;
-    box-shadow: 4px 4px 80px #000;
-    border-radius: 2px;
-  }
 
   section h1.section-title {
     font-size: $section-title-size-mobile;
@@ -1447,4 +1468,11 @@ div[ng-view].ng-enter-active {
 
   }
 
+}
+
+@media (max-width: 550px) {
+  .marquee {
+    height:75px;
+    width: 225px;
+  }
 }
