@@ -518,7 +518,7 @@
         },
         {
           time: "11:30 AM",
-          activity: "Investing in Sustainability\nModerated by Mark Bernfield",
+          activity: "Investing in Sustainability",
           speaker: "Alan McKim - Chairman, CEO & President, Clean Harbors Inc.\nNicholas Sammut - Investment Professional, Generate Capital\nDerek Lister - M&A Analyst, Harvard Management Company"
         },
         {
