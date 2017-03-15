@@ -538,7 +538,7 @@
         },
         {
           time: "2:35 PM",
-          activity: "Turnaround Management\nModerated by Nicole Boyson",
+          activity: "Turnaround Management\nModerated by Harlan Platt",
           speaker: "Jacen Dinoff - Co-Founder & CEO, KCP Advisory Group\nBarry Green - Founding Partner, HunterPoint LLC\nJohn Loughnane - Partner, Nutter McClennen & Fish"
         },
         {
