@@ -207,7 +207,7 @@
             company: "Clean Harbors Inc.",
             keynote: false,
             modalShown: false,
-            bioParagraphs: ["Alan S. McKim founded the Clean Harbors in 1980 and has served as Chairman of the Board of Directors and Chief Executive Officer since its founding. He was named President of the Company in September 2016. He serves as a director of most of the Company's subsidiaries. Mr. McKim holds an MBA from Northeastern University's D'Amore - McKim School of Business. He now serves on Northeastern University's Board of Trustees, and he holds an honorary doctorate from the Massachusetts Maritime Academy. Mr. McKim is recognized as an industry leader, with over 35 years' experience in the environmental services business."]
+            bioParagraphs: ["Alan McKim founded the Company in 1980, and has since established Clean Harbors as North America’s leading provider of environmental, energy and industrial services, with 2016 revenues of $2.8 billion.  Under Mr. McKim’s leadership, Clean Harbors has grown organically and through strategic acquisitions, including the 2012 purchase of Safety-Kleen. This acquisition greatly enhanced the Company’s deep commitment to sustainability by adding considerable recycling capabilities, including the world’s largest oil re-refining facility. Today, Clean Harbors offers a comprehensive array of services to more than 250,000 customers, and counts the majority of the Fortune 500 among its customer base.  Headquartered in Norwell, Massachusetts, the Company has more than 600 locations, including more than 100 waste management facilities throughout the U.S., Canada, Mexico and Puerto Rico. The Company’s workforce comprises more than 12,000 employees. Mr. McKim holds an MBA from Northeastern University, where he also serves as Trustee. He also received an Honorary Doctorate degree from Massachusetts Maritime Academy."]
           },
           {
             name: "Nicholas Sammut",
@@ -235,6 +235,56 @@
             keynote: false,
           modalShown: false
           }
+        ]
+      },
+      {
+        'category': 'Partner-Track in Venture Capital',
+        'members': [
+          {
+            name: "Richard Dulude",
+            img: "/public/assets/img/speakers/headshots/unavailable.png",
+            topic: "",
+            year: "",
+            title: "Principal & Investment Manager",
+            company: "_Underscore.VC",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: []
+          },
+          {
+            name: "Andy Lefkarites",
+            img: "/public/assets/img/speakers/headshots/unavailable.png",
+            topic: "",
+            year: "",
+            title: "Senior Associate",
+            company: "North Bridge Growth Equity",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: []
+          },
+          {
+            name: "Juan Leung Li",
+            img: "/public/assets/img/speakers/headshots/unavailable.png",
+            topic: "",
+            year: "",
+            title: "Senior Associate",
+            company: "General Catalyst Partners",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: []
+          },
+          {
+            name: "Parul Singh",
+            img: "/public/assets/img/speakers/headshots/unavailable.png",
+            topic: "",
+            year: "",
+            title: "Principal",
+            company: "Founder Collective",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: []
+          }
+
         ]
       },
       {
@@ -342,9 +392,12 @@
             img: "/public/assets/img/speakers/headshots/martinlemaire.png",
             topic: "",
             year: "",
-            title: "Quantitative Investment Associate",
+            title: "Risk Analyst",
             company: "Putnam Investments",
-            bioParagraphs: [],
+            bioParagraphs: ["Mr. Lemaire is a Risk Analyst in the Risk Group.  He is responsible for the development, research, and testing of new risk models employed within the Investment Management Division for Equities.  In addition, he provides consultative assistance to investment teams regarding risk management and portfolio construction. Mr. Lemaire joined Putnam in 2013 as a Quantitative Investment Associate in the Global Asset Allocation Group.  He has been in the investment industry since 2011.",
+            "Prior to joining Putnam, Mr. Lemaire was a Research Associate at Fidelity Investments and a COOP at Bank of America Merrill Lynch in student loan securitization.",
+            "He earned a BSBA from Northeastern University with a minor in mathematics and a masters in finance from MIT."
+            ],
             keynote: false,
             modalShown: false
           },
@@ -366,7 +419,7 @@
             year: "",
             title: "Assistant Vice President",
             company: "Boston Capital",
-            bioParagraphs: [],
+            bioParagraphs: ["Ms. Murphy began her career at Boston Capital in the Asset Management division in 2007.  She managed a portfolio of multi-family real estate partnerships, developing strong relations with lender representatives, management agents, local agencies, and General Partners.  In 2010, she joined Boston Capital’s Acquisitions division where she is an Assistant Vice-President.  She is currently responsible for the acquisition and structuring of multifamily affordable housing investments for Boston Capital’s corporate investors.  To date, she has been involved in the closing of over $200 million in tax credit equity throughout the United States with a wide range of financing structures including tax-exempt bond transactions, government subsidized, and conventional loans.  Prior to joining Boston Capital, Ms. Murphy worked at CB Richard-Ellis.  Ms. Murphy graduated with honors with a dual degree in Finance and Marketing from Northeastern University and graduated summa cum laude from Northeastern University’s MBA program."],
             keynote: false,
             modalShown: false
           }
@@ -422,12 +475,12 @@
         },
         {
           time: "6:45 PM",
-          activity: "DMSB Alumni Panel\nModerated by Professor Nicole Boyson",
+          activity: "DMSB Alumni Panel\nModerated by Nicole Boyson",
           speaker: "Lilly Xie - Analyst, Spinnaker Capital\nMartin Lemaire - Quantitative Investment Associate, Putnam Investments\nTarik Emara - Vice President of Private Equity, Citi\nAnnemarie Murphy - Assistant Vice President, Boston Capital"
         },
         {
           time: "7:35 PM",
-          activity: "Alumni Night Keynote\nModerated by Richard D'Amore - Partner, North Bridge Venture Partners",
+          activity: "Alumni Night Keynote\nModerated by Richard D'Amore",
           speaker: "Fran Janis - Founding Partner, Pomona Capital"
         },
         {
@@ -455,7 +508,7 @@
         },
         {
           time: "10:15 AM",
-          activity: "Conference Keynotes - Different Perspectives in Private Equity\nModerated by Nicole Boyson - Associate Professor, D'Amore-McKim School of Business",
+          activity: "Conference Keynotes - Different Perspectives in Private Equity\nModerated by Nicole Boyson",
           speaker: "Henry Nasella - Partner, LNK Partners\nTed English - Executive Chairman, Bob's Discount Furniture"
         },
         {
@@ -465,13 +518,13 @@
         },
         {
           time: "11:30 AM",
-          activity: "Investing in Sustainability",
+          activity: "Investing in Sustainability\nModerated by Mark Bernfield",
           speaker: "Alan McKim - Chairman, CEO & President, Clean Harbors Inc.\nNicholas Sammut - Investment Professional, Generate Capital\nDerek Lister - M&A Analyst, Harvard Management Company"
         },
         {
           time: "12:30 PM",
-          activity: "Partner-Track in Venture Capital\nModerated by Dan Gregory - Digital Media I-cubator Director, D'Amore-McKim School of Business",
-          speaker: "Our Venture Capital experts will be announced in the coming days"
+          activity: "Partner-Track in Venture Capital\nModerated by Dan Gregory",
+          speaker: "Richard Dulude - Principal & Investment Manager, _Underscore.VC\nAndy Lefkarites - Senior Associate, North Bridge Growth Equity\nJuan Leung Li - Senior Associate, General Catalyst Partners\nParul Singh - Principal, Founder Collective"
         },
         {
           time: "1:30 PM",
@@ -485,7 +538,7 @@
         },
         {
           time: "2:35 PM",
-          activity: "Turnaround Management\nModerated by Harlan Platt - Professor, D'Amore-McKim School of Business",
+          activity: "Turnaround Management\nModerated by Nicole Boyson",
           speaker: "Jacen Dinoff - Co-Founder & CEO, KCP Advisory Group\nBarry Green - Founding Partner, HunterPoint LLC\nJohn Loughnane - Partner, Nutter McClennen & Fish"
         },
         {
@@ -671,12 +724,6 @@
        var pressImgRoot = "/public/assets/img/press/";
 
        $scope.press = [
-         {
-           link: "http://finance.yahoo.com/news/4th-annual-northeastern-university-collegiate-110000421.html",
-           img: pressImgRoot + "yahoofinance.png",
-           paddingTop: true,
-           extraPadding: true
-         },
          {
            link: "http://www.businesswire.com/news/home/20160308005500/en/4th-Annual-Northeastern-University-Collegiate-Alternative-Investment",
            img: pressImgRoot + "businesswire.jpg",
