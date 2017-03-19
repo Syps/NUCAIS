@@ -242,7 +242,7 @@
         'members': [
           {
             name: "Richard Dulude",
-            img: "/public/assets/img/speakers/headshots/unavailable.png",
+            img: "/public/assets/img/speakers/headshots/richarddulude.jpg",
             topic: "",
             year: "",
             title: "Principal & Investment Manager",
@@ -253,36 +253,47 @@
           },
           {
             name: "Andy Lefkarites",
-            img: "/public/assets/img/speakers/headshots/unavailable.png",
+            img: "/public/assets/img/speakers/headshots/andylefkarites.jpg",
             topic: "",
             year: "",
             title: "Senior Associate",
             company: "North Bridge Growth Equity",
             keynote: false,
             modalShown: false,
-            bioParagraphs: []
+            bioParagraphs: [
+              "Andy Lefkarites is a senior associate at North Bridge Growth Equity and joined in 2014. He focus on identifying, evaluating and executing investment opportunities within the technology and technology-enabled services sectors. Mr. Lefkarites currently support our investments in Asurint, Ingenious Med, and Valence Health/Evolent Health.",
+              "North Bridge Growth Equity invests in rapidly growing companies that address large, dynamic market opportunities and have $15 million to $300 million in annualized revenue. They invest from $15 million to $100 million as either a minority or majority investor, and are able to make larger investments using an established network of partners. Their capital gives management more options at key inflection points to accelerate growth, fund acquisitions and buyouts, and provide liquidity to shareholders.",
+              "Prior to joining North Bridge, Mr. Lefkarites was an analyst with Houlihan Lokey’s Global Technology Group in San Francisco where he advised clients on mergers and acquisitions and private placements within the software, internet, technology-enabled services and healthcare IT sectors."
+            ]
           },
           {
             name: "Juan Leung Li",
-            img: "/public/assets/img/speakers/headshots/unavailable.png",
+            img: "/public/assets/img/speakers/headshots/juanleungli.jpg",
             topic: "",
             year: "",
             title: "Senior Associate",
             company: "General Catalyst Partners",
             keynote: false,
             modalShown: false,
-            bioParagraphs: []
+            bioParagraphs: [
+              "Juan is part of the early stage investment team at General Catalyst, a venture capital firm that makes early-stage and transformational investments. The firm backs exceptional entrepreneurs who are building innovative technology companies and market leading businesses, including Airbnb, BigCommerce, ClassPass, Datalogix, Datto, Demandware, Gusto (fka ZenPayroll), The Honest Company, HubSpot, KAYAK, Oscar, Snap, Stripe, and Warby Parker. Juan works closely with companies like Catalant (fka HourlyNerd), Feedvisor and B12.io.",
+              "Juan’s experience in technology covers a wide spectrum – prior to joining General Catalyst, he worked at Javelin Venture Partners, Primary Venture Partners, McGraw-Hill Education and J.P. Morgan and was also the co-founder of Ripple Concerts, a marketplace for live music. He graduated from Boston University with a B.S., summa cum laude, in Business and from Harvard Business School with an MBA where he was a National Society of Hispanic MBAs Scholar and was awarded the Rock Entrepreneurship, Toigo and InSITE Fellowships. Follow Juan on Twitter via @juanleungli."
+            ]
           },
           {
             name: "Parul Singh",
-            img: "/public/assets/img/speakers/headshots/unavailable.png",
+            img: "/public/assets/img/speakers/headshots/parulsingh.jpg",
             topic: "",
             year: "",
             title: "Principal",
             company: "Founder Collective",
             keynote: false,
             modalShown: false,
-            bioParagraphs: []
+            bioParagraphs: [
+              "Parul Singh is a principal at Founder Collective, one of the first seed stage VC firms in the country.  There she focuses on early stage investments across a wide range of industries, with technology as a unifying theme.  She has particular interests in SaaS, analytics, consumer products, food and developer tools.",
+              "Parul is a former developer turned product manager for venture backed startups and media companies like the NY Times, where she helped launch the video and multimedia vertical and managed the video player on the homepage.  Before joining Founder Collective, she founded and ran an edtech assessment and analytics company which aimed to provide an alternative to standardized testing.",
+              "Parul lectures on data analytics at Northeastern University and is deeply involved in the startup ecosystem in Boston and in building support networks for entrepreneurs at every level.  She grew up in the Boston area and has an undergraduate degree from Harvard College and an MBA from MIT.  Parul lives in a converted schoolhouse in Cambridge with her husband and two children."
+            ]
           }
 
         ]
@@ -408,7 +419,9 @@
             year: "",
             title: "Vice President of Private Equity",
             company: "Citi",
-            bioParagraphs: [],
+            bioParagraphs: [
+              "Tarik joined Citi Private Bank in 2015 and is a Vice President on the Private Equity Research and Management team. He is responsible for sourcing, structuring and diligencing private equity investment opportunities. Prior to joining Citi, he was a Senior Associate at Liberty Mutual Investments, where he was responsible for the analysis and underwriting of private equity investments across buyout, venture capital, growth equity, distressed and secondary strategies. He also contributed to the monitoring responsibilities for a portfolio of over 200 fund and co-investments with over $5 billion in total exposure. Tarik holds a BS in Finance and Management from Northeastern University. He is a member of the Boston Security Analyst Society and is a CFA charterholder."
+            ],
             keynote: false,
             modalShown: false
           },
@@ -518,7 +531,7 @@
         },
         {
           time: "11:30 AM",
-          activity: "Investing in Sustainability",
+          activity: "Investing in Sustainability\nModerated by Mark Bernfield",
           speaker: "Alan McKim - Chairman, CEO & President, Clean Harbors Inc.\nNicholas Sammut - Investment Professional, Generate Capital\nDerek Lister - M&A Analyst, Harvard Management Company"
         },
         {
