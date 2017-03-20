@@ -249,7 +249,10 @@
             company: "_Underscore.VC",
             keynote: false,
             modalShown: false,
-            bioParagraphs: []
+            bioParagraphs: [
+              "Richard is the Principal & Investment Manager at _Underscore.VC, an early stage venture firm based in Boston and leads the firm's AR/VR investing practice. Richard previously worked at Founder Collective, a seed stage venture firm, while at Harvard Business School.",
+              "Previously, he was the technical co-founder of Popt, a social media sentiment analysis startup focused on $1B+ brands. Before that, he led the Direct-to-Consumer eCommerce business for Procter & Gamble in North America following programming roles as a developer on Apple's first iTunes product and Goldman Sachs internal trading systems after retiring from the U.S. Ski Team for Freestyle Skiing where he was an alternate for the 2006 Winter Olympics in Torino Italy."
+            ]
           },
           {
             name: "Andy Lefkarites",
@@ -486,18 +489,19 @@
           activity: "Welcome",
           speaker: "Nicholas Lara - Founder and Chairman of CAIS\nHugh Courtney, Ph.D. - Dean, D'Amore-McKim School of Business"
         },
+
         {
           time: "6:45 PM",
-          activity: "DMSB Alumni Panel\nModerated by Nicole Boyson",
-          speaker: "Lilly Xie - Analyst, Spinnaker Capital\nMartin Lemaire - Quantitative Investment Associate, Putnam Investments\nTarik Emara - Vice President of Private Equity, Citi\nAnnemarie Murphy - Assistant Vice President, Boston Capital"
-        },
-        {
-          time: "7:35 PM",
           activity: "Alumni Night Keynote\nModerated by Richard D'Amore",
           speaker: "Fran Janis - Founding Partner, Pomona Capital"
         },
         {
-          time: "8:20 PM",
+          time: "7:30 PM",
+          activity: "DMSB Alumni Panel\nModerated by Nicole Boyson",
+          speaker: "Lilly Xie - Analyst, Spinnaker Capital\nMartin Lemaire - Quantitative Investment Associate, Putnam Investments\nTarik Emara - Vice President of Private Equity, Citi\nAnnemarie Murphy - Assistant Vice President, Boston Capital"
+        },
+        {
+          time: "8:15 PM",
           activity: "Networking Session",
           speaker: ""
         }
@@ -531,7 +535,7 @@
         },
         {
           time: "11:30 AM",
-          activity: "Investing in Sustainability\nModerated by Mark Bernfield",
+          activity: "Investing in Sustainability\nModerated by Mark Bernfeld",
           speaker: "Alan McKim - Chairman, CEO & President, Clean Harbors Inc.\nNicholas Sammut - Investment Professional, Generate Capital\nDerek Lister - M&A Analyst, Harvard Management Company"
         },
         {
@@ -738,8 +742,14 @@
 
        $scope.press = [
          {
-           link: "http://www.businesswire.com/news/home/20160308005500/en/4th-Annual-Northeastern-University-Collegiate-Alternative-Investment",
+           link: "http://www.businesswire.com/news/home/20170320005109/en/Northeastern-University-Host-5th-Annual-Collegiate-Alternative",
            img: pressImgRoot + "businesswire.jpg",
+           paddingTop: false,
+           extraPadding: false
+         },
+         {
+           link: "https://sg.finance.yahoo.com/news/northeastern-university-host-5th-annual-110000963.html",
+           img: pressImgRoot + "yahoofinance.png",
            paddingTop: false,
            extraPadding: false
          }
