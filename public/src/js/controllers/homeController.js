@@ -12,11 +12,11 @@
     function($scope, $http, $sce, $window, $document) {
       $scope.welcome = "Welcome home";
 
-      var LAT_CONF = 42.337358;
-      var LONG_CONF = -71.091847;
-      var LAT_NWK = 42.337831;
-      var LONG_NWK = -71.085189;
-      var DATE_CONF = new Date("April 6, 2017 11:00:00");
+      var LAT_CONF = 42.337748;
+      var LONG_CONF = -71.085369;
+      var LAT_NWK = 42.336729;
+      var LONG_NWK = -71.091747;
+      var DATE_CONF = new Date("April 14, 2018 11:00:00");
 
       $scope.modalVisible = false;
       $scope.modalSpeakerBioParagraphs = [];
@@ -114,7 +114,7 @@
         $scope.about = {};
         $scope.about.title = "About";
         $scope.about.summary1 = "CAIS is a student-run organization that enables students and professionals to learn from and engage with experts in the alternative investments space. Its mission is to bridge the gap between the traditional educational curriculum and real-life application by creating a knowledge-sharing forum for like-minded students and professionals to interact. CAIS educates students on topics related to private equity, venture capital, hedge funds and real estate.";
-        $scope.about.summary2 = "CAIS 2017 will be held on April 7-8, 2017. It will mark the fifth anniversary of the inaugural CAIS event, and will highlight the strides CAIS has made since its inception. It begins with a networking event designed to provide attendees with thoughtful discussion led by a panel of recent Northeastern alumni who are currently working in alternative investments. The main event, held the following day, consists of a series of speakers and panels. Speakers and panelists have had years of extensive experience in the alternative investments space and are considered specialists in their respective fields.";
+        $scope.about.summary2 = "CAIS 2018 will be held on April 13-14, 2018. It will mark the sixth anniversary of the inaugural CAIS event, and will highlight the strides CAIS has made since its inception. It begins with a networking event designed to provide attendees with thoughtful discussion led by a panel of recent Northeastern alumni who are currently working in alternative investments. The main event, held the following day, consists of a series of speakers and panels. Speakers and panelists have had years of extensive experience in the alternative investments space and are considered specialists in their respective fields.";
 
 
         $scope.speakers = [
@@ -573,11 +573,11 @@
       $scope.faqs = [
         {
           question: "Who can attend?",
-          answer: "CAIS 2017 is open to anyone interested in learning more about alternative investments, regardless of university or professional affiliation."
+          answer: "CAIS 2018 is open to anyone interested in learning more about alternative investments, regardless of university or professional affiliation."
         },
         {
           question: "What's the cost?",
-          answer: "CAIS 2017 will employ a variable cost structure. An early bird special will be available until Friday, March 24. These tickets will cost $20 each, and will grant the attendee access to Alumni Night and the Conference. Beginning Saturday, March 25, each ticket will cost $30, and will grant the attendee access to Alumni Night and the Conference. The registration fee includes breakfast and lunch at the Conference on April 8."
+          answer: "CAIS 2018 will employ a variable cost structure. An early bird special will be available until Friday, March 24. These tickets will cost $20 each, and will grant the attendee access to Alumni Night and the Conference. Beginning Saturday, March 25, each ticket will cost $30, and will grant the attendee access to Alumni Night and the Conference. The registration fee includes breakfast and lunch at the Conference on April 14."
         },
         {
           question: "What's the dresscode?",
@@ -593,7 +593,7 @@
         },
         {
           question: "Is the press allowed to attend?",
-          answer: "As a general practice, we do not invite press to our conference events. CAIS 2017 will operate under Chatham House Rules in order to preserve the substance of the conference. Chatham House Rules are defined as a meeting where participants are free to use the information received, but neither the identity nor the affiliation of the speakers, nor that of any participant, may be revealed."
+          answer: "As a general practice, we do not invite press to our conference events. CAIS 2018 will operate under Chatham House Rules in order to preserve the substance of the conference. Chatham House Rules are defined as a meeting where participants are free to use the information received, but neither the identity nor the affiliation of the speakers, nor that of any participant, may be revealed."
         },
       ];
 
@@ -617,12 +617,6 @@
       ];
 
       $scope.team = [
-        {
-          name: "Lauren Tawfik",
-          img: "/public/assets/img/team/laurentawfik.jpg",
-          linkedin: "https://www.linkedin.com/in/lauren-tawfik-a93a48111?authType=name&authToken=jiE_&trk=prof-sb-browse_map-name",
-          title: "Co-President"
-        },
         {
           name: "Cole Weppner",
           img: "/public/assets/img/team/coleweppner.jpg",
@@ -702,6 +696,16 @@
            title: "Founder and Chairman"
          },
          {
+           name: "Lauren Tawfik",
+           img: "/public/assets/img/team/laurentawfik.jpg",
+           linkedin: "https://www.linkedin.com/in/lauren-tawfik-a93a48111?authType=name&authToken=jiE_&trk=prof-sb-browse_map-name"
+         },
+         {
+           name: "Michael Counihan",
+           img: "/public/assets/img/advisory/michaelcounihan.jpg",
+           linkedin: "https://www.linkedin.com/in/michaelbcounihan/"
+         },
+         {
            name: "Stephen Price",
            img: "/public/assets/img/advisory/price.jpg",
            linkedin: "https://www.linkedin.com/in/stephenprice93"
@@ -715,11 +719,6 @@
            name: "Amy Zhou",
            img: "/public/assets/img/advisory/amyzhou.jpg",
            linkedin: "https://www.linkedin.com/in/amywzhou/"
-         },
-         {
-           name: "Michael DeCenzo",
-           img: "/public/assets/img/advisory/deCenzo.jpg",
-           linkedin: "https://www.linkedin.com/pub/michael-decenzo/13/873/46a"
          },
          {
            name: "Daniel Asulin",
