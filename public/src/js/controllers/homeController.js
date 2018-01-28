@@ -793,6 +793,12 @@
                   img: imgRoot + "caia.jpg",
                   title: "Silver Sponsor",
                   link: "https://www.caia.org/"
+                },
+                {
+                  name: "CFA Society Boston",
+                  img: imgRoot + "cfaboston.jpg",
+                  title: "Silver Sponsor",
+                  link: "https://www.cfaboston.org/"
                 }]
       },
       {
