@@ -15,7 +15,9 @@ $text-font-thin: 'Roboto Condensed', sans-serif;
 $intro-font: 'Montserrat', sans-serif;
 $intro-text-size: 80px;
 $section-title-size: 50px;
+$section-subtitle-size: 30px;
 $section-title-size-mobile: 40px;
+$section-subtitle-size-mobile: 20px;
 $section-title-color: darken(#465362, 15%);
 $subtitle-font-size: 20px;
 $img-subtext-size: 20px;
@@ -479,6 +481,12 @@ div[ng-view].ng-enter-active {
     background-color: rgba(33,33,33,0.9); //rgba(55,0,0,0.9);
   }
 
+  .apply-btn-container {
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
   .apply-btn {
     text-decoration: none;
     margin-top: 30px;
@@ -491,7 +499,7 @@ div[ng-view].ng-enter-active {
     font-family: $intro-font;
     font-weight: 100;
     letter-spacing: 1px;
-    width: 190px;
+    // width: 190px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
@@ -625,6 +633,11 @@ div[ng-view].ng-enter-active {
   margin-bottom: 70px;
   margin-top: 40px;
   font-style: normal;
+}
+
+.section-subtitle {
+  @extend .section-title;
+  font-size: $section-subtitle-size;
 }
 // select highlight key words
 .about-billboard {
@@ -1417,6 +1430,10 @@ div[ng-view].ng-enter-active {
 
   section h1.section-title {
     font-size: $section-title-size-mobile;
+  }
+
+  section h2.section-subtitle {
+    font-size: $section-subtitle-size-mobile;
   }
 
   //navbar

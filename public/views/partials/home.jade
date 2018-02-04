@@ -17,7 +17,8 @@ section#intro
       img.nu-seal(src="/public/assets/img/nu-seal.png")
       div.intro-date-contain
         h2.animated.fadeIn APRIL 13 - 14
-      a.apply-btn.animated.fadeIn(ng-hide="hideButton", target="_blank", href="https://commerce.cashnet.com/SFDMSB2018") REGISTER
+      div.apply-btn-container
+        a.apply-btn.animated.fadeIn(ng-hide="hideButton", target="_blank", href="") REGISTRATION OPENS MARCH 18
       //h2.registration-warning {{getTimeLeftMessage()}}
 
 section#about
@@ -112,6 +113,7 @@ section#faq
 
 section#sponsors
   h1.section-title.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") 2017 Sponsors
+  h2.section-subtitle.animated(ng-class="{slideInLeft:anSponsors, 'not-visible':!(anSponsors)}") To donate, please visit our #[a(target="_blank", href="https://giving.northeastern.edu/live/profiles/491-collegiate-alternative-investment-summit") funding page]
   div.line-divider
   div.container
     div.row.row-centered
