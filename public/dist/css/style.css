@@ -523,7 +523,7 @@ div[ng-view].ng-enter-active {
   margin-top: 0px; }
 
 #speakers {
-  padding-bottom: 100px;
+  padding-bottom: 0px;
   /* debug */
   background-color: #f4f5f6; }
   #speakers .row > h2 {
@@ -581,7 +581,7 @@ div[ng-view].ng-enter-active {
     padding-left: 5px;
     padding-right: 5px; }
   #speakers .container {
-    margin-top: 75px; }
+    margin-top: 45px; }
 
 .info-appear {
   opacity: 0.0;
@@ -746,7 +746,7 @@ div[ng-view].ng-enter-active {
 
 .member-box {
   text-align: center;
-  margin-bottom: 60px; }
+  margin-bottom: 20px; }
 
 .member-box .img-responsive:hover {
   filter: none; }
@@ -832,8 +832,8 @@ div[ng-view].ng-enter-active {
     font-weight: 300; }
 
 .sponsor {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   margin-right: 40px;
   margin-left: 40px; }
   .sponsor .img-responsive {
