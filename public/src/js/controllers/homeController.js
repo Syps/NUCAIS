@@ -168,7 +168,7 @@
             img: "/public/assets/img/speakers/headshots/robindevereux.png",
             topic: "",
             year: "",
-            title: "Managing Director",
+            title: "CFO",
             company: "Summit Partners",
             keynote: false,
             modalShown: false,
@@ -427,7 +427,7 @@
         {
           time: "9:00 AM",
           activity: "Welcome to CAIS 2018",
-          speaker: "Cody Gilbert - Co-President, CAIS"
+          speaker: "Colby Gilbert - Co-President, CAIS"
         },
         {
           time: "9:15 AM",
@@ -524,7 +524,7 @@
 
       $scope.team = [
         {
-          name: "Cody Gilbert",
+          name: "Colby Gilbert",
           img: "/public/assets/img/team/codygilbert.png",
           linkedin: "https://www.linkedin.com/in/gilbertrichardc/",
           title: "President"
