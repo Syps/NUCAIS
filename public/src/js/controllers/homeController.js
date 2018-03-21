@@ -124,7 +124,7 @@
               {
                 name: "Bob Davis",
                 img: "/public/assets/img/speakers/headshots/bobdavis.png",
-                topic: "",
+                topic: "A Partner's Perspective in Venture Capital",
                 year: "",
                 title: "Partner",
                 company: "Highland Capital Partners",
@@ -176,6 +176,41 @@
               "Robin joined Summit Partners in 2000. Prior to Summit, she worked for National Development, Property Capital Trust, R.M. Bradley & Co. and Deloitte & Touche.",
               "Based in Summit’s Boston office, Robin is the firm’s Chief Financial Officer and Chief Compliance Officer.",
               "She holds a BS in accounting from Northeastern University and is a CPA (expired)."
+            ]
+          },
+          {
+            name: "Whitney Kelley",
+            img: "/public/assets/img/speakers/headshots/whitneykelly.jpg",
+            topic: "",
+            year: "",
+            title: "Vice President",
+            company: "Berkshire Partners",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: []
+          },
+          {
+            name: "Laurie Gormley",
+            img: "/public/assets/img/speakers/headshots/lauriegormley.png",
+            topic: "",
+            year: "",
+            title: "Portfolio Manager",
+            company: "Adage Capital Management",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: []
+          },
+          {
+            name: "Jess Yuan",
+            img: "/public/assets/img/speakers/headshots/jessyuan.jpeg",
+            topic: "",
+            year: "",
+            title: "Associate",
+            company: "J.W. Childs Associates",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "Ms. Yuan joined J.W. Childs Associates in July 2016. Previously, she was an Investment Banking Analyst at Deloitte Corporate Finance (formerly McColl Partners). Her current portfolio company involvement include Honors Holdings, Kosta Browne and Comoto Holdings, the parent company of Cycle Gear and RevZilla. Ms. Yuan graduated with distinction from the University of Virginia, where she received a B.S. in Commerce with concentrations in Finance and Accounting."
             ]
           }
         ]
@@ -237,14 +272,100 @@
             keynote: false,
             modalShown: false,
             bioParagraphs: [
-              "Forrest received a BS (with university honors) in Business Administration with a concentration in Finance from Carnegie Mellon University in 2013."
+              "Nick currently works at 3L Capital, a technology, media and consumer fund based in NYC & LA. 3L is focused on expansion capital, seeking to invest in transformational business models driven by rapidly evolving demands and expectations of consumers and businesses.",
+              "Previously, Nick worked at Morgan Stanley in the Media and Communications group and graduated from Northeastern University. "
             ]
           }
 
         ]
       },
       {
-        'category': 'Young Venture Capitalists',
+        'category': 'Blockchain: What Can the Future Hold?',
+        'members': [
+          {
+            name: "Abhi Shelat",
+            img: "/public/assets/img/speakers/headshots/abhishelat.png",
+            topic: "",
+            year: "",
+            title: "Associate Professor",
+            company: "Northeastern University",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "Abhi Shelat is an associate professor at Northeastern University’s College of Computer and Information Science. Previously he served as an associate professor at the University of Virginia’s computer science department.",
+              "Abhi earned a BA from Harvard in 1997, before moving to San Francisco to work at a startup. He earned his PhD in cryptography from MIT in 2005 and joined the Zurich IBM Research Lab shortly after. He then joined the computer science department at the University of Virginia in 2007. He was promoted and tenured from an assistant professor to an associate professor in 2013.",
+              "Abhi has received the NSF CAREER award, Microsoft Faculty Fellowship Award, the FEST fellowship award, an Amazon Research award, an SAIC research award, a Jacobs Future of Money Workshop research prize, the Google Faculty Research Award, and an ACM UVA-chapter Professor of the Year award. He is also co-founder of a software company, Arqspin, in Charlottesville that now operates itself.",
+              "His research interests lie in cryptography and applied security. He focused on secure computation protocols, which are methods for mutually distrusting parties, each with private inputs, to jointly compute a function while ensuring maximal privacy and correctness."
+          ]
+        },
+          {
+            name: "Dave Balter",
+            img: "/public/assets/img/speakers/headshots/davebalter.jpeg",
+            topic: "",
+            year: "",
+            title: "Partner",
+            company: "Flipside Crypto",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "Dave has been active in the cryptocurrency space for years, and has learned invaluable lessons from not buying during crypto winters and at least one wallet loss.",
+              "Previously, Dave was the CEO and co-founder of Smarterer, a machine-learning skills assessment company acquired by Pluralsight in 2014.  Post-acquisition, Dave was the Head of Transactions at Pluralsight, while also serving as a Board Observer.  Before co-founding Smarterer in 2010, Dave founded and was CEO of BzzAgent, a social media marketing company, which was acquired by dunnhumby, a division of Tesco (PLC) in 2011.  From 2011-2014 Dave sat on the Global Executive Team at dunnhumby, where he led all venture investments and M&A activity.",
+              "Dave was the Chairman of Mylestone, a company that assigns a personal biographer to your digital photo library, to generate your life story, which he founded in early 2016.",
+              "Dave shares his drive for technology with his local Boston community as an investor and advisor to dozens of startups, including acting as Venture Partner Emeritus in seed-stage investment firm Boston Seed Capital.  Personal investments include Promoboxx, Help Scout, Kettle & Fire, Turo, NRG, AdHawk, and Fortified Bike.  Dave sits on the Board of Directors of tech-enabled startups Grapevine, and Kindara, and is Vice Chairman of Boch Center for the Performing Arts, a nonprofit steward of iconic venues, providing arts, entertainment, cultural, and educational experiences to the greater Boston community."
+            ]
+          },
+          {
+            name: "Russ Wilcox",
+            img: "/public/assets/img/speakers/headshots/russwilcox.jpeg",
+            topic: "",
+            year: "",
+            title: "Partner",
+            company: "Pillar VC",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "Russ Wilcox is a partner at Pillar. He has 20 years of start-up operating experience, having founded three companies and raised $150 million in private capital. At E Ink Corporation, he commercialized electronic paper invented at the MIT Media Lab. E Ink conducted materials research, filed patents, scaled a factory, and shipped tens of millions of displays for the Amazon Kindle and other devices. E Ink reached a $200 million run rate with strong profits leading to its sale in 2009. To date consumers have purchased more than $10 billion of E Ink-related devices and content.",
+              "Following E Ink, Russ co-founded Transatomic Power, advancing a source of clean energy; and Piper Therapeutics, conducting pre-clinical studies for an immuno-oncology drug.",
+              "Russ actively supports the Boston entrepreneurial community. Since 2012 he has volunteered as an Entrepreneur-in-Residence for the Harvard Business School Rock Center and counseled hundreds of students on achieving their start-up goals. He sits on the Harvard Physical Sciences Accelerator Review Board and was a Board Director for Harvest Automation, a venture-backed developer of agricultural robots. He has been an angel investor in several start-ups, including Disruptor Beam, PowerInbox, Calimmune, Gen9, DriveFactor, and Camino Financial. Russ began his startup career as a product manager at PureSpeech, a speech recognition company co-founded by Jamie Goldstein.",
+              "Russ graduated with honors in Applied Mathematics from Harvard College and worked in Boston and Paris as a management consultant for Oliver Wyman. He was a Baker Scholar at the Harvard Business School. He is an Ernst & Young New England Entrepreneur of the Year and a Mass High Tech All-Star. He holds thirty-three issued U.S. patents."
+            ]
+          },
+          {
+            name: "Jim Cunha",
+            img: "/public/assets/img/speakers/headshots/jimcunha.jpeg",
+            topic: "",
+            year: "",
+            title: "SVP",
+            company: "Federal Reserve Bank of Boston",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "As Senior Vice President of Treasury and Financial Services at the Federal Reserve Bank of Boston, Jim Cunha leads the Bank's work on behalf the Bank's cash operation, wholesale payments, mobile and digital payments.",
+              "Cunha is spearheading the Boston Fed's efforts to study, explore, and engage with distributed ledger technology to determine applicability, potential benefits, and risks for internal and external uses. He is focused on the evolution of the technology and its potential impact on the financial services sector.",
+              "Cunha is also responsible for two U.S. Treasury businesses supported by the Boston Fed: Stored Value Card, which is a chip based card prepaid used world-wide by the U.S. military; and Invoice Processing Platform, a web based portal to automate purchase order and invoice processing for Federal agencies and their vendors.",
+              "Jim has worked at the Boston Fed since 1984. Prior to that, he worked at Fleet National Bank.",
+              "He has a Bachelor of Science in accounting and philosophy from Northeastern University and a Bachelor of Arts in computer science from Rhode Island College. He is chairman of the board of Children's Friend and Family Services of Salem, Mass. and an ex-officio member of the board of directors at New England ACH Association (NEACH), a payments education non-profit."
+            ]
+          },
+          {
+            name: "Jeremy Kauffman",
+            img: "/public/assets/img/speakers/headshots/jeremykauffman.jpeg",
+            topic: "",
+            year: "",
+            title: "Founder & CEO",
+            company: "LBRY",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "Jeremy is the founder and chief executive officer at LBRY a company he started because he fell in love with the idea of shared, global content registry that is owned and controlled by no one. Unsurprisingly, he is a longtime supporter of decentralized technology and freedom of information. LBRY is first and foremost a new protocol that allows anyone to build apps that interact with digital content on the LBRY network.  LBRY’s underlying technology is blockchain.",
+              "Prior to LBRY, Jeremy founded TopScore, a startup that processes millions of dollars monthly in event and activity registrations. Before TopScore, he founded Flickswitch which helps companies build the internet of things focused on SIM card management.",
+              "He attended Rensselaer Polytechnic Institute, where he received degrees in physics and computer science."
+            ]
+          }
+        ]
+      },
+      {
+        'category': 'Innovators in Venture',
         'members': [
           {
             name: "Cory Bolotsky",
@@ -277,6 +398,33 @@
               "Before EMC, Rob spent over 3 years working in a variety of operational roles at MineralTree, a .406 Fund I portfolio company. While the company was in stealth mode and Rob was in college, he joined as a summer intern focused on market research in the financial and SMB spaces. Immediately drawn to the energy, culture, and pace of the startup world, Rob graduated a semester early from college to start working full-time. As a former customer support representative, sales engineer, project manager, customer success representative, inside sales representative, sales operations lead, account manager, and just about any other title he could think up for the day’s activities, Rob knows the hard-work and drive required to bring a start-up to life.",
               "Rob received his BA in Psychology from Duke University, with minors in Economics as well as Environmental Science and Policy."
             ]
+          },
+          {
+            name: "Ken Cowan",
+            img: "/public/assets/img/speakers/headshots/kencowan.jpeg",
+            topic: "",
+            year: "",
+            title: "Associate",
+            company: "OpenView Partners",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "Ken is an Associate at OpenView where he works to find great entrepreneurs building generational software companies.",
+              "Prior to joining OpenView, Ken helped build early-stage tech companies across the US and in Europe, working with companies such as Tagetik, OutlookSoft, Vcommerce, OpenBox Technologies, RMS and modomodo. Ken was also CEO of The Stables, a services company in Scottsdale, AZ, and a Consultant at FTI Consulting in New York City."
+            ]
+          },
+          {
+            name: "Monique Guimond",
+            img: "/public/assets/img/speakers/headshots/moniqueguimond.jpg",
+            topic: "",
+            year: "",
+            title: "Associate",
+            company: "The Engine",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "Monique received her MBA from MIT Sloan in the Spring of 2017, where she was involved with the entrepreneurial ecosystem as the Managing Director of the MIT $100K Competition. Prior to Sloan, she was one of the first employees at a social enterprise specializing in healthcare design, MASS Design Group, where she built out operations and expanded the business model abroad. Monique is working on founder programs, investments, and the overall business model of The Engine’s space"
+            ]
           }
         ]
       },
@@ -288,7 +436,7 @@
             img: "/public/assets/img/speakers/headshots/kellywallace.png",
             topic: "",
             year: "",
-            title: "Analyst",
+            title: "Associate",
             company: "Spring Lake Equity Partners",
             keynote: false,
             modalShown: false,
@@ -305,7 +453,37 @@
             year: "",
             title: "Analyst",
             company: "Acadian Asset Management",
-            bioParagraphs: [],
+            bioParagraphs: [
+              "William joined Acadian Asset Management in 2017 as trader and analyst in the Portfolio Construction Group. He is responsible for the daily portfolio construction, implementation and trading of Acadian’s global quantitative investment strategies. Prior to joining Acadian, William was a trader at PanAgora Asset Management, where he was responsible for research and execution of global trading strategies.",
+              "William holds an M.B.A from the D’Amore-Mckim School of Business at Northeastern University and a BS in Business from Salve Regina University. Additionally, William is a CFA charterholder and a member of CFA Society Boston."
+            ],
+            keynote: false,
+            modalShown: false
+          },
+          {
+            name: "Andrew Hinker",
+            img: "/public/assets/img/speakers/headshots/andrewhinker.png",
+            topic: "",
+            year: "",
+            title: "Pricing Analyst",
+            company: "The Baupost Group",
+            bioParagraphs: [
+              "Andrew joined Baupost in June of 2016. His main responsibilities include the valuation of different asset classes of public securities and of select private equity investments. Before Baupost he worked as a pricing analyst at the Bank of New York Mellon. He completed 3 co-ops at Liberty Mutual, Hercules Technology Growth Capital, and Spinnaker Capital.",
+              "Andrew graduated from Northeastern University in 2014 with a BS in Business Administration with dual concentrations in Finance and Accounting and a minor in Economics."
+            ],
+            keynote: false,
+            modalShown: false
+          },
+          {
+            name: "Emma Odell",
+            img: "/public/assets/img/speakers/headshots/emmaodell.png",
+            topic: "",
+            year: "",
+            title: "Director of Analytics",
+            company: "Matheys Lane Capital Management",
+            bioParagraphs: [
+              ""
+            ],
             keynote: false,
             modalShown: false
           }
@@ -403,13 +581,13 @@
 
         {
           time: "6:15 PM",
-          activity: "Alumni Night Keynote",
+          activity: "Hedge Funds: A Misnomer",
           speaker: "Gerry Coughlin - Managing Partner, Oakpoint Advisors"
         },
         {
           time: "7:15 PM",
-          activity: "DMSB Alumni Panel\nModerated by Prof. Elliot Sherman",
-          speaker: "Kelly Wallace - Analyst, Spring Lake Equity Partners\nWilliam Pearce - Analyst, Acadian Asset Management"
+          activity: "DMSB Recent Alumni",
+          speaker: "\nElliot Sherman* - Professor, Northeastern University\nKelly Wallace - Analyst, Spring Lake Equity Partners\nWilliam Pearce - Analyst, Acadian Asset Management"
         },
         {
           time: "8:30 PM",
@@ -426,27 +604,27 @@
         },
         {
           time: "9:00 AM",
-          activity: "Welcome to CAIS 2018",
+          activity: "Welcome",
           speaker: "Colby Gilbert - Co-President, CAIS"
         },
         {
           time: "9:15 AM",
-          activity: "Investment Banking to Private/Growth Equity\nModerated by Prof. Mark Bernfeld",
-          speaker: "Caitlin Vorlicek - Associate, Summit Partners\nBen Fischberg - Associate, Guidepot\nForrest Richmond - Associate, HarbourVest\nNicolas Wright - Associate, 3L Capital"
+          activity: "Investment Banking to Private Equity",
+          speaker: "Mark Bernfeld* - Professor, Northeastern University\nCaitlin Vorlicek - Associate, Summit Partners\nBen Fischberg - Associate, Guidepost\nForrest Richmond - Associate, HarbourVest\nNicolas Wright - Associate, 3L Capital"
         },
         {
           time: "10:15 AM",
-          activity: "Women in Alternatives\nModerated by Robin Devereux - CFO, Summit Partners",
-          speaker: ""
+          activity: "Women in Alternatives",
+          speaker: "Robin Devereux* - CFO, Summit Partners\nLaurie Gormley - Portfolio Manager, Adage Capital\nJess Yuan - Associate, J.W. Childs Associates\nWhitney Kelly - Vice President, Berkshire Partners"
         },
         {
           time: "11:15 AM",
-          activity: "Venture Capital",
+          activity: "A Partner's Perspective in Venture Capital",
           speaker: "Bob Davis - Partner, Highland Capital Partners"
         },
         {
           time: "12 PM",
-          activity: "Private Equity",
+          activity: "Keynote Address",
           speaker: ""
         },
         {
@@ -456,17 +634,17 @@
         },
         {
           time: "1:45 PM",
-          activity: "Crypto/Blockchain",
-          speaker: ""
+          activity: "Blockchain: What Can the Future Hold?",
+          speaker: "Abhi Shellat* - Professor, Northeastern University\nDave Balter - Partner, Flipside Crypto\nRuss Wilcox - Partner, Pillar VC\nJim Cunha - SVP, Federal Reserve Bank of Boston\nJeremy Kauffman - Founder & CEO, LBRY"
         },
         {
           time: "2:45 PM",
-          activity: "Young Venture Capitalists\nModerated by Cory Bolotsky, Head of Platform & Community, Underscore VC",
-          speaker: "Rob McCall - Associate, .406 Ventures"
+          activity: "Innovators in Venture",
+          speaker: "Cory Bolotsky*, Head of Platform, Underscore VC\nRob McCall - Associate, .406 Ventures\nKen Cowan - Associate, OpenView Venture Partners\nMonique Guimond - Associate, The Engine"
         },
         {
           time: "3:45 PM",
-          activity: "CAIS Closing Remarks",
+          activity: "Closing Remarks",
           speaker: "Mike Watts - Co-President, CAIS"
         },
         {
@@ -483,7 +661,7 @@
         },
         {
           question: "What's the cost?",
-          answer: "CAIS 2018 will employ a variable cost structure. An early bird special will be available until Friday, March 24. These tickets will cost $20 each, and will grant the attendee access to Alumni Night and the Conference. Beginning Saturday, March 25, each ticket will cost $30, and will grant the attendee access to Alumni Night and the Conference. The registration fee includes breakfast and lunch at the Conference on April 14."
+          answer: "CAIS 2018 will employ a variable cost structure. An early bird special will be available until Monday, April 2nd. These tickets will cost $30 each, and will grant the attendee access to Alumni Night and the Conference. Beginning Wednesday, April 3rd, each ticket will cost $40, and will grant the attendee access to Alumni Night and the Conference. The registration fee includes breakfast and lunch at the Conference on April 14."
         },
         {
           question: "What's the dresscode?",
@@ -527,7 +705,7 @@
           name: "Colby Gilbert",
           img: "/public/assets/img/team/codygilbert.png",
           linkedin: "https://www.linkedin.com/in/gilbertrichardc/",
-          title: "President"
+          title: "Co-President"
         },
         {
           name: "Michael Watts",
@@ -688,6 +866,12 @@
       {
         'category': 'Silver Sponsors',
         'members': [
+          {
+            name: "EY",
+            img: imgRoot + "ey.png",
+            title: "Silver Sponsor",
+            link: ""
+          },
                 {
                   name: "CFA Society Boston",
                   img: imgRoot + "cfaboston.jpg",

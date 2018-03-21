@@ -81,6 +81,10 @@
 .black {
   color: black; }
 
+.asterisk {
+  font-size: 14px;
+  text-align: left; }
+
 .cursor-pointer {
   cursor: pointer; }
 
