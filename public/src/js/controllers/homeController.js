@@ -119,7 +119,7 @@
 
         $scope.speakers = [
           {
-            'category': 'Conference Keynotes',
+            'category': 'Keynotes',
             'members': [
               {
                 name: "Bob Davis",
@@ -137,12 +137,7 @@
                     "Bob graduated summa cum laude from Northeastern University, where he earned a B.S. in Business Administration. He holds an M.B.A. from Babson College, an Honorary Doctorate of Commercial Sciences from Bentley College, and an Honorary Doctorate from Northeastern University.",
                     "Bob has been inducted into the Academy of Distinguished Entrepreneurs and received the Massachusetts Interactive Media Council’s Lifetime Achievement Award."
                   ]
-              }
-            ]
-        },
-        {
-          'category': 'Alumni Night Keynote',
-          'members': [
+              },
             {
               name: "Gerry Coughlin",
               img: "/public/assets/img/speakers/headshots/gerrycoughlin.png",
@@ -187,18 +182,35 @@
             company: "Berkshire Partners",
             keynote: false,
             modalShown: false,
+            bioParagraphs: [
+              "Whitney originally joined Berkshire Partners in 2012 as an Associate and returned in 2016 after graduating from Harvard Business School.  Prior to joining Berkshire, Whitney was an analyst at J.P. Morgan.",
+              "Whitney holds a BA in economics and psychology from Williams College."
+            ]
+          },
+          {
+            name: "Adele Kohler",
+            img: "/public/assets/img/speakers/headshots/adelekohler.jpeg",
+            topic: "",
+            year: "",
+            title: "Director",
+            company: "Wellington Management",
+            keynote: false,
+            modalShown: false,
             bioParagraphs: []
           },
           {
             name: "Laurie Gormley",
-            img: "/public/assets/img/speakers/headshots/lauriegormley.png",
+            img: "/public/assets/img/speakers/headshots/lauriegormley.jpeg",
             topic: "",
             year: "",
             title: "Portfolio Manager",
             company: "Adage Capital Management",
             keynote: false,
             modalShown: false,
-            bioParagraphs: []
+            bioParagraphs: [
+              "Laurel Gormley has worked over thirty years in the investment industry. For the past ten years, she has worked as a portfolio manager at Adage Capital Management, a hedge fund founded by two portfolio managers from Harvard Management. She currently follows the healthcare industry. Prior to joining Adage, Laurel worked at various investment firms in Boston. She has analyzed numerous industries, including energy, chemicals, retail, and industrials. Laurel has managed small and large cap portfolios, value and growth.",
+              "Laurel graduated from the Boston College Carroll School of Management Honors Program in 1984. She earned a MBA from Babson College in 1995. She is a Chartered Financial Analyst and a member of the CFA Society Boston. Laurel is a member of the Council for Disability Awareness at Spaulding Rehabilitation Hospital. An avid Boston sports fan, she resides in the Charlestown Navy Yard."
+            ]
           },
           {
             name: "Jess Yuan",
@@ -482,7 +494,8 @@
             title: "Director of Analytics",
             company: "Matheys Lane Capital Management",
             bioParagraphs: [
-              ""
+              "Emma Odell graduated from Northeastern University in 2013 with a degree in both Finance and Accounting. While at Northeastern, Emma completed three six-month co-ops at Goldman Sachs in their Boston office in both Client Services and Operations, as well as a three-month summer internship in Goldman’s NYC office.",
+              "Upon graduation, Emma worked for IBM in their Consulting by Degree program where she helped to provide IBM’s financial sector clientele with strategic business solutions. Emma transitioned into an operations role with Fidelity’s Prime Brokerage group, where she worked for two years. As of April 2016, she serves as the Director of Analytics at Matheys Lane Capital Management, a family office based in Providence, RI."
             ],
             keynote: false,
             modalShown: false
@@ -587,7 +600,7 @@
         {
           time: "7:15 PM",
           activity: "DMSB Recent Alumni",
-          speaker: "\nElliot Sherman* - Professor, Northeastern University\nKelly Wallace - Analyst, Spring Lake Equity Partners\nWilliam Pearce - Analyst, Acadian Asset Management"
+          speaker: "\nElliot Sherman* - Professor, Northeastern University\nKelly Wallace - Associate, Spring Lake Equity Partners\nWilliam Pearce - Analyst, Acadian Asset Management\nAndrew Hiniker - Analyst, The Baupost Group\nEmma Odell - Director of Analytics, Matheys Lane Capital"
         },
         {
           time: "8:30 PM",
@@ -615,7 +628,7 @@
         {
           time: "10:15 AM",
           activity: "Women in Alternatives",
-          speaker: "Robin Devereux* - CFO, Summit Partners\nLaurie Gormley - Portfolio Manager, Adage Capital\nJess Yuan - Associate, J.W. Childs Associates\nWhitney Kelly - Vice President, Berkshire Partners"
+          speaker: "Robin Devereux* - CFO, Summit Partners\nLaurie Gormley - Portfolio Manager, Adage Capital\nJess Yuan - Associate, J.W. Childs Associates\nWhitney Kelly - Vice President, Berkshire Partners\nAdele Kohler - Director, Wellington Management"
         },
         {
           time: "11:15 AM",
@@ -894,11 +907,6 @@
                 img: imgRoot + 'wso.png',
                 hasFacts: true,
                 link: "http://www.wallstreetoasis.com/"
-              },
-              {
-                name: 'Pitchbook',
-                img: imgRoot + 'pitchbook.jpg',
-                link: "http://pitchbook.com/"
               }]
       }
       ];
