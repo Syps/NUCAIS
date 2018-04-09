@@ -196,7 +196,12 @@
             company: "Wellington Management",
             keynote: false,
             modalShown: false,
-            bioParagraphs: []
+            bioParagraphs: [
+              'Adele Kohler is an investment director and director of Alternatives Product Development in Wellington Alternative Investments (WAI). WAI oversees certain Wellington-managed fund vehicles that pursue alternative investment strategies. The WAI team serves as fund sponsor for several alternative funds, overseeing fund governance, product development, marketing, operations, and servicing fund investors.',
+              'In her role, Adele works closely with investment teams to help ensure the integrity of their investment approaches and represents the funds both internally and externally. She is also director of the firm’s product development process for alternatives, working closely with Wellington Management’s investment and business teams to initiate and launch new product ideas.',
+              'Before joining Wellington Management in 2008, Adele was a senior managing director responsible for Global Product Development and Product Engineering for State Street Global Advisors (SSgA) (2005 – 2008). Prior to that, she held several investment roles, including senior product engineer for Global Asset Allocation and portfolio manager for SSgA’s Global Structured Products Group (1992 – 2005).',
+              'Adele earned her BA in economics from Smith College. Additionally, she holds the Chartered Financial Analyst designation and is a member of the CFA Institute and the CFA Society Boston.'
+            ]
           },
           {
             name: "Laurie Gormley",
@@ -289,6 +294,27 @@
             ]
           }
 
+        ]
+      },
+      {
+        'category': 'Private Equity: Buyout vs. Growth',
+        'members': [
+          {
+            name: "Chris Cavanagh",
+            img: "/public/assets/img/speakers/headshots/chriscavanagh.png",
+            topic: "",
+            year: "",
+            title: "Principal",
+            company: "Guidepost Growth Equity",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "Chris Cavanagh, Principal, joined Guidepost Growth Equity in 2015.",
+              "Chris focuses on originating, evaluating and managing growth equity investments in the technology and technology-enabled services sectors. He enjoys partnering with entrepreneurs of rapidly growing companies and supporting them through their company’s next phase of growth.",
+              "Previously, Chris was a Vice President at Great Hill Partners, a $5.3 billion Boston-based growth-focused private equity firm. Chris was involved in investments in software, internet, and business services and was responsible for originating, evaluating and executing investment opportunities, as well as assuming Board of Director responsibilities at portfolio companies. He began his career as an investment banking analyst at Citigroup in New York, where he focused in the consumer products and retail sectors.",
+              "Chris earned a B.A. in Economics from the University of Notre Dame. He is an active member of Notre Dame’s Irish Entrepreneurship Network, serving as a mentor to entrepreneurs and a judge in the annual McCloskey Business Plan Competition."
+            ]
+          }
         ]
       },
       {
@@ -636,32 +662,32 @@
           speaker: "Bob Davis - Partner, Highland Capital Partners"
         },
         {
-          time: "12 PM",
-          activity: "Keynote Address",
-          speaker: ""
+          time: "12:10 PM",
+          activity: "Private Equity: Buyouts vs. Growth",
+          speaker: "Elliot Sherman* - Professor, Northeastern University\nChris Cavanagh - Principal, Guidepost Growth Equity"
         },
         {
-          time: "1 PM",
+          time: "1:10 PM",
           activity: "Lunch",
           speaker: ""
         },
         {
-          time: "1:45 PM",
+          time: "2 PM",
           activity: "Blockchain: What Can the Future Hold?",
           speaker: "Abhi Shellat* - Professor, Northeastern University\nDave Balter - Partner, Flipside Crypto\nRuss Wilcox - Partner, Pillar VC\nJim Cunha - SVP, Federal Reserve Bank of Boston\nJeremy Kauffman - Founder & CEO, LBRY"
         },
         {
-          time: "2:45 PM",
+          time: "3 PM",
           activity: "Innovators in Venture",
           speaker: "Cory Bolotsky*, Head of Platform, Underscore VC\nRob McCall - Associate, .406 Ventures\nKen Cowan - Associate, OpenView Venture Partners\nMonique Guimond - Associate, The Engine"
         },
         {
-          time: "3:45 PM",
+          time: "4 PM",
           activity: "Closing Remarks",
           speaker: "Mike Watts - Co-President, CAIS"
         },
         {
-          time: "4 PM",
+          time: "4:05 PM",
           activity: "Networking",
           speaker: ""
         }
@@ -853,12 +879,6 @@
             img: imgRoot + "thrive.jpg",
             title: "Platinum Sponsor",
             link: "http://www.northeastern.edu/cfi"
-        },
-        {
-            name: "BackBay Communications",
-            img: imgRoot + "bbc.jpg",
-            title: "Media Sponsor",
-            link: "http://www.backbaycommunications.com/"
         }]
       },
       {
