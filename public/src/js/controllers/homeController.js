@@ -174,20 +174,6 @@
             ]
           },
           {
-            name: "Whitney Kelley",
-            img: "/public/assets/img/speakers/headshots/whitneykelly.jpg",
-            topic: "",
-            year: "",
-            title: "Vice President",
-            company: "Berkshire Partners",
-            keynote: false,
-            modalShown: false,
-            bioParagraphs: [
-              "Whitney originally joined Berkshire Partners in 2012 as an Associate and returned in 2016 after graduating from Harvard Business School.  Prior to joining Berkshire, Whitney was an analyst at J.P. Morgan.",
-              "Whitney holds a BA in economics and psychology from Williams College."
-            ]
-          },
-          {
             name: "Adele Kohler",
             img: "/public/assets/img/speakers/headshots/adelekohler.jpeg",
             topic: "",
@@ -313,6 +299,20 @@
               "Chris focuses on originating, evaluating and managing growth equity investments in the technology and technology-enabled services sectors. He enjoys partnering with entrepreneurs of rapidly growing companies and supporting them through their company’s next phase of growth.",
               "Previously, Chris was a Vice President at Great Hill Partners, a $5.3 billion Boston-based growth-focused private equity firm. Chris was involved in investments in software, internet, and business services and was responsible for originating, evaluating and executing investment opportunities, as well as assuming Board of Director responsibilities at portfolio companies. He began his career as an investment banking analyst at Citigroup in New York, where he focused in the consumer products and retail sectors.",
               "Chris earned a B.A. in Economics from the University of Notre Dame. He is an active member of Notre Dame’s Irish Entrepreneurship Network, serving as a mentor to entrepreneurs and a judge in the annual McCloskey Business Plan Competition."
+            ]
+          },
+          {
+            name: "Whitney Kelley",
+            img: "/public/assets/img/speakers/headshots/whitneykelly.jpg",
+            topic: "",
+            year: "",
+            title: "Vice President",
+            company: "Berkshire Partners",
+            keynote: false,
+            modalShown: false,
+            bioParagraphs: [
+              "Whitney originally joined Berkshire Partners in 2012 as an Associate and returned in 2016 after graduating from Harvard Business School.  Prior to joining Berkshire, Whitney was an analyst at J.P. Morgan.",
+              "Whitney holds a BA in economics and psychology from Williams College."
             ]
           }
         ]
